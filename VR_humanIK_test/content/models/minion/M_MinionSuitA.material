@@ -1,0 +1,46 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	color_map = "content/models/minion/textures/MinionSuitA_Color"
+	emissive_map = "content/models/minion/textures/MinionSuitA_Glow"
+	normal_map = "content/models/minion/textures/MinionSuitA_Normal"
+	roughness_map = "content/models/minion/textures/MinionSuitA_Spec"
+}
+variables = {
+	base_color = {
+		type = "vector3"
+		value = [
+			1
+			1
+			1
+		]
+	}
+	emissive = {
+		type = "vector3"
+		value = [
+			0.5
+			0.5
+			0.5
+		]
+	}
+	roughness = {
+		type = "scalar"
+		value = 0.9368821
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_emissive_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_normal_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_roughness_map = {
+		type = "scalar"
+		value = 1
+	}
+}

@@ -1,0 +1,858 @@
+
+Connections = [
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "e8c0dd18-43f4-495d-a9b6-73b59b6372e8"
+		Id = "60442cac-f719-44a7-b72c-bef1af73a165"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "3ff15bdc-38dd-4368-93c6-fa6470403cda"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "2312968c-c94f-4273-9f0c-7b941b6021c4"
+		Id = "fa13750d-a678-4b59-b63c-03baecf427f0"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "e8c0dd18-43f4-495d-a9b6-73b59b6372e8"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+		Id = "a7c0aa45-8034-449e-a3fe-f1c472835899"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "6874a707-9cf2-4c48-a2a2-93dcffc46ed6"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "6874a707-9cf2-4c48-a2a2-93dcffc46ed6"
+		Id = "a508d192-3d0b-42d5-8157-82a091c70a2a"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "6553ae9a-8d34-4f98-9910-07e6dafcda50"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "3ff15bdc-38dd-4368-93c6-fa6470403cda"
+		Id = "83b5cbca-90af-465c-9c4c-8931a2e3901a"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "361c0360-db86-405c-9d85-18625d21cfb5"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "361c0360-db86-405c-9d85-18625d21cfb5"
+		Id = "a5d3e2ed-c29b-4453-97de-b03bfe29b0fa"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "65e0a18e-40cf-4037-9e68-6815f51d9c73"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "65e0a18e-40cf-4037-9e68-6815f51d9c73"
+		Id = "167ca807-0f78-4b44-9718-bb3a7e3099cf"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "3dcce27a-626c-444e-a0c7-cc30b9f855b2"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "3dcce27a-626c-444e-a0c7-cc30b9f855b2"
+		Id = "a4d318f9-6c2f-44cc-9ec7-b3b02251ba6f"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "88d3664e-b658-4802-9b93-86db53150b66"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "88d3664e-b658-4802-9b93-86db53150b66"
+		Id = "cf9b49aa-727f-4dd1-841a-1bb507b29c88"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "bfd81f42-4cb2-4b11-9ae2-c4f12fbd0cf6"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "6553ae9a-8d34-4f98-9910-07e6dafcda50"
+		Id = "d8b64a61-6453-4b94-bfdc-ec3c11922611"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "2312968c-c94f-4273-9f0c-7b941b6021c4"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "2312968c-c94f-4273-9f0c-7b941b6021c4"
+		Id = "4d77db7e-2d7e-4d38-aff9-ce1f1bf749b0"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "744a39a8-2ec4-42f8-a6e2-9c461d2197b9"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "744a39a8-2ec4-42f8-a6e2-9c461d2197b9"
+		Id = "4f71eb7b-ef64-4ec7-bac9-28f9bd0d79b5"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "3ff15bdc-38dd-4368-93c6-fa6470403cda"
+	}
+]
+Groups = []
+Nodes = [
+	{
+		Arguments = [
+			{
+				Name = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableUnit"
+					UseMyUnit = true
+				}
+			}
+			{
+				Name = "Characterization"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableString"
+					Value = "content/models/minion/minion"
+				}
+			}
+		]
+		Class = "Stingray.Foundation.Flow.CustomScriptNode"
+		FlowNodesResource = "core/humanik/humanik"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "6553ae9a-8d34-4f98-9910-07e6dafcda50"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "HumanIK Creature"
+		NodeLocation = {
+			X = 260
+			Y = 160
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = []
+		Width = 300
+	}
+	{
+		Arguments = [
+			{
+				Name = "InWorldSpace"
+				Type = "bool"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableBoolean"
+					Value = false
+				}
+			}
+			{
+				Name = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableUnit"
+					UseMyUnit = true
+				}
+			}
+			{
+				Name = "ConstraintId"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = -1
+				}
+			}
+			{
+				Name = "BlendInTime"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "ChainIndex"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "BlendAlpha"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+		]
+		Class = "Stingray.Foundation.Flow.CustomScriptNode"
+		FlowNodesResource = "core/humanik/humanik"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "3ff15bdc-38dd-4368-93c6-fa6470403cda"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "HumanIK Add Chain Pin"
+		NodeLocation = {
+			X = 1260
+			Y = 40
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = []
+		Width = 180
+	}
+	{
+		Arguments = [
+			{
+				Name = "InWorldSpace"
+				Type = "bool"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableBoolean"
+					Value = false
+				}
+			}
+			{
+				Name = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableUnit"
+					UseMyUnit = true
+				}
+			}
+			{
+				Name = "ConstraintId"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = -1
+				}
+			}
+			{
+				Name = "BlendInTime"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "ChainIndex"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 4
+				}
+			}
+			{
+				Name = "BlendAlpha"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+		]
+		Class = "Stingray.Foundation.Flow.CustomScriptNode"
+		FlowNodesResource = "core/humanik/humanik"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "3dcce27a-626c-444e-a0c7-cc30b9f855b2"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "HumanIK Add Chain Pin"
+		NodeLocation = {
+			X = 1260
+			Y = 260
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = []
+		Width = 180
+	}
+	{
+		Arguments = [
+			{
+				Name = "InWorldSpace"
+				Type = "bool"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableBoolean"
+					Value = false
+				}
+			}
+			{
+				Name = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableUnit"
+					UseMyUnit = true
+				}
+			}
+			{
+				Name = "ConstraintId"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = -1
+				}
+			}
+			{
+				Name = "BlendInTime"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "ChainIndex"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 2
+				}
+			}
+			{
+				Name = "BlendAlpha"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+		]
+		Class = "Stingray.Foundation.Flow.CustomScriptNode"
+		FlowNodesResource = "core/humanik/humanik"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "361c0360-db86-405c-9d85-18625d21cfb5"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "HumanIK Add Chain Pin"
+		NodeLocation = {
+			X = 1480
+			Y = 40
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = []
+		Width = 180
+	}
+	{
+		Arguments = [
+			{
+				Name = "InWorldSpace"
+				Type = "bool"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableBoolean"
+					Value = false
+				}
+			}
+			{
+				Name = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableUnit"
+					UseMyUnit = true
+				}
+			}
+			{
+				Name = "ConstraintId"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = -1
+				}
+			}
+			{
+				Name = "BlendInTime"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "ChainIndex"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 5
+				}
+			}
+			{
+				Name = "BlendAlpha"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+		]
+		Class = "Stingray.Foundation.Flow.CustomScriptNode"
+		FlowNodesResource = "core/humanik/humanik"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "88d3664e-b658-4802-9b93-86db53150b66"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "HumanIK Add Chain Pin"
+		NodeLocation = {
+			X = 1480
+			Y = 260
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = []
+		Width = 180
+	}
+	{
+		Arguments = [
+			{
+				Name = "InWorldSpace"
+				Type = "bool"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableBoolean"
+					Value = false
+				}
+			}
+			{
+				Name = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableUnit"
+					UseMyUnit = true
+				}
+			}
+			{
+				Name = "ConstraintId"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = -1
+				}
+			}
+			{
+				Name = "BlendInTime"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "ChainIndex"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 3
+				}
+			}
+			{
+				Name = "BlendAlpha"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+		]
+		Class = "Stingray.Foundation.Flow.CustomScriptNode"
+		FlowNodesResource = "core/humanik/humanik"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "65e0a18e-40cf-4037-9e68-6815f51d9c73"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "HumanIK Add Chain Pin"
+		NodeLocation = {
+			X = 1700
+			Y = 40
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = []
+		Width = 180
+	}
+	{
+		Arguments = [
+			{
+				Name = "InWorldSpace"
+				Type = "bool"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableBoolean"
+					Value = false
+				}
+			}
+			{
+				Name = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableUnit"
+					UseMyUnit = true
+				}
+			}
+			{
+				Name = "ConstraintId"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = -1
+				}
+			}
+			{
+				Name = "BlendInTime"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "ChainIndex"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 6
+				}
+			}
+			{
+				Name = "BlendAlpha"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+		]
+		Class = "Stingray.Foundation.Flow.CustomScriptNode"
+		FlowNodesResource = "core/humanik/humanik"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "bfd81f42-4cb2-4b11-9ae2-c4f12fbd0cf6"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "HumanIK Add Chain Pin"
+		NodeLocation = {
+			X = 1700
+			Y = 260
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = []
+		Width = 180
+	}
+	{
+		Brief = "Triggers an event whenever a unit that uses this Flow graph is spawned."
+		Category = "Event"
+		Class = "Stingray.Foundation.Flow.DataDrivenFlowNode"
+		ExportTypeName = "unit_spawned"
+		Id = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+		NodeLocation = {
+			X = -140
+			Y = 120
+		}
+		Outputs = [
+			{
+				Class = "Stingray.Foundation.Flow.DataDrivenFlowNode+Output"
+				Hidden = false
+				RawName = "unit"
+				Type = "unit"
+				UIName = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.DataDrivenFlowNode+Output"
+				Hidden = false
+				RawName = "out"
+				Type = "event"
+				UIName = "Out"
+			}
+		]
+		Title = "Unit Spawned"
+		Width = 160
+	}
+	{
+		Arguments = []
+		Class = "Stingray.Foundation.Flow.CustomScriptNode"
+		FlowNodesResource = "core/humanik/humanik"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "6874a707-9cf2-4c48-a2a2-93dcffc46ed6"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "HumanIK Switch On"
+		NodeLocation = {
+			X = 60
+			Y = 140
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = []
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				Name = "ReachR"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 0
+				}
+			}
+			{
+				Name = "BlendInTime"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "ReachT"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "BlendAlpha"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableUnit"
+					UseMyUnit = true
+				}
+			}
+			{
+				Name = "MotionAmplitude"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 0.15
+				}
+			}
+			{
+				Name = "ConstraintId"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = -1
+				}
+			}
+			{
+				Name = "Pull"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "MotionPhase"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 0
+				}
+			}
+			{
+				Name = "SectionIndex"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "MotionFrequency"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 2
+				}
+			}
+			{
+				Name = "MotionType"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 2
+				}
+			}
+		]
+		Class = "Stingray.Foundation.Flow.CustomScriptNode"
+		FlowNodesResource = "core/humanik/humanik"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "2312968c-c94f-4273-9f0c-7b941b6021c4"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "HumanIK Add Section Motion"
+		NodeLocation = {
+			X = 600
+			Y = 140
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = []
+		Width = 200
+	}
+	{
+		Arguments = [
+			{
+				Name = "ReachR"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "BlendInTime"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "ReachT"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 0
+				}
+			}
+			{
+				Name = "BlendAlpha"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableUnit"
+					UseMyUnit = true
+				}
+			}
+			{
+				Name = "MotionAmplitude"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 0.25
+				}
+			}
+			{
+				Name = "ConstraintId"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = -1
+				}
+			}
+			{
+				Name = "Pull"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 0
+				}
+			}
+			{
+				Name = "MotionPhase"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 0.5
+				}
+			}
+			{
+				Name = "SectionIndex"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 1
+				}
+			}
+			{
+				Name = "MotionFrequency"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 3
+				}
+			}
+			{
+				Name = "MotionType"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Foundation.Flow.InVariableFloat"
+					Value = 6
+				}
+			}
+		]
+		Class = "Stingray.Foundation.Flow.CustomScriptNode"
+		FlowNodesResource = "core/humanik/humanik"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "744a39a8-2ec4-42f8-a6e2-9c461d2197b9"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "HumanIK Add Section Motion"
+		NodeLocation = {
+			X = 920
+			Y = 140
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = []
+		Width = 200
+	}
+]

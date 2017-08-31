@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "teapot"
+		node = "StingrayEntityRoot"
+		shapes = [
+			{
+				material = "default"
+				shape = "convex"
+				template = "default"
+				type = "convex_computed"
+			}
+		]
+		template = "dynamic"
+	}
+]

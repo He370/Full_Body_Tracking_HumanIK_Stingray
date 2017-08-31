@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "dcb3cc3c-e410-4049-9a88-4645dd7ac0be"
+_name = "content/models/Props/box_motion"
+anim_controller_ref = {
+	_id = "cf0429e8-b276-4429-9989-5f97c27ce73c"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "a07f0396-8d1c-451b-bc0c-3872aea9ccaa"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "bf054e89-7f83-47d4-998c-cbfb4223be08"
+	ref_filename = "content/models/Props/box_motion.dcc_asset"
+	ref_id = null
+}

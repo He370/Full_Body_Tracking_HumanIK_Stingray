@@ -1,0 +1,135 @@
+
+cameras = {
+	CharacterCam = {
+		far_range = 100
+		near_range = 0.0999999940395355
+		node = "CharacterCam"
+		projection_type = "perspective"
+		vertical_fov = 0.133136063814163
+	}
+}
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 3.956934
+		orthographic_plane = [0 0 1 0]
+		orthographic_zoom = 10
+		position = [-0.473522 3.545001 1.334232]
+		projection_type = "perspective"
+		rotation = [0.005521 -0.090546 0.994031 -0.060611]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+	flow_framing = {
+		scale = 0.833333333333333
+		x = 137.50414197531
+		y = 313.849117283951
+	}
+}
+materials = {
+	M_glass1 = "content/models/minion/M_glass1"
+	M_Killamari = "content/models/minion/M_Killamari"
+	M_MinionSuitA = "content/models/minion/M_MinionSuitA"
+}
+renderables = {
+	Mesh_Glass_Dome = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = false
+		surface_queries = false
+		viewport_visible = true
+	}
+	Mesh_Killamari_Body = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Mesh_Killamari_EyeLid_Lower = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Mesh_Killamari_EyeLid_Upper = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Mesh_Killamari_Eyes = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Mesh_L_BlastShield_Bottom = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Mesh_L_BlastShield_Top = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Mesh_M_Body = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Mesh_R_BlastShield_Bottom = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Mesh_R_BlastShield_Top = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

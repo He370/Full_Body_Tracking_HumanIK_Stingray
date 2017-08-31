@@ -1,0 +1,125 @@
+
+_data_root_version = 1
+_id = "d92fdf2b-1fab-4e7b-9d77-514cb93eff25"
+_name = "content/models/standlookaround_anim_controller"
+anim_skeleton_ref = {
+	_id = "d10b3f8f-bfd0-41b0-8103-50ce1fb3ee48"
+	ref_filename = "content/models/standlookaround.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	bones = "content/models/standlookaround"
+	layers = [
+		{
+			default_state = "Clip"
+			states = [
+				{
+					animations = [
+						"content/models/standlookaround"
+					]
+					loop_animation = true
+					name = "Clip"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+					]
+					weights = [
+						"1.0"
+					]
+				}
+			]
+		}
+	]
+}
+constraint_targets = [
+]
+constraints = [
+]
+events = [
+]
+layers = [
+	{
+		_id = "3c6ffc92-d64f-44a2-9987-e73d4f389104"
+		_name = "Layer"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "500dd349-1ebc-4e40-a77d-5a2c9a69b7df"
+			ref_filename = null
+			ref_id = "b13447d9-a4b2-4d04-bbff-d667e8834fb4"
+		}
+		empty_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
+			{
+				_id = "b13447d9-a4b2-4d04-bbff-d667e8834fb4"
+				_name = "Clip"
+				anim_blend_set_ref = {
+					_id = "1c8fc256-c429-4e65-972c-f12f05696e04"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "b5a1aa9a-4247-4b5a-bb01-6bf9999bb562"
+						ref_filename = "content/models/standlookaround.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "24d0368c-a347-4dbb-804c-1982aba22152"
+					ref_filename = null
+					ref_id = null
+				}
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				template_transitions = [
+				]
+				transitions = [
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 100
+				y = 100
+			}
+		]
+		template_states = [
+		]
+		time_states = [
+		]
+	}
+]
+ragdolls = [
+]
+setup = {
+	_id = "cceb6c7c-8162-4137-b555-b7f182343dfa"
+	level = "core/editor_slave/levels/animation_preview_level/animation_preview_level"
+	unit_ref = {
+		_id = "cf460244-f1cc-4778-9da6-cddb92f5d39f"
+		ref_filename = "content/models/standlookaround.unit_anim"
+		ref_id = null
+	}
+}
+variables = [
+]

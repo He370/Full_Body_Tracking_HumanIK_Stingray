@@ -1,0 +1,18 @@
+
+events = [
+	"sfx_amb_vr_museum"
+	"sfx_impact_ball"
+	"sfx_impact_bat"
+	"sfx_impact_bat_on_ball"
+	"sfx_impact_teapot"
+	"sfx_impact_torus"
+	"sfx_impact_wood_block"
+	"sfx_pickup"
+	"sfx_pickup_ball"
+	"sfx_pickup_block"
+	"sfx_reset"
+	"sfx_spawn_sound"
+	"sfx_teleport"
+	"sfx_teleport_ui_down"
+	"sfx_teleport_ui_up"
+]

@@ -1,0 +1,34 @@
+
+shader = {
+	connections = [
+	]
+	constants = [
+	]
+	groups = [
+	]
+	nodes = [
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "abbaabba-abba-abba-abba-abbaabbaabba"
+			options = [
+			]
+			position = [
+				0
+				0
+			]
+			samplers = {
+			}
+			type = "core/stingray_renderer/output_nodes/standard_base"
+		}
+	]
+	version = 3
+}
+textures = {
+}
+variables = {
+}

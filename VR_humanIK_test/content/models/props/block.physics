@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "block"
+		node = "StingrayEntityRoot"
+		shapes = [
+			{
+				material = "default"
+				shape = "block"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "dynamic"
+	}
+]

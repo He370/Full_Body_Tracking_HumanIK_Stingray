@@ -1,0 +1,15 @@
+
+materials = {
+	wpn_assaultrif_3p_mat = "content/models/robot/textures/wpn_assaultrif_3p_mat"
+}
+renderables = {
+	wpn_assaultrif_3p = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

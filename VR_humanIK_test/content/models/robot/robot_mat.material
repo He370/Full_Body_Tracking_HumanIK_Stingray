@@ -1,0 +1,52 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	ao_map = "content/models/robot/textures/robot_ao"
+	color_map = "content/models/robot/textures/robot_diff_blue"
+	emissive_map = "content/models/robot/textures/robot_glow"
+	metallic_map = "content/models/robot/textures/robot_metal"
+	normal_map = "content/models/robot/textures/robot_nrm"
+	roughness_map = "content/models/robot/textures/robot_rough"
+}
+variables = {
+	emissive = {
+		type = "vector3"
+		value = [
+			1
+			1
+			1
+		]
+	}
+	emissive_intensity = {
+		type = "scalar"
+		value = 5
+	}
+	metallic = {
+		type = "scalar"
+		value = 0.966
+	}
+	roughness = {
+		type = "scalar"
+		value = 0.9368821
+	}
+	use_ao_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_emissive_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_metallic_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_normal_map = {
+		type = "scalar"
+		value = 1
+	}
+}

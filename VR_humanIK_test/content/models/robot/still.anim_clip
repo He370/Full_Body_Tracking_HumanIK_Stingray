@@ -1,0 +1,42 @@
+
+_data_root_version = 2
+_id = "f0e1ee70-3e2b-4b13-95c9-7462c3a6ae88"
+_name = "content/models/robot/still"
+anim_skeleton_ref = {
+	_id = "b1cfc051-5c02-4490-b7df-65ed5624ee26"
+	ref_filename = "content/models/robot/char_robot_3p.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "6f065748-7234-4c2e-9439-7d386156b943"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+base_offset_preview_animation_clip_ref = {
+	_id = "eec75fae-d3b9-4440-8edf-799e5fd64449"
+	ref_filename = null
+	ref_id = null
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "6145cb4a-0999-4e51-93c2-201ffa402ebf"
+	ref_filename = "content/models/robot/still.dcc_asset"
+	ref_id = null
+}
+flow_events = [
+]
+global_compression_settings = {
+	_id = "d5e74cd1-a04e-42f0-83a9-c0fc69190f89"
+	do_pack_positions = true
+	do_pack_rotations = true
+	do_pack_scales = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+	scale_tolerance = 0.001
+}
+offset_animation = false
+take_name = "Take 001"

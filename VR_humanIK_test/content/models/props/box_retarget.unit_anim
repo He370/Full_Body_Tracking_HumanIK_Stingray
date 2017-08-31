@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "9a3341a0-9ad9-4dec-ba65-1e181ee9981f"
+_name = "content/models/Props/box_retarget"
+anim_controller_ref = {
+	_id = "29077f3b-1616-4345-80ff-684aa68e4519"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "23bd3a01-bbf5-4ea5-8006-a82c0dfbbd4c"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "da8dc504-a865-4010-ae66-efafa4640e32"
+	ref_filename = "content/models/Props/box_retarget.dcc_asset"
+	ref_id = null
+}

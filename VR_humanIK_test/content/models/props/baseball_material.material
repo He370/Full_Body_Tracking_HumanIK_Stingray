@@ -1,0 +1,24 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	color_map = "content/models/props/textures/baseball_diffuse"
+	normal_map = "content/models/props/textures/baseball_normal"
+}
+variables = {
+	metallic = {
+		type = "scalar"
+		value = 0
+	}
+	roughness = {
+		type = "scalar"
+		value = 0.35
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_normal_map = {
+		type = "scalar"
+		value = 1
+	}
+}

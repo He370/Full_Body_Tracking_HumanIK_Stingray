@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "e0554d8c-b549-4304-854c-62099a97d594"
+_name = "content/models/minion/minion"
+anim_controller_ref = {
+	_id = "264f5e74-e6fe-43fb-bd66-50b8ed08a60c"
+	ref_filename = "content/models/minion/minion_anim_controller.anim_controller"
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "b097d8f2-c430-4866-9bef-2a3b4c8eab53"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "4d3677e1-e754-4cfe-bb6e-604ea7ee894c"
+	ref_filename = "content/models/minion/minion.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/minion/minion"

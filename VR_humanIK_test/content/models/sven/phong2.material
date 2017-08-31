@@ -1,0 +1,46 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	color_map = "content/models/sven/textures/sven_Armor_diffuse_u3_v1"
+	emissive_map = "content/models/sven/textures/sven_Armor_glow_u3_v1"
+	normal_map = "content/models/sven/textures/sven_Armor_normal_u3_v1"
+	roughness_map = "content/models/sven/textures/sven_Armor_specular_u3_v1"
+}
+variables = {
+	base_color = {
+		type = "vector3"
+		value = [
+			1
+			1
+			1
+		]
+	}
+	emissive = {
+		type = "vector3"
+		value = [
+			0.5
+			0.5
+			0.5
+		]
+	}
+	roughness = {
+		type = "scalar"
+		value = 0.9464957
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_emissive_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_normal_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_roughness_map = {
+		type = "scalar"
+		value = 1
+	}
+}

@@ -1,0 +1,11 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	color_map = "content/models/Props/Textures/motion"
+}
+variables = {
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+}

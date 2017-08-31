@@ -1,0 +1,45 @@
+materials = {
+	default 			= {density = 1, dynamic_friction = 0.1, static_friction = 0.1, restitution = 0.1, restitution_combine_mode = "max"}
+	bounce 				= {density = 1, dynamic_friction = 0.01, static_friction = 0.1, restitution = 1.0, restitution_combine_mode = "max"}
+}
+
+collision_types = [
+	"default"
+	"character"
+	"congas_trigger"
+	"pickup_trigger"
+	"static_object"
+	"turn_object"
+	"turn_off_trigger"
+]
+
+collision_filters = {
+	default 			= {is = ["default"] collides_with_all_except = ["character"]}
+	static_object 		= {is = ["static_object"] collides_with_all_except = ["pickup_trigger"]}
+	character 			= {is = ["character"] collides_with_all_except = ["pickup_trigger"]}
+	character_trigger 	= {collides_with = ["character"]}
+	turn_off_trigger	= {collides_with = ["turn_object"]}
+	congas_trigger		= {collides_with = ["static_object"]}
+	turn_object			= {is = ["turn_object"] collides_with = ["turn_off_trigger"]}
+	pickup_trigger 		= {collides_with_all_except = ["static_object"]}
+	non_collider 		= {is = [] collides_with = []}
+}
+
+shapes = {
+	default 			= {}
+	trigger 			= {trigger = true}
+	sweeper 			= {sweep = true}
+	character 			= {collision_filter = "character"}
+	character_trigger 	= {trigger = true collision_filter = "character_trigger"}
+	congas_trigger		= {trigger = true collision_filter = "congas_trigger"}
+	pickup_trigger 		= {trigger = true collision_filter = "pickup_trigger"}
+	static_object 		= {collision_filter = "static_object"}
+	turn_off_trigger	= {trigger = true collision_filter = "turn_off_trigger"}
+	turn_object			= {collision_filter = "turn_object"}
+}
+
+actors = {
+	static 				= {dynamic = false}
+	dynamic 			= {dynamic = true linear_damping = 0.01 angular_damping = 0.01}
+	keyframed 			= {dynamic = true  kinematic = true linear_damping = 0.05 angular_damping = 0.05}
+}

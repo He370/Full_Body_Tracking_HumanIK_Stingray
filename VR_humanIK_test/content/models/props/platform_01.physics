@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "Box003"
+		node = "Box003"
+		shapes = [
+			{
+				material = "default"
+				shape = "Box003"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+]

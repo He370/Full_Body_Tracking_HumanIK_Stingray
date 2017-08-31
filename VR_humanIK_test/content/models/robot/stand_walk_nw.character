@@ -1,0 +1,150 @@
+unit_name = "stand_walk_nw"
+
+bones_mapping = [
+	{ id = 1 name = "Hips" bone = "s_robot_Hips" }
+	{ id = 2 name = "LeftUpLeg" bone = "s_robot_LeftUpLeg" }
+	{ id = 3 name = "LeftLeg" bone = "s_robot_LeftLeg" }
+	{ id = 4 name = "LeftFoot" bone = "s_robot_LeftFoot" }
+	{ id = 16 name = "LeftToeBase" bone = "s_robot_LeftToeBase" }
+	{ id = 5 name = "RightUpLeg" bone = "s_robot_RightUpLeg" }
+	{ id = 6 name = "RightLeg" bone = "s_robot_RightLeg" }
+	{ id = 7 name = "RightFoot" bone = "s_robot_RightFoot" }
+	{ id = 17 name = "RightToeBase" bone = "s_robot_RightToeBase" }
+	{ id = 8 name = "Spine" bone = "s_robot_Spine" }
+	{ id = 23 name = "Spine1" bone = "s_robot_Spine1" }
+	{ id = 18 name = "LeftShoulder" bone = "s_robot_LeftShoulder" }
+	{ id = 9 name = "LeftArm" bone = "s_robot_LeftArm" }
+	{ id = 10 name = "LeftForeArm" bone = "s_robot_LeftForeArm" }
+	{ id = 11 name = "LeftHand" bone = "s_robot_LeftHand" }
+	{ id = 19 name = "RightShoulder" bone = "s_robot_RightShoulder" }
+	{ id = 12 name = "RightArm" bone = "s_robot_RightArm" }
+	{ id = 13 name = "RightForeArm" bone = "s_robot_RightForeArm" }
+	{ id = 14 name = "RightHand" bone = "s_robot_RightHand" }
+	{ id = 20 name = "Neck" bone = "s_robot_Neck" }
+	{ id = 15 name = "Head" bone = "s_robot_Head" }
+	{ id = 24 name = "Spine2" bone = "s_robot_Spine2" }
+	{ id = 25 name = "Spine3" bone = "s_robot_Spine3" }
+	{ id = 26 name = "Spine4" bone = "s_robot_Spine4" }
+	{ id = 27 name = "Spine5" bone = "s_robot_Spine5" }
+	{ id = 28 name = "Spine6" bone = "s_robot_Spine6" }
+	{ id = 29 name = "Spine7" bone = "s_robot_Spine7" }
+	{ id = 50 name = "LeftHandThumb1" bone = "s_robot_LeftHandThumb1" }
+	{ id = 51 name = "LeftHandThumb2" bone = "s_robot_LeftHandThumb2" }
+	{ id = 52 name = "LeftHandThumb3" bone = "s_robot_LeftHandThumb3" }
+	{ id = 54 name = "LeftHandIndex1" bone = "s_robot_LeftHandIndex1" }
+	{ id = 55 name = "LeftHandIndex2" bone = "s_robot_LeftHandIndex2" }
+	{ id = 56 name = "LeftHandIndex3" bone = "s_robot_LeftHandIndex3" }
+	{ id = 58 name = "LeftHandMiddle1" bone = "s_robot_LeftHandMiddle1" }
+	{ id = 59 name = "LeftHandMiddle2" bone = "s_robot_LeftHandMiddle2" }
+	{ id = 60 name = "LeftHandMiddle3" bone = "s_robot_LeftHandMiddle3" }
+	{ id = 62 name = "LeftHandRing1" bone = "s_robot_LeftHandRing1" }
+	{ id = 63 name = "LeftHandRing2" bone = "s_robot_LeftHandRing2" }
+	{ id = 64 name = "LeftHandRing3" bone = "s_robot_LeftHandRing3" }
+	{ id = 66 name = "LeftHandPinky1" bone = "s_robot_LeftHandPinky1" }
+	{ id = 67 name = "LeftHandPinky2" bone = "s_robot_LeftHandPinky2" }
+	{ id = 68 name = "LeftHandPinky3" bone = "s_robot_LeftHandPinky3" }
+	{ id = 74 name = "RightHandThumb1" bone = "s_robot_RightHandThumb1" }
+	{ id = 75 name = "RightHandThumb2" bone = "s_robot_RightHandThumb2" }
+	{ id = 76 name = "RightHandThumb3" bone = "s_robot_RightHandThumb3" }
+	{ id = 78 name = "RightHandIndex1" bone = "s_robot_RightHandIndex1" }
+	{ id = 79 name = "RightHandIndex2" bone = "s_robot_RightHandIndex2" }
+	{ id = 80 name = "RightHandIndex3" bone = "s_robot_RightHandIndex3" }
+	{ id = 82 name = "RightHandMiddle1" bone = "s_robot_RightHandMiddle1" }
+	{ id = 83 name = "RightHandMiddle2" bone = "s_robot_RightHandMiddle2" }
+	{ id = 84 name = "RightHandMiddle3" bone = "s_robot_RightHandMiddle3" }
+	{ id = 86 name = "RightHandRing1" bone = "s_robot_RightHandRing1" }
+	{ id = 87 name = "RightHandRing2" bone = "s_robot_RightHandRing2" }
+	{ id = 88 name = "RightHandRing3" bone = "s_robot_RightHandRing3" }
+	{ id = 90 name = "RightHandPinky1" bone = "s_robot_RightHandPinky1" }
+	{ id = 91 name = "RightHandPinky2" bone = "s_robot_RightHandPinky2" }
+	{ id = 92 name = "RightHandPinky3" bone = "s_robot_RightHandPinky3" }
+	{ id = 0 name = "Reference" bone = "s_robot_Root" }
+	{ id = 21 name = "LeftFingerBase" bone = "s_robot_LeftFingerBase" }
+	{ id = 22 name = "RightFingerBase" bone = "s_robot_RightFingerBase" }
+]
+
+contact_foot_type = 0
+contact_foot_bottom_to_ankle = 0.191021
+contact_foot_back_to_ankle = 0.047120
+contact_foot_middle_to_ankle = 0.094239
+contact_foot_front_to_middle = 0.047120
+contact_foot_in_to_ankle = 0.047120
+contact_foot_out_to_ankle = 0.047120
+
+contact_hand_type = 0
+contact_hand_bottom_to_wrist = 0.035342
+contact_hand_back_to_wrist = 0.000100
+contact_hand_middle_to_wrist = 0.058730
+contact_hand_front_to_middle = 0.058730
+contact_hand_in_to_wrist = 0.058730
+contact_hand_out_to_wrist = 0.058730
+
+t_stance = [
+	{ tx = -0.000000 ty = 1.118620 tz = 0.000000 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.102044 ty = 1.067519 tz = 0.039344 qx = 0.000000 qy = 0.000000 qz = -0.652762 qw = 0.757563 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.172835 ty = 0.593831 tz = 0.039344 qx = 0.062842 qy = 0.060597 qz = -0.691481 qw = 0.717100 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.187719 ty = 0.191021 tz = -0.031802 qx = -0.190037 qy = -0.184475 qz = -0.671655 qw = 0.691907 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.193200 ty = 0.032405 tz = 0.062437 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.102044 ty = 1.067520 tz = 0.039344 qx = 0.757563 qy = 0.652762 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.172835 ty = 0.593831 tz = 0.039344 qx = -0.717100 qy = -0.691481 qz = -0.060597 qw = 0.062842 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.187719 ty = 0.191021 tz = -0.031802 qx = 0.691907 qy = 0.671655 qz = -0.184475 qw = 0.190037 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.193200 ty = 0.032405 tz = 0.062437 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.000000 ty = 1.160670 tz = -0.028793 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.000000 ty = 1.191737 tz = -0.028793 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.044106 ty = 1.569140 tz = 0.058603 qx = -0.000435 qy = 0.050730 qz = -0.008555 qw = 0.998676 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.253296 ty = 1.565537 tz = 0.037296 qx = -0.000001 qy = -0.011783 qz = 0.000045 qw = 0.999931 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.505173 ty = 1.565559 tz = 0.043233 qx = -0.000006 qy = -0.001344 qz = 0.004546 qw = 0.999989 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.907789 ty = 1.569220 tz = 0.044315 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.044106 ty = 1.569140 tz = 0.058603 qx = 0.998676 qy = 0.008555 qz = 0.050730 qw = 0.000435 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.253296 ty = 1.565540 tz = 0.037296 qx = 0.999931 qy = -0.000045 qz = -0.011783 qw = 0.000001 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.505173 ty = 1.565560 tz = 0.043233 qx = 0.999989 qy = -0.004546 qz = -0.001344 qw = 0.000006 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.907789 ty = 1.569220 tz = 0.044315 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.000000 ty = 1.654434 tz = 0.043745 qx = 0.142055 qy = 0.000000 qz = 0.000000 qw = 0.989859 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.000000 ty = 1.738500 tz = 0.068381 qx = 0.142055 qy = 0.000000 qz = 0.000000 qw = 0.989859 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.000000 ty = 1.239124 tz = -0.028793 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.000000 ty = 1.274390 tz = -0.028793 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.000000 ty = 1.311702 tz = -0.028793 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.000000 ty = 1.348827 tz = -0.028793 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.000000 ty = 1.386331 tz = -0.028793 qx = 0.193671 qy = 0.000000 qz = 0.000000 qw = 0.981067 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.000000 ty = 1.537802 tz = 0.033435 qx = 0.044068 qy = 0.000000 qz = 0.000000 qw = 0.999029 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.927608 ty = 1.571126 tz = 0.091762 qx = 0.026275 qy = -0.713707 qz = -0.025752 qw = 0.699477 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.926680 ty = 1.567727 tz = 0.137844 qx = 0.023458 qy = -0.717120 qz = -0.022773 qw = 0.696183 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.925638 ty = 1.565424 tz = 0.173001 qx = 0.023458 qy = -0.717120 qz = -0.022773 qw = 0.696183 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.991520 ty = 1.573708 tz = 0.078060 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.042520 ty = 1.573708 tz = 0.078060 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.078020 ty = 1.573708 tz = 0.078060 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.991520 ty = 1.573708 tz = 0.058310 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.042520 ty = 1.573708 tz = 0.058310 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.078020 ty = 1.573708 tz = 0.058310 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.991520 ty = 1.573708 tz = 0.038316 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.042520 ty = 1.573708 tz = 0.038316 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.078020 ty = 1.573708 tz = 0.038316 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.991520 ty = 1.573708 tz = 0.018421 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.042520 ty = 1.573708 tz = 0.018421 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.078020 ty = 1.573708 tz = 0.018421 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.927609 ty = 1.571130 tz = 0.091765 qx = -0.699477 qy = -0.025752 qz = 0.713707 qw = 0.026275 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.926680 ty = 1.567727 tz = 0.137851 qx = -0.696183 qy = -0.022773 qz = 0.717120 qw = 0.023458 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.925639 ty = 1.565424 tz = 0.173010 qx = -0.696183 qy = -0.022773 qz = 0.717120 qw = 0.023458 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.991520 ty = 1.573710 tz = 0.078060 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.042520 ty = 1.573710 tz = 0.078060 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.078020 ty = 1.573710 tz = 0.078060 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.991520 ty = 1.573710 tz = 0.058310 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.042520 ty = 1.573710 tz = 0.058310 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.078020 ty = 1.573710 tz = 0.058310 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.991520 ty = 1.573710 tz = 0.038316 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.042520 ty = 1.573710 tz = 0.038316 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.078020 ty = 1.573710 tz = 0.038316 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.991520 ty = 1.573710 tz = 0.018421 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.042520 ty = 1.573710 tz = 0.018421 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.078020 ty = 1.573710 tz = 0.018421 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.000000 ty = 0.000000 tz = 0.000000 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.966520 ty = 1.569220 tz = 0.048126 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.966520 ty = 1.569220 tz = 0.048126 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+]
+
+parent_offsets = [
+	{ nodeID = 0 parents = [ "rp_chr_robot_3p" ] }
+]
+
+limits = [
+]

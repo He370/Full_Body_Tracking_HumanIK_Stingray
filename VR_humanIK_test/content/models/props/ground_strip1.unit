@@ -1,0 +1,78 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 0.6473
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			0.336469
+			0.488402
+			0.290963
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.107966
+			-0.236224
+			0.878295
+			0.401422
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+lod = [
+	{
+		bounding_volume = "ground_strip_lod0"
+		name = "ground_strip"
+		orientation = "ground_strip_lod0"
+		steps = [
+			{
+				renderables = [
+					"ground_strip_lod0"
+				]
+				visible_height_range = [
+					1
+					0.12
+				]
+			}
+			{
+				renderables = [
+					"ground_strip_lod1"
+				]
+				visible_height_range = [
+					0.12
+					0
+				]
+			}
+		]
+	}
+]
+materials = {
+	walls2 = "content/models/props/walls"
+}
+renderables = {
+	ground_strip_lod0 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	ground_strip_lod1 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

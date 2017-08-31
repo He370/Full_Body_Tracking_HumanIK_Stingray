@@ -1,0 +1,46 @@
+
+nodes = [
+	{
+		id = "e6ada957-97e0-4b3f-bf93-eecfefa5a122"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "7728c77d-187c-4b4c-bc95-e55914ac8964:0"
+					node = "7728c77d-187c-4b4c-bc95-e55914ac8964"
+				}
+			]
+		}
+		out_variables = {
+			unit = {
+				type = "unit"
+			}
+		}
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+	{
+		id = "7728c77d-187c-4b4c-bc95-e55914ac8964"
+		in_variables = {
+			group = {
+				type = "id"
+			}
+			unit = {
+				node = "e6ada957-97e0-4b3f-bf93-eecfefa5a122"
+				type = "unit"
+				variable = "unit"
+			}
+			visible = {
+				type = "bool"
+			}
+		}
+		type = "set_unit_visibility"
+		variable_values = {
+			group = null
+			unit = null
+			visible = false
+		}
+	}
+]

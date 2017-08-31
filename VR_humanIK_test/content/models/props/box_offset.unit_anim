@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "abf11381-0b85-4760-a396-e5856f1b02a4"
+_name = "content/models/Props/box_offset"
+anim_controller_ref = {
+	_id = "ed80d478-6b93-4683-832e-d3c10c987c0b"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "ae30ebf0-bb74-45a7-aa51-1958ec6421cc"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "559cc3fe-7229-4f1c-9f60-aea698cc9acd"
+	ref_filename = "content/models/Props/box_offset.dcc_asset"
+	ref_id = null
+}

@@ -1,0 +1,133 @@
+unit_name = "minion"
+
+chains = [
+ { id = 0  parent = 0 name = "stalk"   type = "HIKChainSolvingTypeTentacleCCD"  bones = [ "Bone__M__Stalk_01" "Bone__M__Stalk_02" "Bone__M__Stalk_03" "Bone__M__Stalk_04" "Bone__M__Stalk_05" "Bone__M__Stalk_06" "Bone__M__Stalk_07" "Bone__M__Stalk_08" "Bone__M__Stalk_09" "Bone__M__Stalk_10" "Bone__M__Stalk_011" ] }
+ { id = 1  parent = 0 name = "rarm"    type = "HIKChainSolvingTypeTentacleCCD"  bones = [ "Bone__R__Tentacle_Arm_01" "Bone__R__Tentacle_Arm_02" "Bone__R__Tentacle_Arm_03" "Bone__R__Tentacle_Arm_04" "Bone__R__Tentacle_Arm_05" "Bone__R__Tentacle_Arm_06" "Bone__R__Tentacle_Arm_07" "Bone__R__Tentacle_Arm_08" "Bone__R__Tentacle_Arm_09" "Bone__R__Tentacle_Arm_010" "Bone__R__Tentacle_Arm_011" "Bone__R__Tentacle_Arm_012" "Bone__R__Tentacle_Arm_013" "Bone__R__Tentacle_Arm_014" "Bone__R__Tentacle_Arm_015" "Bone__R__Tentacle_Arm_016" "Bone__R__Tentacle_Arm_017" ] }
+ { id = 2  parent = 0 name = "larm"    type = "HIKChainSolvingTypeTentacleCCD"  bones = [ "Bone__L__Tentacle_Arm_01" "Bone__L__Tentacle_Arm_02" "Bone__L__Tentacle_Arm_03" "Bone__L__Tentacle_Arm_04" "Bone__L__Tentacle_Arm_05" "Bone__L__Tentacle_Arm_06" "Bone__L__Tentacle_Arm_07" "Bone__L__Tentacle_Arm_08" "Bone__L__Tentacle_Arm_09" "Bone__L__Tentacle_Arm_010" "Bone__L__Tentacle_Arm_011" "Bone__L__Tentacle_Arm_012" "Bone__L__Tentacle_Arm_013" "Bone__L__Tentacle_Arm_014" "Bone__L__Tentacle_Arm_015" "Bone__L__Tentacle_Arm_016" "Bone__L__Tentacle_Arm_017" ] }
+ { id = 3  parent = 0 name = "rmid"    type = "HIKChainSolvingTypeTentacleCCD"  bones = [ "Bone__R__Tentacle_Mid_01" "Bone__R__Tentacle_Mid_02" "Bone__R__Tentacle_Mid_03" "Bone__R__Tentacle_Mid_04" "Bone__R__Tentacle_Mid_05" "Bone__R__Tentacle_Mid_06" "Bone__R__Tentacle_Mid_07" "Bone__R__Tentacle_Mid_08" "Bone__R__Tentacle_Mid_09" "Bone__R__Tentacle_Mid_010" "Bone__R__Tentacle_Mid_011" "Bone__R__Tentacle_Mid_012" "Bone__R__Tentacle_Mid_013" ] }
+ { id = 4  parent = 0 name = "lmid"    type = "HIKChainSolvingTypeTentacleCCD"  bones = [ "Bone__L__Tentacle_Mid_01" "Bone__L__Tentacle_Mid_02" "Bone__L__Tentacle_Mid_03" "Bone__L__Tentacle_Mid_04" "Bone__L__Tentacle_Mid_05" "Bone__L__Tentacle_Mid_06" "Bone__L__Tentacle_Mid_07" "Bone__L__Tentacle_Mid_08" "Bone__L__Tentacle_Mid_09" "Bone__L__Tentacle_Mid_010" "Bone__L__Tentacle_Mid_011" "Bone__L__Tentacle_Mid_012" "Bone__L__Tentacle_Mid_013" ] }
+ { id = 5  parent = 0 name = "rcen"    type = "HIKChainSolvingTypeTentacleCCD"  bones = [ "Bone__R__Tentacle_Center_01" "Bone__R__Tentacle_Center_02" "Bone__R__Tentacle_Center_03" "Bone__R__Tentacle_Center_04" "Bone__R__Tentacle_Center_05" "Bone__R__Tentacle_Center_06" "Bone__R__Tentacle_Center_07" "Bone__R__Tentacle_Center_08" "Bone__R__Tentacle_Center_09" "Bone__R__Tentacle_Center_010" "Bone__R__Tentacle_Center_011" "Bone__R__Tentacle_Center_012" "Bone__R__Tentacle_Center_013" ] }
+ { id = 6  parent = 0 name = "lcen"    type = "HIKChainSolvingTypeTentacleCCD"  bones = [ "Bone__L__Tentacle_Center_01" "Bone__L__Tentacle_Center_02" "Bone__L__Tentacle_Center_03" "Bone__L__Tentacle_Center_04" "Bone__L__Tentacle_Center_05" "Bone__L__Tentacle_Center_06" "Bone__L__Tentacle_Center_07" "Bone__L__Tentacle_Center_08" "Bone__L__Tentacle_Center_09" "Bone__L__Tentacle_Center_010" "Bone__L__Tentacle_Center_011" "Bone__L__Tentacle_Center_012" "Bone__L__Tentacle_Center_013" ] }
+ { id = 7  parent = 0 name = "gun"     type = "HIKChainSolvingTypeQuadrupedLeg" bones = [ "Bone__Gun_01" "Bone__Gun_02" "Bone__Gun_03" "Bone__Gun_04" ] }
+]
+
+sections = [
+ { id = 1 parent = -1 name = "root" bone = "Bone__Hip_" }
+]
+
+reference = "Bone__M__Root"
+
+unknown_parents = [
+ { bone = "Bone__R__Tentacle_Arm_01" parents = [ "Bone__Head" ] }
+ { bone = "Bone__L__Tentacle_Arm_01" parents = [ "Bone__Head" ] }
+ { bone = "Bone__R__Tentacle_Mid_01" parents = [ "Bone__Head" ] }
+ { bone = "Bone__L__Tentacle_Mid_01" parents = [ "Bone__Head" ] }
+ { bone = "Bone__R__Tentacle_Center_01" parents = [ "Bone__Head" ] }
+ { bone = "Bone__L__Tentacle_Center_01" parents = [ "Bone__Head" ] }
+ { bone = "Bone__Gun_01" parents = [ "Bone__Head" ] }
+]
+
+natural_pose = [
+ { bone = "Bone__M__Stalk_01" tx=0.000998 ty=0.581729 tz=-0.053119 qx=0.996493 qy=0.000672 qz=-0.000899 qw=-0.083663 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__M__Stalk_02" tx=0.000984 ty=0.498128 tz=-0.067031 qx=0.984887 qy=-0.000987 qz=-0.004028 qw=0.173149 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__M__Stalk_03" tx=0.000936 ty=0.429537 tz=-0.042276 qx=0.917343 qy=-0.002612 qz=-0.004292 qw=0.398066 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__M__Stalk_04" tx=0.000918 ty=0.371205 tz=0.012724 qx=0.917755 qy=0.002250 qz=0.003688 qw=0.397123 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__M__Stalk_05" tx=0.000945 ty=0.321807 tz=0.068495 qx=0.949727 qy=-0.000317 qz=-0.001413 qw=0.313075 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__M__Stalk_06" tx=0.000964 ty=0.265948 tz=0.108905 qx=0.995195 qy=-0.001405 qz=-0.011561 qw=0.097219 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__M__Stalk_07" tx=0.000932 ty=0.210957 tz=0.119761 qx=0.966866 qy=0.004819 qz=-0.020631 qw=-0.254405 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__M__Stalk_08" tx=0.000771 ty=0.162367 tz=0.089727 qx=0.920305 qy=0.001382 qz=-0.010211 qw=-0.391065 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__M__Stalk_09" tx=0.000514 ty=0.124379 tz=0.052636 qx=0.992570 qy=-0.001910 qz=-0.006839 qw=-0.121464 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__M__Stalk_10" tx=0.000253 ty=0.086096 tz=0.039841 qx=0.998806 qy=-0.018246 qz=-0.001095 qw=-0.045302 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__M__Stalk_011" tx=-0.000790 ty=0.048510 tz=0.039423 qx=-0.839302 qy=-0.006683 qz=-0.020778 qw=0.543228 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_01" tx=-0.378672 ty=0.719357 tz=-0.015265 qx=0.348713 qy=0.234050 qz=0.551276 qw=0.720913 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_02" tx=-0.396261 ty=0.637528 tz=-0.017994 qx=0.278522 qy=0.320530 qz=0.594830 qw=0.682542 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_03" tx=-0.401378 ty=0.590187 tz=-0.012175 qx=0.247200 qy=0.337049 qz=0.624501 qw=0.659764 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_04" tx=-0.401044 ty=0.555896 tz=-0.007571 qx=0.263172 qy=0.320038 qz=0.640585 qw=0.646504 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_05" tx=-0.399564 ty=0.513271 tz=-0.004853 qx=0.249377 qy=0.321694 qz=0.666927 qw=0.624126 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_06" tx=-0.395073 ty=0.464354 tz=-0.001112 qx=0.262720 qy=0.317083 qz=0.679512 qw=0.607206 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_07" tx=-0.388096 ty=0.411598 tz=0.000876 qx=0.303632 qy=0.285740 qz=0.726644 qw=0.546030 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_08" tx=-0.375745 ty=0.354823 tz=-0.006868 qx=0.353956 qy=0.204402 qz=0.836122 qw=0.365835 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_09" tx=-0.354170 ty=0.321115 tz=-0.026686 qx=0.391253 qy=0.092992 qz=0.911411 qw=0.087200 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_010" tx=-0.327471 ty=0.313167 tz=-0.054474 qx=0.401185 qy=-0.042917 qz=0.851014 qw=-0.336131 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_011" tx=-0.311628 ty=0.335639 tz=-0.077562 qx=-0.319381 qy=0.225435 qz=-0.623496 qw=0.677073 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_012" tx=-0.311727 ty=0.343947 tz=-0.077347 qx=-0.298942 qy=0.247484 qz=-0.595473 qw=0.703418 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_013" tx=-0.315250 ty=0.366656 tz=-0.078908 qx=-0.195163 qy=0.344305 qz=-0.297816 qw=0.868718 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_014" tx=-0.325913 ty=0.379330 tz=-0.070404 qx=-0.069619 qy=0.384681 qz=0.024808 qw=0.920086 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_015" tx=-0.337533 ty=0.379156 tz=-0.058050 qx=0.014840 qy=0.385196 qz=0.210193 qw=0.898456 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_016" tx=-0.346626 ty=0.373034 tz=-0.047772 qx=0.006218 qy=0.386570 qz=0.188842 qw=0.902698 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Arm_017" tx=-0.355733 ty=0.367420 tz=-0.036623 qx=0.047571 qy=0.305974 qz=0.194640 qw=0.930716 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_01" tx=0.378672 ty=0.719357 tz=-0.015265 qx=0.768157 qy=-0.584892 qz=0.118263 qw=-0.232056 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_02" tx=0.397544 ty=0.637854 tz=-0.019522 qx=0.727291 qy=-0.633101 qz=0.204629 qw=-0.168401 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_03" tx=0.404143 ty=0.590440 tz=-0.015066 qx=0.697296 qy=-0.662888 qz=0.228640 qw=-0.148597 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_04" tx=0.404640 ty=0.556027 tz=-0.010938 qx=0.687517 qy=-0.677177 qz=0.207264 qw=-0.160603 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_05" tx=0.403061 ty=0.513231 tz=-0.008960 qx=-0.650932 qy=0.700654 qz=-0.227242 qw=0.183665 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_06" tx=0.399225 ty=0.464208 tz=-0.006832 qx=-0.625913 qy=0.711483 qz=-0.222656 qw=0.229020 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_07" tx=0.393057 ty=0.411322 tz=-0.008733 qx=-0.544837 qy=0.758572 qz=-0.210208 qw=0.289023 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_08" tx=0.379431 ty=0.355444 tz=-0.021362 qx=-0.397474 qy=0.835027 qz=-0.202464 qw=0.322106 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_09" tx=0.357940 ty=0.319814 tz=-0.038356 qx=-0.224333 qy=0.902880 qz=-0.162374 qw=0.328813 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_010" tx=0.331017 ty=0.300749 tz=-0.059300 qx=0.307922 qy=0.882432 qz=0.005232 qw=0.355626 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_011" tx=0.311280 ty=0.321065 tz=-0.081556 qx=0.632138 qy=0.693955 qz=0.156754 qw=0.307010 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_012" tx=0.311530 ty=0.325317 tz=-0.081826 qx=0.638129 qy=0.689915 qz=0.162807 qw=0.300502 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_013" tx=0.310896 ty=0.347532 tz=-0.087878 qx=0.842076 qy=0.410255 qz=0.266830 qw=0.226718 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_014" tx=0.320213 ty=0.363043 tz=-0.083489 qx=0.933307 qy=0.089938 qz=0.323642 qw=0.126904 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_015" tx=0.333141 ty=0.367000 tz=-0.073248 qx=0.934667 qy=-0.101202 qz=0.336459 qw=0.054319 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_016" tx=0.344358 ty=0.364413 tz=-0.063589 qx=0.936450 qy=-0.078992 qz=0.336189 qw=0.061637 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Arm_017" tx=0.355610 ty=0.362493 tz=-0.053175 qx=0.962854 qy=-0.093032 qz=0.251689 qw=0.030176 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_01" tx=-0.185535 ty=0.610366 tz=0.272962 qx=0.645324 qy=0.562034 qz=0.298349 qw=0.422685 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_02" tx=-0.190654 ty=0.581662 tz=0.275617 qx=0.590327 qy=0.540016 qz=0.353801 qw=0.484480 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_03" tx=-0.198641 ty=0.529499 tz=0.280744 qx=0.702110 qy=0.356014 qz=0.412759 qw=0.458176 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_04" tx=-0.218220 ty=0.483951 tz=0.265352 qx=0.827008 qy=0.177304 qz=0.470835 qw=0.250868 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_05" tx=-0.245626 ty=0.455875 tz=0.229296 qx=0.883496 qy=0.037331 qz=0.465163 qw=0.040795 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_06" tx=-0.260784 ty=0.453108 tz=0.206773 qx=0.899625 qy=-0.160476 qz=0.396779 qw=-0.086533 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_07" tx=-0.275659 ty=0.462130 tz=0.189515 qx=0.746466 qy=-0.515832 qz=0.335794 qw=-0.252879 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_08" tx=-0.280494 ty=0.479647 tz=0.184686 qx=-0.550595 qy=0.721207 qz=-0.241246 qw=0.344246 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_09" tx=-0.277455 ty=0.498683 tz=0.190125 qx=-0.282334 qy=0.865886 qz=-0.108077 qw=0.398558 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_010" tx=-0.267864 ty=0.508851 tz=0.201718 qx=0.086308 qy=0.902120 qz=0.066476 qw=0.417506 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_011" tx=-0.257170 ty=0.505819 tz=0.213600 qx=0.552435 qy=0.716407 qz=0.262112 qw=0.335968 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_012" tx=-0.255291 ty=0.493055 tz=0.216040 qx=0.832159 qy=0.372702 qz=0.379204 qw=0.157509 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Mid_013" tx=-0.260953 ty=0.477000 tz=0.201241 qx=0.832159 qy=0.372702 qz=0.379204 qw=0.157509 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_01" tx=0.186736 ty=0.610366 tz=0.272961 qx=-0.404978 qy=0.285545 qz=-0.509065 qw=0.703782 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_02" tx=0.195677 ty=0.582430 tz=0.273300 qx=-0.457910 qy=0.328163 qz=-0.519573 qw=0.642395 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_03" tx=0.207861 ty=0.530923 tz=0.275624 qx=-0.425794 qy=0.408977 qz=-0.412135 qw=0.693961 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_04" tx=0.223388 ty=0.483732 tz=0.262258 qx=-0.260780 qy=0.484913 qz=-0.201137 qw=0.810183 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_05" tx=0.248509 ty=0.453090 tz=0.226467 qx=-0.102006 qy=0.495383 qz=-0.054076 qw=0.860968 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_06" tx=0.262021 ty=0.447827 tz=0.203332 qx=0.005378 qy=0.440823 qz=0.158766 qw=0.883425 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_07" tx=0.274455 ty=0.454419 tz=0.184935 qx=0.193991 qy=0.410352 qz=0.499380 qw=0.737969 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_08" tx=0.277816 ty=0.471081 tz=0.176894 qx=0.311272 qy=0.330350 qz=0.702935 qw=0.547596 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_09" tx=0.273841 ty=0.490571 tz=0.179240 qx=0.397109 qy=0.203223 qz=0.848363 qw=0.285105 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_010" tx=0.264294 ty=0.502039 tz=0.189588 qx=0.454129 qy=0.021275 qz=0.887462 qw=-0.075661 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_011" tx=0.254546 ty=0.500516 tz=0.202526 qx=-0.412979 qy=0.206936 qz=-0.707712 qw=0.534574 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_012" tx=0.253670 ty=0.488280 tz=0.207210 qx=-0.251853 qy=0.367484 qz=-0.372830 qw=0.813955 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Mid_013" tx=0.263859 ty=0.471003 tz=0.198316 qx=-0.251853 qy=0.367484 qz=-0.372830 qw=0.813955 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_01" tx=-0.149346 ty=0.577237 tz=0.299548 qx=0.271522 qy=0.460708 qz=0.466522 qw=0.704543 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_02" tx=-0.154945 ty=0.544546 tz=0.315396 qx=0.283060 qy=0.461379 qz=0.478095 qw=0.691687 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_03" tx=-0.159557 ty=0.505157 tz=0.331405 qx=0.291368 qy=0.442145 qz=0.494988 qw=0.688912 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_04" tx=-0.166059 ty=0.454207 tz=0.348245 qx=0.291423 qy=0.390883 qz=0.550030 qw=0.678049 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_05" tx=-0.170818 ty=0.402205 tz=0.359079 qx=0.335063 qy=0.345890 qz=0.630467 qw=0.608773 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_06" tx=-0.168487 ty=0.343670 tz=0.357155 qx=0.356922 qy=0.290044 qz=0.710487 qw=0.532626 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_07" tx=-0.159504 ty=0.291219 tz=0.346440 qx=0.395081 qy=0.294182 qz=0.807539 qw=0.324420 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_08" tx=-0.138786 ty=0.256405 tz=0.325996 qx=0.408668 qy=0.195313 qz=0.849582 qw=-0.270286 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_09" tx=-0.122903 ty=0.262875 tz=0.304970 qx=-0.397868 qy=0.302883 qz=-0.644800 qw=0.578096 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_010" tx=-0.123611 ty=0.287094 tz=0.301131 qx=-0.426788 qy=0.494060 qz=-0.211261 qw=0.727410 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_011" tx=-0.131092 ty=0.300729 tz=0.311656 qx=-0.359631 qy=0.335516 qz=0.314929 qw=0.811735 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_012" tx=-0.138239 ty=0.298367 tz=0.321483 qx=-0.125506 qy=0.194503 qz=0.576810 qw=0.783394 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__R__Tentacle_Center_013" tx=-0.141737 ty=0.285997 tz=0.327764 qx=-0.121910 qy=0.211911 qz=0.569292 qw=0.784945 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_01" tx=0.157431 ty=0.576880 tz=0.285447 qx=0.699437 qy=-0.460271 qz=0.482425 qw=-0.257303 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_02" tx=0.161910 ty=0.544804 tz=0.302846 qx=0.680667 qy=-0.462599 qz=0.491724 qw=-0.284433 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_03" tx=0.165290 ty=0.505975 tz=0.320454 qx=0.673869 qy=-0.467565 qz=0.482540 qw=-0.307309 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_04" tx=0.170703 ty=0.455676 tz=0.339588 qx=0.670742 qy=-0.503448 qz=0.444744 qw=-0.314402 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_05" tx=0.176005 ty=0.404692 tz=0.354152 qx=0.616211 qy=-0.584191 qz=0.386261 qw=-0.360288 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_06" tx=0.177066 ty=0.346014 tz=0.355536 qx=-0.558238 qy=0.682787 qz=-0.283735 qw=0.376386 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_07" tx=0.172646 ty=0.292897 tz=0.344976 qx=-0.412799 qy=0.801074 qz=-0.181214 qw=0.393749 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_08" tx=0.157959 ty=0.255879 tz=0.322821 qx=0.023676 qy=0.898547 qz=0.036907 qw=0.436681 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_09" tx=0.136922 ty=0.258505 tz=0.297221 qx=0.622961 qy=0.728009 qz=0.188223 qw=0.215626 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_010" tx=0.135126 ty=0.282364 tz=0.295424 qx=0.760354 qy=0.611353 qz=0.057003 qw=-0.211801 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_011" tx=0.139795 ty=0.299421 tz=0.302288 qx=0.902999 qy=-0.006915 qz=0.420905 qw=0.085930 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_012" tx=0.147828 ty=0.300684 tz=0.312324 qx=0.808570 qy=-0.222888 qz=0.450366 qw=-0.306115 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__L__Tentacle_Center_013" tx=0.155026 ty=0.291458 tz=0.320556 qx=0.799348 qy=-0.216892 qz=0.464579 qw=-0.313317 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__Gun_01" tx=0.004299 ty=1.116383 tz=-0.153883 qx=-0.291299 qy=0.000000 qz=-0.000000 qw=0.956632 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__Gun_02" tx=0.004299 ty=1.155619 tz=-0.218260 qx=0.636598 qy=0.002308 qz=0.002812 qw=0.771187 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__Gun_03" tx=0.003941 ty=1.255613 tz=-0.027232 qx=-0.567657 qy=-0.003127 qz=0.004064 qw=0.823249 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__Gun_04" tx=0.003286 ty=1.329678 tz=-0.221089 qx=0.019909 qy=0.000080 qz=0.000096 qw=0.999802 sx=1.000000 sy=1.000000 sz=1.000000 }
+ { bone = "Bone__Hip_" tx=-0.000000 ty=0.777341 tz=-0.000165 qx=0.000000 qy=0.000000 qz=-0.000000 qw=1.000000 sx=1.000000 sy=1.000000 sz=1.000000 }
+]

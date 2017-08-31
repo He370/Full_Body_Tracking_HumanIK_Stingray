@@ -1,0 +1,42 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 0.131389
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			0.011032
+			0.074816
+			0.107443
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.03369
+			-0.459428
+			0.885199
+			0.064912
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	white = "content/models/Props/white"
+}
+renderables = {
+	Cube = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

@@ -1,0 +1,42 @@
+
+_data_root_version = 2
+_id = "b73d27f2-6483-4d19-8775-ef3eb234fb45"
+_name = "content/models/robot/punch"
+anim_skeleton_ref = {
+	_id = "90412acd-39ba-4f94-ba67-42256e4a90b1"
+	ref_filename = "content/models/robot/char_robot_3p.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "64633f6e-4719-4b3a-8c6b-d6d647323e40"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+base_offset_preview_animation_clip_ref = {
+	_id = "6218c206-2dc4-4619-9f46-8b4ae72eaeba"
+	ref_filename = null
+	ref_id = null
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "660076b7-f96a-4766-8107-376aeccb54ab"
+	ref_filename = "content/models/robot/punch.dcc_asset"
+	ref_id = null
+}
+flow_events = [
+]
+global_compression_settings = {
+	_id = "e30b9adf-9b1f-4fa0-bab6-3216e4efae6e"
+	do_pack_positions = true
+	do_pack_rotations = true
+	do_pack_scales = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+	scale_tolerance = 0.001
+}
+offset_animation = false
+take_name = "FSTPUPR"

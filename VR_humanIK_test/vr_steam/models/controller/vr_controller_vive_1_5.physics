@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "collision"
+		node = "collision"
+		shapes = [
+			{
+				material = "default"
+				shape = "collision"
+				template = "static_object"
+				type = "mesh"
+			}
+		]
+		template = "keyframed"
+	}
+]

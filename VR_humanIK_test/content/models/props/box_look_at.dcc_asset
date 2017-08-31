@@ -1,0 +1,15 @@
+
+_data_root_version = 1
+_id = "08bdcacb-a4e6-4276-8d7f-e2483f5ac68e"
+_name = "content/models/Props/box_look_at"
+asset = "content/models/Props/box_look_at"
+extension = ".fbx"
+import_options = {
+	combine_meshes = false
+	combine_meshes_by_material = false
+	reverse_forward_axis = true
+	skip_animations = false
+	skip_cameras = false
+	skip_lights = false
+	skip_lods = false
+}

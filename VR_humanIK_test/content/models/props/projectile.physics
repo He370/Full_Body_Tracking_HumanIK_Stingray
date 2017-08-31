@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 10
+		name = "projectile"
+		node = "projectile"
+		shapes = [
+			{
+				material = "default"
+				shape = "projectile"
+				template = "sweeper"
+				type = "sphere"
+			}
+		]
+		template = "dynamic"
+	}
+]

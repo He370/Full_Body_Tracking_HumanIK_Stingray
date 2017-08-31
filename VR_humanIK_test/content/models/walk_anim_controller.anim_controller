@@ -1,0 +1,125 @@
+
+_data_root_version = 1
+_id = "86b0e8b1-b523-4358-b2a3-a5cb915a745a"
+_name = "content/models/walk_anim_controller"
+anim_skeleton_ref = {
+	_id = "eab3b214-b1f8-405c-8567-80cc5b071224"
+	ref_filename = "content/models/walk.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	bones = "content/models/walk"
+	layers = [
+		{
+			default_state = "Clip"
+			states = [
+				{
+					animations = [
+						"content/models/walk"
+					]
+					loop_animation = true
+					name = "Clip"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+					]
+					weights = [
+						"1.0"
+					]
+				}
+			]
+		}
+	]
+}
+constraint_targets = [
+]
+constraints = [
+]
+events = [
+]
+layers = [
+	{
+		_id = "2c8d7e2b-381d-403c-a8f9-65f09ecc045a"
+		_name = "Layer"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "38ea35bd-758f-4e66-b684-34a904287312"
+			ref_filename = null
+			ref_id = "c3e4eec6-4970-4a9d-95bc-f5db677b2553"
+		}
+		empty_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
+			{
+				_id = "c3e4eec6-4970-4a9d-95bc-f5db677b2553"
+				_name = "Clip"
+				anim_blend_set_ref = {
+					_id = "9db51e0b-c322-4f04-b944-d05eee9e4156"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "d59f3a76-6dd4-4a92-8428-c71e1172f3cd"
+						ref_filename = "content/models/walk.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "1a8b22f0-c0cb-4711-90ff-9f091637452d"
+					ref_filename = null
+					ref_id = null
+				}
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				template_transitions = [
+				]
+				transitions = [
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 100
+				y = 100
+			}
+		]
+		template_states = [
+		]
+		time_states = [
+		]
+	}
+]
+ragdolls = [
+]
+setup = {
+	_id = "490afcfd-eb12-4117-aa20-9b150d24e9e1"
+	level = "core/editor_slave/levels/animation_preview_level/animation_preview_level"
+	unit_ref = {
+		_id = "d0462851-62e8-4b07-8893-8603b96edd3c"
+		ref_filename = "content/models/walk.unit_anim"
+		ref_id = null
+	}
+}
+variables = [
+]

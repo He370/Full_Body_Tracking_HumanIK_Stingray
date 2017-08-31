@@ -1,0 +1,24 @@
+
+steam = {
+	shader = "billboard:BLEND_ADDITIVE:DIFFUSE_MAP:ROTATION:VERTEX_COLOR"
+	textures = {
+		diffuse_map = "content/fx/textures/Smoke"
+	}
+	variables = {
+		animation_frame_size = {
+			type = "vector2"
+			value = [
+				0.1
+				0.1
+			]
+		}
+		glossiness = {
+			type = "scalar"
+			value = 0
+		}
+		specular = {
+			type = "scalar"
+			value = 0
+		}
+	}
+}

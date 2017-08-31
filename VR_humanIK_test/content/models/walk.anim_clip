@@ -1,0 +1,35 @@
+
+_data_root_version = 1
+_id = "18057339-0d34-440b-b51e-37f0ff69f58c"
+_name = "content/models/walk"
+anim_skeleton_ref = {
+	_id = "dbcf244b-7619-4935-8c97-7d24184d9f86"
+	ref_filename = "content/models/walk.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "9f2f6f40-8549-4400-8b25-0db0862499fd"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "59a53895-d453-4df1-85b8-33a8a72cab8e"
+	ref_filename = "content/models/walk.dcc_asset"
+	ref_id = null
+}
+global_compression_settings = {
+	_id = "0dd69054-9594-4dfc-93ac-500d907e69e9"
+	do_pack_positions = true
+	do_pack_rotations = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+}
+offset_animation = false
+take_name = "Walk"
+triggers = [
+]

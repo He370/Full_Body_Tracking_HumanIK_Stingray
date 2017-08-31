@@ -1,0 +1,15 @@
+
+_data_root_version = 1
+_id = "8c72eb2d-ff54-43aa-9b7f-6bfab436427a"
+_name = "content/models/Props/autodesk"
+asset = "content/models/Props/autodesk"
+extension = ".FBX"
+import_options = {
+	combine_meshes = false
+	combine_meshes_by_material = false
+	reverse_forward_axis = true
+	skip_animations = false
+	skip_cameras = false
+	skip_lights = true
+	skip_lods = true
+}

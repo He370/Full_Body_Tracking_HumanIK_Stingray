@@ -1,0 +1,125 @@
+
+_data_root_version = 1
+_id = "64bae954-92ac-4b42-8069-867e66950efc"
+_name = "content/models/stand_anim_controller"
+anim_skeleton_ref = {
+	_id = "8eeb455d-a6d9-4d52-9f11-db486d4f5980"
+	ref_filename = "content/models/stand_anim.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	bones = "content/models/stand_anim"
+	layers = [
+		{
+			default_state = "Clip"
+			states = [
+				{
+					animations = [
+						"content/models/stand_anim"
+					]
+					loop_animation = true
+					name = "Clip"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+					]
+					weights = [
+						"1.0"
+					]
+				}
+			]
+		}
+	]
+}
+constraint_targets = [
+]
+constraints = [
+]
+events = [
+]
+layers = [
+	{
+		_id = "f0c3e7b0-d1a1-4dbd-9123-bce79ad8cdd4"
+		_name = "Layer"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "7ab5a7d4-c39a-48dc-8d2d-84322a97b942"
+			ref_filename = null
+			ref_id = "0189bce4-6a8a-40ed-b1c0-e40f0e512ade"
+		}
+		empty_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
+			{
+				_id = "0189bce4-6a8a-40ed-b1c0-e40f0e512ade"
+				_name = "Clip"
+				anim_blend_set_ref = {
+					_id = "5aef1ee2-bd8e-4eb7-9856-8debbd2cf2bb"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "9344659a-38f1-4355-a50b-87938fc15b40"
+						ref_filename = "content/models/stand_anim.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "f125dde2-e244-414e-bb39-6afb607cdd8b"
+					ref_filename = null
+					ref_id = null
+				}
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				template_transitions = [
+				]
+				transitions = [
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 100
+				y = 100
+			}
+		]
+		template_states = [
+		]
+		time_states = [
+		]
+	}
+]
+ragdolls = [
+]
+setup = {
+	_id = "f4b6ca9c-4ded-40d9-be57-195eacb630e3"
+	level = "core/editor_slave/levels/animation_preview_level/animation_preview_level"
+	unit_ref = {
+		_id = "261ddbee-bd95-4693-9518-52784f3bfcb2"
+		ref_filename = "content/models/stand_anim.unit_anim"
+		ref_id = null
+	}
+}
+variables = [
+]

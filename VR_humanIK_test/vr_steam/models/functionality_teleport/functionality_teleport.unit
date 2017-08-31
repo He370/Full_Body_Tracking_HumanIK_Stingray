@@ -1,0 +1,56 @@
+
+data = {
+	controller_index = "1"
+	teleport_speed = 0.06
+}
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 0.673215
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			-0.668489
+			0.11826
+			0.064851
+		]
+		projection_type = "perspective"
+		rotation = [
+			0.032901
+			-0.035253
+			0.730229
+			-0.681499
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+	flow_framing = {
+		scale = 0.598494047258475
+		x = -5489.33039271849
+		y = 7.35287651854969
+	}
+}
+materials = {
+	transparent = "vr_steam/models/functionality_teleport/transparent"
+}
+renderables = {
+	attach = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = false
+		surface_queries = false
+		viewport_visible = false
+	}
+}
+visibility_groups = {
+	pickup_trigger = [
+		"pickup_trigger"
+	]
+}

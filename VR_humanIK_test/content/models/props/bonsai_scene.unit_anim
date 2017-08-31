@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "b7baef32-b0c5-4283-8e47-447e8f2b502b"
+_name = "content/models/Props/bonsai_scene"
+anim_controller_ref = {
+	_id = "46eebcfa-e4b1-44df-b6ed-5d062faa5c98"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "df2aa99e-fac0-4a12-addc-d41ee2cb5e87"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "96533587-11f6-493a-ba45-6a83d5352eea"
+	ref_filename = "content/models/Props/bonsai_scene.dcc_asset"
+	ref_id = null
+}

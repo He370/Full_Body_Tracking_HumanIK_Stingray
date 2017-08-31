@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "83b13de6-28eb-4f55-bd17-770933e282fe"
+_name = "content/models/Props/ChamfBox"
+anim_controller_ref = {
+	_id = "6d944003-3deb-41c0-b287-42977eb8f76e"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "6ea49f15-4ce6-46e7-809f-b4a6e8142184"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "1bbc834a-d811-433d-b593-34cab5c3a205"
+	ref_filename = "content/models/Props/ChamfBox.dcc_asset"
+	ref_id = null
+}

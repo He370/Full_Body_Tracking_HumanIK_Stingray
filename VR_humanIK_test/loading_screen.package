@@ -1,0 +1,5 @@
+// Files used by the loading screen.
+
+material = [
+	"core/appkit/materials/loading_screen"
+]

@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "2c766e2c-7f30-4f9d-8d06-f37b8a6e042b"
+_name = "content/models/standlookaround"
+anim_controller_ref = {
+	_id = "1e2c1e9a-c924-48df-9c06-8b8bc089e56e"
+	ref_filename = "content/models/standlookaround_anim_controller.anim_controller"
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "7e6e5677-c326-4634-b5c8-ccc24e2484a4"
+	ref_filename = "content/models/standlookaround.anim_skeleton"
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "7254dc33-37c8-4b6d-a35d-ae7155e68f48"
+	ref_filename = "content/models/standlookaround.dcc_asset"
+	ref_id = null
+}

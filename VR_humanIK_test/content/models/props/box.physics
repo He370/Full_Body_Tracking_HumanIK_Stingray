@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "Cube"
+		node = "Cube"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cube"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "keyframed"
+	}
+]

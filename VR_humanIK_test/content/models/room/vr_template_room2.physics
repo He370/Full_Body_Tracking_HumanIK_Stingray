@@ -1,0 +1,78 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "ceiling2"
+		node = "ceiling2"
+		shapes = [
+			{
+				material = "default"
+				shape = "ceiling2"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "dividerwall1"
+		node = "dividerwall1"
+		shapes = [
+			{
+				material = "default"
+				shape = "dividerwall1"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "wallsandfloor2"
+		node = "wallsandfloor2"
+		shapes = [
+			{
+				material = "default"
+				shape = "wallsandfloor2"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "wallsandfloor1"
+		node = "wallsandfloor1"
+		shapes = [
+			{
+				material = "default"
+				shape = "wallsandfloor1"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "ceiling1"
+		node = "ceiling1"
+		shapes = [
+			{
+				material = "default"
+				shape = "ceiling1"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+]

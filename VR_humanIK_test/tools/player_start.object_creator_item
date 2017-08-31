@@ -1,0 +1,11 @@
+category = "Helpers"
+subcategory = "Misc"
+display_name = "Player Start"
+type = "unit"
+unit_resource = "tools/player_start"
+icon = "icons/player_start.svg"
+menu_item = {
+    path = "Create/Player Start"
+    section = "GENERAL"
+    order = 130
+}

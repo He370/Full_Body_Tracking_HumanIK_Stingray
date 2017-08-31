@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "28f12de4-fe3b-41c8-b5c5-8b795e23e401"
+_name = "content/models/Props/target"
+anim_controller_ref = {
+	_id = "da13926d-7fd7-4cfc-923b-f6e6f7600206"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "25822593-33df-443a-a51b-1ca57eb9fb8e"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "6ffbd8ce-a117-4528-9a1c-85a00803a6d1"
+	ref_filename = "content/models/Props/target.dcc_asset"
+	ref_id = null
+}

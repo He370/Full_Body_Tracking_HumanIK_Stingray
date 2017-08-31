@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "baseball"
+		node = "StingrayEntityRoot"
+		shapes = [
+			{
+				material = "default"
+				shape = "baseball"
+				template = "sweeper"
+				type = "sphere"
+			}
+		]
+		template = "dynamic"
+	}
+]

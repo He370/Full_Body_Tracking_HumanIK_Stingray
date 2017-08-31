@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "6a96fbba-43c2-4773-98b9-f133b3d6de3a"
+_name = "content/models/Props/box_planting"
+anim_controller_ref = {
+	_id = "e56a1ffb-43f9-4d28-9db1-aeaef8d37eea"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "04abfda8-e5b5-4a03-a689-de99ff229996"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "cb41c585-dcb1-4ffd-b4ed-152461c19114"
+	ref_filename = "content/models/Props/box_planting.dcc_asset"
+	ref_id = null
+}

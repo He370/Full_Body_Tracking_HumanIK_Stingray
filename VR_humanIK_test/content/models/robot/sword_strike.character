@@ -1,0 +1,908 @@
+
+bones_mapping = [ {
+		bone = "s_robot_Hips"
+		id = 1
+		name = "Hips"
+	} {
+		bone = "s_robot_LeftUpLeg"
+		id = 2
+		name = "LeftUpLeg"
+	} {
+		bone = "s_robot_LeftLeg"
+		id = 3
+		name = "LeftLeg"
+	} {
+		bone = "s_robot_LeftFoot"
+		id = 4
+		name = "LeftFoot"
+	} {
+		bone = "s_robot_LeftToeBase"
+		id = 16
+		name = "LeftToeBase"
+	} {
+		bone = "s_robot_RightUpLeg"
+		id = 5
+		name = "RightUpLeg"
+	} {
+		bone = "s_robot_RightLeg"
+		id = 6
+		name = "RightLeg"
+	} {
+		bone = "s_robot_RightFoot"
+		id = 7
+		name = "RightFoot"
+	} {
+		bone = "s_robot_RightToeBase"
+		id = 17
+		name = "RightToeBase"
+	} {
+		bone = "s_robot_Spine"
+		id = 8
+		name = "Spine"
+	} {
+		bone = "s_robot_Spine1"
+		id = 23
+		name = "Spine1"
+	} {
+		bone = "s_robot_LeftShoulder"
+		id = 18
+		name = "LeftShoulder"
+	} {
+		bone = "s_robot_LeftArm"
+		id = 9
+		name = "LeftArm"
+	} {
+		bone = "s_robot_LeftForeArm"
+		id = 10
+		name = "LeftForeArm"
+	} {
+		bone = "s_robot_LeftHand"
+		id = 11
+		name = "LeftHand"
+	} {
+		bone = "s_robot_RightShoulder"
+		id = 19
+		name = "RightShoulder"
+	} {
+		bone = "s_robot_RightArm"
+		id = 12
+		name = "RightArm"
+	} {
+		bone = "s_robot_RightForeArm"
+		id = 13
+		name = "RightForeArm"
+	} {
+		bone = "s_robot_RightHand"
+		id = 14
+		name = "RightHand"
+	} {
+		bone = "s_robot_Neck"
+		id = 20
+		name = "Neck"
+	} {
+		bone = "s_robot_Head"
+		id = 15
+		name = "Head"
+	} {
+		bone = "s_robot_Spine2"
+		id = 24
+		name = "Spine2"
+	} {
+		bone = "s_robot_Spine3"
+		id = 25
+		name = "Spine3"
+	} {
+		bone = "s_robot_Spine4"
+		id = 26
+		name = "Spine4"
+	} {
+		bone = "s_robot_Spine5"
+		id = 27
+		name = "Spine5"
+	} {
+		bone = "s_robot_Spine6"
+		id = 28
+		name = "Spine6"
+	} {
+		bone = "s_robot_Spine7"
+		id = 29
+		name = "Spine7"
+	} {
+		bone = "s_robot_LeftHandThumb1"
+		id = 50
+		name = "LeftHandThumb1"
+	} {
+		bone = "s_robot_LeftHandThumb2"
+		id = 51
+		name = "LeftHandThumb2"
+	} {
+		bone = "s_robot_LeftHandThumb3"
+		id = 52
+		name = "LeftHandThumb3"
+	} {
+		bone = "s_robot_LeftHandIndex1"
+		id = 54
+		name = "LeftHandIndex1"
+	} {
+		bone = "s_robot_LeftHandIndex2"
+		id = 55
+		name = "LeftHandIndex2"
+	} {
+		bone = "s_robot_LeftHandIndex3"
+		id = 56
+		name = "LeftHandIndex3"
+	} {
+		bone = "s_robot_LeftHandMiddle1"
+		id = 58
+		name = "LeftHandMiddle1"
+	} {
+		bone = "s_robot_LeftHandMiddle2"
+		id = 59
+		name = "LeftHandMiddle2"
+	} {
+		bone = "s_robot_LeftHandMiddle3"
+		id = 60
+		name = "LeftHandMiddle3"
+	} {
+		bone = "s_robot_LeftHandRing1"
+		id = 62
+		name = "LeftHandRing1"
+	} {
+		bone = "s_robot_LeftHandRing2"
+		id = 63
+		name = "LeftHandRing2"
+	} {
+		bone = "s_robot_LeftHandRing3"
+		id = 64
+		name = "LeftHandRing3"
+	} {
+		bone = "s_robot_LeftHandPinky1"
+		id = 66
+		name = "LeftHandPinky1"
+	} {
+		bone = "s_robot_LeftHandPinky2"
+		id = 67
+		name = "LeftHandPinky2"
+	} {
+		bone = "s_robot_LeftHandPinky3"
+		id = 68
+		name = "LeftHandPinky3"
+	} {
+		bone = "s_robot_RightHandThumb1"
+		id = 74
+		name = "RightHandThumb1"
+	} {
+		bone = "s_robot_RightHandThumb2"
+		id = 75
+		name = "RightHandThumb2"
+	} {
+		bone = "s_robot_RightHandThumb3"
+		id = 76
+		name = "RightHandThumb3"
+	} {
+		bone = "s_robot_RightHandIndex1"
+		id = 78
+		name = "RightHandIndex1"
+	} {
+		bone = "s_robot_RightHandIndex2"
+		id = 79
+		name = "RightHandIndex2"
+	} {
+		bone = "s_robot_RightHandIndex3"
+		id = 80
+		name = "RightHandIndex3"
+	} {
+		bone = "s_robot_RightHandMiddle1"
+		id = 82
+		name = "RightHandMiddle1"
+	} {
+		bone = "s_robot_RightHandMiddle2"
+		id = 83
+		name = "RightHandMiddle2"
+	} {
+		bone = "s_robot_RightHandMiddle3"
+		id = 84
+		name = "RightHandMiddle3"
+	} {
+		bone = "s_robot_RightHandRing1"
+		id = 86
+		name = "RightHandRing1"
+	} {
+		bone = "s_robot_RightHandRing2"
+		id = 87
+		name = "RightHandRing2"
+	} {
+		bone = "s_robot_RightHandRing3"
+		id = 88
+		name = "RightHandRing3"
+	} {
+		bone = "s_robot_RightHandPinky1"
+		id = 90
+		name = "RightHandPinky1"
+	} {
+		bone = "s_robot_RightHandPinky2"
+		id = 91
+		name = "RightHandPinky2"
+	} {
+		bone = "s_robot_RightHandPinky3"
+		id = 92
+		name = "RightHandPinky3"
+	} {
+		bone = "s_robot_LeftFingerBase"
+		id = 21
+		name = "LeftFingerBase"
+	} {
+		bone = "s_robot_RightFingerBase"
+		id = 22
+		name = "RightFingerBase"
+	} ]
+contact_foot_back_to_ankle = 0.0471196
+contact_foot_bottom_to_ankle = 0.191021
+contact_foot_front_to_middle = 0.0471196
+contact_foot_in_to_ankle = 0.0471196
+contact_foot_middle_to_ankle = 0.0942392
+contact_foot_out_to_ankle = 0.0471196
+contact_foot_type = 0
+contact_hand_back_to_wrist = 0.0001
+contact_hand_bottom_to_wrist = 0.0353418
+contact_hand_front_to_middle = 0.0587305
+contact_hand_in_to_wrist = 0.0587305
+contact_hand_middle_to_wrist = 0.0587305
+contact_hand_out_to_wrist = 0.0587305
+contact_hand_type = 0
+limits = [ ]
+parent_offsets = [ {
+		nodeID = 1
+		parents = [ "s_robot_Root" ]
+	} ]
+t_stance = [ {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -3.15544e-032
+		ty = 1.11862
+		tz = 0
+	} {
+		qw = 0.757563
+		qx = 0
+		qy = -0
+		qz = -0.652762
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.102044
+		ty = 1.06752
+		tz = 0.039344
+	} {
+		qw = 0.7171
+		qx = 0.0628425
+		qy = 0.0605974
+		qz = -0.691481
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.172835
+		ty = 0.593831
+		tz = 0.039344
+	} {
+		qw = 0.691907
+		qx = -0.190037
+		qy = -0.184475
+		qz = -0.671655
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.187719
+		ty = 0.191021
+		tz = -0.0318022
+	} {
+		qw = 1
+		qx = 5.82867e-016
+		qy = 2.03043e-016
+		qz = 7.53962e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.1932
+		ty = 0.032405
+		tz = 0.062437
+	} {
+		qw = 1.48623e-008
+		qx = 0.757563
+		qy = 0.652762
+		qz = 1.28062e-008
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.102044
+		ty = 1.06752
+		tz = 0.039344
+	} {
+		qw = 0.0628425
+		qx = -0.7171
+		qy = -0.691481
+		qz = -0.0605974
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.172835
+		ty = 0.593831
+		tz = 0.039344
+	} {
+		qw = 0.190037
+		qx = 0.691907
+		qy = 0.671655
+		qz = -0.184475
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.187719
+		ty = 0.191021
+		tz = -0.0318022
+	} {
+		qw = 1.2168e-008
+		qx = 1
+		qy = -1.86974e-015
+		qz = 1.24797e-015
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.1932
+		ty = 0.032405
+		tz = 0.062437
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.27927e-016
+		ty = 1.16067
+		tz = -0.0287933
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -6.18298e-017
+		ty = 1.19174
+		tz = -0.0287933
+	} {
+		qw = 0.998676
+		qx = -0.000434575
+		qy = 0.0507296
+		qz = -0.00855515
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.044106
+		ty = 1.56914
+		tz = 0.0586031
+	} {
+		qw = 0.999931
+		qx = -5.26847e-007
+		qy = -0.0117833
+		qz = 4.4708e-005
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.253296
+		ty = 1.56554
+		tz = 0.0372957
+	} {
+		qw = 0.999989
+		qx = -6.11132e-006
+		qy = -0.0013443
+		qz = 0.00454603
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.505173
+		ty = 1.56556
+		tz = 0.0432328
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.907789
+		ty = 1.56922
+		tz = 0.0443153
+	} {
+		qw = 0.000434587
+		qx = 0.998676
+		qy = 0.00855515
+		qz = 0.0507296
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.044106
+		ty = 1.56914
+		tz = 0.0586031
+	} {
+		qw = 5.39014e-007
+		qx = 0.999931
+		qy = -4.47079e-005
+		qz = -0.0117833
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.253296
+		ty = 1.56554
+		tz = 0.0372957
+	} {
+		qw = 6.12349e-006
+		qx = 0.999989
+		qy = -0.00454603
+		qz = -0.0013443
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.505173
+		ty = 1.56556
+		tz = 0.0432328
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.907789
+		ty = 1.56922
+		tz = 0.0443153
+	} {
+		qw = 0.989859
+		qx = 0.142055
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -1.1263e-015
+		ty = 1.65443
+		tz = 0.0437445
+	} {
+		qw = 0.989859
+		qx = 0.142055
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -1.53285e-015
+		ty = 1.7385
+		tz = 0.0683805
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -1.72166e-016
+		ty = 1.23912
+		tz = -0.0287933
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -2.74151e-016
+		ty = 1.27439
+		tz = -0.0287933
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -3.95344e-016
+		ty = 1.3117
+		tz = -0.0287933
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -5.27742e-016
+		ty = 1.34883
+		tz = -0.0287933
+	} {
+		qw = 0.981067
+		qx = 0.193671
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -5.24849e-016
+		ty = 1.38633
+		tz = -0.0287933
+	} {
+		qw = 0.999029
+		qx = 0.044068
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -5.51627e-016
+		ty = 1.5378
+		tz = 0.033435
+	} {
+		qw = 0.699477
+		qx = 0.0262755
+		qy = -0.713707
+		qz = -0.0257516
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.927608
+		ty = 1.57113
+		tz = 0.0917621
+	} {
+		qw = 0.696182
+		qx = 0.0234581
+		qy = -0.71712
+		qz = -0.0227732
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.92668
+		ty = 1.56773
+		tz = 0.137844
+	} {
+		qw = 0.696182
+		qx = 0.0234581
+		qy = -0.71712
+		qz = -0.0227732
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.925638
+		ty = 1.56542
+		tz = 0.173001
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.99152
+		ty = 1.57371
+		tz = 0.0780602
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.04252
+		ty = 1.57371
+		tz = 0.0780602
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.07802
+		ty = 1.57371
+		tz = 0.0780602
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.99152
+		ty = 1.57371
+		tz = 0.0583104
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.04252
+		ty = 1.57371
+		tz = 0.0583104
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.07802
+		ty = 1.57371
+		tz = 0.0583104
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.99152
+		ty = 1.57371
+		tz = 0.0383158
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.04252
+		ty = 1.57371
+		tz = 0.0383158
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.07802
+		ty = 1.57371
+		tz = 0.0383158
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.99152
+		ty = 1.57371
+		tz = 0.0184209
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.04252
+		ty = 1.57371
+		tz = 0.0184209
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.07802
+		ty = 1.57371
+		tz = 0.0184209
+	} {
+		qw = 0.0262755
+		qx = -0.699477
+		qy = -0.0257516
+		qz = 0.713707
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.927609
+		ty = 1.57113
+		tz = 0.0917653
+	} {
+		qw = 0.0234581
+		qx = -0.696182
+		qy = -0.0227732
+		qz = 0.71712
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.92668
+		ty = 1.56773
+		tz = 0.137851
+	} {
+		qw = 0.0234581
+		qx = -0.696182
+		qy = -0.0227732
+		qz = 0.71712
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.925639
+		ty = 1.56542
+		tz = 0.17301
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.99152
+		ty = 1.57371
+		tz = 0.0780602
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -1.04252
+		ty = 1.57371
+		tz = 0.0780602
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -1.07802
+		ty = 1.57371
+		tz = 0.0780602
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.99152
+		ty = 1.57371
+		tz = 0.0583104
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -1.04252
+		ty = 1.57371
+		tz = 0.0583104
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -1.07802
+		ty = 1.57371
+		tz = 0.0583104
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.99152
+		ty = 1.57371
+		tz = 0.0383158
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -1.04252
+		ty = 1.57371
+		tz = 0.0383158
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -1.07802
+		ty = 1.57371
+		tz = 0.0383158
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.99152
+		ty = 1.57371
+		tz = 0.0184208
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -1.04252
+		ty = 1.57371
+		tz = 0.0184208
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -1.07802
+		ty = 1.57371
+		tz = 0.0184208
+	} {
+		qw = 1
+		qx = -5.41251e-013
+		qy = 3.23092e-017
+		qz = 1.40915e-017
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.96652
+		ty = 1.56922
+		tz = 0.0481258
+	} {
+		qw = 1.21744e-008
+		qx = 1
+		qy = -2.10964e-015
+		qz = -6.46618e-016
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.96652
+		ty = 1.56922
+		tz = 0.0481258
+	} ]
+unit_name = "sword_strike"

@@ -1,0 +1,15 @@
+
+_data_root_version = 1
+_id = "c574948d-e06a-42b3-8348-bf02e56dd2f2"
+_name = "content/models/walk"
+asset = "content/models/walk"
+extension = ".fbx"
+import_options = {
+	combine_meshes = false
+	combine_meshes_by_material = false
+	reverse_forward_axis = true
+	skip_animations = false
+	skip_cameras = false
+	skip_lights = false
+	skip_lods = false
+}

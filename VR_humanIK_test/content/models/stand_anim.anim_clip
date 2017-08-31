@@ -1,0 +1,35 @@
+
+_data_root_version = 1
+_id = "e2f15312-19af-4e69-9bc8-74f2aa86af90"
+_name = "content/models/stand_anim"
+anim_skeleton_ref = {
+	_id = "128e4b3c-e394-4456-9df5-d0b4cc3d9e75"
+	ref_filename = "content/models/stand_anim.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "fd03f65e-6e80-42b7-a762-cad0484c4acf"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "258f9c8b-716e-4b93-a9d2-098ce40d4630"
+	ref_filename = "content/models/stand_anim.dcc_asset"
+	ref_id = null
+}
+global_compression_settings = {
+	_id = "88056d2b-96de-40af-abba-c2a05f6445ea"
+	do_pack_positions = true
+	do_pack_rotations = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+}
+offset_animation = false
+take_name = "Stand_M"
+triggers = [
+]

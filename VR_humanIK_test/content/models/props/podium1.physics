@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "podium1"
+		node = "podium1"
+		shapes = [
+			{
+				material = "default"
+				shape = "podium1"
+				template = "static_object"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+]

@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "f16c31f2-8f62-420f-9f4b-13bf22bf0a26"
+_name = "content/models/Props/box"
+anim_controller_ref = {
+	_id = "8dfb391d-abab-461e-8c50-73a9333f305a"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "79886a61-90e3-49f6-b829-1f83881edb4f"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "e0a75c3f-1d57-4449-adc7-8193fcceea31"
+	ref_filename = "content/models/Props/box.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/Props/box"

@@ -1,0 +1,398 @@
+
+_data_root_version = 1
+_id = "95c90192-9691-41f6-9a9d-6572b10a22cd"
+_name = "content/models/stand_anim"
+anim_blend_sets = [
+]
+anim_bones = [
+	{
+		_id = "b99f96d2-ce41-4b98-8ef4-5d0fd6083efc"
+		_name = "StingrayEntityRoot"
+		lod_level = 0
+	}
+	{
+		_id = "ba6e001d-a08b-42a6-adb1-0255ff21181c"
+		_name = "FbxAxisSystem_ConvertNode"
+		lod_level = 0
+	}
+	{
+		_id = "28726523-e1ae-434c-8083-c3371ea65e23"
+		_name = "Skeleton_v75:Reference"
+		lod_level = 0
+	}
+	{
+		_id = "b8a2505f-5cfb-4ab5-b462-d22468dc138f"
+		_name = "Skeleton_v75:Hips"
+		lod_level = 0
+	}
+	{
+		_id = "55994b24-973f-4971-8419-1ab67e5d4e50"
+		_name = "Skeleton_v75:LeftUpLeg"
+		lod_level = 0
+	}
+	{
+		_id = "565cb820-504e-4c7e-bcbc-6dc7058aef6b"
+		_name = "Skeleton_v75:RightUpLeg"
+		lod_level = 0
+	}
+	{
+		_id = "d8a7689e-ba4a-46ae-b0c1-aa9395d6ec82"
+		_name = "Skeleton_v75:Spine"
+		lod_level = 0
+	}
+	{
+		_id = "0a1c51fc-5520-423a-9c1c-0a25c45ae7a7"
+		_name = "Skeleton_v75:LeftUpLegRoll"
+		lod_level = 0
+	}
+	{
+		_id = "4a412d6e-a9fe-4ae6-aa01-ebecdfff4133"
+		_name = "Skeleton_v75:RightUpLegRoll"
+		lod_level = 0
+	}
+	{
+		_id = "d4b4be4c-186e-4bbe-ac80-d1d98e1d5d3b"
+		_name = "Skeleton_v75:Spine1"
+		lod_level = 0
+	}
+	{
+		_id = "fa86f7ed-42d1-442d-81e1-5c7d90ccd259"
+		_name = "Skeleton_v75:LeftLeg"
+		lod_level = 0
+	}
+	{
+		_id = "fa5b4cad-f22d-4a4d-9c62-7e7635ae3565"
+		_name = "Skeleton_v75:RightLeg"
+		lod_level = 0
+	}
+	{
+		_id = "e7ab1c2e-581d-4b26-962f-f570bd9d546b"
+		_name = "Skeleton_v75:Spine2"
+		lod_level = 0
+	}
+	{
+		_id = "0e68059d-5e33-41df-9e77-503e8eb07c17"
+		_name = "Skeleton_v75:LeftLegRoll"
+		lod_level = 0
+	}
+	{
+		_id = "e1dda542-f469-4765-b806-bdac6ee2a0fe"
+		_name = "Skeleton_v75:RightLegRoll"
+		lod_level = 0
+	}
+	{
+		_id = "b1fcd9ae-0cb4-4e39-901b-31019f57db96"
+		_name = "Skeleton_v75:Spine3"
+		lod_level = 0
+	}
+	{
+		_id = "37447793-b8ac-4087-a4f5-7bbce0dbcc4a"
+		_name = "Skeleton_v75:LeftFoot"
+		lod_level = 0
+	}
+	{
+		_id = "01956d15-5c16-494c-9256-c42cfee35ced"
+		_name = "Skeleton_v75:RightFoot"
+		lod_level = 0
+	}
+	{
+		_id = "7aad54f3-0853-4857-b505-de01c927138b"
+		_name = "Skeleton_v75:Neck"
+		lod_level = 0
+	}
+	{
+		_id = "e2a0aa79-93f5-4072-871c-e7573e105918"
+		_name = "Skeleton_v75:LeftShoulder"
+		lod_level = 0
+	}
+	{
+		_id = "cf129ce9-a49c-41c6-bdd4-1e59e5c4d573"
+		_name = "Skeleton_v75:RightShoulder"
+		lod_level = 0
+	}
+	{
+		_id = "aa70033e-e7b9-40da-93d4-f0a6ef3ffe39"
+		_name = "Skeleton_v75:LeftToeBase"
+		lod_level = 0
+	}
+	{
+		_id = "1293f361-178d-4f38-8977-19344da6da7d"
+		_name = "Skeleton_v75:RightToeBase"
+		lod_level = 0
+	}
+	{
+		_id = "bd9b4f0d-7bcf-4448-83ef-27366a716a37"
+		_name = "Skeleton_v75:Head"
+		lod_level = 0
+	}
+	{
+		_id = "d334ad11-4d0e-4f47-823b-0f5bc4d32f49"
+		_name = "Skeleton_v75:LeftArm"
+		lod_level = 0
+	}
+	{
+		_id = "dd8cc46d-9c65-49a4-8546-82071c699de2"
+		_name = "Skeleton_v75:RightArm"
+		lod_level = 0
+	}
+	{
+		_id = "ef4ac999-4a8b-4bab-b9d9-f47a910e620f"
+		_name = "Skeleton_v75:LeftToe_End"
+		lod_level = 0
+	}
+	{
+		_id = "7194ffca-1140-4017-b21a-6a54db7a2b86"
+		_name = "Skeleton_v75:RightToe_End"
+		lod_level = 0
+	}
+	{
+		_id = "d9fd9003-c52d-4d7d-81ce-6dc29fd6422c"
+		_name = "Skeleton_v75:Head_End"
+		lod_level = 0
+	}
+	{
+		_id = "d7ff9ab4-9ea5-4b92-a654-1cf34a45066a"
+		_name = "Skeleton_v75:LeftArmRoll"
+		lod_level = 0
+	}
+	{
+		_id = "f0eb2338-239c-4ae9-96ef-ca1082aa777f"
+		_name = "Skeleton_v75:RightArmRoll"
+		lod_level = 0
+	}
+	{
+		_id = "f35454af-40ae-4cfb-9209-23c8dea1308e"
+		_name = "Skeleton_v75:LeftForeArm"
+		lod_level = 0
+	}
+	{
+		_id = "13e0d795-9e90-4d7d-8089-0c5b94c37546"
+		_name = "Skeleton_v75:RightForeArm"
+		lod_level = 0
+	}
+	{
+		_id = "38ce9c6a-472c-4803-81cb-3b8ea6609b7a"
+		_name = "Skeleton_v75:LeftForeArmRoll"
+		lod_level = 0
+	}
+	{
+		_id = "348cbff6-70a2-4168-a2a0-5f08f8562be4"
+		_name = "Skeleton_v75:RightForeArmRoll"
+		lod_level = 0
+	}
+	{
+		_id = "49bdbc88-c247-497d-9f2a-dd5561534beb"
+		_name = "Skeleton_v75:LeftHand"
+		lod_level = 0
+	}
+	{
+		_id = "3115cc80-5582-486e-bdaa-9622f43e3a25"
+		_name = "Skeleton_v75:RightHand"
+		lod_level = 0
+	}
+	{
+		_id = "5dc6879b-6e71-41ce-b4ab-1dd7c0b5c40c"
+		_name = "Skeleton_v75:LeftHandThumb1"
+		lod_level = 0
+	}
+	{
+		_id = "a204187f-8b0c-407d-8f26-33a42e069d83"
+		_name = "Skeleton_v75:LeftHandIndex1"
+		lod_level = 0
+	}
+	{
+		_id = "c9766b17-f0c2-4b8b-849f-09795b7a79a2"
+		_name = "Skeleton_v75:LeftHandMiddle1"
+		lod_level = 0
+	}
+	{
+		_id = "f4020816-7e01-4ad4-8e4a-321eb8f12cd8"
+		_name = "Skeleton_v75:LeftHandRing1"
+		lod_level = 0
+	}
+	{
+		_id = "ac0da090-4b95-4374-994c-bea3083e8e9d"
+		_name = "Skeleton_v75:LeftHandPinky1"
+		lod_level = 0
+	}
+	{
+		_id = "0becb464-5db3-4d3d-9df4-04bc15793947"
+		_name = "Skeleton_v75:RightHandThumb1"
+		lod_level = 0
+	}
+	{
+		_id = "855b9160-abb8-41fc-9444-5557c7a19e74"
+		_name = "Skeleton_v75:RightHandIndex1"
+		lod_level = 0
+	}
+	{
+		_id = "d3c967c7-9170-4b92-9dbf-7ef5a4c2db72"
+		_name = "Skeleton_v75:RightHandMiddle1"
+		lod_level = 0
+	}
+	{
+		_id = "41b725c2-b039-4206-805f-2bdba41e4002"
+		_name = "Skeleton_v75:RightHandRing1"
+		lod_level = 0
+	}
+	{
+		_id = "f6f7faa1-4687-4798-8461-590addd88fa9"
+		_name = "Skeleton_v75:RightHandPinky1"
+		lod_level = 0
+	}
+	{
+		_id = "e098c751-2d40-428a-b2ea-8f2bf887e086"
+		_name = "Skeleton_v75:LeftHandThumb2"
+		lod_level = 0
+	}
+	{
+		_id = "920b589a-ab44-41f0-af4f-3e59904bcca9"
+		_name = "Skeleton_v75:LeftHandIndex2"
+		lod_level = 0
+	}
+	{
+		_id = "7cba3f04-a6b8-4b73-b5cd-6a75a7996f70"
+		_name = "Skeleton_v75:LeftHandMiddle2"
+		lod_level = 0
+	}
+	{
+		_id = "c268ffe8-533b-4be5-89d3-386414d879ad"
+		_name = "Skeleton_v75:LeftHandRing2"
+		lod_level = 0
+	}
+	{
+		_id = "8c35fcd3-e554-4119-97d6-2f25755c8655"
+		_name = "Skeleton_v75:LeftHandPinky2"
+		lod_level = 0
+	}
+	{
+		_id = "0292b6d2-64b2-47f2-b9ed-55ff0daffd5e"
+		_name = "Skeleton_v75:RightHandThumb2"
+		lod_level = 0
+	}
+	{
+		_id = "d160ac6a-4208-48d7-9165-b08bcfe89069"
+		_name = "Skeleton_v75:RightHandIndex2"
+		lod_level = 0
+	}
+	{
+		_id = "b8765e6d-3668-4b9d-a52a-e489c47143da"
+		_name = "Skeleton_v75:RightHandMiddle2"
+		lod_level = 0
+	}
+	{
+		_id = "5abd51e4-24de-4dd7-b976-564c2b5abb50"
+		_name = "Skeleton_v75:RightHandRing2"
+		lod_level = 0
+	}
+	{
+		_id = "f1f76217-6249-4f00-a3c3-e4969d2b8117"
+		_name = "Skeleton_v75:RightHandPinky2"
+		lod_level = 0
+	}
+	{
+		_id = "d5386e00-d9ef-4986-b132-cb338c41ed1a"
+		_name = "Skeleton_v75:LeftHandThumb3"
+		lod_level = 0
+	}
+	{
+		_id = "75d80a37-d0d2-48d5-b2e6-8debba23a954"
+		_name = "Skeleton_v75:LeftHandIndex3"
+		lod_level = 0
+	}
+	{
+		_id = "ceb595b9-d274-4900-8d27-9670740f0835"
+		_name = "Skeleton_v75:LeftHandMiddle3"
+		lod_level = 0
+	}
+	{
+		_id = "af6bb08e-2531-4df3-830e-cb8bca86def1"
+		_name = "Skeleton_v75:LeftHandRing3"
+		lod_level = 0
+	}
+	{
+		_id = "a432980c-e976-414d-8d55-f2481659b88a"
+		_name = "Skeleton_v75:LeftHandPinky3"
+		lod_level = 0
+	}
+	{
+		_id = "7e326431-c1f2-44db-931c-f843d33accc0"
+		_name = "Skeleton_v75:RightHandThumb3"
+		lod_level = 0
+	}
+	{
+		_id = "8dceac0c-d9cf-49ce-9b69-8d8998bacfe2"
+		_name = "Skeleton_v75:RightHandIndex3"
+		lod_level = 0
+	}
+	{
+		_id = "f74e6d89-7961-4e5b-9424-8702b12ff318"
+		_name = "Skeleton_v75:RightHandMiddle3"
+		lod_level = 0
+	}
+	{
+		_id = "650f30d3-fae1-42a9-9fe3-4aa7acc9101a"
+		_name = "Skeleton_v75:RightHandRing3"
+		lod_level = 0
+	}
+	{
+		_id = "ca24c0d8-ddcd-424f-b6b8-95526d0f5147"
+		_name = "Skeleton_v75:RightHandPinky3"
+		lod_level = 0
+	}
+	{
+		_id = "3b920421-1289-486d-acb3-5ddb8aee9187"
+		_name = "Skeleton_v75:LeftHandThumb4"
+		lod_level = 0
+	}
+	{
+		_id = "80bd40ad-2529-4d5f-8c46-da1f7c0a77be"
+		_name = "Skeleton_v75:LeftHandIndex4"
+		lod_level = 0
+	}
+	{
+		_id = "6a1b7f02-53b8-47d5-9523-08b1f8e405fe"
+		_name = "Skeleton_v75:LeftHandMiddle4"
+		lod_level = 0
+	}
+	{
+		_id = "21b65112-0c9f-424f-a177-5c474881a84e"
+		_name = "Skeleton_v75:LeftHandRing4"
+		lod_level = 0
+	}
+	{
+		_id = "67047782-c9ba-4e06-b443-2a4a0bdfaec9"
+		_name = "Skeleton_v75:LeftHandPinky4"
+		lod_level = 0
+	}
+	{
+		_id = "7a20c4a3-e039-45e1-b46d-1e350bab573f"
+		_name = "Skeleton_v75:RightHandThumb4"
+		lod_level = 0
+	}
+	{
+		_id = "fd6ee4e4-bfaf-49de-a598-a11a17b63c35"
+		_name = "Skeleton_v75:RightHandIndex4"
+		lod_level = 0
+	}
+	{
+		_id = "3ceff198-192b-4f4b-8855-3235a46f5768"
+		_name = "Skeleton_v75:RightHandMiddle4"
+		lod_level = 0
+	}
+	{
+		_id = "53817dd7-5e7d-46b0-b385-8e8e84e041f3"
+		_name = "Skeleton_v75:RightHandRing4"
+		lod_level = 0
+	}
+	{
+		_id = "ab481cf5-22e6-4dc9-9f01-bd553f878f49"
+		_name = "Skeleton_v75:RightHandPinky4"
+		lod_level = 0
+	}
+]
+locomotion_root_bone_ref = {
+	_id = "062ab68c-8e9a-47ba-acaf-0c268c8bca29"
+	ref_filename = null
+	ref_id = "28726523-e1ae-434c-8083-c3371ea65e23"
+}

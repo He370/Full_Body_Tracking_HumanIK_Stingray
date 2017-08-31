@@ -1,0 +1,7087 @@
+
+editor_metadata = {
+	Entities = [
+		{
+			id = "b5891f54-e2c3-41a3-aa87-06bc18cf5245"
+			inherit = {
+				"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
+				"$resource_type" = "entity"
+			}
+			layer = "Default"
+			modified_components = {
+				"06c78e06-c921-4208-8069-d377b6415d30" = {
+					fog_enabled = false
+					fog_sun_blend = 0.9
+				}
+				"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
+					baked_diffuse_tint = {
+						intensity = 1
+						rgb = [1 1 1]
+					}
+					global_diffuse_map = {
+						"$resource_name" = "content/levels/vr_learning-cubemaps/reflection_probe_diffuse_bake"
+						"$resource_type" = "texture"
+					}
+					global_radiance_map = {
+						"$resource_name" = "content/levels/vr_learning-cubemaps/reflection_probe_radiance_bake"
+						"$resource_type" = "texture"
+					}
+					global_specular_map = {
+						"$resource_name" = "content/levels/vr_learning-cubemaps/reflection_probe_specular_bake"
+						"$resource_type" = "texture"
+					}
+					material_ao_baked_diffuse_intensity = 0.5
+					material_ao_reflection_occlusion_falloff = 1
+					material_ao_reflection_occlusion_intensity = 1
+					reflections_tint = {
+						intensity = 1
+					}
+					skydome_intensity = 3
+					skydome_map = {
+						"$resource_name" = "content/models/skydome/white"
+						"$resource_type" = "texture"
+					}
+				}
+				"597d400f-c916-454b-9912-b9bb35e6e689" = {
+					shadow_log_linear_blend = 0.25
+					shadow_max_distance = 75
+				}
+				"68333c83-9659-4d2e-b664-35790e366f08" = {
+					exposure = 1
+				}
+				"6d36e8c5-dac7-4e28-b873-c4555b95e2bf" = {
+					lens_quality_enabled = false
+				}
+				"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
+					dof_enabled = false
+				}
+				"8386face-d486-49d6-9b8b-6d8cba24d4f7" = {
+					ssr_enabled = false
+					ssr_screen_edge_threshold = 0.05
+					ssr_surface_thickness_threshold = [0.001 10]
+				}
+				"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+					ao_blur = 0.6
+					ao_enabled = false
+					ao_half_res = false
+					ao_quality = 2
+					ao_use_world_radius = false
+				}
+				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+					motion_blur_enabled = false
+				}
+				"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+					vignette_enabled = false
+				}
+				"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+					bloom_enabled = true
+					bloom_lens_dirt_amount = 0
+					bloom_threshold = 2.5
+					bloom_tint = {
+						intensity = 1
+					}
+				}
+			}
+			name = "Default Shading Environment"
+		}
+	]
+	Flow = {
+		Connections = [
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f0d83f9f-dee3-4bc7-8aa4-23fdcc198eda"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "23976373-1f7d-44b5-be98-9326fbb424b0"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "HeadPosition"
+				FromNode = "60cb1014-476c-48b7-8597-1bfb276d8dcf"
+				ToItem = "Position"
+				ToNode = "23976373-1f7d-44b5-be98-9326fbb424b0"
+				Type = "Vector3"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "HeadRotation"
+				FromNode = "60cb1014-476c-48b7-8597-1bfb276d8dcf"
+				ToItem = "Rotation"
+				ToNode = "23976373-1f7d-44b5-be98-9326fbb424b0"
+				Type = "Quaternion"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "db3bc2d9-6c7f-4614-9d22-2133872fd41c"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "e04eefe8-2609-4871-9db9-cbadf725232a"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "db3bc2d9-6c7f-4614-9d22-2133872fd41c"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "0b5a41ad-d7ab-4701-9ff8-58a11c0f0aa2"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "db3bc2d9-6c7f-4614-9d22-2133872fd41c"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "ae611efd-0895-4185-8c0b-9b7d83970780"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "db3bc2d9-6c7f-4614-9d22-2133872fd41c"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "42a0dad6-80f6-4708-b218-48ce65be2290"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "26de0036-851e-4184-a9c7-966fe70bce14"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "ca69577d-a5c3-4554-88c5-f9ac3f84197d"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "f3497fea-0913-4d44-ba5b-a45e10abbc51"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "60d4f44c-809b-41b5-bdcb-bca08123cef5"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "f3497fea-0913-4d44-ba5b-a45e10abbc51"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "a3641b2e-b16a-4d87-8506-40b67c254ae0"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "f3497fea-0913-4d44-ba5b-a45e10abbc51"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "81556461-cc20-47dc-9feb-02866c25e4a3"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "f3497fea-0913-4d44-ba5b-a45e10abbc51"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "65661ecc-7da0-4bcf-80e9-e6d7dcb31d06"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "f3497fea-0913-4d44-ba5b-a45e10abbc51"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "1ff7e6b3-126f-4baf-ad06-573d36d10347"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "f3497fea-0913-4d44-ba5b-a45e10abbc51"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "8a1c03be-a3d9-49cb-a1a8-23446444fa64"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "reset"
+				FromNode = "f3497fea-0913-4d44-ba5b-a45e10abbc51"
+				Priority = 0
+				ToItem = "reset"
+				ToNode = "b48c2720-96c6-48d0-a7fc-db1627ae67eb"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "a4226f31-80d6-4637-8e8f-00f857a5b84d"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "231f7e11-7abe-44a9-8b31-cc9644dbc29e"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "cc775507-9119-4605-a2a4-e52d779ecc6b"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "01da4ffd-d13a-4a29-b8a8-fcd1ec47ad7f"
+			}
+		]
+		Groups = [
+			{
+				Collapsed = false
+				Groups = [
+					"501ba936-974b-4724-a5ce-5f751863b670"
+				]
+				Id = "19d23b6e-f319-40d9-85c9-4d0523a82bb8"
+				Nodes = [
+					"231f7e11-7abe-44a9-8b31-cc9644dbc29e"
+					"a4226f31-80d6-4637-8e8f-00f857a5b84d"
+				]
+				Title = "Level Audio"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "501ba936-974b-4724-a5ce-5f751863b670"
+				Nodes = [
+					"f0d83f9f-dee3-4bc7-8aa4-23fdcc198eda"
+					"23976373-1f7d-44b5-be98-9326fbb424b0"
+					"60cb1014-476c-48b7-8597-1bfb276d8dcf"
+				]
+				Title = "Set Audio Listener position to the HMD"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "a1c70db6-105e-4208-8dca-33460c8894ea"
+				Nodes = [
+					"e04eefe8-2609-4871-9db9-cbadf725232a"
+					"42a0dad6-80f6-4708-b218-48ce65be2290"
+					"ae611efd-0895-4185-8c0b-9b7d83970780"
+					"0b5a41ad-d7ab-4701-9ff8-58a11c0f0aa2"
+					"db3bc2d9-6c7f-4614-9d22-2133872fd41c"
+				]
+				Title = "reset baseballs"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "d2cf664f-260d-48ae-a110-6e84deacfc98"
+				Nodes = [
+					"26de0036-851e-4184-a9c7-966fe70bce14"
+					"ca69577d-a5c3-4554-88c5-f9ac3f84197d"
+				]
+				Title = "reset bat"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "5ca094d5-e722-4d0a-9368-69e5cd3ff9db"
+				Nodes = [
+					"65661ecc-7da0-4bcf-80e9-e6d7dcb31d06"
+					"81556461-cc20-47dc-9feb-02866c25e4a3"
+					"a3641b2e-b16a-4d87-8506-40b67c254ae0"
+					"60d4f44c-809b-41b5-bdcb-bca08123cef5"
+					"1ff7e6b3-126f-4baf-ad06-573d36d10347"
+					"8a1c03be-a3d9-49cb-a1a8-23446444fa64"
+					"b48c2720-96c6-48d0-a7fc-db1627ae67eb"
+					"f3497fea-0913-4d44-ba5b-a45e10abbc51"
+				]
+				Title = "reset objects"
+			}
+		]
+		Nodes = [
+			{
+				Brief = "Passes an event at every update interval of the engine."
+				Category = "Event"
+				Class = "Stingray.Foundation.Flow.DataDrivenFlowNode"
+				ColorCategory = ""
+				ExportTypeName = "level_update"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "f0d83f9f-dee3-4bc7-8aa4-23fdcc198eda"
+				Inputs = [
+				]
+				NodeLocation = {
+					X = -340
+					Y = 180
+				}
+				Outputs = [
+					{
+						Class = "Stingray.Foundation.Flow.DataDrivenFlowNode+Output"
+						RawName = "out"
+						Type = "event"
+						UIName = "Out"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutEvent"
+						}
+					}
+				]
+				Title = "Level Update"
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Listener"
+						Type = "enum"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InEnumVariable"
+							Value = "Listener0"
+						}
+					}
+					{
+						RawName = "Position"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+					{
+						RawName = "Rotation"
+						Type = "quaternion"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableQuaternion"
+						}
+					}
+				]
+				Brief = "Sets the world space transform of the listener. The transform is absolute."
+				Category = "Audio/Wwise/Global"
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/wwise/wwise"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "23976373-1f7d-44b5-be98-9326fbb424b0"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Wwise Set Listener Pose"
+				NodeLocation = {
+					X = -40
+					Y = 40
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "space"
+						Type = "enum"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InEnumVariable"
+							Value = "World"
+						}
+					}
+				]
+				Brief = ""
+				Category = "SteamVR"
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "vr_steam/script/steam_vr"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "60cb1014-476c-48b7-8597-1bfb276d8dcf"
+				InEvents = [
+				]
+				IsQuery = true
+				Name = "SteamVR HMD Pose"
+				NodeLocation = {
+					X = -340
+					Y = 0
+				}
+				OutEvents = [
+				]
+				ReturnValues = [
+					{
+						RawName = "headPosition"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableVector3"
+						}
+					}
+					{
+						RawName = "headRotation"
+						Type = "quaternion"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableQuaternion"
+						}
+					}
+					{
+						RawName = "leftEyePosition"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableVector3"
+						}
+					}
+					{
+						RawName = "leftEyeRotation"
+						Type = "quaternion"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableQuaternion"
+						}
+					}
+					{
+						RawName = "rightEyePosition"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableVector3"
+						}
+					}
+					{
+						RawName = "rightEyeRotation"
+						Type = "quaternion"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableQuaternion"
+						}
+					}
+				]
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "db3bc2d9-6c7f-4614-9d22-2133872fd41c"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 500
+					Y = -60
+				}
+				OutEvents = [
+					"reset"
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "de37cc94-389a-4dce-a3dc-41af8cd1aaf8"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/reset"
+				Unit = {
+				}
+				Width = 200
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "e04eefe8-2609-4871-9db9-cbadf725232a"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 940
+					Y = 120
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "9bbdd544-1dd1-491b-9d54-fb761844a9a9"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/base_ball"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "0b5a41ad-d7ab-4701-9ff8-58a11c0f0aa2"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 760
+					Y = -60
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "ad4af651-58c3-475e-9398-e83344c58f95"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/base_ball"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "ae611efd-0895-4185-8c0b-9b7d83970780"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 940
+					Y = -60
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "d75bae14-4ad3-44f8-8b75-bd2733d7f1a1"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/base_ball"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "42a0dad6-80f6-4708-b218-48ce65be2290"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 760
+					Y = 120
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "585f6f1e-28db-405b-9433-3c6139075315"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/base_ball"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "26de0036-851e-4184-a9c7-966fe70bce14"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 500
+					Y = 340
+				}
+				OutEvents = [
+					"reset"
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "b9989d6d-51d4-4698-9855-ce7f8c51d808"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/reset"
+				Unit = {
+				}
+				Width = 200
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "ca69577d-a5c3-4554-88c5-f9ac3f84197d"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"Linked"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 740
+					Y = 340
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "170c2f67-1f30-45ab-9902-d3f8e1eef9dc"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/BaseBall_Bat"
+				Unit = {
+				}
+				Width = 180
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "f3497fea-0913-4d44-ba5b-a45e10abbc51"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 1160
+					Y = -60
+				}
+				OutEvents = [
+					"reset"
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "db2ba26a-5f6e-4c37-b117-d8164c584171"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/reset"
+				Unit = {
+				}
+				Width = 180
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "65661ecc-7da0-4bcf-80e9-e6d7dcb31d06"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"pickup_sound"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 1580
+					Y = 100
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "f7d1780b-8635-4e0d-b5eb-6bdb74f49b05"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/block"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "81556461-cc20-47dc-9feb-02866c25e4a3"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"pickup_sound"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 1400
+					Y = 100
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "aff8a153-1573-4298-9147-01f5f3e2fe9d"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/block"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "a3641b2e-b16a-4d87-8506-40b67c254ae0"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"pickup_sound"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 1580
+					Y = -60
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "772ea3ba-067d-4b37-8f1c-e4377889e6f9"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/block"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "60d4f44c-809b-41b5-bdcb-bca08123cef5"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"pickup_sound"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 1400
+					Y = -60
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "4efaa04b-7280-4e74-87d9-2c2621cac3d1"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/block"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "1ff7e6b3-126f-4baf-ad06-573d36d10347"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"pickup_sound"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 1760
+					Y = -60
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "a0ad922e-6110-49ca-a3ca-482ebddd3ea1"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/block"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "8a1c03be-a3d9-49cb-a1a8-23446444fa64"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"pickup_sound"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 1940
+					Y = -60
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "65b05cd5-75ce-46ca-a375-185a238220d0"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/teapot"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "b48c2720-96c6-48d0-a7fc-db1627ae67eb"
+				InEvents = [
+					"highlight_off"
+					"highlight_on"
+					"pickup_sound"
+					"reset"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 1760
+					Y = 100
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "49944df3-2bb5-4f65-90af-1139628db72e"
+				}
+				Title = "Level Unit"
+				Type = "content/models/props/torus"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_event"
+							Value = "sfx_amb_vr_museum"
+						}
+					}
+					{
+						RawName = "Unit"
+						Type = "unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+					{
+						RawName = "Unit_Node"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Position"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+					{
+						RawName = "Existing_Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = "Posts the given event to the Wwise engine, creating a source if none is provided."
+				Category = "Audio/Wwise"
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/wwise/wwise"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "231f7e11-7abe-44a9-8b31-cc9644dbc29e"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Wwise Trigger Event"
+				NodeLocation = {
+					X = -80
+					Y = 260
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+					{
+						RawName = "Playing_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+					{
+						RawName = "Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+				]
+				Width = 220
+			}
+			{
+				Brief = "Passes an event when the level has been loaded into the world."
+				Category = "Event"
+				Class = "Stingray.Foundation.Flow.DataDrivenFlowNode"
+				ColorCategory = ""
+				ExportTypeName = "level_loaded"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "a4226f31-80d6-4637-8e8f-00f857a5b84d"
+				Inputs = [
+				]
+				NodeLocation = {
+					X = -340
+					Y = 420
+				}
+				Outputs = [
+					{
+						Class = "Stingray.Foundation.Flow.DataDrivenFlowNode+Output"
+						RawName = "out"
+						Type = "event"
+						UIName = "Out"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutEvent"
+						}
+					}
+				]
+				Title = "Level Loaded"
+				Width = 160
+			}
+			{
+				Arguments = [
+				]
+				Brief = "Switches on HumanIK for all characters and creatures."
+				Category = "HumanIK/Setup and Debug"
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/humanik/humanik"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "01da4ffd-d13a-4a29-b8a8-fcd1ec47ad7f"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "HumanIK Switch On"
+				NodeLocation = {
+					X = -220
+					Y = 500
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Passes an event when the level has been loaded into the world."
+				Category = "Event"
+				Class = "Stingray.Foundation.Flow.DataDrivenFlowNode"
+				ColorCategory = ""
+				ExportTypeName = "level_loaded"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "cc775507-9119-4605-a2a4-e52d779ecc6b"
+				Inputs = [
+				]
+				NodeLocation = {
+					X = -480
+					Y = 520
+				}
+				Outputs = [
+					{
+						Class = "Stingray.Foundation.Flow.DataDrivenFlowNode+Output"
+						RawName = "out"
+						Type = "event"
+						UIName = "Out"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutEvent"
+						}
+					}
+				]
+				Title = "Level Loaded"
+				Width = 160
+			}
+		]
+	}
+	Groups = [
+	]
+	Layers = [
+		"Default"
+		"Background"
+	]
+	LevelObjectSets = {
+		NestedSetNamesBySetName = {
+		}
+		ObjectIdsBySetName = {
+		}
+		VisibleSetNames = [
+		]
+	}
+	LevelReferences = [
+	]
+	LightBakeSettings = {
+		Baker = "Stingray"
+		DiffuseBoost = 1.20000004768372
+		EmissiveScaleRGB = {
+			X = 0.4
+			Y = 0.4
+			Z = 0.4
+		}
+		ExcludedObjectSets = [
+		]
+		FilterGain = 20
+		FilterLightmaps = true
+		FilterType = "Both"
+		IlluminationType = "Both"
+		IndirectScaleRGB = {
+			X = 1.8
+			Y = 1.8
+			Z = 1.8
+		}
+		Layers = [
+		]
+		LightmapType = "Standard"
+		MaxSamples = 96
+		MinSamples = 32
+		QualityPreset = "Custom"
+		SkylightIntensityRGB = {
+			X = 1
+			Y = 1
+			Z = 1
+		}
+		TexelScale = 100
+		TotalPasses = 2048
+		Variance = 0.5
+	}
+	Navmeshes = [
+	]
+	Notes = [
+	]
+	ParticleEffects = [
+	]
+	PositionMarkers = [
+	]
+	Prototypes = [
+	]
+	Scatter = {
+		PoolSettings = {
+		}
+		ScatterData = {
+		}
+	}
+	Settings = {
+		FrozenLayers = [
+			"Background"
+		]
+		HiddenLayers = [
+		]
+		HiddenObjects = [
+			"fea72bce-eef5-4814-8c5b-9d23528ac1a3"
+		]
+		LastHiddenObjects = [
+		]
+		SoundEnvironment = ""
+		TimpaniSoundEnvironment = "default"
+	}
+	Sounds = [
+	]
+	Splines = [
+	]
+	Stories = [
+	]
+	Triggers = [
+	]
+	Units = [
+		{
+			Cameras = {
+			}
+			Id = "9a101476-3f37-4f0d-a1bd-1618673d2c1e"
+			Layer = "Background"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Skydome"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/editor_slave/units/skydome/skydome"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e27d5195-3f25-4329-88fb-161fe7ac3ff0"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 8
+						Y = 4
+						Z = 6
+					}
+					BoxMin = {
+						X = -8
+						Y = -4
+						Z = -6
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/vr_learning-cubemaps/reflection_probe_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = -1.79209
+				Z = 2.7437
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.probe.indirect_intensity" = 1
+				"probe.trace_box_max[0]" = 6.1
+				"probe.trace_box_max[1]" = 4
+				"probe.trace_box_max[2]" = 2.35
+				"probe.trace_box_min[0]" = -6.1
+				"probe.trace_box_min[1]" = -4
+				"probe.trace_box_min[2]" = -2.75
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "65b05cd5-75ce-46ca-a375-185a238220d0"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "teapot"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.886412
+				Y = -5.29173
+				Z = 0.774957
+			}
+			Rot = {
+				W = -0.00756
+				X = 0
+				Y = 0
+				Z = 0.999971
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/teapot"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4efaa04b-7280-4e74-87d9-2c2621cac3d1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "block"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.07202
+				Y = -5.12403
+				Z = 0.77
+			}
+			Rot = {
+				W = -0.00756
+				X = 0
+				Y = 0
+				Z = 0.999971
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/block"
+		}
+		{
+			Cameras = {
+			}
+			Id = "772ea3ba-067d-4b37-8f1c-e4377889e6f9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "block1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.22262
+				Y = -5.12548
+				Z = 0.77
+			}
+			Rot = {
+				W = -0.00756
+				X = 0
+				Y = 0
+				Z = 0.999971
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/block"
+		}
+		{
+			Cameras = {
+			}
+			Id = "aff8a153-1573-4298-9147-01f5f3e2fe9d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "block2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.38
+				Y = -5.12282
+				Z = 0.77
+			}
+			Rot = {
+				W = -0.00756
+				X = 0
+				Y = 0
+				Z = 0.999971
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/block"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f7d1780b-8635-4e0d-b5eb-6bdb74f49b05"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "block3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.30734
+				Y = -5.30912
+				Z = 0.77
+			}
+			Rot = {
+				W = -0.00756
+				X = 0
+				Y = 0
+				Z = 0.999971
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/block"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a0ad922e-6110-49ca-a3ca-482ebddd3ea1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "block4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.14276
+				Y = -5.30927
+				Z = 0.77
+			}
+			Rot = {
+				W = -0.00756
+				X = 0
+				Y = 0
+				Z = 0.999971
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/block"
+		}
+		{
+			Cameras = {
+			}
+			Id = "49944df3-2bb5-4f65-90af-1139628db72e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "torus"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.54469
+				Y = -5.2826
+				Z = 0.785488
+			}
+			Rot = {
+				W = -0.00756
+				X = 0
+				Y = 0
+				Z = 0.999971
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/torus"
+		}
+		{
+			Cameras = {
+			}
+			Id = "170c2f67-1f30-45ab-9902-d3f8e1eef9dc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "BaseBall_Bat"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.729451
+				Y = -5.46707
+				Z = 0.808167
+			}
+			Rot = {
+				W = -0.859669
+				X = 0
+				Y = 0
+				Z = 0.510852
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/BaseBall_Bat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ad4af651-58c3-475e-9398-e83344c58f95"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "base_ball"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.068294
+				Y = -5.40225
+				Z = 0.804925
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/base_ball"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d75bae14-4ad3-44f8-8b75-bd2733d7f1a1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "base_ball1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.011965
+				Y = -5.31867
+				Z = 0.804925
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/base_ball"
+		}
+		{
+			Cameras = {
+			}
+			Id = "585f6f1e-28db-405b-9433-3c6139075315"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "base_ball2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.091517
+				Y = -5.23913
+				Z = 0.804925
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/base_ball"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ce223f73-984d-4e27-ba41-a6400507ffeb"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 227
+						G = 237
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.5
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "directional"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.342487
+				Y = -1.65883
+				Z = 3.26618
+			}
+			Rot = {
+				W = -0.382799
+				X = 0.722981
+				Y = -0.37536
+				Z = 0.435739
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.light.indirect_intensity" = 1
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b50edef1-b3da-421f-bf36-79536bc1f6bf"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 8
+						Y = 7
+						Z = 6
+					}
+					BoxMin = {
+						X = -8
+						Y = -6
+						Z = -6
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/vr_learning-cubemaps/reflection_probe1_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = -10.0586
+				Z = 2.68197
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.trace_box_max[0]" = 6.1
+				"probe.trace_box_max[1]" = 4
+				"probe.trace_box_max[2]" = 2.4
+				"probe.trace_box_min[0]" = -6.1
+				"probe.trace_box_min[1]" = -4
+				"probe.trace_box_min[2]" = -2.68
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "72ec0166-7c12-4755-a76b-90df44cdc8ac"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "podium1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.10098
+				Y = -5.31678
+				Z = 0
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.podium1.texel_scale" = 2
+			}
+			Type = "content/models/props/podium1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "895eca84-3295-4e30-b99c-405bbc247e6f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "podium"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.060241
+				Y = -5.31678
+				Z = 0
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.podium1.texel_scale" = 2
+			}
+			Type = "content/models/props/podium1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "69028cda-4275-425f-aed2-65f801876d8a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "podium3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.22331
+				Y = -5.31954
+				Z = 0
+			}
+			Rot = {
+				W = -0.999988
+				X = -0.000643
+				Y = 0.002004
+				Z = -0.004313
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.podium1.texel_scale" = 2
+			}
+			Type = "content/models/props/podium1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8b57c270-fb36-4595-8bf6-29864078c8a4"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = true
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 6
+					FalloffStart = 4
+					Intensity = 2
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 40
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source22"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.99779
+				Y = -9.27714
+				Z = 4.5332
+			}
+			Rot = {
+				W = -0.596703
+				X = 0.668831
+				Y = 0.235597
+				Z = -0.375639
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f5deda4e-c913-4a69-9ae4-66fd1a9f21d8"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = true
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 6
+					FalloffStart = 4
+					Intensity = 1.5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 40
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source23"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 2.1664
+				Y = -13.0995
+				Z = 4.71298
+			}
+			Rot = {
+				W = -0.54111
+				X = 0.6779
+				Y = 0.270891
+				Z = -0.417457
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "07fe7249-01c3-4606-958c-988bdd7c328f"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = true
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 6
+					FalloffStart = 4
+					Intensity = 1.5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 40
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source24"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.15886
+				Y = -13.0995
+				Z = 4.71298
+			}
+			Rot = {
+				W = -0.544912
+				X = 0.716656
+				Y = 0.301309
+				Z = -0.314146
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6032d7fc-fb9c-489f-affc-43ab76eb1b60"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = true
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 6
+					FalloffStart = 4
+					Intensity = 1.5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 40
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source25"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.073998
+				Y = -13.0995
+				Z = 4.71298
+			}
+			Rot = {
+				W = -0.54111
+				X = 0.6779
+				Y = 0.270891
+				Z = -0.417457
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5c0e61ba-c40b-493a-907d-5b974cea5684"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = true
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 6
+					FalloffStart = 4
+					Intensity = 1.5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 40
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source26"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.035811
+				Y = -12.9154
+				Z = 4.63908
+			}
+			Rot = {
+				W = -0.602889
+				X = 0.52314
+				Y = 0.484585
+				Z = -0.357808
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c96c8b40-6e00-4db1-af04-f6afaac5ac0d"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = true
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 6
+					FalloffStart = 4
+					Intensity = 1.5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 40
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source27"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.30391
+				Y = -13.1267
+				Z = 4.69576
+			}
+			Rot = {
+				W = -0.432231
+				X = 0.537394
+				Y = 0.489095
+				Z = -0.534013
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "61a5903d-eddb-404d-bd31-0d1c96c652d2"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = true
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 6
+					FalloffStart = 4
+					Intensity = 1.5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 40
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source28"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.31529
+				Y = -13.1267
+				Z = 4.69576
+			}
+			Rot = {
+				W = -0.542891
+				X = 0.561916
+				Y = 0.339878
+				Z = -0.523453
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5ac444cb-0001-4f19-9a94-2c6db556e41c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.059989
+				Y = -4.64583
+				Z = -0.001864
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = 0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1.68951
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "09e9dc5a-cc1a-469a-800a-260ecaff874f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "lightfixture_group2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.944
+				Y = -3.59586
+				Z = 5.08
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/lightfixture_group2"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d24aa438-ca92-4a58-af0b-b6d9a28ce345"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "lightfixture_group1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.94416
+				Y = 0.480459
+				Z = 5.077
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/lightfixture_group1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8fe57db5-91b1-4304-9e13-c12f151f9815"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "lightfixture_group"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.135026
+				Y = -5.02779
+				Z = 5.077
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/lightfixture_group1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c2ef0125-c512-4369-a51c-42330155884d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "lightfixture_group3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.95553
+				Y = -0.862001
+				Z = 5.077
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/lightfixture_group1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a558a96d-6902-4946-a6ea-ca372312cb36"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "lightfixture_group4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.92883
+				Y = -2.63913
+				Z = 5.077
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/lightfixture_group2"
+		}
+		{
+			Cameras = {
+			}
+			Id = "411c1835-cc50-408f-bf76-d6de8fddc583"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "lightfixture_group6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.94985
+				Y = -10.2955
+				Z = 5.077
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/lightfixture_group2"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d711fbf0-f7f6-4f8e-9eba-511058d11ff3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "lightfixture_group7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.134893
+				Y = -6.58395
+				Z = 5.08
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/lightfixture_group1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7e85e837-c30a-4e1c-a58d-320d3b26d281"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "lightfixture_group9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.167724
+				Y = -13.0322
+				Z = 5.077
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/lightfixture_group1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1fbc2497-e859-4ba6-bbc4-6c705d8b1c91"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "lightfixture_group10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.85656
+				Y = -12.1414
+				Z = 5.077
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/lightfixture_group2"
+		}
+		{
+			Cameras = {
+			}
+			Id = "de37cc94-389a-4dce-a3dc-41af8cd1aaf8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "reset_baseballs"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.444947
+				Y = -4.99396
+				Z = 0.762
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/reset"
+		}
+		{
+			Cameras = {
+			}
+			Id = "db2ba26a-5f6e-4c37-b117-d8164c584171"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "reset_objects"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.59271
+				Y = -4.99396
+				Z = 0.762
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/reset"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b9989d6d-51d4-4698-9855-ce7f8c51d808"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "reset_bat"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.733108
+				Y = -4.99396
+				Z = 0.762
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/reset"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9bbdd544-1dd1-491b-9d54-fb761844a9a9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "base_ball3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.174559
+				Y = -5.16076
+				Z = 0.804925
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+			}
+			Type = "content/models/props/base_ball"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2d473b3e-c0a2-4238-8184-a0fede1b40d6"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip14"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.27709
+				Y = -5.91498
+				Z = 5.08018
+			}
+			Rot = {
+				W = 0
+				X = -0.707107
+				Y = 0.707107
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1.9
+				Z = 2
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e4a8be1f-4c2b-4d8a-a1d2-51b1c0bbbd3f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip15"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.27243
+				Y = -5.91498
+				Z = 5.08018
+			}
+			Rot = {
+				W = 0
+				X = -0.707107
+				Y = 0.707107
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1.9
+				Z = 2
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3007b62c-0c7f-4428-af9f-175f5c8e1f73"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip16"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 6.09593
+				Y = -5.91498
+				Z = 2.56629
+			}
+			Rot = {
+				W = -0.5
+				X = 0.5
+				Y = 0.5
+				Z = -0.5
+			}
+			Scl = {
+				X = 1
+				Y = 2.6
+				Z = 2
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "016a81d4-acb1-46b1-a917-7ea96dfdc8b3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.099055
+				Y = -5.02777
+				Z = 5.08012
+			}
+			Rot = {
+				W = 0
+				X = -0.707107
+				Y = 0.707107
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 2.52189
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0db16c54-518f-4eb9-b498-073e7a2851e4"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip11"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.099055
+				Y = -13.0327
+				Z = 5.08012
+			}
+			Rot = {
+				W = 0
+				X = -0.707107
+				Y = 0.707107
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 2.52189
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "116f3370-e26b-4ba2-9cfd-e8d581865645"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip12"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.099055
+				Y = -6.58527
+				Z = 5.08012
+			}
+			Rot = {
+				W = 0
+				X = -0.707107
+				Y = 0.707107
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 2.52189
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "03b4f5e0-7e4b-4362-a8e8-0885bed978f6"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip22"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.94297
+				Y = 0.350328
+				Z = 5.08012
+			}
+			Rot = {
+				W = 0
+				X = 1
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1.5
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "835e586e-65b2-4ca8-b434-11039990cc77"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip23"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.94297
+				Y = -3.60073
+				Z = 5.08012
+			}
+			Rot = {
+				W = 0
+				X = 1
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1.5
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1efaf4c1-06ca-44f8-8c07-34a429d23660"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip24"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.94514
+				Y = -0.27892
+				Z = 5.08012
+			}
+			Rot = {
+				W = 0
+				X = 1
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1.5
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "80d7d7b4-9788-4d13-9e2e-9f01e58aff77"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip25"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.94514
+				Y = -3.24399
+				Z = 5.08012
+			}
+			Rot = {
+				W = 0
+				X = 1
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1.5
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6570969e-983f-487e-8171-3b77e5eb1a3d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip26"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.94514
+				Y = -10.333
+				Z = 5.08012
+			}
+			Rot = {
+				W = 0
+				X = 1
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1.5
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "59d3baa1-c4cb-46e3-8f13-ba4d5d9d405d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip27"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.85014
+				Y = -12.2097
+				Z = 5.08012
+			}
+			Rot = {
+				W = 0
+				X = 1
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1.5
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5c06d1dc-1c90-4261-9b7d-f254ac017113"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 4.05
+						Y = 2
+						Z = 1
+					}
+					BoxMin = {
+						X = -4.05
+						Y = -1
+						Z = -3
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/vr_learning-cubemaps/reflection_probe3_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = -10.9959
+				Z = 0.761799
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.trace_box_max[0]" = 4.05
+				"probe.trace_box_max[1]" = 1
+				"probe.trace_box_max[2]" = 0.75
+				"probe.trace_box_min[0]" = -4.05
+				"probe.trace_box_min[1]" = -1
+				"probe.trace_box_min[2]" = -0.75
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3f1a71b8-9d41-4f10-b86c-d1fcaafd2cb7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -6.09626
+				Y = -5.91498
+				Z = 2.56629
+			}
+			Rot = {
+				W = -0.5
+				X = 0.5
+				Y = -0.5
+				Z = 0.5
+			}
+			Scl = {
+				X = 1
+				Y = 2.6
+				Z = 2
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3160a1d0-a596-4f49-b5e0-3e10834c3538"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -6.09626
+				Y = -10
+				Z = 2.56629
+			}
+			Rot = {
+				W = -0.5
+				X = 0.5
+				Y = -0.5
+				Z = 0.5
+			}
+			Scl = {
+				X = 1
+				Y = 2.6
+				Z = 2
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a9be1f3e-cd38-4ecc-8f9e-a871fdfaa034"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground_strip3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 6.09593
+				Y = -10
+				Z = 2.56629
+			}
+			Rot = {
+				W = -0.5
+				X = 0.5
+				Y = 0.5
+				Z = -0.5
+			}
+			Scl = {
+				X = 1
+				Y = 2.6
+				Z = 2
+			}
+			ScriptData = {
+			}
+			Type = "content/models/props/ground_strip1"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1c3706f7-0b19-4ff3-a401-4e6f5ede998f"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = true
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 20
+					FalloffStart = 0
+					Intensity = 5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 80
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.261745
+				Y = -5.15764
+				Z = 4.58396
+			}
+			Rot = {
+				W = -0.482237
+				X = 0.874026
+				Y = -0.039402
+				Z = -0.044417
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fdd0a49a-96f2-4c48-bfe8-5dedec7717c5"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = true
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 20
+					FalloffStart = 0
+					Intensity = 5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 80
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.25703
+				Y = -5.11763
+				Z = 4.67604
+			}
+			Rot = {
+				W = -0.521614
+				X = 0.849207
+				Y = -0.066853
+				Z = -0.047924
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6a0be8ce-9bb5-4149-a955-52ef840e5147"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = true
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 20
+					FalloffStart = 0
+					Intensity = 5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 80
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.964005
+				Y = -5.19209
+				Z = 4.6173
+			}
+			Rot = {
+				W = -0.461467
+				X = 0.883087
+				Y = 0.064296
+				Z = 0.055425
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4f29585e-ab07-4baa-850c-6880be5835a5"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				walls2 = "content/models/props/walls"
+			}
+			Name = "vr_template_room2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = -6.1653
+				Z = 0
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/room/vr_template_room2"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1b46be9b-f1d7-4cfe-bd93-97eaea4a6dcc"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0.2
+					Intensity = 3
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 70
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.8
+				Y = -2.81277
+				Z = 4.70658
+			}
+			Rot = {
+				W = -0.559201
+				X = 0.829032
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e2a40c13-50f2-40fb-aea6-f1377095154c"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0.2
+					Intensity = 3
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 70
+					SpotAngleStart = 0
+					Type = "spot"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.619507
+				Y = -2.84489
+				Z = 4.70714
+			}
+			Rot = {
+				W = -0.559201
+				X = 0.829032
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "11654d67-3bf5-4eb9-b9c8-4f61e2170e46"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 25
+					FalloffStart = 2.5
+					Intensity = 0.5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 45
+					SpotAngleStart = 0
+					Type = "omni"
+				}
+			}
+			Materials = {
+			}
+			Name = "amb_light_source_01"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3
+				Y = -1.5
+				Z = 2.5
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3ea89697-1a89-4a1b-ab80-8c51c6c24a98"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 25
+					FalloffStart = 2.5
+					Intensity = 0.5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 45
+					SpotAngleStart = 0
+					Type = "omni"
+				}
+			}
+			Materials = {
+			}
+			Name = "amb_light_source_02"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3
+				Y = -1.5
+				Z = 2.5
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "72516d8e-74f8-4835-a4d9-4f432f3deec2"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 25
+					FalloffStart = 2.5
+					Intensity = 0.5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 45
+					SpotAngleStart = 0
+					Type = "omni"
+				}
+			}
+			Materials = {
+			}
+			Name = "amb_light_source_03"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3
+				Y = -10
+				Z = 3
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "438897c1-2e4f-4343-9237-df806f0d5813"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 25
+					FalloffStart = 2.5
+					Intensity = 0.5
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 45
+					SpotAngleStart = 0
+					Type = "omni"
+				}
+			}
+			Materials = {
+			}
+			Name = "amb_light_source_04"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3
+				Y = -10
+				Z = 3
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6257de8b-a4ec-4f42-b31a-880429a42891"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "player_start"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -5.30182604755945E-17
+				Y = -1.01593315601349
+				Z = 0
+			}
+			Rot = {
+				W = 6.12303176911189E-17
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "tools/player_start"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4b34e1bc-ed50-4f7d-8317-1debacd3e27a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "stand_anim"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.533401072025299
+				Y = 2.2187340259552
+				Z = 2.8435652256012
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stand_anim"
+		}
+		{
+			Cameras = {
+			}
+			Id = "73cf178d-fc62-4ad6-b74c-58b3a6002887"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "stage"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.00259131193161011
+				Y = -3.69465351104736
+				Z = -0.0862236246466637
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1.45389068126678
+				Y = 1.15428709983826
+				Z = 0.11119120568037
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fea72bce-eef5-4814-8c5b-9d23528ac1a3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "stand_anim1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.04862022399902
+				Y = -3.50460839271545
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stand_anim"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0b895861-b0a8-4cec-8aed-7dda6470f4e9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				material = "content/materials/red"
+			}
+			Name = "test_sphere_red"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.151113748550415
+				Y = 0.654217481613159
+				Z = 1.73054873943329
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 0.100000001490116
+				Y = 0.100000001490116
+				Z = 0.100000001490116
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/sphere_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "86c2b6ef-3dcd-4e13-b394-5981625906d9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				material = "content/materials/blue"
+			}
+			Name = "test_cube_blue"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.623072504997253
+				Y = 0.682063341140747
+				Z = 1.12922263145447
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 0.100000001490116
+				Y = 0.100000001490116
+				Z = 0.100000001490116
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "461e5134-ddee-4d37-8deb-929072202880"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				material = "content/materials/green"
+			}
+			Name = "test_cube_green"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.330127954483032
+				Y = 0.667736291885376
+				Z = 1.11795544624329
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 0.100000001490116
+				Y = 0.100000001490116
+				Z = 0.100000001490116
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "bac65a8c-e618-4c8f-81b2-cd4c6af02ce0"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				material = "content/materials/yellow"
+			}
+			Name = "test_cone"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.133577823638916
+				Y = -2.74954271316528
+				Z = 0.885343074798584
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 0.100000001490116
+				Y = 0.100000001490116
+				Z = 0.100000001490116
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cone_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "22caac79-af9e-47eb-b7de-668a1a563684"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "stage1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.80052638053894
+				Y = -3.15502738952637
+				Z = -0.0862236246466637
+			}
+			Rot = {
+				W = -0.960584282875061
+				X = 0
+				Y = 0
+				Z = -0.277988940477371
+			}
+			Scl = {
+				X = 1.45389068126678
+				Y = 1.15428709983826
+				Z = 0.11119120568037
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "cfd58f00-b4c6-468f-9bc1-5d37a2577752"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "stage2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.90439903736115
+				Y = -3.0148913860321
+				Z = -0.0862236246466637
+			}
+			Rot = {
+				W = -0.946025192737579
+				X = 0
+				Y = 0
+				Z = 0.324093163013458
+			}
+			Scl = {
+				X = 1.45389068126678
+				Y = 1.15428709983826
+				Z = 0.11119120568037
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "bccdc117-d944-4f95-9fc4-05634b84bbfc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				material = "content/materials/blue"
+			}
+			Name = "test_cone_blue"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.435541987419128
+				Y = 0.775586843490601
+				Z = 0.0704922676086426
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 0.150000005960464
+				Y = 0.150000005960464
+				Z = 0.150000005960464
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cone_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "80b8253b-21c3-4f39-b60a-e1e9f84b3281"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				material = "content/materials/green"
+			}
+			Name = "test_cone_green"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.301880836486816
+				Y = 0.65526008605957
+				Z = 0.037510871887207
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 0.150000005960464
+				Y = 0.150000005960464
+				Z = 0.150000005960464
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cone_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ba7d54cf-50b6-47a7-951b-7b82783501a9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "robot2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.017325147986412
+				Y = -3.75133180618286
+				Z = 0.0250000953674316
+			}
+			Rot = {
+				W = -0.999758183956146
+				X = 0
+				Y = 0
+				Z = 0.0219923630356789
+			}
+			Scl = {
+				X = 0.949999868869781
+				Y = 0.949999868869781
+				Z = 0.949999988079071
+			}
+			ScriptData = {
+			}
+			Type = "content/models/robot/char_robot_3p"
+		}
+	]
+	Volumes = [
+	]
+}
+entities = [
+	{
+		id = "b5891f54-e2c3-41a3-aa87-06bc18cf5245"
+		inherit = {
+			"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
+			"$resource_type" = "entity"
+		}
+		modified_components = {
+			"06c78e06-c921-4208-8069-d377b6415d30" = {
+				fog_enabled = false
+				fog_sun_blend = 0.9
+			}
+			"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
+				baked_diffuse_tint = {
+					intensity = 1
+					rgb = [1 1 1]
+				}
+				global_diffuse_map = {
+					"$resource_name" = "content/levels/vr_learning-cubemaps/reflection_probe_diffuse_bake"
+					"$resource_type" = "texture"
+				}
+				global_radiance_map = {
+					"$resource_name" = "content/levels/vr_learning-cubemaps/reflection_probe_radiance_bake"
+					"$resource_type" = "texture"
+				}
+				global_specular_map = {
+					"$resource_name" = "content/levels/vr_learning-cubemaps/reflection_probe_specular_bake"
+					"$resource_type" = "texture"
+				}
+				material_ao_baked_diffuse_intensity = 0.5
+				material_ao_reflection_occlusion_falloff = 1
+				material_ao_reflection_occlusion_intensity = 1
+				reflections_tint = {
+					intensity = 1
+				}
+				skydome_intensity = 3
+				skydome_map = {
+					"$resource_name" = "content/models/skydome/white"
+					"$resource_type" = "texture"
+				}
+			}
+			"597d400f-c916-454b-9912-b9bb35e6e689" = {
+				shadow_log_linear_blend = 0.25
+				shadow_max_distance = 75
+			}
+			"68333c83-9659-4d2e-b664-35790e366f08" = {
+				exposure = 1
+			}
+			"6d36e8c5-dac7-4e28-b873-c4555b95e2bf" = {
+				lens_quality_enabled = false
+			}
+			"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
+				dof_enabled = false
+			}
+			"8386face-d486-49d6-9b8b-6d8cba24d4f7" = {
+				ssr_enabled = false
+				ssr_screen_edge_threshold = 0.05
+				ssr_surface_thickness_threshold = [0.001 10]
+			}
+			"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+				ao_blur = 0.6
+				ao_enabled = false
+				ao_half_res = false
+				ao_quality = 2
+				ao_use_world_radius = false
+			}
+			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+				motion_blur_enabled = false
+			}
+			"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+				vignette_enabled = false
+			}
+			"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+				bloom_enabled = true
+				bloom_lens_dirt_amount = 0
+				bloom_threshold = 2.5
+				bloom_tint = {
+					intensity = 1
+				}
+			}
+		}
+		name = "Default Shading Environment"
+	}
+]
+entity_version = "0.2.0"
+flow = {
+	nodes = [
+		{
+			id = "f0d83f9f-dee3-4bc7-8aa4-23fdcc198eda"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "23976373-1f7d-44b5-be98-9326fbb424b0:0"
+						node = "23976373-1f7d-44b5-be98-9326fbb424b0"
+					}
+				]
+			}
+			type = "level_update"
+		}
+		{
+			flow_nodes_resource = "core/wwise/wwise"
+			id = "23976373-1f7d-44b5-be98-9326fbb424b0"
+			in_variables = {
+				Listener = {
+					type = "string"
+				}
+				Position = {
+					node = "60cb1014-476c-48b7-8597-1bfb276d8dcf"
+					type = "vector3"
+					variable = "headPosition"
+				}
+				Rotation = {
+					node = "60cb1014-476c-48b7-8597-1bfb276d8dcf"
+					type = "quaternion"
+					variable = "headRotation"
+				}
+			}
+			name = "Wwise Set Listener Pose"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Listener = "Listener0"
+				Position = null
+				Rotation = null
+			}
+			variables = [
+				{
+					name = "Listener"
+					type = "string"
+				}
+				{
+					name = "Position"
+					type = "vector3"
+				}
+				{
+					name = "Rotation"
+					type = "quaternion"
+				}
+			]
+		}
+		{
+			flow_nodes_resource = "vr_steam/script/steam_vr"
+			id = "60cb1014-476c-48b7-8597-1bfb276d8dcf"
+			in_variables = {
+				space = {
+					type = "string"
+				}
+			}
+			name = "SteamVR HMD Pose"
+			out_variables = {
+				headPosition = {
+					type = "vector3"
+				}
+				headRotation = {
+					type = "quaternion"
+				}
+			}
+			query = true
+			return_values = [
+				{
+					name = "headPosition"
+					type = "vector3"
+				}
+				{
+					name = "headRotation"
+					type = "quaternion"
+				}
+				{
+					name = "leftEyePosition"
+					type = "vector3"
+				}
+				{
+					name = "leftEyeRotation"
+					type = "quaternion"
+				}
+				{
+					name = "rightEyePosition"
+					type = "vector3"
+				}
+				{
+					name = "rightEyeRotation"
+					type = "quaternion"
+				}
+			]
+			type = "custom_script_node"
+			variable_values = {
+				headPosition = null
+				headRotation = null
+				leftEyePosition = null
+				leftEyeRotation = null
+				rightEyePosition = null
+				rightEyeRotation = null
+				space = "World"
+			}
+			variables = [
+				{
+					name = "space"
+					type = "string"
+				}
+			]
+		}
+		{
+			id = "db3bc2d9-6c7f-4614-9d22-2133872fd41c"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+			]
+			out_event_index = [
+				"reset"
+			]
+			out_events = {
+				reset = [
+					{
+						event = 2
+						id = "e04eefe8-2609-4871-9db9-cbadf725232a:2"
+						node = "e04eefe8-2609-4871-9db9-cbadf725232a"
+					}
+					{
+						event = 2
+						id = "0b5a41ad-d7ab-4701-9ff8-58a11c0f0aa2:2"
+						node = "0b5a41ad-d7ab-4701-9ff8-58a11c0f0aa2"
+					}
+					{
+						event = 2
+						id = "ae611efd-0895-4185-8c0b-9b7d83970780:2"
+						node = "ae611efd-0895-4185-8c0b-9b7d83970780"
+					}
+					{
+						event = 2
+						id = "42a0dad6-80f6-4708-b218-48ce65be2290:2"
+						node = "42a0dad6-80f6-4708-b218-48ce65be2290"
+					}
+				]
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "de37cc94-389a-4dce-a3dc-41af8cd1aaf8"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "e04eefe8-2609-4871-9db9-cbadf725232a"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "9bbdd544-1dd1-491b-9d54-fb761844a9a9"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "0b5a41ad-d7ab-4701-9ff8-58a11c0f0aa2"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "ad4af651-58c3-475e-9398-e83344c58f95"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "ae611efd-0895-4185-8c0b-9b7d83970780"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "d75bae14-4ad3-44f8-8b75-bd2733d7f1a1"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "42a0dad6-80f6-4708-b218-48ce65be2290"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "585f6f1e-28db-405b-9433-3c6139075315"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "26de0036-851e-4184-a9c7-966fe70bce14"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+			]
+			out_event_index = [
+				"reset"
+			]
+			out_events = {
+				reset = [
+					{
+						event = 3
+						id = "ca69577d-a5c3-4554-88c5-f9ac3f84197d:3"
+						node = "ca69577d-a5c3-4554-88c5-f9ac3f84197d"
+					}
+				]
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "b9989d6d-51d4-4698-9855-ce7f8c51d808"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "ca69577d-a5c3-4554-88c5-f9ac3f84197d"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"Linked"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "170c2f67-1f30-45ab-9902-d3f8e1eef9dc"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "f3497fea-0913-4d44-ba5b-a45e10abbc51"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+			]
+			out_event_index = [
+				"reset"
+			]
+			out_events = {
+				reset = [
+					{
+						event = 3
+						id = "60d4f44c-809b-41b5-bdcb-bca08123cef5:3"
+						node = "60d4f44c-809b-41b5-bdcb-bca08123cef5"
+					}
+					{
+						event = 3
+						id = "a3641b2e-b16a-4d87-8506-40b67c254ae0:3"
+						node = "a3641b2e-b16a-4d87-8506-40b67c254ae0"
+					}
+					{
+						event = 3
+						id = "81556461-cc20-47dc-9feb-02866c25e4a3:3"
+						node = "81556461-cc20-47dc-9feb-02866c25e4a3"
+					}
+					{
+						event = 3
+						id = "65661ecc-7da0-4bcf-80e9-e6d7dcb31d06:3"
+						node = "65661ecc-7da0-4bcf-80e9-e6d7dcb31d06"
+					}
+					{
+						event = 3
+						id = "1ff7e6b3-126f-4baf-ad06-573d36d10347:3"
+						node = "1ff7e6b3-126f-4baf-ad06-573d36d10347"
+					}
+					{
+						event = 3
+						id = "8a1c03be-a3d9-49cb-a1a8-23446444fa64:3"
+						node = "8a1c03be-a3d9-49cb-a1a8-23446444fa64"
+					}
+					{
+						event = 3
+						id = "b48c2720-96c6-48d0-a7fc-db1627ae67eb:3"
+						node = "b48c2720-96c6-48d0-a7fc-db1627ae67eb"
+					}
+				]
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "db2ba26a-5f6e-4c37-b117-d8164c584171"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "65661ecc-7da0-4bcf-80e9-e6d7dcb31d06"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"pickup_sound"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "f7d1780b-8635-4e0d-b5eb-6bdb74f49b05"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "81556461-cc20-47dc-9feb-02866c25e4a3"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"pickup_sound"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "aff8a153-1573-4298-9147-01f5f3e2fe9d"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "a3641b2e-b16a-4d87-8506-40b67c254ae0"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"pickup_sound"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "772ea3ba-067d-4b37-8f1c-e4377889e6f9"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "60d4f44c-809b-41b5-bdcb-bca08123cef5"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"pickup_sound"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "4efaa04b-7280-4e74-87d9-2c2621cac3d1"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "1ff7e6b3-126f-4baf-ad06-573d36d10347"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"pickup_sound"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "a0ad922e-6110-49ca-a3ca-482ebddd3ea1"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "8a1c03be-a3d9-49cb-a1a8-23446444fa64"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"pickup_sound"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "65b05cd5-75ce-46ca-a375-185a238220d0"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "b48c2720-96c6-48d0-a7fc-db1627ae67eb"
+			in_event_index = [
+				"highlight_off"
+				"highlight_on"
+				"pickup_sound"
+				"reset"
+			]
+			out_event_index = [
+			]
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "49944df3-2bb5-4f65-90af-1139628db72e"
+				}
+				unit = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/wwise/wwise"
+			id = "231f7e11-7abe-44a9-8b31-cc9644dbc29e"
+			in_variables = {
+				Existing_Source_Id = {
+					type = "float"
+				}
+				Name = {
+					type = "string"
+				}
+				Position = {
+					type = "vector3"
+				}
+				Unit = {
+					type = "unit"
+				}
+				Unit_Node = {
+					type = "string"
+				}
+			}
+			name = "Wwise Trigger Event"
+			query = false
+			return_values = [
+				{
+					name = "Playing_Id"
+					type = "float"
+				}
+				{
+					name = "Source_Id"
+					type = "float"
+				}
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Existing_Source_Id = null
+				Name = "sfx_amb_vr_museum"
+				Playing_Id = null
+				Position = null
+				Source_Id = null
+				Unit = null
+				Unit_Node = null
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+				{
+					name = "Unit"
+					type = "unit"
+				}
+				{
+					name = "Unit_Node"
+					type = "string"
+				}
+				{
+					name = "Position"
+					type = "vector3"
+				}
+				{
+					name = "Existing_Source_Id"
+					type = "float"
+				}
+			]
+		}
+		{
+			id = "a4226f31-80d6-4637-8e8f-00f857a5b84d"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "231f7e11-7abe-44a9-8b31-cc9644dbc29e:0"
+						node = "231f7e11-7abe-44a9-8b31-cc9644dbc29e"
+					}
+				]
+			}
+			type = "level_loaded"
+		}
+		{
+			flow_nodes_resource = "core/humanik/humanik"
+			id = "01da4ffd-d13a-4a29-b8a8-fcd1ec47ad7f"
+			name = "HumanIK Switch On"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variables = [
+			]
+		}
+		{
+			id = "cc775507-9119-4605-a2a4-e52d779ecc6b"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "01da4ffd-d13a-4a29-b8a8-fcd1ec47ad7f:0"
+						node = "01da4ffd-d13a-4a29-b8a8-fcd1ec47ad7f"
+					}
+				]
+			}
+			type = "level_loaded"
+		}
+	]
+}
+level_references = [
+]
+level_settings = {
+	num_background_units = 0
+	sound_environment = ""
+	timpani_sound_environment = "default"
+}
+navmeshes = [
+]
+object_sets = {
+}
+particle_effects = [
+]
+prototypes = [
+]
+scatter = [
+]
+sounds = [
+]
+splines = [
+]
+stories = [
+]
+triggers = [
+]
+units = [
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9a101476-3f37-4f0d-a1bd-1618673d2c1e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Skydome"
+		pos = [0 0 0]
+		rot = [0 0 0 1]
+		scl = [1 1 1]
+		type = "core/editor_slave/units/skydome/skydome"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.probe.indirect_intensity" = 1
+			"probe.trace_box_max[0]" = 6.1
+			"probe.trace_box_max[1]" = 4
+			"probe.trace_box_max[2]" = 2.35
+			"probe.trace_box_min[0]" = -6.1
+			"probe.trace_box_min[1]" = -4
+			"probe.trace_box_min[2]" = -2.75
+		}
+		id = "e27d5195-3f25-4329-88fb-161fe7ac3ff0"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [8 4 6]
+				box_min = [-8 -4 -6]
+				cast_shadows = false
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/vr_learning-cubemaps/reflection_probe_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe"
+		pos = [0 -1.79209 2.7437]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "65b05cd5-75ce-46ca-a375-185a238220d0"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "teapot"
+		pos = [-0.886412 -5.29173 0.774957]
+		rot = [0 0 0.999971 -0.00756]
+		scl = [1 1 1]
+		type = "content/models/props/teapot"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "4efaa04b-7280-4e74-87d9-2c2621cac3d1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "block"
+		pos = [-1.07202 -5.12403 0.77]
+		rot = [0 0 0.999971 -0.00756]
+		scl = [1 1 1]
+		type = "content/models/props/block"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "772ea3ba-067d-4b37-8f1c-e4377889e6f9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "block1"
+		pos = [-1.22262 -5.12548 0.77]
+		rot = [0 0 0.999971 -0.00756]
+		scl = [1 1 1]
+		type = "content/models/props/block"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "aff8a153-1573-4298-9147-01f5f3e2fe9d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "block2"
+		pos = [-1.38 -5.12282 0.77]
+		rot = [0 0 0.999971 -0.00756]
+		scl = [1 1 1]
+		type = "content/models/props/block"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "f7d1780b-8635-4e0d-b5eb-6bdb74f49b05"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "block3"
+		pos = [-1.30734 -5.30912 0.77]
+		rot = [0 0 0.999971 -0.00756]
+		scl = [1 1 1]
+		type = "content/models/props/block"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "a0ad922e-6110-49ca-a3ca-482ebddd3ea1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "block4"
+		pos = [-1.14276 -5.30927 0.77]
+		rot = [0 0 0.999971 -0.00756]
+		scl = [1 1 1]
+		type = "content/models/props/block"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "49944df3-2bb5-4f65-90af-1139628db72e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "torus"
+		pos = [-1.54469 -5.2826 0.785488]
+		rot = [0 0 0.999971 -0.00756]
+		scl = [1 1 1]
+		type = "content/models/props/torus"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "170c2f67-1f30-45ab-9902-d3f8e1eef9dc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "BaseBall_Bat"
+		pos = [0.729451 -5.46707 0.808167]
+		rot = [0 0 0.510852 -0.859669]
+		scl = [1 1 1]
+		type = "content/models/props/BaseBall_Bat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "ad4af651-58c3-475e-9398-e83344c58f95"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "base_ball"
+		pos = [0.068294 -5.40225 0.804925]
+		rot = [0 0 1 0]
+		scl = [1 1 1]
+		type = "content/models/props/base_ball"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "d75bae14-4ad3-44f8-8b75-bd2733d7f1a1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "base_ball1"
+		pos = [-0.011965 -5.31867 0.804925]
+		rot = [0 0 1 0]
+		scl = [1 1 1]
+		type = "content/models/props/base_ball"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "585f6f1e-28db-405b-9433-3c6139075315"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "base_ball2"
+		pos = [-0.091517 -5.23913 0.804925]
+		rot = [0 0 1 0]
+		scl = [1 1 1]
+		type = "content/models/props/base_ball"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.light.indirect_intensity" = 1
+		}
+		id = "ce223f73-984d-4e27-ba41-a6400507ffeb"
+		lights = {
+			light = {
+				baked = false
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 0.929411764705882 0.890196078431373]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 5
+				material = ""
+				shadow_depth_bias = 0.5
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "directional"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source"
+		pos = [0.342487 -1.65883 3.26618]
+		rot = [0.722981 -0.37536 0.435739 -0.382799]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.trace_box_max[0]" = 6.1
+			"probe.trace_box_max[1]" = 4
+			"probe.trace_box_max[2]" = 2.4
+			"probe.trace_box_min[0]" = -6.1
+			"probe.trace_box_min[1]" = -4
+			"probe.trace_box_min[2]" = -2.68
+		}
+		id = "b50edef1-b3da-421f-bf36-79536bc1f6bf"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [8 7 6]
+				box_min = [-8 -6 -6]
+				cast_shadows = false
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/vr_learning-cubemaps/reflection_probe1_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe1"
+		pos = [0 -10.0586 2.68197]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.podium1.texel_scale" = 2
+		}
+		id = "72ec0166-7c12-4755-a76b-90df44cdc8ac"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "podium1"
+		pos = [1.10098 -5.31678 0]
+		rot = [0 0 1 0]
+		scl = [1 1 1]
+		type = "content/models/props/podium1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.podium1.texel_scale" = 2
+		}
+		id = "895eca84-3295-4e30-b99c-405bbc247e6f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "podium"
+		pos = [-0.060241 -5.31678 0]
+		rot = [0 0 1 0]
+		scl = [1 1 1]
+		type = "content/models/props/podium1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.podium1.texel_scale" = 2
+		}
+		id = "69028cda-4275-425f-aed2-65f801876d8a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "podium3"
+		pos = [-1.22331 -5.31954 0]
+		rot = [-0.000643 0.002004 -0.004313 -0.999988]
+		scl = [1 1 1]
+		type = "content/models/props/podium1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8b57c270-fb36-4595-8bf6-29864078c8a4"
+		lights = {
+			light = {
+				baked = true
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 6
+				falloff_start = 4
+				intensity = 2
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 0.698131700797732
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source22"
+		pos = [-3.99779 -9.27714 4.5332]
+		rot = [0.668831 0.235597 -0.375639 -0.596703]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f5deda4e-c913-4a69-9ae4-66fd1a9f21d8"
+		lights = {
+			light = {
+				baked = true
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 6
+				falloff_start = 4
+				intensity = 1.5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 0.698131700797732
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source23"
+		pos = [2.1664 -13.0995 4.71298]
+		rot = [0.6779 0.270891 -0.417457 -0.54111]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "07fe7249-01c3-4606-958c-988bdd7c328f"
+		lights = {
+			light = {
+				baked = true
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 6
+				falloff_start = 4
+				intensity = 1.5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 0.698131700797732
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source24"
+		pos = [1.15886 -13.0995 4.71298]
+		rot = [0.716656 0.301309 -0.314146 -0.544912]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6032d7fc-fb9c-489f-affc-43ab76eb1b60"
+		lights = {
+			light = {
+				baked = true
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 6
+				falloff_start = 4
+				intensity = 1.5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 0.698131700797732
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source25"
+		pos = [0.073998 -13.0995 4.71298]
+		rot = [0.6779 0.270891 -0.417457 -0.54111]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5c0e61ba-c40b-493a-907d-5b974cea5684"
+		lights = {
+			light = {
+				baked = true
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 6
+				falloff_start = 4
+				intensity = 1.5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 0.698131700797732
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source26"
+		pos = [-0.035811 -12.9154 4.63908]
+		rot = [0.52314 0.484585 -0.357808 -0.602889]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c96c8b40-6e00-4db1-af04-f6afaac5ac0d"
+		lights = {
+			light = {
+				baked = true
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 6
+				falloff_start = 4
+				intensity = 1.5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 0.698131700797732
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source27"
+		pos = [-1.30391 -13.1267 4.69576]
+		rot = [0.537394 0.489095 -0.534013 -0.432231]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "61a5903d-eddb-404d-bd31-0d1c96c652d2"
+		lights = {
+			light = {
+				baked = true
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 6
+				falloff_start = 4
+				intensity = 1.5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 0.698131700797732
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source28"
+		pos = [-2.31529 -13.1267 4.69576]
+		rot = [0.561916 0.339878 -0.523453 -0.542891]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5ac444cb-0001-4f19-9a94-2c6db556e41c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip2"
+		pos = [-0.059989 -4.64583 -0.001864]
+		rot = [0 0 0.707107 -0.707107]
+		scl = [1 1.68951 1]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "09e9dc5a-cc1a-469a-800a-260ecaff874f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "lightfixture_group2"
+		pos = [3.944 -3.59586 5.08]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/props/lightfixture_group2"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d24aa438-ca92-4a58-af0b-b6d9a28ce345"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "lightfixture_group1"
+		pos = [3.94416 0.480459 5.077]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/props/lightfixture_group1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8fe57db5-91b1-4304-9e13-c12f151f9815"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "lightfixture_group"
+		pos = [-0.135026 -5.02779 5.077]
+		rot = [0 0 -0.707107 -0.707107]
+		scl = [1 1 1]
+		type = "content/models/props/lightfixture_group1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c2ef0125-c512-4369-a51c-42330155884d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "lightfixture_group3"
+		pos = [-3.95553 -0.862001 5.077]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/props/lightfixture_group1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a558a96d-6902-4946-a6ea-ca372312cb36"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "lightfixture_group4"
+		pos = [-3.92883 -2.63913 5.077]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/props/lightfixture_group2"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "411c1835-cc50-408f-bf76-d6de8fddc583"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "lightfixture_group6"
+		pos = [-3.94985 -10.2955 5.077]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/props/lightfixture_group2"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d711fbf0-f7f6-4f8e-9eba-511058d11ff3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "lightfixture_group7"
+		pos = [-0.134893 -6.58395 5.08]
+		rot = [0 0 -0.707107 -0.707107]
+		scl = [1 1 1]
+		type = "content/models/props/lightfixture_group1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7e85e837-c30a-4e1c-a58d-320d3b26d281"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "lightfixture_group9"
+		pos = [-0.167724 -13.0322 5.077]
+		rot = [0 0 -0.707107 -0.707107]
+		scl = [1 1 1]
+		type = "content/models/props/lightfixture_group1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1fbc2497-e859-4ba6-bbc4-6c705d8b1c91"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "lightfixture_group10"
+		pos = [4.85656 -12.1414 5.077]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/props/lightfixture_group2"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "de37cc94-389a-4dce-a3dc-41af8cd1aaf8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "reset_baseballs"
+		pos = [-0.444947 -4.99396 0.762]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/props/reset"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "db2ba26a-5f6e-4c37-b117-d8164c584171"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "reset_objects"
+		pos = [-1.59271 -4.99396 0.762]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/props/reset"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b9989d6d-51d4-4698-9855-ce7f8c51d808"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "reset_bat"
+		pos = [0.733108 -4.99396 0.762]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/props/reset"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+		}
+		id = "9bbdd544-1dd1-491b-9d54-fb761844a9a9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "base_ball3"
+		pos = [-0.174559 -5.16076 0.804925]
+		rot = [0 0 1 0]
+		scl = [1 1 1]
+		type = "content/models/props/base_ball"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2d473b3e-c0a2-4238-8184-a0fede1b40d6"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip14"
+		pos = [-4.27709 -5.91498 5.08018]
+		rot = [-0.707107 0.707107 0 0]
+		scl = [1 1.9 2]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e4a8be1f-4c2b-4d8a-a1d2-51b1c0bbbd3f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip15"
+		pos = [4.27243 -5.91498 5.08018]
+		rot = [-0.707107 0.707107 0 0]
+		scl = [1 1.9 2]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3007b62c-0c7f-4428-af9f-175f5c8e1f73"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip16"
+		pos = [6.09593 -5.91498 2.56629]
+		rot = [0.5 0.5 -0.5 -0.5]
+		scl = [1 2.6 2]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "016a81d4-acb1-46b1-a917-7ea96dfdc8b3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip10"
+		pos = [-0.099055 -5.02777 5.08012]
+		rot = [-0.707107 0.707107 0 0]
+		scl = [1 2.52189 1]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0db16c54-518f-4eb9-b498-073e7a2851e4"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip11"
+		pos = [-0.099055 -13.0327 5.08012]
+		rot = [-0.707107 0.707107 0 0]
+		scl = [1 2.52189 1]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "116f3370-e26b-4ba2-9cfd-e8d581865645"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip12"
+		pos = [-0.099055 -6.58527 5.08012]
+		rot = [-0.707107 0.707107 0 0]
+		scl = [1 2.52189 1]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "03b4f5e0-7e4b-4362-a8e8-0885bed978f6"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip22"
+		pos = [3.94297 0.350328 5.08012]
+		rot = [1 0 0 0]
+		scl = [1 1.5 1]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "835e586e-65b2-4ca8-b434-11039990cc77"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip23"
+		pos = [3.94297 -3.60073 5.08012]
+		rot = [1 0 0 0]
+		scl = [1 1.5 1]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1efaf4c1-06ca-44f8-8c07-34a429d23660"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip24"
+		pos = [-3.94514 -0.27892 5.08012]
+		rot = [1 0 0 0]
+		scl = [1 1.5 1]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "80d7d7b4-9788-4d13-9e2e-9f01e58aff77"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip25"
+		pos = [-3.94514 -3.24399 5.08012]
+		rot = [1 0 0 0]
+		scl = [1 1.5 1]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6570969e-983f-487e-8171-3b77e5eb1a3d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip26"
+		pos = [-3.94514 -10.333 5.08012]
+		rot = [1 0 0 0]
+		scl = [1 1.5 1]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "59d3baa1-c4cb-46e3-8f13-ba4d5d9d405d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip27"
+		pos = [4.85014 -12.2097 5.08012]
+		rot = [1 0 0 0]
+		scl = [1 1.5 1]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.trace_box_max[0]" = 4.05
+			"probe.trace_box_max[1]" = 1
+			"probe.trace_box_max[2]" = 0.75
+			"probe.trace_box_min[0]" = -4.05
+			"probe.trace_box_min[1]" = -1
+			"probe.trace_box_min[2]" = -0.75
+		}
+		id = "5c06d1dc-1c90-4261-9b7d-f254ac017113"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [4.05 2 1]
+				box_min = [-4.05 -1 -3]
+				cast_shadows = false
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/vr_learning-cubemaps/reflection_probe3_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe3"
+		pos = [0 -10.9959 0.761799]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3f1a71b8-9d41-4f10-b86c-d1fcaafd2cb7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip"
+		pos = [-6.09626 -5.91498 2.56629]
+		rot = [0.5 -0.5 0.5 -0.5]
+		scl = [1 2.6 2]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3160a1d0-a596-4f49-b5e0-3e10834c3538"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip1"
+		pos = [-6.09626 -10 2.56629]
+		rot = [0.5 -0.5 0.5 -0.5]
+		scl = [1 2.6 2]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a9be1f3e-cd38-4ecc-8f9e-a871fdfaa034"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground_strip3"
+		pos = [6.09593 -10 2.56629]
+		rot = [0.5 0.5 -0.5 -0.5]
+		scl = [1 2.6 2]
+		type = "content/models/props/ground_strip1"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1c3706f7-0b19-4ff3-a401-4e6f5ede998f"
+		lights = {
+			light = {
+				baked = true
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 20
+				falloff_start = 0
+				intensity = 5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.39626340159546
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source8"
+		pos = [-0.261745 -5.15764 4.58396]
+		rot = [0.874026 -0.039402 -0.044417 -0.482237]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fdd0a49a-96f2-4c48-bfe8-5dedec7717c5"
+		lights = {
+			light = {
+				baked = true
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 20
+				falloff_start = 0
+				intensity = 5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.39626340159546
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source9"
+		pos = [-1.25703 -5.11763 4.67604]
+		rot = [0.849207 -0.066853 -0.047924 -0.521614]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6a0be8ce-9bb5-4149-a955-52ef840e5147"
+		lights = {
+			light = {
+				baked = true
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 20
+				falloff_start = 0
+				intensity = 5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.39626340159546
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source7"
+		pos = [0.964005 -5.19209 4.6173]
+		rot = [0.883087 0.064296 0.055425 -0.461467]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4f29585e-ab07-4baa-850c-6880be5835a5"
+		lights = {
+		}
+		material = ""
+		materials = {
+			walls2 = "content/models/props/walls"
+		}
+		name = "vr_template_room2"
+		pos = [0 -6.1653 0]
+		rot = [0 0 1 0]
+		scl = [1 1 1]
+		type = "content/models/room/vr_template_room2"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1b46be9b-f1d7-4cfe-bd93-97eaea4a6dcc"
+		lights = {
+			light = {
+				baked = false
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0.2
+				intensity = 3
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.22173047639603
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source1"
+		pos = [-0.8 -2.81277 4.70658]
+		rot = [0.829032 0 0 -0.559201]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e2a40c13-50f2-40fb-aea6-f1377095154c"
+		lights = {
+			light = {
+				baked = false
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = true
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0.2
+				intensity = 3
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.22173047639603
+				spot_angle_start = 0
+				type = "spot"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source2"
+		pos = [0.619507 -2.84489 4.70714]
+		rot = [0.829032 0 0 -0.559201]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "11654d67-3bf5-4eb9-b9c8-4f61e2170e46"
+		lights = {
+			light = {
+				baked = false
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = false
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 25
+				falloff_start = 2.5
+				intensity = 0.5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 0.785398163397448
+				spot_angle_start = 0
+				type = "omni"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "amb_light_source_01"
+		pos = [3 -1.5 2.5]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3ea89697-1a89-4a1b-ab80-8c51c6c24a98"
+		lights = {
+			light = {
+				baked = false
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = false
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 25
+				falloff_start = 2.5
+				intensity = 0.5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 0.785398163397448
+				spot_angle_start = 0
+				type = "omni"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "amb_light_source_02"
+		pos = [-3 -1.5 2.5]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "72516d8e-74f8-4835-a4d9-4f432f3deec2"
+		lights = {
+			light = {
+				baked = false
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = false
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 25
+				falloff_start = 2.5
+				intensity = 0.5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 0.785398163397448
+				spot_angle_start = 0
+				type = "omni"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "amb_light_source_03"
+		pos = [-3 -10 3]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "438897c1-2e4f-4343-9237-df806f0d5813"
+		lights = {
+			light = {
+				baked = false
+				box_max = [10 10 10]
+				box_min = [-10 0 -10]
+				cast_shadows = false
+				color = [1 1 1]
+				enabled = true
+				falloff_end = 25
+				falloff_start = 2.5
+				intensity = 0.5
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 0.785398163397448
+				spot_angle_start = 0
+				type = "omni"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "amb_light_source_04"
+		pos = [3 -10 3]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6257de8b-a4ec-4f42-b31a-880429a42891"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "player_start"
+		pos = [-5.30182604755945E-17 -1.01593315601349 0]
+		rot = [0 0 1 6.12303176911189E-17]
+		scl = [1 1 1]
+		type = "tools/player_start"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4b34e1bc-ed50-4f7d-8317-1debacd3e27a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "stand_anim"
+		pos = [-0.533401072025299 2.2187340259552 2.8435652256012]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/stand_anim"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "73cf178d-fc62-4ad6-b74c-58b3a6002887"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "stage"
+		pos = [0.00259131193161011 -3.69465351104736 -0.0862236246466637]
+		rot = [0 0 0 1]
+		scl = [1.45389068126678 1.15428709983826 0.11119120568037]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fea72bce-eef5-4814-8c5b-9d23528ac1a3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "stand_anim1"
+		pos = [3.04862022399902 -3.50460839271545 0]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/stand_anim"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0b895861-b0a8-4cec-8aed-7dda6470f4e9"
+		lights = {
+		}
+		material = ""
+		materials = {
+			material = "content/materials/red"
+		}
+		name = "test_sphere_red"
+		pos = [0.151113748550415 0.654217481613159 1.73054873943329]
+		rot = [0 0 0 -1]
+		scl = [0.100000001490116 0.100000001490116 0.100000001490116]
+		type = "core/units/primitives/sphere_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "86c2b6ef-3dcd-4e13-b394-5981625906d9"
+		lights = {
+		}
+		material = ""
+		materials = {
+			material = "content/materials/blue"
+		}
+		name = "test_cube_blue"
+		pos = [0.623072504997253 0.682063341140747 1.12922263145447]
+		rot = [0 0 0 -1]
+		scl = [0.100000001490116 0.100000001490116 0.100000001490116]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "461e5134-ddee-4d37-8deb-929072202880"
+		lights = {
+		}
+		material = ""
+		materials = {
+			material = "content/materials/green"
+		}
+		name = "test_cube_green"
+		pos = [-0.330127954483032 0.667736291885376 1.11795544624329]
+		rot = [0 0 0 -1]
+		scl = [0.100000001490116 0.100000001490116 0.100000001490116]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "bac65a8c-e618-4c8f-81b2-cd4c6af02ce0"
+		lights = {
+		}
+		material = ""
+		materials = {
+			material = "content/materials/yellow"
+		}
+		name = "test_cone"
+		pos = [0.133577823638916 -2.74954271316528 0.885343074798584]
+		rot = [0 0 0 1]
+		scl = [0.100000001490116 0.100000001490116 0.100000001490116]
+		type = "core/units/primitives/cone_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "22caac79-af9e-47eb-b7de-668a1a563684"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "stage1"
+		pos = [1.80052638053894 -3.15502738952637 -0.0862236246466637]
+		rot = [0 0 -0.277988940477371 -0.960584282875061]
+		scl = [1.45389068126678 1.15428709983826 0.11119120568037]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "cfd58f00-b4c6-468f-9bc1-5d37a2577752"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "stage2"
+		pos = [-1.90439903736115 -3.0148913860321 -0.0862236246466637]
+		rot = [0 0 0.324093163013458 -0.946025192737579]
+		scl = [1.45389068126678 1.15428709983826 0.11119120568037]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "bccdc117-d944-4f95-9fc4-05634b84bbfc"
+		lights = {
+		}
+		material = ""
+		materials = {
+			material = "content/materials/blue"
+		}
+		name = "test_cone_blue"
+		pos = [0.435541987419128 0.775586843490601 0.0704922676086426]
+		rot = [0 0 0 -1]
+		scl = [0.150000005960464 0.150000005960464 0.150000005960464]
+		type = "core/units/primitives/cone_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "80b8253b-21c3-4f39-b60a-e1e9f84b3281"
+		lights = {
+		}
+		material = ""
+		materials = {
+			material = "content/materials/green"
+		}
+		name = "test_cone_green"
+		pos = [-0.301880836486816 0.65526008605957 0.037510871887207]
+		rot = [0 0 0 -1]
+		scl = [0.150000005960464 0.150000005960464 0.150000005960464]
+		type = "core/units/primitives/cone_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ba7d54cf-50b6-47a7-951b-7b82783501a9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "robot2"
+		pos = [0.017325147986412 -3.75133180618286 0.0250000953674316]
+		rot = [0 0 0.0219923630356789 -0.999758183956146]
+		scl = [0.949999868869781 0.949999868869781 0.949999988079071]
+		type = "content/models/robot/char_robot_3p"
+	}
+]
+volumes = [
+]

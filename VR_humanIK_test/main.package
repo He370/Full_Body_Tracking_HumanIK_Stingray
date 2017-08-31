@@ -1,0 +1,7 @@
+level = [
+	"content/levels/*"
+]
+s2d = [
+	"content/ui/simple_menu"
+	"content/ui/template_hud"
+]

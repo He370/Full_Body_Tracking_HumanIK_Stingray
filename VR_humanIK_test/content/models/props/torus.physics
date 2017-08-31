@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "torus"
+		node = "StingrayEntityRoot"
+		shapes = [
+			{
+				material = "default"
+				shape = "torus"
+				template = "default"
+				type = "convex_computed"
+			}
+		]
+		template = "dynamic"
+	}
+]

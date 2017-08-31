@@ -1,0 +1,42 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	ao_map = "vr_steam/models/controller/textures/onepointfive_occ_bake"
+	color_map = "vr_steam/models/controller/textures/onepointfive_texture"
+	emissive_map = "vr_steam/models/controller/textures/onepointfive_emissive"
+	roughness_map = "vr_steam/models/controller/textures/onepointfive_spec"
+}
+variables = {
+	base_color = {
+		type = "vector3"
+		value = [
+			1
+			1
+			1
+		]
+	}
+	emissive = {
+		type = "vector3"
+		value = [
+			0
+			0
+			0
+		]
+	}
+	emissive_intensity = {
+		type = "scalar"
+		value = 0
+	}
+	roughness = {
+		type = "scalar"
+		value = 0.9794
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_roughness_map = {
+		type = "scalar"
+		value = 1
+	}
+}

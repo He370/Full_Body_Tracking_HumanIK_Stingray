@@ -1,0 +1,474 @@
+
+nodes = [
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "6b27dbcc-007c-4c6b-9474-719b08925d44"
+		in_variables = {
+			Alpha = {
+				type = "float"
+			}
+			Color = {
+				type = "vector3"
+			}
+			Enable = {
+				type = "bool"
+			}
+			Mask = {
+				type = "float"
+			}
+			MaterialSlot = {
+				type = "string"
+			}
+			Mesh = {
+				type = "string"
+			}
+			Unit = {
+				node = "e89142c5-c104-45de-9fcd-57ea2bfae475"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "SteamVR Set Unit Highlight"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "d42dc00e-0136-404d-8cca-0f92e866c787:0"
+					node = "d42dc00e-0136-404d-8cca-0f92e866c787"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Alpha = 1
+			Color = [
+				255
+				198
+				0
+			]
+			Enable = false
+			Mask = null
+			MaterialSlot = "white"
+			Mesh = "reset"
+			Unit = null
+		}
+		variables = [
+			{
+				name = "Alpha"
+				type = "float"
+			}
+			{
+				name = "Unit"
+				type = "unit"
+			}
+			{
+				name = "Mesh"
+				type = "string"
+			}
+			{
+				name = "Enable"
+				type = "bool"
+			}
+			{
+				name = "Color"
+				type = "vector3"
+			}
+			{
+				name = "MaterialSlot"
+				type = "string"
+			}
+			{
+				name = "Mask"
+				type = "float"
+			}
+		]
+	}
+	{
+		id = "1eb96940-47c7-4633-9237-5bbcf231db77"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "6b27dbcc-007c-4c6b-9474-719b08925d44:0"
+					node = "6b27dbcc-007c-4c6b-9474-719b08925d44"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "highlight_off"
+		}
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "1ac19386-fbfe-4bda-8667-6f8dbe099bc1"
+		in_variables = {
+			Alpha = {
+				type = "float"
+			}
+			Color = {
+				type = "vector3"
+			}
+			Enable = {
+				type = "bool"
+			}
+			Mask = {
+				type = "float"
+			}
+			MaterialSlot = {
+				type = "string"
+			}
+			Mesh = {
+				type = "string"
+			}
+			Unit = {
+				node = "e89142c5-c104-45de-9fcd-57ea2bfae475"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "SteamVR Set Unit Highlight"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "d5f8c66a-a0bd-4d47-9bc5-15f194dafa8f:0"
+					node = "d5f8c66a-a0bd-4d47-9bc5-15f194dafa8f"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Alpha = 1
+			Color = [
+				255
+				198
+				0
+			]
+			Enable = true
+			Mask = null
+			MaterialSlot = "white"
+			Mesh = "reset"
+			Unit = null
+		}
+		variables = [
+			{
+				name = "Alpha"
+				type = "float"
+			}
+			{
+				name = "Unit"
+				type = "unit"
+			}
+			{
+				name = "Mesh"
+				type = "string"
+			}
+			{
+				name = "Enable"
+				type = "bool"
+			}
+			{
+				name = "Color"
+				type = "vector3"
+			}
+			{
+				name = "MaterialSlot"
+				type = "string"
+			}
+			{
+				name = "Mask"
+				type = "float"
+			}
+		]
+	}
+	{
+		id = "850e4644-f2e5-4a33-9261-c2269510ecb7"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "1ac19386-fbfe-4bda-8667-6f8dbe099bc1:0"
+					node = "1ac19386-fbfe-4bda-8667-6f8dbe099bc1"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "highlight_on"
+		}
+	}
+	{
+		id = "67e5e76b-68a3-4f94-8943-e11f6681b188"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			string = {
+				type = "string"
+			}
+		}
+		type = "get_string_variable"
+		variable_values = {
+			name = "controller_touch_index"
+			scope = "global"
+			string = null
+		}
+	}
+	{
+		id = "d42dc00e-0136-404d-8cca-0f92e866c787"
+		in_variables = {
+			bool = {
+				type = "bool"
+			}
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_bool_variable"
+		variable_values = {
+			bool = false
+			name = "can_reset"
+			scope = "local"
+		}
+	}
+	{
+		id = "d5f8c66a-a0bd-4d47-9bc5-15f194dafa8f"
+		in_variables = {
+			bool = {
+				type = "bool"
+			}
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_bool_variable"
+		variable_values = {
+			bool = true
+			name = "can_reset"
+			scope = "local"
+		}
+	}
+	{
+		id = "e89142c5-c104-45de-9fcd-57ea2bfae475"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "d42dc00e-0136-404d-8cca-0f92e866c787:0"
+					node = "d42dc00e-0136-404d-8cca-0f92e866c787"
+				}
+			]
+		}
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+	{
+		id = "322eaa7c-4fb4-4f47-9f78-67efa0ff32c3"
+		in_variables = {
+			condition = {
+				node = "e1844d79-d246-48a4-96b3-4aa5e7b8bfe4"
+				type = "bool"
+				variable = "bool"
+			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "c86f52e8-172b-40a4-b92b-194aef204fbd:0"
+					node = "c86f52e8-172b-40a4-b92b-194aef204fbd"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		id = "c9b62676-2619-459f-96fd-7356ac371b29"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "322eaa7c-4fb4-4f47-9f78-67efa0ff32c3:0"
+					node = "322eaa7c-4fb4-4f47-9f78-67efa0ff32c3"
+				}
+			]
+		}
+		type = "level_update"
+	}
+	{
+		id = "e1844d79-d246-48a4-96b3-4aa5e7b8bfe4"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			bool = {
+				type = "bool"
+			}
+		}
+		type = "get_bool_variable"
+		variable_values = {
+			bool = null
+			name = "can_reset"
+			scope = "local"
+		}
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "c86f52e8-172b-40a4-b92b-194aef204fbd"
+		in_variables = {
+			buttonName = {
+				type = "string"
+			}
+			controllerIndex = {
+				node = "67e5e76b-68a3-4f94-8943-e11f6681b188"
+				type = "string"
+				variable = "string"
+			}
+		}
+		name = "SteamVR Button"
+		out_events = {
+			pressed = [
+				{
+					event = 0
+					id = "797dcd5d-eb7a-4a98-b7cc-0c428e155181:0"
+					node = "797dcd5d-eb7a-4a98-b7cc-0c428e155181"
+				}
+				{
+					event = 0
+					id = "77bfb347-149a-4888-8fa5-079d32905f62:0"
+					node = "77bfb347-149a-4888-8fa5-079d32905f62"
+				}
+			]
+		}
+		query = false
+		return_values = [
+			{
+				name = "value"
+				type = "float"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			buttonName = "Trigger"
+			controllerIndex = null
+			value = null
+		}
+		variables = [
+			{
+				name = "controllerIndex"
+				type = "string"
+			}
+			{
+				name = "buttonName"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "797dcd5d-eb7a-4a98-b7cc-0c428e155181"
+		type = "level_flow_event"
+		variable_values = {
+			event = "reset"
+		}
+	}
+	{
+		flow_nodes_resource = "core/wwise/wwise"
+		id = "77bfb347-149a-4888-8fa5-079d32905f62"
+		in_variables = {
+			Existing_Source_Id = {
+				type = "float"
+			}
+			Name = {
+				type = "string"
+			}
+			Position = {
+				type = "vector3"
+			}
+			Unit = {
+				type = "unit"
+			}
+			Unit_Node = {
+				type = "string"
+			}
+		}
+		name = "Wwise Trigger Event"
+		query = false
+		return_values = [
+			{
+				name = "Playing_Id"
+				type = "float"
+			}
+			{
+				name = "Source_Id"
+				type = "float"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Existing_Source_Id = null
+			Name = "sfx_reset"
+			Playing_Id = null
+			Position = null
+			Source_Id = null
+			Unit = null
+			Unit_Node = null
+		}
+		variables = [
+			{
+				name = "Unit"
+				type = "unit"
+			}
+			{
+				name = "Position"
+				type = "vector3"
+			}
+			{
+				name = "Name"
+				type = "string"
+			}
+			{
+				name = "Existing_Source_Id"
+				type = "float"
+			}
+			{
+				name = "Unit_Node"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "11111111-2222-3333-4444-555555555555"
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+]

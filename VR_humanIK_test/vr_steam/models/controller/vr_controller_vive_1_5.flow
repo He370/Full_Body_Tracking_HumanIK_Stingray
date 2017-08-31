@@ -1,0 +1,1291 @@
+
+nodes = [
+	{
+		id = "0686cc8e-c080-4a79-b394-1e708f4a20f2"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "54530cbf-5bd1-4afa-8230-15fb37efe035"
+				type = "unit"
+				variable = "spawned_unit"
+			}
+			value = {
+				node = "a15af22b-f6d9-4dd4-b1c6-220aca9fd35c"
+				type = "string"
+				variable = "value"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "c996f5b1-d1ff-43dd-844c-9b829eeaf854:0"
+					node = "c996f5b1-d1ff-43dd-844c-9b829eeaf854"
+				}
+			]
+		}
+		type = "set_unit_string_data"
+		variable_values = {
+			key = "controller_index"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "16d192f1-c761-4f9e-a0d6-65ebc1777fed"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "get_unit_bool_data"
+		variable_values = {
+			key = "spawn_pickup_functionality"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "173ff704-d010-4d4f-b4a4-7f6c6b20ce11"
+		in_variables = {
+			a = {
+				node = "5c02fafb-8599-4d35-806a-02fb1171cb2e"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = -30
+			value = null
+		}
+	}
+	{
+		id = "25a93f73-41d1-4ee9-b13c-79e31136838e"
+		in_variables = {
+			x = {
+				node = "545315bf-1e7d-472e-80d1-ba41e1d92727"
+				type = "float"
+				variable = "value"
+			}
+			y = {
+				node = "8db12ff6-7880-4685-ab66-a65bf0358f75"
+				type = "float"
+				variable = "value"
+			}
+			z = {
+				node = "8fc3de3c-8696-4dd4-a334-9dbf9f37f180"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			vector = {
+				type = "vector3"
+			}
+		}
+		type = "vector_from_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
+		id = "267674ea-a8e5-4c9f-b718-60e7f0fcc4c2"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "776c111e-f2e4-425b-911f-0cb16922ef10"
+				type = "unit"
+				variable = "spawned_unit"
+			}
+			value = {
+				node = "26b3b266-6301-44da-b32a-9416e0e3448c"
+				type = "string"
+				variable = "value"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "82bb338d-fae4-4565-93c8-bcc63fe6091a:0"
+					node = "82bb338d-fae4-4565-93c8-bcc63fe6091a"
+				}
+			]
+		}
+		type = "set_unit_string_data"
+		variable_values = {
+			key = "controller_index"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "2683acc1-35fe-463e-a0b0-fd39e241db88"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "get_unit_bool_data"
+		variable_values = {
+			key = "spawn_teleport_functionality"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "26b3b266-6301-44da-b32a-9416e0e3448c"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "get_unit_string_data"
+		variable_values = {
+			key = "controller_index"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "2e817598-d8cd-473d-b1f3-22a4e07414e2"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "get_unit_string_data"
+		variable_values = {
+			key = "controller_index"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "3261d953-23a4-4c4a-829d-9328a94fd76e"
+		in_variables = {
+			condition = {
+				node = "16d192f1-c761-4f9e-a0d6-65ebc1777fed"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 1
+					id = "776c111e-f2e4-425b-911f-0cb16922ef10:1"
+					node = "776c111e-f2e4-425b-911f-0cb16922ef10"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "3958176f-bf27-4aa7-b5af-c21b4bb689d2"
+		in_variables = {
+			buttonName = {
+				type = "string"
+			}
+			controllerIndex = {
+				node = "bac75699-74d2-4262-b15e-c8531ac277b1"
+				type = "string"
+				variable = "value"
+			}
+		}
+		name = "SteamVR Touch"
+		out_events = {
+			touched = [
+				{
+					event = 0
+					id = "e168e304-7fc8-4957-a6a7-7cde5484364d:0"
+					node = "e168e304-7fc8-4957-a6a7-7cde5484364d"
+				}
+			]
+			untouched = [
+				{
+					event = 0
+					id = "f839806c-2634-4cd4-93d8-bc87bc825d4a:0"
+					node = "f839806c-2634-4cd4-93d8-bc87bc825d4a"
+				}
+			]
+		}
+		out_variables = {
+			x = {
+				type = "float"
+			}
+			y = {
+				type = "float"
+			}
+		}
+		query = false
+		return_values = [
+			{
+				name = "y"
+				type = "float"
+			}
+			{
+				name = "x"
+				type = "float"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			buttonName = "Touch"
+			controllerIndex = null
+			x = null
+			y = null
+		}
+		variables = [
+			{
+				name = "controllerIndex"
+				type = "string"
+			}
+			{
+				name = "buttonName"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "4e01fe06-b5d6-44ed-a76f-e9c36beb8960"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "3958176f-bf27-4aa7-b5af-c21b4bb689d2:0"
+					node = "3958176f-bf27-4aa7-b5af-c21b4bb689d2"
+				}
+			]
+		}
+		type = "level_update"
+	}
+	{
+		id = "54530cbf-5bd1-4afa-8230-15fb37efe035"
+		in_event_index = [
+			"press_teleport"
+			"release_teleport"
+		]
+		in_variables = {
+			position = {
+				type = "vector3"
+			}
+			rotation = {
+				type = "quaternion"
+			}
+			unit = {
+				type = "id"
+			}
+		}
+		out_event_index = [
+		]
+		out_events = {
+			spawned = [
+				{
+					event = 0
+					id = "0686cc8e-c080-4a79-b394-1e708f4a20f2:0"
+					node = "0686cc8e-c080-4a79-b394-1e708f4a20f2"
+				}
+			]
+		}
+		out_variables = {
+			spawned_unit = {
+				type = "unit"
+			}
+		}
+		type = "spawn_unit_position_rotation"
+		variable_values = {
+			position = null
+			rotation = null
+			spawned_unit = null
+			unit = "vr_steam/models/functionality_teleport/functionality_teleport"
+		}
+	}
+	{
+		id = "545315bf-1e7d-472e-80d1-ba41e1d92727"
+		in_variables = {
+			a = {
+				node = "3958176f-bf27-4aa7-b5af-c21b4bb689d2"
+				type = "float"
+				variable = "x"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = 0.0002
+			value = null
+		}
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "57f64af8-9574-43a1-a97c-97f7ff5fc300"
+		in_variables = {
+			link_to = {
+				node = "e1385a4e-112f-4ae2-8ef8-6c6f7d245fca"
+				type = "string"
+				variable = "value"
+			}
+			node_name = {
+				type = "string"
+			}
+			preserve_world_pose = {
+				type = "bool"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "SteamVR Link Node To Tracker"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "3261d953-23a4-4c4a-829d-9328a94fd76e:0"
+					node = "3261d953-23a4-4c4a-829d-9328a94fd76e"
+				}
+				{
+					event = 0
+					id = "920891df-9938-4ed1-83b3-b8c614fe904d:0"
+					node = "920891df-9938-4ed1-83b3-b8c614fe904d"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			link_to = null
+			node_name = "body"
+			preserve_world_pose = null
+			unit = null
+		}
+		variables = [
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "link_to"
+				type = "string"
+			}
+			{
+				name = "node_name"
+				type = "string"
+			}
+			{
+				name = "preserve_world_pose"
+				type = "bool"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "5c02fafb-8599-4d35-806a-02fb1171cb2e"
+		in_variables = {
+			buttonName = {
+				type = "string"
+			}
+			controllerIndex = {
+				node = "d5f7fbe9-2f43-4c64-b0a7-fdc67b702a8e"
+				type = "string"
+				variable = "value"
+			}
+		}
+		name = "SteamVR Button"
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		query = false
+		return_values = [
+			{
+				name = "value"
+				type = "float"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			buttonName = "Trigger"
+			controllerIndex = null
+			value = null
+		}
+		variables = [
+			{
+				name = "controllerIndex"
+				type = "string"
+			}
+			{
+				name = "buttonName"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "76d27bb3-5cac-4ae7-8877-dda2fd23951b"
+		in_variables = {
+			a = {
+				type = "string"
+			}
+			b = {
+				node = "26b3b266-6301-44da-b32a-9416e0e3448c"
+				type = "string"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "concatenate_strings"
+		variable_values = {
+			a = "Controller"
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "77237396-6519-47d0-b3e8-ce116006eecc"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			rotation = {
+				node = "8d792c0b-c789-41f3-9e09-e296771b85a1"
+				type = "quaternion"
+				variable = "rotation"
+			}
+			teleport = {
+				type = "bool"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "set_unit_local_rotation"
+		variable_values = {
+			object = "trigger"
+			rotation = null
+			teleport = false
+			unit = null
+		}
+	}
+	{
+		id = "776c111e-f2e4-425b-911f-0cb16922ef10"
+		in_event_index = [
+			"set_invisable"
+		]
+		in_variables = {
+			position = {
+				type = "vector3"
+			}
+			rotation = {
+				type = "quaternion"
+			}
+			unit = {
+				type = "id"
+			}
+		}
+		out_event_index = [
+		]
+		out_events = {
+			spawned = [
+				{
+					event = 0
+					id = "267674ea-a8e5-4c9f-b718-60e7f0fcc4c2:0"
+					node = "267674ea-a8e5-4c9f-b718-60e7f0fcc4c2"
+				}
+			]
+		}
+		out_variables = {
+			spawned_unit = {
+				type = "unit"
+			}
+		}
+		type = "spawn_unit_position_rotation"
+		variable_values = {
+			position = null
+			rotation = null
+			spawned_unit = null
+			unit = "vr_steam/models/functionality_pickup/functionality_pickup"
+		}
+	}
+	{
+		id = "7bd324ef-d179-4a4c-8e19-bc1ccd0c635a"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			position = {
+				node = "25a93f73-41d1-4ee9-b13c-79e31136838e"
+				type = "vector3"
+				variable = "vector"
+			}
+			teleport = {
+				type = "bool"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "set_unit_local_position"
+		variable_values = {
+			object = "trackpad_touch"
+			position = null
+			teleport = null
+			unit = null
+		}
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "82bb338d-fae4-4565-93c8-bcc63fe6091a"
+		in_variables = {
+			link_to = {
+				node = "76d27bb3-5cac-4ae7-8877-dda2fd23951b"
+				type = "string"
+				variable = "value"
+			}
+			node_name = {
+				type = "string"
+			}
+			preserve_world_pose = {
+				type = "bool"
+			}
+			unit = {
+				node = "776c111e-f2e4-425b-911f-0cb16922ef10"
+				type = "unit"
+				variable = "spawned_unit"
+			}
+		}
+		name = "SteamVR Link Node To Tracker"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			link_to = null
+			node_name = "pickup_trigger"
+			preserve_world_pose = null
+			unit = null
+		}
+		variables = [
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "link_to"
+				type = "string"
+			}
+			{
+				name = "node_name"
+				type = "string"
+			}
+			{
+				name = "preserve_world_pose"
+				type = "bool"
+			}
+		]
+	}
+	{
+		id = "8d792c0b-c789-41f3-9e09-e296771b85a1"
+		in_variables = {
+			x = {
+				node = "173ff704-d010-4d4f-b4a4-7f6c6b20ce11"
+				type = "float"
+				variable = "value"
+			}
+			y = {
+				type = "float"
+			}
+			z = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			rotation = {
+				type = "quaternion"
+			}
+		}
+		type = "rotation_from_components"
+		variable_values = {
+			rotation = null
+			x = null
+			y = 0
+			z = 0
+		}
+	}
+	{
+		id = "8db12ff6-7880-4685-ab66-a65bf0358f75"
+		in_variables = {
+			a = {
+				node = "8fc3de3c-8696-4dd4-a334-9dbf9f37f180"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = -0.12
+			value = null
+		}
+	}
+	{
+		id = "8fc3de3c-8696-4dd4-a334-9dbf9f37f180"
+		in_variables = {
+			a = {
+				node = "3958176f-bf27-4aa7-b5af-c21b4bb689d2"
+				type = "float"
+				variable = "y"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = -0.0002
+			value = null
+		}
+	}
+	{
+		id = "91208f43-d44e-486b-9051-7d1b5d539e9e"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "77237396-6519-47d0-b3e8-ce116006eecc:0"
+					node = "77237396-6519-47d0-b3e8-ce116006eecc"
+				}
+				{
+					event = 0
+					id = "5c02fafb-8599-4d35-806a-02fb1171cb2e:0"
+					node = "5c02fafb-8599-4d35-806a-02fb1171cb2e"
+				}
+			]
+		}
+		type = "level_update"
+	}
+	{
+		id = "920891df-9938-4ed1-83b3-b8c614fe904d"
+		in_variables = {
+			condition = {
+				node = "2683acc1-35fe-463e-a0b0-fd39e241db88"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 2
+					id = "54530cbf-5bd1-4afa-8230-15fb37efe035:2"
+					node = "54530cbf-5bd1-4afa-8230-15fb37efe035"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		id = "a15af22b-f6d9-4dd4-b1c6-220aca9fd35c"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "get_unit_string_data"
+		variable_values = {
+			key = "controller_index"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "bac75699-74d2-4262-b15e-c8531ac277b1"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "get_unit_string_data"
+		variable_values = {
+			key = "controller_index"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "c5f57082-5bf6-4c3b-b10c-196cf2db3ad6"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "57f64af8-9574-43a1-a97c-97f7ff5fc300:0"
+					node = "57f64af8-9574-43a1-a97c-97f7ff5fc300"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "link_controller"
+		}
+	}
+	{
+		id = "d199c3cd-a3b8-4f5a-a69a-c12bdac87941"
+		in_variables = {
+			a = {
+				type = "string"
+			}
+			b = {
+				node = "a15af22b-f6d9-4dd4-b1c6-220aca9fd35c"
+				type = "string"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "concatenate_strings"
+		variable_values = {
+			a = "Controller"
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "d5f7fbe9-2f43-4c64-b0a7-fdc67b702a8e"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "get_unit_string_data"
+		variable_values = {
+			key = "controller_index"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "e1385a4e-112f-4ae2-8ef8-6c6f7d245fca"
+		in_variables = {
+			a = {
+				type = "string"
+			}
+			b = {
+				node = "e1c92c36-c772-433c-b1b0-6ee6074073c5"
+				type = "string"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "concatenate_strings"
+		variable_values = {
+			a = "Controller"
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "e168e304-7fc8-4957-a6a7-7cde5484364d"
+		in_variables = {
+			group = {
+				type = "id"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+			visible = {
+				type = "bool"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "7bd324ef-d179-4a4c-8e19-bc1ccd0c635a:0"
+					node = "7bd324ef-d179-4a4c-8e19-bc1ccd0c635a"
+				}
+			]
+		}
+		type = "set_unit_visibility"
+		variable_values = {
+			group = "trackpad_touch"
+			unit = null
+			visible = true
+		}
+	}
+	{
+		id = "e1c92c36-c772-433c-b1b0-6ee6074073c5"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "get_unit_string_data"
+		variable_values = {
+			key = "controller_index"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "e25129b5-dc09-4c59-a8fa-cf3e23f76e4e"
+		in_variables = {
+			group = {
+				type = "id"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+			visible = {
+				type = "bool"
+			}
+		}
+		type = "set_unit_visibility"
+		variable_values = {
+			group = "trackpad_touch"
+			unit = null
+			visible = false
+		}
+	}
+	{
+		id = "f839806c-2634-4cd4-93d8-bc87bc825d4a"
+		in_variables = {
+			group = {
+				type = "id"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+			visible = {
+				type = "bool"
+			}
+		}
+		type = "set_unit_visibility"
+		variable_values = {
+			group = "trackpad_touch"
+			unit = null
+			visible = false
+		}
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "c996f5b1-d1ff-43dd-844c-9b829eeaf854"
+		in_variables = {
+			link_to = {
+				node = "d199c3cd-a3b8-4f5a-a69a-c12bdac87941"
+				type = "string"
+				variable = "value"
+			}
+			node_name = {
+				type = "string"
+			}
+			preserve_world_pose = {
+				type = "bool"
+			}
+			unit = {
+				node = "54530cbf-5bd1-4afa-8230-15fb37efe035"
+				type = "unit"
+				variable = "spawned_unit"
+			}
+		}
+		name = "SteamVR Link Node To Tracker"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			link_to = null
+			node_name = "attach"
+			preserve_world_pose = null
+			unit = null
+		}
+		variables = [
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "link_to"
+				type = "string"
+			}
+			{
+				name = "node_name"
+				type = "string"
+			}
+			{
+				name = "preserve_world_pose"
+				type = "bool"
+			}
+		]
+	}
+	{
+		id = "89992fb7-fc02-46a3-b752-5d341b1efc3c"
+		in_variables = {
+			name = {
+				node = "0fb2bca4-99a6-462a-9796-c37035002a42"
+				type = "string"
+				variable = "value"
+			}
+			scope = {
+				type = "string"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "e25129b5-dc09-4c59-a8fa-cf3e23f76e4e:0"
+					node = "e25129b5-dc09-4c59-a8fa-cf3e23f76e4e"
+				}
+			]
+		}
+		type = "set_unit_variable"
+		variable_values = {
+			name = null
+			scope = "global"
+			unit = null
+		}
+	}
+	{
+		id = "1c23778d-2373-4220-88c1-65db380e00a8"
+		in_variables = {
+			time = {
+				type = "float"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "89992fb7-fc02-46a3-b752-5d341b1efc3c:0"
+					node = "89992fb7-fc02-46a3-b752-5d341b1efc3c"
+				}
+			]
+		}
+		type = "delay"
+		variable_values = {
+			time = 0.1
+		}
+	}
+	{
+		id = "0fb2bca4-99a6-462a-9796-c37035002a42"
+		in_variables = {
+			a = {
+				type = "string"
+			}
+			b = {
+				node = "eb30ecf5-5385-49fd-817c-dd34216b3a63"
+				type = "string"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "concatenate_strings"
+		variable_values = {
+			a = "wand_"
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "eb30ecf5-5385-49fd-817c-dd34216b3a63"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "get_unit_string_data"
+		variable_values = {
+			key = "controller_index"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "0adfd71e-0227-478c-ac6a-cb59e58e8eda"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "1c23778d-2373-4220-88c1-65db380e00a8:0"
+					node = "1c23778d-2373-4220-88c1-65db380e00a8"
+				}
+			]
+		}
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+	{
+		id = "a0387157-2de5-4c23-9ebf-b435ee6267ca"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "6edaf6e4-0d57-49fe-8c81-c5673176e2e8:0"
+					node = "6edaf6e4-0d57-49fe-8c81-c5673176e2e8"
+				}
+			]
+		}
+		type = "level_update"
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "6edaf6e4-0d57-49fe-8c81-c5673176e2e8"
+		in_variables = {
+			buttonName = {
+				type = "string"
+			}
+			controllerIndex = {
+				node = "2e817598-d8cd-473d-b1f3-22a4e07414e2"
+				type = "string"
+				variable = "value"
+			}
+		}
+		name = "SteamVR Touch"
+		out_events = {
+			pressed = [
+				{
+					event = 0
+					id = "672b855b-0701-46be-ad7a-649f7d0f7fe0:0"
+					node = "672b855b-0701-46be-ad7a-649f7d0f7fe0"
+				}
+			]
+			released = [
+				{
+					event = 0
+					id = "f429ac8e-c353-4610-9002-8c764055a0e1:0"
+					node = "f429ac8e-c353-4610-9002-8c764055a0e1"
+				}
+			]
+		}
+		query = false
+		return_values = [
+			{
+				name = "y"
+				type = "float"
+			}
+			{
+				name = "x"
+				type = "float"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			buttonName = "Touch"
+			controllerIndex = null
+			x = null
+			y = null
+		}
+		variables = [
+			{
+				name = "controllerIndex"
+				type = "string"
+			}
+			{
+				name = "buttonName"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "f429ac8e-c353-4610-9002-8c764055a0e1"
+		in_variables = {
+			unit = {
+				node = "54530cbf-5bd1-4afa-8230-15fb37efe035"
+				type = "unit"
+				variable = "spawned_unit"
+			}
+		}
+		type = "unit_flow_event"
+		variable_values = {
+			event = "release_teleport"
+			unit = null
+		}
+	}
+	{
+		id = "672b855b-0701-46be-ad7a-649f7d0f7fe0"
+		in_variables = {
+			unit = {
+				node = "54530cbf-5bd1-4afa-8230-15fb37efe035"
+				type = "unit"
+				variable = "spawned_unit"
+			}
+		}
+		type = "unit_flow_event"
+		variable_values = {
+			event = "press_teleport"
+			unit = null
+		}
+	}
+]

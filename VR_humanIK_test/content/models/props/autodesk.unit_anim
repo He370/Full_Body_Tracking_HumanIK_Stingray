@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "05d0c75f-483f-496e-a5c5-8610c24be526"
+_name = "content/models/Props/autodesk"
+anim_controller_ref = {
+	_id = "b0a1576b-9bdd-4bee-958f-5bb1429eb1c4"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "fe971a59-c07f-47ee-b060-85bcccd58a90"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "8190b922-d27b-4ae4-b66d-5ff307206904"
+	ref_filename = "content/models/Props/autodesk.dcc_asset"
+	ref_id = null
+}

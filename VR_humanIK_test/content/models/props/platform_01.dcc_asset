@@ -1,0 +1,15 @@
+
+_data_root_version = 1
+_id = "79f8409a-45d8-4a91-8344-ccf24caf1b60"
+_name = "content/models/Props/platform_01"
+asset = "content/models/Props/platform_01"
+extension = ".FBX"
+import_options = {
+	combine_meshes = false
+	combine_meshes_by_material = false
+	reverse_forward_axis = true
+	skip_animations = false
+	skip_cameras = true
+	skip_lights = true
+	skip_lods = true
+}

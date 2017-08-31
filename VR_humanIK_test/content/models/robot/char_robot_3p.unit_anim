@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "d6f0197f-5d36-4efe-a67f-764079177535"
+_name = "content/models/robot/char_robot_3p"
+anim_controller_ref = {
+	_id = "ac5ac35e-f9cb-4fcb-bdff-6ebd94d67f08"
+	ref_filename = "content/models/robot/char_robot_3p.anim_controller"
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "6b9a0dab-7af2-416a-b91f-9264856a3591"
+	ref_filename = "content/models/robot/char_robot_3p.anim_skeleton"
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "500eeee0-389d-494d-bce2-50c5ce4fa9d7"
+	ref_filename = "content/models/robot/char_robot_3p.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/robot/char_robot_3p"

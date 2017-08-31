@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "segment"
+		node = "segment"
+		shapes = [
+			{
+				material = "default"
+				shape = "segment"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]

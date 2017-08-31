@@ -1,0 +1,156 @@
+
+aux_buses = [
+	"reverb"
+]
+banks = {
+	default = {
+		events = [
+			"sfx_amb_vr_museum"
+			"sfx_impact_ball"
+			"sfx_impact_bat"
+			"sfx_impact_bat_on_ball"
+			"sfx_impact_teapot"
+			"sfx_impact_torus"
+			"sfx_impact_wood_block"
+			"sfx_pickup"
+			"sfx_pickup_ball"
+			"sfx_pickup_block"
+			"sfx_reset"
+			"sfx_spawn_sound"
+			"sfx_teleport"
+			"sfx_teleport_ui_down"
+			"sfx_teleport_ui_up"
+		]
+	}
+	Init = {
+		events = [
+		]
+	}
+}
+buses = [
+	"Master Audio Bus"
+	"Master Secondary Bus"
+	"MUSIC"
+	"SFX"
+	"VO"
+]
+events = {
+	sfx_amb_vr_museum = {
+		attenuation_max = 0
+		duration_max = 0
+		duration_min = 0
+		duration_type = "Infinite"
+		positioning = "2D"
+	}
+	sfx_impact_ball = {
+		attenuation_max = 8
+		duration_max = 0.279819
+		duration_min = 0.15102
+		duration_type = "OneShot"
+		positioning = "3D"
+	}
+	sfx_impact_bat = {
+		attenuation_max = 8
+		duration_max = 0.401927
+		duration_min = 0.178413
+		duration_type = "OneShot"
+		positioning = "3D"
+	}
+	sfx_impact_bat_on_ball = {
+		attenuation_max = 8
+		duration_max = 0.741066
+		duration_min = 0.563311
+		duration_type = "OneShot"
+		positioning = "3D"
+	}
+	sfx_impact_teapot = {
+		attenuation_max = 8
+		duration_max = 0.801338
+		duration_min = 0.640476
+		duration_type = "OneShot"
+		positioning = "3D"
+	}
+	sfx_impact_torus = {
+		attenuation_max = 8
+		duration_max = 0.512542
+		duration_min = 0.281025
+		duration_type = "OneShot"
+		positioning = "3D"
+	}
+	sfx_impact_wood_block = {
+		attenuation_max = 8
+		duration_max = 0.839569
+		duration_min = 0.289841
+		duration_type = "OneShot"
+		positioning = "3D"
+	}
+	sfx_pickup = {
+		attenuation_max = 8
+		duration_max = 0.514354
+		duration_min = 0.136871
+		duration_type = "OneShot"
+		positioning = "3D"
+	}
+	sfx_pickup_ball = {
+		attenuation_max = 8
+		duration_max = 0.381134
+		duration_min = 0.250816
+		duration_type = "OneShot"
+		positioning = "3D"
+	}
+	sfx_pickup_block = {
+		attenuation_max = 8
+		duration_max = 0.160544
+		duration_min = 0.08254
+		duration_type = "OneShot"
+		positioning = "3D"
+	}
+	sfx_reset = {
+		attenuation_max = 0
+		duration_max = 0.417392
+		duration_min = 0.417392
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
+	sfx_spawn_sound = {
+		attenuation_max = 0
+		duration_max = 2.767347
+		duration_min = 2.767347
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
+	sfx_teleport = {
+		attenuation_max = 0
+		duration_max = 1.498345
+		duration_min = 1.498345
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
+	sfx_teleport_ui_down = {
+		attenuation_max = 0
+		duration_max = 0.295669
+		duration_min = 0.295669
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
+	sfx_teleport_ui_up = {
+		attenuation_max = 0
+		duration_max = 0.316531
+		duration_min = 0.316531
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
+}
+parameters = [
+	"CODE_Volume_Music"
+	"CODE_Volume_SFX"
+	"CODE_Volume_VO"
+	"Shrink"
+	"UnitSpeed"
+]
+state_groups = {
+}
+switch_groups = {
+}
+triggers = [
+]

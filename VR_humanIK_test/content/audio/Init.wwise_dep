@@ -1,0 +1,47 @@
+
+android = {
+	banks = [
+		"content/audio/Init"
+	]
+	metadata = "content/audio/project"
+	streams = [
+	]
+}
+banks = [
+	"content/audio/Init"
+]
+ios = {
+	banks = [
+		"content/audio/Init"
+	]
+	metadata = "content/audio/project"
+	streams = [
+	]
+}
+metadata = "content/audio/project"
+ps4 = {
+	banks = [
+		"content/audio/Init"
+	]
+	metadata = "content/audio/project"
+	streams = [
+	]
+}
+streams = [
+]
+win32 = {
+	banks = [
+		"content/audio/Init"
+	]
+	metadata = "content/audio/project"
+	streams = [
+	]
+}
+xb1 = {
+	banks = [
+		"content/audio/Init"
+	]
+	metadata = "content/audio/project"
+	streams = [
+	]
+}

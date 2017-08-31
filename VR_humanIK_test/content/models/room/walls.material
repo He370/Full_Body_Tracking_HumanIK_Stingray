@@ -1,0 +1,35 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	normal_map = "content/models/props/textures/TX_WallPaint_N"
+}
+variables = {
+	base_color = {
+		type = "vector3"
+		value = [ 1 1 1]
+	}
+	emissive = {
+		type = "vector3"
+		value = [ 0 0 0]
+	}
+	emissive_intensity = {
+		type = "scalar"
+		value = 0
+	}
+	metallic = {
+		type = "scalar"
+		value = 0.05
+	}
+	roughness = {
+		type = "scalar"
+		value = 0.5
+	}
+	use_normal_map = {
+		type = "scalar"
+		value = 1
+	}
+	uv_scale = {
+		type = "vector2"
+		value = [ 10 10]
+	}
+}

@@ -1,0 +1,488 @@
+
+_data_root_version = 1
+_id = "73e3ae71-6807-40ba-be16-5bc7cc4685b7"
+_name = "content/models/robot/char_robot_3p"
+anim_blend_sets = [
+]
+anim_bones = [
+	{
+		_id = "4bf3f926-fddb-4ec6-94b0-d02aea54dcac"
+		_name = "StingrayEntityRoot"
+		lod_level = 0
+	}
+	{
+		_id = "60fc4805-3cdb-499b-a22b-b6e3615ec36d"
+		_name = "FbxAxisSystem_ConvertNode"
+		lod_level = 0
+	}
+	{
+		_id = "115d16a5-3ecf-4707-8c81-62852eaf081b"
+		_name = "rp_chr_robot_3p"
+		lod_level = 0
+	}
+	{
+		_id = "4c6c88d0-43b0-40d0-9d46-3b0679fc4db4"
+		_name = "robot_LOD0"
+		lod_level = 0
+	}
+	{
+		_id = "fadb021c-53aa-4d17-b831-7916a8fe473a"
+		_name = "s_robot_Root"
+		lod_level = 0
+	}
+	{
+		_id = "c4e96fdf-cc7b-4d67-ab78-d1b52a4cbd34"
+		_name = "s_robot_Hips"
+		lod_level = 0
+	}
+	{
+		_id = "d9febadd-e9ed-4362-b62b-2d231f7b0ecc"
+		_name = "s_robot_AimTarget"
+		lod_level = 0
+	}
+	{
+		_id = "f6dddd70-19e5-4875-82a5-e6e1e626a0b8"
+		_name = "s_robot_LeftUpLeg"
+		lod_level = 0
+	}
+	{
+		_id = "741d648c-a384-40ed-abf0-b4ea69df3717"
+		_name = "s_robot_Spine"
+		lod_level = 0
+	}
+	{
+		_id = "54f5fb05-85b9-4e8c-b9e1-dd97d50c8ce6"
+		_name = "s_robot_RightUpLeg"
+		lod_level = 0
+	}
+	{
+		_id = "e4145d49-999e-4d77-b877-6ceb2c1a3f53"
+		_name = "col_robot_Hips"
+		lod_level = 0
+	}
+	{
+		_id = "26724d2c-a7ee-456d-ac0a-9f9c7becd8a4"
+		_name = "s_robot_LeftLeg"
+		lod_level = 0
+	}
+	{
+		_id = "ec993add-f426-4556-9929-07ae0a4d170f"
+		_name = "col_robot_LeftUpLeg"
+		lod_level = 0
+	}
+	{
+		_id = "d8483ed4-bd5b-439c-87f1-18ce6d365e16"
+		_name = "s_robot_Spine1"
+		lod_level = 0
+	}
+	{
+		_id = "5293740a-e01d-48f2-b367-104d8bd955cd"
+		_name = "col_robot_Spine"
+		lod_level = 0
+	}
+	{
+		_id = "f7318b24-a39e-4961-8fcd-e2f71273b329"
+		_name = "s_robot_RightLeg"
+		lod_level = 0
+	}
+	{
+		_id = "29eee280-451a-4d34-a8f4-bfd45a5052e7"
+		_name = "col_robot_RightUpLeg"
+		lod_level = 0
+	}
+	{
+		_id = "d2f4b7bf-4fbf-4b0e-9f04-a9ad002c99b2"
+		_name = "s_robot_LeftFoot"
+		lod_level = 0
+	}
+	{
+		_id = "79c3183b-722c-4a50-a555-84f9bb0aa0aa"
+		_name = "col_robot_LeftLeg"
+		lod_level = 0
+	}
+	{
+		_id = "bb580fd0-655f-4734-8f5e-d695198c66c7"
+		_name = "s_robot_Spine2"
+		lod_level = 0
+	}
+	{
+		_id = "b228d389-7ed2-45b2-a288-dccfaea18746"
+		_name = "col_robot_Spine1"
+		lod_level = 0
+	}
+	{
+		_id = "91f1ec61-12aa-45dd-bd3a-b9c604be2f7d"
+		_name = "s_robot_RightFoot"
+		lod_level = 0
+	}
+	{
+		_id = "bac7c4f4-ab5b-44fa-99ca-7c6e8d87f60b"
+		_name = "col_robot_RightLeg"
+		lod_level = 0
+	}
+	{
+		_id = "a3930914-f48e-4386-ae0b-4c821154e238"
+		_name = "s_robot_LeftToeBase"
+		lod_level = 0
+	}
+	{
+		_id = "268125b5-971f-4eed-80dd-e9613657ca36"
+		_name = "col_robot_LeftFoot"
+		lod_level = 0
+	}
+	{
+		_id = "ef090606-c231-4c79-8269-c5b8a7753d7e"
+		_name = "s_robot_Spine3"
+		lod_level = 0
+	}
+	{
+		_id = "b215547d-b820-4949-b874-34909e62db94"
+		_name = "col_robot_Spine2"
+		lod_level = 0
+	}
+	{
+		_id = "c9029db4-da60-4084-a08e-4384d8b149e6"
+		_name = "s_robot_RightToeBase"
+		lod_level = 0
+	}
+	{
+		_id = "cb84a3ca-178e-4d7c-9950-3a16627b8335"
+		_name = "col_robot_RightFoot"
+		lod_level = 0
+	}
+	{
+		_id = "de775bd0-e81a-48bd-b7e7-d3d93a92ef5c"
+		_name = "col_robot_LeftToeBase"
+		lod_level = 0
+	}
+	{
+		_id = "9a1ac256-f16c-4902-8743-3453aaf3fd38"
+		_name = "s_robot_Spine4"
+		lod_level = 0
+	}
+	{
+		_id = "ae178262-6717-4bf7-ab91-677f16b9b4ca"
+		_name = "col_robot_Spine3"
+		lod_level = 0
+	}
+	{
+		_id = "40d2855b-d3a4-41ec-9775-ba5ba0a18f7d"
+		_name = "col_robot_RightToeBase"
+		lod_level = 0
+	}
+	{
+		_id = "71a3e44a-f7d2-4ea4-b148-19d04230d062"
+		_name = "s_robot_Spine5"
+		lod_level = 0
+	}
+	{
+		_id = "2b8493f8-e2b4-4243-9a5d-bb37f87d87de"
+		_name = "col_robot_Spine4"
+		lod_level = 0
+	}
+	{
+		_id = "c9c7b8f2-2fc9-4fa9-987c-615b1b0f344f"
+		_name = "s_robot_Spine6"
+		lod_level = 0
+	}
+	{
+		_id = "786e58c9-3183-4e4a-ac8b-6a1dec397803"
+		_name = "col_robot_Spine5"
+		lod_level = 0
+	}
+	{
+		_id = "82bdf582-3f50-4df8-9eec-9f002933b9d7"
+		_name = "s_robot_Spine7"
+		lod_level = 0
+	}
+	{
+		_id = "eddd5636-db52-4027-b7b9-171a3efcec3a"
+		_name = "col_robot_Spine6"
+		lod_level = 0
+	}
+	{
+		_id = "19ce2aef-bb51-49ce-9096-ea516d08cbe2"
+		_name = "s_robot_Neck"
+		lod_level = 0
+	}
+	{
+		_id = "32697c93-2655-48dc-a7e3-193f0032d1d0"
+		_name = "s_robot_LeftShoulder"
+		lod_level = 0
+	}
+	{
+		_id = "9e36cb8c-4323-4ef0-8065-e2b20ac1797d"
+		_name = "s_robot_RightShoulder"
+		lod_level = 0
+	}
+	{
+		_id = "3adcf70e-85f0-4dfe-a2fc-06732ec34ada"
+		_name = "col_robot_Spine7"
+		lod_level = 0
+	}
+	{
+		_id = "27b385a1-1566-4405-a12b-0165602c0ac8"
+		_name = "s_robot_Head"
+		lod_level = 0
+	}
+	{
+		_id = "e425f29d-7acc-4b16-9b3f-361dddcc10c1"
+		_name = "col_robot_Neck"
+		lod_level = 0
+	}
+	{
+		_id = "b311921b-d3ef-420b-b191-fe470f5bdda4"
+		_name = "s_robot_LeftArm"
+		lod_level = 0
+	}
+	{
+		_id = "b5d9fd27-a5fe-4139-b403-fcdd80892ac2"
+		_name = "col_robot_LeftShoulder"
+		lod_level = 0
+	}
+	{
+		_id = "1b073905-dfd3-4f23-9c3e-32502487828a"
+		_name = "s_robot_RightArm"
+		lod_level = 0
+	}
+	{
+		_id = "a13dc159-b534-4edc-ba36-da220012988a"
+		_name = "col_robot_RightShoulder"
+		lod_level = 0
+	}
+	{
+		_id = "3e91a0a0-ccd0-4faa-af87-e9292767a9e6"
+		_name = "col_robot_Head"
+		lod_level = 0
+	}
+	{
+		_id = "d49f5cac-c213-4b4e-ac88-25cb07407094"
+		_name = "s_robot_LeftForeArm"
+		lod_level = 0
+	}
+	{
+		_id = "fc557b50-f6fd-4708-8e35-6ec1deed2d0e"
+		_name = "col_robot_LeftArm"
+		lod_level = 0
+	}
+	{
+		_id = "e5b97ad7-5ee3-40e6-9b71-22c2ca45ed1e"
+		_name = "s_robot_RightForeArm"
+		lod_level = 0
+	}
+	{
+		_id = "ec44b862-2c77-4722-b271-0a3f9d05398d"
+		_name = "col_robot_RightArm"
+		lod_level = 0
+	}
+	{
+		_id = "29078a7a-c63d-446c-880e-92c167669d15"
+		_name = "s_robot_LeftHand"
+		lod_level = 0
+	}
+	{
+		_id = "a8c9bc32-da1f-4376-9219-9c70045acbfd"
+		_name = "col_robot_LeftForeArm"
+		lod_level = 0
+	}
+	{
+		_id = "b2953a25-4d40-4e06-8f42-4384e24a091a"
+		_name = "s_robot_RightHand"
+		lod_level = 0
+	}
+	{
+		_id = "e85dcfd8-6542-4cce-948c-43646b94aee1"
+		_name = "col_robot_RightForeArm"
+		lod_level = 0
+	}
+	{
+		_id = "ca614270-292f-4a9a-b66e-a704a3e0fa39"
+		_name = "s_robot_LeftFingerBase"
+		lod_level = 0
+	}
+	{
+		_id = "aae3f999-0409-4240-b33a-f06bf23a4038"
+		_name = "s_robot_LeftHandThumb1"
+		lod_level = 0
+	}
+	{
+		_id = "7839002c-c1b9-4f73-9b67-36267a52ef1b"
+		_name = "s_robot_LeftHandAttach"
+		lod_level = 0
+	}
+	{
+		_id = "54030aa2-f46c-49a9-85a2-e5f3bfcdb185"
+		_name = "col_robot_LeftHand"
+		lod_level = 0
+	}
+	{
+		_id = "db78c52e-f04a-4d8e-af78-d94694c42ced"
+		_name = "s_robot_RightFingerBase"
+		lod_level = 0
+	}
+	{
+		_id = "5483dd4d-5ad4-4f8f-a8ac-9a74edcbaeb0"
+		_name = "s_robot_RightHandThumb1"
+		lod_level = 0
+	}
+	{
+		_id = "8008caef-4123-4250-8947-e78492479ef0"
+		_name = "s_robot_RightHandAttach"
+		lod_level = 0
+	}
+	{
+		_id = "7af3e891-a746-4af2-ac07-bb7db57ab929"
+		_name = "col_robot_RightHand"
+		lod_level = 0
+	}
+	{
+		_id = "2721d7c8-b61e-4d4f-9db4-d7394c6d7df2"
+		_name = "s_robot_LeftHandIndex1"
+		lod_level = 0
+	}
+	{
+		_id = "9546b2d2-ecd4-44c2-9af8-d5a7402b0721"
+		_name = "s_robot_LeftHandMiddle1"
+		lod_level = 0
+	}
+	{
+		_id = "bf6edc87-6304-423f-8500-5167210f93d1"
+		_name = "s_robot_LeftHandRing1"
+		lod_level = 0
+	}
+	{
+		_id = "26123061-84f5-4d93-a10f-a90c5a60b0e4"
+		_name = "s_robot_LeftHandPinky1"
+		lod_level = 0
+	}
+	{
+		_id = "d8b11e7a-8966-46b6-964c-bedf1929c5d4"
+		_name = "s_robot_LeftHandThumb2"
+		lod_level = 0
+	}
+	{
+		_id = "79ed06a6-7583-40d8-add5-6f01e10914a8"
+		_name = "s_robot_RightHandIndex1"
+		lod_level = 0
+	}
+	{
+		_id = "a10d8b69-f656-42f5-b75a-092f3d33871d"
+		_name = "s_robot_RightHandMiddle1"
+		lod_level = 0
+	}
+	{
+		_id = "35e5febf-3781-4544-9019-c22982c0636d"
+		_name = "s_robot_RightHandRing1"
+		lod_level = 0
+	}
+	{
+		_id = "5bc2c3df-e7ba-43bc-bd09-a0dd7800c010"
+		_name = "s_robot_RightHandPinky1"
+		lod_level = 0
+	}
+	{
+		_id = "785141ac-fbf8-4e5b-9499-dcaa2c2a2eb1"
+		_name = "s_robot_RightHandThumb2"
+		lod_level = 0
+	}
+	{
+		_id = "f5c78c94-cd94-49d7-87c8-c20e29f906d6"
+		_name = "s_robot_LeftHandIndex2"
+		lod_level = 0
+	}
+	{
+		_id = "ee248039-84c8-4984-b14f-6486bea95d1c"
+		_name = "s_robot_LeftHandMiddle2"
+		lod_level = 0
+	}
+	{
+		_id = "907dc9c9-c682-4f83-a224-19b51bf0e5d0"
+		_name = "s_robot_LeftHandRing2"
+		lod_level = 0
+	}
+	{
+		_id = "35ca151f-f3f6-4abf-b29f-407ca68e2e47"
+		_name = "s_robot_LeftHandPinky2"
+		lod_level = 0
+	}
+	{
+		_id = "55fa1587-82a0-4350-99e2-c8bc12ebede7"
+		_name = "s_robot_LeftHandThumb3"
+		lod_level = 0
+	}
+	{
+		_id = "84052ab6-bd28-4945-b22f-09020dd43387"
+		_name = "s_robot_RightHandIndex2"
+		lod_level = 0
+	}
+	{
+		_id = "2c90b67c-2f11-4dbe-98ee-3266edf7cc83"
+		_name = "s_robot_RightHandMiddle2"
+		lod_level = 0
+	}
+	{
+		_id = "8729fbc0-bb80-45fe-8c81-b24d6e503dac"
+		_name = "s_robot_RightHandRing2"
+		lod_level = 0
+	}
+	{
+		_id = "adfd6829-9933-4e42-b612-3e8a6a475257"
+		_name = "s_robot_RightHandPinky2"
+		lod_level = 0
+	}
+	{
+		_id = "6712b145-f965-4eac-b664-6a893b6d4a40"
+		_name = "s_robot_RightHandThumb3"
+		lod_level = 0
+	}
+	{
+		_id = "348cd5d8-63bb-452d-bb96-971c48e0fdc1"
+		_name = "s_robot_LeftHandIndex3"
+		lod_level = 0
+	}
+	{
+		_id = "af37b35d-352d-46c4-9873-d04529778f55"
+		_name = "s_robot_LeftHandMiddle3"
+		lod_level = 0
+	}
+	{
+		_id = "b7cc151a-6b4a-4d33-9e18-243b58616341"
+		_name = "s_robot_LeftHandRing3"
+		lod_level = 0
+	}
+	{
+		_id = "1019f951-45c1-4b0f-9eaa-01be8e008049"
+		_name = "s_robot_LeftHandPinky3"
+		lod_level = 0
+	}
+	{
+		_id = "c57c90dc-20cb-4b31-aaab-c2aebfd98efc"
+		_name = "s_robot_RightHandIndex3"
+		lod_level = 0
+	}
+	{
+		_id = "837a98f2-7ea7-4e43-b740-4b6164be97b6"
+		_name = "s_robot_RightHandMiddle3"
+		lod_level = 0
+	}
+	{
+		_id = "92b4410f-69d2-4042-95ab-23b716f43f03"
+		_name = "s_robot_RightHandRing3"
+		lod_level = 0
+	}
+	{
+		_id = "7b8a7acb-6fc4-45ce-9876-803ccdcf2903"
+		_name = "s_robot_RightHandPinky3"
+		lod_level = 0
+	}
+]
+dcc_asset_ref = {
+	_id = "f3756e5e-aa6d-4f46-b98b-f008bba52723"
+	ref_filename = "content/models/robot/char_robot_3p.dcc_asset"
+	ref_id = null
+}
+locomotion_root_bone_ref = {
+	_id = "2cbd5342-e102-4df9-8f5f-da72f4c283a8"
+	ref_filename = null
+	ref_id = null
+}

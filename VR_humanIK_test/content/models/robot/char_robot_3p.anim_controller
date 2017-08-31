@@ -1,0 +1,299 @@
+
+_data_root_version = 4
+_id = "baeb75b8-64d0-4c2a-b2ed-1d7962983902"
+_name = "content/models/robot/char_robot_3p"
+anim_skeleton_ref = {
+	_id = "5036228d-5bbd-4b84-9c6f-1518e75893a0"
+	ref_filename = "content/models/robot/char_robot_3p.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	bones = "content/models/robot/char_robot_3p"
+	layers = [
+		{
+			default_state = "Still_Clip"
+			states = [
+				{
+					animations = [
+						"content/models/robot/stand_walk_nw"
+					]
+					loop_animation = true
+					name = "WalkNW_Clip"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1.0"
+					state_type = "regular"
+					transitions = [
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/robot/punch"
+					]
+					loop_animation = true
+					name = "Punch_Clip"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "0.5"
+					state_type = "regular"
+					transitions = [
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/robot/sword_strike"
+					]
+					loop_animation = true
+					name = "SwordStrike_Clip"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/robot/still"
+					]
+					loop_animation = true
+					name = "Still_Clip"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+					]
+					weights = [
+						"1.0"
+					]
+				}
+			]
+		}
+	]
+}
+constraint_targets = [
+]
+constraints = [
+]
+events = [
+]
+layers = [
+	{
+		_id = "f685d95b-7601-47f7-9ec4-e2bf7b4cf908"
+		_name = "Base"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "c6ce366e-6900-4863-96da-a082b86b774f"
+			ref_filename = null
+			ref_id = "e44a9beb-e400-41de-94c3-4ff95de6e080"
+		}
+		empty_states = [
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
+			{
+				_id = "6e50fcd1-2b32-4ad2-99c5-902b5a1d4f3a"
+				_name = "WalkNW_Clip"
+				anim_blend_set_ref = {
+					_id = "eb830c2f-1016-43e3-9a0f-ade67147aee4"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "d7cb16b2-3f43-44bc-a25f-18af64fd702c"
+						ref_filename = "content/models/robot/stand_walk_nw.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "2c3dc7b2-5c74-4965-9e27-4bad916a4a5f"
+					ref_filename = null
+					ref_id = null
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1.0"
+				transitions = [
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 62
+				y = -31
+			}
+			{
+				_id = "dd246ec6-2447-4c89-b0f0-745a66c6d848"
+				_name = "Punch_Clip"
+				anim_blend_set_ref = {
+					_id = "6dade90a-333a-4fce-b920-877dda44ee9c"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "8c9b0c5a-1a95-4d47-bfca-27c3341d8d6e"
+						ref_filename = "content/models/robot/punch.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "a7887d54-d679-4b6f-904c-15a5f0552b72"
+					ref_filename = null
+					ref_id = null
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "0.5"
+				transitions = [
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 68
+				y = 67
+			}
+			{
+				_id = "5e42168b-2cf5-4cde-b025-cefb24093b82"
+				_name = "SwordStrike_Clip"
+				anim_blend_set_ref = {
+					_id = "c871e765-6a19-420f-846a-35280f4a5d08"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "031a4c3a-9450-40a6-b841-535b80f9b560"
+						ref_filename = "content/models/robot/sword_strike.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "82b78c6d-1ecc-4616-93db-0b6ca18690b1"
+					ref_filename = null
+					ref_id = null
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 240
+				y = -40
+			}
+			{
+				_id = "e44a9beb-e400-41de-94c3-4ff95de6e080"
+				_name = "Still_Clip"
+				anim_blend_set_ref = {
+					_id = "3ba70f06-9d50-4927-8aa1-067da3cba894"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "cd070816-94cf-47c5-9b42-ced02faf4b85"
+						ref_filename = "content/models/robot/still.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "e4dd96a8-79cb-408f-b200-4b10bde6aa30"
+					ref_filename = null
+					ref_id = null
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 240
+				y = 60
+			}
+		]
+		time_states = [
+		]
+	}
+]
+ragdolls = [
+]
+setup = {
+	_id = "5f348791-717c-4cf7-bcc9-26f020ca1ead"
+	level = ""
+	unit_ref = {
+		_id = "c723c18e-423b-4fdf-9c6a-3319fc354f4e"
+		ref_filename = "content/models/robot/char_robot_3p.unit_anim"
+		ref_id = null
+	}
+}
+variables = [
+]

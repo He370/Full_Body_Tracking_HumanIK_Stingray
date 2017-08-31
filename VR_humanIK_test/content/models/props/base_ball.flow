@@ -1,0 +1,814 @@
+
+nodes = [
+	{
+		id = "284e2d52-c8af-49fb-88bd-bfb78f41c1fe"
+		in_variables = {
+			a = {
+				node = "939be1c3-59aa-4667-9170-8cc5fccc4e4d"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = 2
+			value = null
+		}
+	}
+	{
+		flow_nodes_resource = "core/wwise/wwise"
+		id = "47eb50f6-07b9-4aa6-b6cf-f98d7a24b85a"
+		in_variables = {
+			Existing_Source_Id = {
+				type = "float"
+			}
+			Name = {
+				type = "string"
+			}
+			Position = {
+				type = "vector3"
+			}
+			Unit = {
+				node = "1718de56-9973-454e-8136-241cb7e15e90"
+				type = "unit"
+				variable = "unit"
+			}
+			Unit_Node = {
+				type = "string"
+			}
+		}
+		name = "Wwise Trigger Event"
+		out_variables = {
+			Source_Id = {
+				type = "float"
+			}
+		}
+		query = false
+		return_values = [
+			{
+				name = "Playing_Id"
+				type = "float"
+			}
+			{
+				name = "Source_Id"
+				type = "float"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Existing_Source_Id = null
+			Name = "sfx_impact_ball"
+			Playing_Id = null
+			Position = null
+			Source_Id = null
+			Unit = null
+			Unit_Node = "baseball"
+		}
+		variables = [
+			{
+				name = "Unit"
+				type = "unit"
+			}
+			{
+				name = "Position"
+				type = "vector3"
+			}
+			{
+				name = "Name"
+				type = "string"
+			}
+			{
+				name = "Existing_Source_Id"
+				type = "float"
+			}
+			{
+				name = "Unit_Node"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "4eb079aa-a348-4b4c-ad1e-dde36d8c9bbb"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "d873189a-ff4d-46ca-a6c5-fc2e12354683:0"
+					node = "d873189a-ff4d-46ca-a6c5-fc2e12354683"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "highlight_off"
+		}
+	}
+	{
+		id = "63e0c182-c78a-4088-8903-3f3a431de3a4"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			string = {
+				type = "string"
+			}
+		}
+		type = "get_string_variable"
+		variable_values = {
+			name = "controller_touch_index"
+			scope = "global"
+			string = null
+		}
+	}
+	{
+		id = "6823395b-7c4a-4396-9bf8-15a0e014b11a"
+		in_variables = {
+			actor = {
+				node = "b687d8e5-22be-484c-ac88-7244216898ea"
+				type = "actor"
+				variable = "actor"
+			}
+		}
+		out_variables = {
+			velocity = {
+				type = "vector3"
+			}
+		}
+		type = "get_actor_velocity"
+		variable_values = {
+			actor = null
+			velocity = null
+		}
+	}
+	{
+		id = "939be1c3-59aa-4667-9170-8cc5fccc4e4d"
+		in_variables = {
+			vector = {
+				node = "6823395b-7c4a-4396-9bf8-15a0e014b11a"
+				type = "vector3"
+				variable = "velocity"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "vector_length"
+		variable_values = {
+			value = null
+			vector = null
+		}
+	}
+	{
+		id = "93e75ca4-79b8-417b-ad85-d883b8707ae8"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "e9120f85-5c61-4722-a94c-87080b000443:0"
+					node = "e9120f85-5c61-4722-a94c-87080b000443"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "highlight_on"
+		}
+	}
+	{
+		flow_nodes_resource = "core/wwise/wwise"
+		id = "98f5a924-92d1-4103-90a4-998f2d0d7d37"
+		in_variables = {
+			Parameter_Name = {
+				type = "string"
+			}
+			Source_Id = {
+				node = "47eb50f6-07b9-4aa6-b6cf-f98d7a24b85a"
+				type = "float"
+				variable = "Source_Id"
+			}
+			Value = {
+				node = "284e2d52-c8af-49fb-88bd-bfb78f41c1fe"
+				type = "float"
+				variable = "value"
+			}
+		}
+		name = "Wwise Set Source Parameter"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Parameter_Name = "UnitSpeed"
+			Source_Id = null
+			Value = null
+		}
+		variables = [
+			{
+				name = "Value"
+				type = "float"
+			}
+			{
+				name = "Source_Id"
+				type = "float"
+			}
+			{
+				name = "Parameter_Name"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "b0906151-e92a-4f22-989f-88be733f74cf"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			unit = {
+				node = "1718de56-9973-454e-8136-241cb7e15e90"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			position = {
+				type = "vector3"
+			}
+		}
+		type = "get_unit_world_position"
+		variable_values = {
+			object = null
+			position = null
+			unit = null
+		}
+	}
+	{
+		id = "b687d8e5-22be-484c-ac88-7244216898ea"
+		in_variables = {
+			actor_index = {
+				type = "float"
+			}
+			actor_name = {
+				type = "string"
+			}
+			unit = {
+				node = "1718de56-9973-454e-8136-241cb7e15e90"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			actor = {
+				type = "actor"
+			}
+		}
+		type = "get_unit_actor"
+		variable_values = {
+			actor = null
+			actor_index = null
+			actor_name = "baseball"
+			unit = null
+		}
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "c0e312b7-0e29-496f-a935-ea1c98ee62d1"
+		in_variables = {
+			controllerIndex = {
+				node = "63e0c182-c78a-4088-8903-3f3a431de3a4"
+				type = "string"
+				variable = "string"
+			}
+			seconds = {
+				type = "float"
+			}
+		}
+		name = "SteamVR Controller Feedback"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			controllerIndex = null
+			seconds = 0.003
+		}
+		variables = [
+			{
+				name = "controllerIndex"
+				type = "string"
+			}
+			{
+				name = "seconds"
+				type = "float"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "d873189a-ff4d-46ca-a6c5-fc2e12354683"
+		in_variables = {
+			Alpha = {
+				type = "float"
+			}
+			Color = {
+				type = "vector3"
+			}
+			Enable = {
+				type = "bool"
+			}
+			Mask = {
+				type = "float"
+			}
+			MaterialSlot = {
+				type = "string"
+			}
+			Mesh = {
+				type = "string"
+			}
+			Unit = {
+				node = "1718de56-9973-454e-8136-241cb7e15e90"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "SteamVR Set Unit Highlight"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Alpha = 1
+			Color = [
+				255
+				198
+				0
+			]
+			Enable = false
+			Mask = null
+			MaterialSlot = "baseball_material"
+			Mesh = "baseball"
+			Unit = null
+		}
+		variables = [
+			{
+				name = "Unit"
+				type = "unit"
+			}
+			{
+				name = "Mesh"
+				type = "string"
+			}
+			{
+				name = "MaterialSlot"
+				type = "string"
+			}
+			{
+				name = "Color"
+				type = "vector3"
+			}
+			{
+				name = "Enable"
+				type = "bool"
+			}
+			{
+				name = "Alpha"
+				type = "float"
+			}
+			{
+				name = "Mask"
+				type = "float"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "e9120f85-5c61-4722-a94c-87080b000443"
+		in_variables = {
+			Alpha = {
+				type = "float"
+			}
+			Color = {
+				type = "vector3"
+			}
+			Enable = {
+				type = "bool"
+			}
+			Mask = {
+				type = "float"
+			}
+			MaterialSlot = {
+				type = "string"
+			}
+			Mesh = {
+				type = "string"
+			}
+			Unit = {
+				node = "1718de56-9973-454e-8136-241cb7e15e90"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "SteamVR Set Unit Highlight"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "c0e312b7-0e29-496f-a935-ea1c98ee62d1:0"
+					node = "c0e312b7-0e29-496f-a935-ea1c98ee62d1"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Alpha = 1
+			Color = [
+				255
+				198
+				0
+			]
+			Enable = true
+			Mask = null
+			MaterialSlot = "baseball_material"
+			Mesh = "baseball"
+			Unit = null
+		}
+		variables = [
+			{
+				name = "Unit"
+				type = "unit"
+			}
+			{
+				name = "Mesh"
+				type = "string"
+			}
+			{
+				name = "MaterialSlot"
+				type = "string"
+			}
+			{
+				name = "Color"
+				type = "vector3"
+			}
+			{
+				name = "Enable"
+				type = "bool"
+			}
+			{
+				name = "Alpha"
+				type = "float"
+			}
+			{
+				name = "Mask"
+				type = "float"
+			}
+		]
+	}
+	{
+		id = "e9254c82-221e-487f-aa01-82d716c2a808"
+		out_events = {
+			start_touch = [
+				{
+					event = 0
+					id = "47eb50f6-07b9-4aa6-b6cf-f98d7a24b85a:0"
+					node = "47eb50f6-07b9-4aa6-b6cf-f98d7a24b85a"
+				}
+			]
+		}
+		type = "physics_collision"
+		variable_values = {
+			actor = "baseball"
+			normal = null
+			position = null
+			separation_distance = null
+			separation_normal = null
+			touched_actor = null
+			touching_actor = null
+			touching_unit = null
+		}
+	}
+	{
+		id = "ef50daae-9e9b-4fe8-84cc-d7c0516bf251"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "98f5a924-92d1-4103-90a4-998f2d0d7d37:0"
+					node = "98f5a924-92d1-4103-90a4-998f2d0d7d37"
+				}
+			]
+		}
+		type = "level_update"
+	}
+	{
+		id = "e03b408d-26eb-474a-a922-703a894e99b1"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "b8162144-afc9-4369-aaaf-5c349239da85:0"
+					node = "b8162144-afc9-4369-aaaf-5c349239da85"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "reset"
+		}
+	}
+	{
+		id = "a6e70106-299a-4387-a758-317476326768"
+		in_variables = {
+			actor_index = {
+				type = "float"
+			}
+			actor_name = {
+				type = "string"
+			}
+			unit = {
+				node = "1718de56-9973-454e-8136-241cb7e15e90"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			actor = {
+				type = "actor"
+			}
+		}
+		type = "get_unit_actor"
+		variable_values = {
+			actor = null
+			actor_index = 1
+			actor_name = "baseball"
+			unit = null
+		}
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "b8162144-afc9-4369-aaaf-5c349239da85"
+		in_variables = {
+			Actor = {
+				node = "a6e70106-299a-4387-a758-317476326768"
+				type = "actor"
+				variable = "actor"
+			}
+			Bool = {
+				type = "bool"
+			}
+		}
+		name = "SteamVR Set Actor Kinematic"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "b5858122-bb2b-4a3a-8326-2eafcaff0c97:0"
+					node = "b5858122-bb2b-4a3a-8326-2eafcaff0c97"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Actor = null
+			Bool = true
+		}
+		variables = [
+			{
+				name = "Bool"
+				type = "bool"
+			}
+			{
+				name = "Actor"
+				type = "actor"
+			}
+		]
+	}
+	{
+		id = "95b977cd-3f28-4c09-8e01-c02f8a6b772e"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			vector = {
+				type = "vector3"
+			}
+		}
+		type = "get_vector_variable"
+		variable_values = {
+			name = "spawn_position"
+			scope = "local"
+			vector = null
+		}
+	}
+	{
+		id = "d8270c7a-4c43-4a1e-9b9e-5992321f2afe"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+			vector = {
+				node = "b0906151-e92a-4f22-989f-88be733f74cf"
+				type = "vector3"
+				variable = "position"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "edfdcf01-8cdb-4459-a850-f73002bf3509:0"
+					node = "edfdcf01-8cdb-4459-a850-f73002bf3509"
+				}
+			]
+		}
+		type = "set_vector_variable"
+		variable_values = {
+			name = "spawn_position"
+			scope = "local"
+			vector = null
+		}
+	}
+	{
+		id = "b5858122-bb2b-4a3a-8326-2eafcaff0c97"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			position = {
+				node = "95b977cd-3f28-4c09-8e01-c02f8a6b772e"
+				type = "vector3"
+				variable = "vector"
+			}
+			teleport = {
+				type = "bool"
+			}
+			unit = {
+				node = "1718de56-9973-454e-8136-241cb7e15e90"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "011fd087-b099-4f25-b975-96a18784a94d:0"
+					node = "011fd087-b099-4f25-b975-96a18784a94d"
+				}
+			]
+		}
+		type = "set_unit_local_position"
+		variable_values = {
+			object = null
+			position = null
+			teleport = null
+			unit = null
+		}
+	}
+	{
+		flow_nodes_resource = "vr_steam/script/steam_vr"
+		id = "0702d43f-c854-459b-943d-b9721cc12211"
+		in_variables = {
+			Actor = {
+				node = "a6e70106-299a-4387-a758-317476326768"
+				type = "actor"
+				variable = "actor"
+			}
+			Bool = {
+				type = "bool"
+			}
+		}
+		name = "SteamVR Set Actor Kinematic"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Actor = null
+			Bool = false
+		}
+		variables = [
+			{
+				name = "Bool"
+				type = "bool"
+			}
+			{
+				name = "Actor"
+				type = "actor"
+			}
+		]
+	}
+	{
+		id = "011fd087-b099-4f25-b975-96a18784a94d"
+		in_variables = {
+			time = {
+				type = "float"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "0702d43f-c854-459b-943d-b9721cc12211:0"
+					node = "0702d43f-c854-459b-943d-b9721cc12211"
+				}
+			]
+		}
+		type = "delay"
+		variable_values = {
+			time = 0.1
+		}
+	}
+	{
+		id = "1718de56-9973-454e-8136-241cb7e15e90"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "d8270c7a-4c43-4a1e-9b9e-5992321f2afe:0"
+					node = "d8270c7a-4c43-4a1e-9b9e-5992321f2afe"
+				}
+			]
+		}
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+	{
+		id = "6262183e-0d9a-486a-8f43-4d1411414347"
+		in_variables = {
+			actor_index = {
+				type = "float"
+			}
+			actor_name = {
+				type = "string"
+			}
+			unit = {
+				node = "1718de56-9973-454e-8136-241cb7e15e90"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			actor = {
+				type = "actor"
+			}
+		}
+		type = "get_unit_actor"
+		variable_values = {
+			actor = null
+			actor_index = null
+			actor_name = "baseball"
+			unit = null
+		}
+	}
+	{
+		id = "edfdcf01-8cdb-4459-a850-f73002bf3509"
+		in_variables = {
+			actor = {
+				node = "6262183e-0d9a-486a-8f43-4d1411414347"
+				type = "actor"
+				variable = "actor"
+			}
+			unit = {
+				node = "1718de56-9973-454e-8136-241cb7e15e90"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "put_actor_to_sleep"
+		variable_values = {
+			actor = null
+			unit = null
+		}
+	}
+]

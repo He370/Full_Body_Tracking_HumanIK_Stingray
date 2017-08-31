@@ -1,0 +1,56 @@
+
+_data_root_version = 3
+_id = "bb845620-d7d5-4eef-8d7a-63a17d52d319"
+_name = "Live Assets/Alex/alex"
+additive_offset_computation_mode = "First Frame"
+anim_skeleton_ref = {
+	_id = "5d30f3d3-666a-46e1-8671-e2526b161ac5"
+	ref_filename = "Live Assets/People Shared/live_skeleton.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "aab03ddd-be43-41b7-8b30-193324f98f17"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+base_offset_preview_animation_clip_ref = {
+	_id = "0385fe51-1f9b-437b-a764-b8da74a62004"
+	ref_filename = null
+	ref_id = null
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "cfa95050-02e0-425b-9fb5-babefff4f958"
+	ref_filename = "Live Assets/Alex/alex.dcc_asset"
+	ref_id = null
+}
+flow_events = [
+]
+global_compression_settings = {
+	_id = "9d4c4f43-fddd-4424-9b83-cd788a7d628d"
+	do_ignore_positions = false
+	do_ignore_rotations = false
+	do_ignore_scales = false
+	do_pack_positions = true
+	do_pack_rotations = true
+	do_pack_scales = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+	scale_tolerance = 0.001
+}
+import_blend_shape_channel_curves = true
+import_extra_curves = true
+import_transform_curves = true
+offset_animation = false
+offset_pose_animation_clip_ref = {
+	_id = "0e6538ec-fc63-4a2f-bac4-24b5289f6904"
+	ref_filename = null
+	ref_id = null
+}
+take_name = "Take 001"
+trimming_end = 10
+trimming_start = 0

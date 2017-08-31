@@ -1,0 +1,374 @@
+
+_data_root_version = 1
+_id = "28a7ba0b-caa0-4396-9d7a-d844b89e413c"
+_name = "Live Assets/People Shared/live_skeleton"
+anim_blend_sets = [
+]
+anim_bones = [
+	{
+		_id = "58558ea6-199c-447f-8f04-eaa49c1e1178"
+		_name = "StingrayEntityRoot"
+		lod_level = 5
+	}
+	{
+		_id = "a529d05f-f874-449a-86d1-b0e7a7f017c1"
+		_name = "FbxAxisSystem_ConvertNode"
+		lod_level = 5
+	}
+	{
+		_id = "c01903ac-6373-4ca4-a76b-9b7857e980be"
+		_name = "Bip01"
+		lod_level = 5
+	}
+	{
+		_id = "be18c965-26a9-4dc6-ac3a-44982f61af1e"
+		_name = "Bip01 Footsteps"
+		lod_level = 5
+	}
+	{
+		_id = "b110c427-b488-4273-96b5-d494dfbc1151"
+		_name = "Bip01 Pelvis"
+		lod_level = 5
+	}
+	{
+		_id = "177c4ee9-ad7a-4760-b587-5505bbc1a55b"
+		_name = "Bip01 Spine"
+		lod_level = 5
+	}
+	{
+		_id = "3c9d14f5-8219-4ae2-88b6-feeaf95ee2eb"
+		_name = "Bip01 Spine1"
+		lod_level = 5
+	}
+	{
+		_id = "5dfe46da-045d-4e25-bb16-708251891370"
+		_name = "Bip01 L Thigh"
+		lod_level = 5
+	}
+	{
+		_id = "2700bfd1-14f8-4222-bd77-6e470af825d4"
+		_name = "Bip01 R Thigh"
+		lod_level = 5
+	}
+	{
+		_id = "42893049-f8d1-459f-a2c1-3b94e2374203"
+		_name = "Bip01 Spine2"
+		lod_level = 5
+	}
+	{
+		_id = "8f1a059e-695b-4ff7-a598-2664183ea620"
+		_name = "Bip01 L Calf"
+		lod_level = 5
+	}
+	{
+		_id = "0b4fdad9-6684-42fc-8778-e682b2333272"
+		_name = "Bip01 R Calf"
+		lod_level = 5
+	}
+	{
+		_id = "279c05ce-71d1-42f1-8be7-81eee544c697"
+		_name = "Bip01 Neck"
+		lod_level = 5
+	}
+	{
+		_id = "3a660e51-1246-41c4-b771-3f3db15e239a"
+		_name = "Bip01 L Foot"
+		lod_level = 5
+	}
+	{
+		_id = "31386ed2-c048-40c1-ab38-cd70affe903b"
+		_name = "Bip01 R Foot"
+		lod_level = 5
+	}
+	{
+		_id = "b470b300-ccbf-41cf-a933-072cd286f89d"
+		_name = "Bip01 Neck1"
+		lod_level = 5
+	}
+	{
+		_id = "c36b674c-bf99-4da9-9c87-2cbebb18b374"
+		_name = "Bip01 L Clavicle"
+		lod_level = 5
+	}
+	{
+		_id = "2eae097f-1195-494a-ab41-fd4bc05fac3b"
+		_name = "Bip01 R Clavicle"
+		lod_level = 5
+	}
+	{
+		_id = "a5387a82-7e32-4090-bd43-2eb54e269719"
+		_name = "Bip01 L Toe0"
+		lod_level = 5
+	}
+	{
+		_id = "96a600ac-d04c-4c80-8ffe-f3bfa980746f"
+		_name = "Bip01 R Toe0"
+		lod_level = 5
+	}
+	{
+		_id = "542e262e-b002-4a3e-b631-2fc98ac449dd"
+		_name = "Bip01 Head"
+		lod_level = 5
+	}
+	{
+		_id = "204e6e97-8cf9-443a-a712-0be4cb8aecdc"
+		_name = "Bip01 L UpperArm"
+		lod_level = 5
+	}
+	{
+		_id = "ede013fb-58f9-49d3-907f-cdb0f2467806"
+		_name = "Bip01 R UpperArm"
+		lod_level = 5
+	}
+	{
+		_id = "6bfeb65a-bfd6-40b8-a95e-1aeabeefac77"
+		_name = "Bip01 L Toe0Nub"
+		lod_level = 5
+	}
+	{
+		_id = "373cc917-f819-4353-b719-401789e45668"
+		_name = "Bip01 R Toe0Nub"
+		lod_level = 5
+	}
+	{
+		_id = "f8a4372c-e2e6-4e74-a656-3b87b6990b95"
+		_name = "Bip01 HeadNub"
+		lod_level = 5
+	}
+	{
+		_id = "fd23a82f-2fa8-444c-b5ac-8a823fc5f317"
+		_name = "Bip01 R Eye"
+		lod_level = 5
+	}
+	{
+		_id = "e265392a-7ed8-4feb-8811-6efbb6544427"
+		_name = "Bip01 L Eye"
+		lod_level = 5
+	}
+	{
+		_id = "834de73f-4060-4fb2-9247-f380f799935e"
+		_name = "Bip01 L Forearm"
+		lod_level = 5
+	}
+	{
+		_id = "a2f02854-9912-4ea9-b480-99a5dca44d59"
+		_name = "Bip01 R Forearm"
+		lod_level = 5
+	}
+	{
+		_id = "4fda56bb-4659-4d43-beab-f5f9910b72ae"
+		_name = "Bip01 L Hand"
+		lod_level = 5
+	}
+	{
+		_id = "81337e7c-e7a7-4f98-a116-dac1caac397e"
+		_name = "Bip01 R Hand"
+		lod_level = 5
+	}
+	{
+		_id = "00e082ce-516b-44d0-a2ac-ed848a7a5d1f"
+		_name = "Bip01 L Finger0"
+		lod_level = 5
+	}
+	{
+		_id = "150d70b8-2ebb-4f43-baa5-8e32ba092ab3"
+		_name = "Bip01 L Finger1"
+		lod_level = 5
+	}
+	{
+		_id = "0887b56e-0e5a-4f95-ba45-ce543c4d1ed3"
+		_name = "Bip01 L Finger2"
+		lod_level = 5
+	}
+	{
+		_id = "1944bac1-d32e-4bdf-be24-d39adb0a5efd"
+		_name = "Bip01 L Finger3"
+		lod_level = 5
+	}
+	{
+		_id = "54d34cc3-b370-4253-acb0-a699543153bb"
+		_name = "Bip01 L Finger4"
+		lod_level = 5
+	}
+	{
+		_id = "eb16ba18-a645-4061-9f67-d2f3b8759460"
+		_name = "Bip01 R Finger0"
+		lod_level = 5
+	}
+	{
+		_id = "ce511540-f768-4429-8bac-42e200c4fdfc"
+		_name = "Bip01 R Finger1"
+		lod_level = 5
+	}
+	{
+		_id = "aed93844-9e14-46a8-81cf-99f84cba2332"
+		_name = "Bip01 R Finger2"
+		lod_level = 5
+	}
+	{
+		_id = "b6bf6663-1b53-4248-bfa9-75f25f82aafd"
+		_name = "Bip01 R Finger3"
+		lod_level = 5
+	}
+	{
+		_id = "4d79dfbe-6bb4-456b-af54-ce771ffe9f7a"
+		_name = "Bip01 R Finger4"
+		lod_level = 5
+	}
+	{
+		_id = "db9d320f-a2de-4d12-aa5e-d76f46404084"
+		_name = "Bip01 L Finger01"
+		lod_level = 5
+	}
+	{
+		_id = "85dae53a-a68b-4064-aa77-c20935a42a7a"
+		_name = "Bip01 L Finger11"
+		lod_level = 5
+	}
+	{
+		_id = "0142ea6a-14e6-4284-ab31-10d1753d33c5"
+		_name = "Bip01 L Finger21"
+		lod_level = 5
+	}
+	{
+		_id = "8faf1fd2-8fc7-4310-8d84-59fb4e78e1cf"
+		_name = "Bip01 L Finger31"
+		lod_level = 5
+	}
+	{
+		_id = "801e1c29-e7ba-4f0a-bd04-67fec3cea8e2"
+		_name = "Bip01 L Finger41"
+		lod_level = 5
+	}
+	{
+		_id = "64bbc1be-314b-4271-9082-d5ab6ee31129"
+		_name = "Bip01 R Finger01"
+		lod_level = 5
+	}
+	{
+		_id = "61abcc49-1697-4f82-a3aa-a003551d083e"
+		_name = "Bip01 R Finger11"
+		lod_level = 5
+	}
+	{
+		_id = "cb15fa6c-2253-46a3-8dd0-c89619ef4ddd"
+		_name = "Bip01 R Finger21"
+		lod_level = 5
+	}
+	{
+		_id = "e70c4037-6604-41b7-a96d-646fa71f5d71"
+		_name = "Bip01 R Finger31"
+		lod_level = 5
+	}
+	{
+		_id = "23429657-89df-4fe3-960c-d8bf70e7e109"
+		_name = "Bip01 R Finger41"
+		lod_level = 5
+	}
+	{
+		_id = "ed2979c0-1c87-46ab-84af-2675f3d7a9e7"
+		_name = "Bip01 L Finger02"
+		lod_level = 5
+	}
+	{
+		_id = "400ce769-a895-4b57-996e-1f880a00ac96"
+		_name = "Bip01 L Finger12"
+		lod_level = 5
+	}
+	{
+		_id = "ac81ee3d-498a-4ea2-b13b-362006043ff9"
+		_name = "Bip01 L Finger22"
+		lod_level = 5
+	}
+	{
+		_id = "7205a7df-d0f9-4180-a313-aeb50dda2859"
+		_name = "Bip01 L Finger32"
+		lod_level = 5
+	}
+	{
+		_id = "d5b41d03-238f-4dca-8894-6eaf4455becf"
+		_name = "Bip01 L Finger42"
+		lod_level = 5
+	}
+	{
+		_id = "81a2ccf4-17c3-4600-9fa5-91c30a3bc824"
+		_name = "Bip01 R Finger02"
+		lod_level = 5
+	}
+	{
+		_id = "96eec292-f8a0-47ee-aafe-e17b7b39c23d"
+		_name = "Bip01 R Finger12"
+		lod_level = 5
+	}
+	{
+		_id = "4c3b8f7b-710c-49a4-a0dc-36aa2338024c"
+		_name = "Bip01 R Finger22"
+		lod_level = 5
+	}
+	{
+		_id = "541837e5-173a-48de-b83a-2f9c820c60f3"
+		_name = "Bip01 R Finger32"
+		lod_level = 5
+	}
+	{
+		_id = "23dac06a-301d-4fc4-8a3b-9257f99c2b44"
+		_name = "Bip01 R Finger42"
+		lod_level = 5
+	}
+	{
+		_id = "c66c1ab0-9487-462d-933d-44be9c038fc0"
+		_name = "Bip01 L Finger0Nub"
+		lod_level = 5
+	}
+	{
+		_id = "cd8223bb-152b-4e08-aec6-45f96dc27680"
+		_name = "Bip01 L Finger1Nub"
+		lod_level = 5
+	}
+	{
+		_id = "da7c60f2-ccb6-4ed4-838a-a96c32b3a94b"
+		_name = "Bip01 L Finger2Nub"
+		lod_level = 5
+	}
+	{
+		_id = "96da6667-79f2-4f8d-a841-271971fb8fb3"
+		_name = "Bip01 L Finger3Nub"
+		lod_level = 5
+	}
+	{
+		_id = "446de5b8-395e-4aa8-9398-e94b18390f73"
+		_name = "Bip01 L Finger4Nub"
+		lod_level = 5
+	}
+	{
+		_id = "9cb582c4-e4cb-4188-a0b6-da37cd07833e"
+		_name = "Bip01 R Finger0Nub"
+		lod_level = 5
+	}
+	{
+		_id = "6968c2db-ce91-4354-9b20-461ae1fd7e4c"
+		_name = "Bip01 R Finger1Nub"
+		lod_level = 5
+	}
+	{
+		_id = "557c3cb7-d5d4-4052-8e2b-87c1cd8228fd"
+		_name = "Bip01 R Finger2Nub"
+		lod_level = 5
+	}
+	{
+		_id = "7e7c4b95-f870-4e4a-a0a3-0b88aa4f8e8c"
+		_name = "Bip01 R Finger3Nub"
+		lod_level = 5
+	}
+	{
+		_id = "ce65e1b0-3bf9-4b58-a9ff-193267f267ca"
+		_name = "Bip01 R Finger4Nub"
+		lod_level = 5
+	}
+]
+default_bonelod_and_maxlod_count = 5
+locomotion_root_bone_ref = {
+	_id = "11e36cf9-ba58-4759-9029-cbe2d4521f8e"
+	ref_filename = null
+	ref_id = null
+}

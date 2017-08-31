@@ -1,0 +1,767 @@
+
+units = [ {
+		unit = "#ID[86ed6d805faa8bae]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[4711dbc4640551e2]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[36645a94c647167b]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[02c630330ab157b5]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[b2ce07a19b8eaa25]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[cacffd5d9a5bd546]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[8f57606cf9a11494]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[a997263f866725d8]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[d9771caae5dfb87c]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[d6cb53333a2b4991]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[fc1e1481c726ff42]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[7e4680671b005a92]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[a1ca8606f86b1ca2]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[d5b29d66dd0ee95a]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[8129d7cd41a12f38]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[369fb6c593f6079d]"
+		meshes = {
+			"#ID[74d62726]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 0
+				}
+			}
+		}
+	} {
+		unit = "#ID[62e080243b55a45e]"
+		meshes = {
+			"#ID[74d62726]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 1
+				}
+			}
+		}
+	} {
+		unit = "#ID[b040ec715ad7390d]"
+		meshes = {
+			"#ID[74d62726]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 2
+				}
+			}
+		}
+	} {
+		unit = "#ID[d35ac23be8eb9adb]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[256e868f3c35b5fc]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[3f5a1d373df344f0]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[20aca1546a55c0ba]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[e2207b6dcaf2c36a]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[81c342e0fed9877a]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[9641d52a32e431af]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[c6f3db5b3b7bd11b]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 3
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 4
+				}
+			}
+		}
+	} {
+		unit = "#ID[503ba1bd6d3161c7]"
+		meshes = {
+			"#ID[891cb00c]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 5
+				}
+			}
+		}
+	} {
+		unit = "#ID[992ee9f7e5446ec5]"
+		meshes = {
+			"#ID[d3da7303]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 6
+				}
+			}
+		}
+	} {
+		unit = "#ID[ca21699904a018bb]"
+		meshes = {
+			"#ID[d3da7303]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 7
+				}
+			}
+		}
+	} {
+		unit = "#ID[21784d8cc47c472d]"
+		meshes = {
+			"#ID[d3da7303]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 8
+				}
+			}
+		}
+	} {
+		unit = "#ID[08459434a4947b58]"
+		meshes = {
+			"#ID[891cb00c]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 9
+				}
+			}
+		}
+	} {
+		unit = "#ID[94ec1faf5b015388]"
+		meshes = {
+			"#ID[891cb00c]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 10
+				}
+			}
+		}
+	} {
+		unit = "#ID[de150a177ec47501]"
+		meshes = {
+			"#ID[d3da7303]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 11
+				}
+			}
+		}
+	} {
+		unit = "#ID[7b5c4214516d2faf]"
+		meshes = {
+			"#ID[d3da7303]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 12
+				}
+			}
+		}
+	} {
+		unit = "#ID[c558c1621ff55df8]"
+		meshes = {
+			"#ID[891cb00c]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 13
+				}
+			}
+		}
+	} {
+		unit = "#ID[42053a1225d01d7d]"
+		meshes = {
+			"#ID[89c8c322]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 14
+				}
+			}
+		}
+	} {
+		unit = "#ID[804d96acc71e9379]"
+		meshes = {
+			"#ID[89c8c322]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 15
+				}
+			}
+		}
+	} {
+		unit = "#ID[3bf7d4a876ab7203]"
+		meshes = {
+			"#ID[89c8c322]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 16
+				}
+			}
+		}
+	} {
+		unit = "#ID[e81aeeb4f9d58dc8]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[f361496dfce10318]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 17
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 18
+				}
+			}
+		}
+	} {
+		unit = "#ID[2abfa22716c6034b]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 19
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 20
+				}
+			}
+		}
+	} {
+		unit = "#ID[4687070e81c61edf]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 21
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 22
+				}
+			}
+		}
+	} {
+		unit = "#ID[0e54cab0f153fa25]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 23
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 24
+				}
+			}
+		}
+	} {
+		unit = "#ID[ce53d640325d9690]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 25
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 26
+				}
+			}
+		}
+	} {
+		unit = "#ID[7dff464eda47a279]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 27
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 28
+				}
+			}
+		}
+	} {
+		unit = "#ID[1dec477fe5ac3bc1]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 29
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 30
+				}
+			}
+		}
+	} {
+		unit = "#ID[e62fb9be3ea8f400]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 31
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 32
+				}
+			}
+		}
+	} {
+		unit = "#ID[9aef47ad62da8903]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 33
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 34
+				}
+			}
+		}
+	} {
+		unit = "#ID[1602b0a206b7a541]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 35
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 36
+				}
+			}
+		}
+	} {
+		unit = "#ID[3b4ec3c00a0bb518]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 37
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 38
+				}
+			}
+		}
+	} {
+		unit = "#ID[a0638268ae957b66]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 39
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 40
+				}
+			}
+		}
+	} {
+		unit = "#ID[f258f9b71ba15410]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[33acaff51ae9e6fc]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 41
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 42
+				}
+			}
+		}
+	} {
+		unit = "#ID[1a8ec02e9ab18dab]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 43
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 44
+				}
+			}
+		}
+	} {
+		unit = "#ID[d8a0f8375324cbea]"
+		meshes = {
+			"#ID[4e672815]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 45
+				}
+			}
+			"#ID[d0e0ce50]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 46
+				}
+			}
+		}
+	} {
+		unit = "#ID[94a59585017dfef4]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[675e7d377a38b3db]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[b3d028d7800137f4]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[b6287c79f8198386]"
+		meshes = {
+			"#ID[6646a197]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 51
+				}
+			}
+			"#ID[38c52e27]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 47
+				}
+			}
+			"#ID[dbc09400]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 49
+				}
+			}
+			"#ID[cbc2477c]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 48
+				}
+			}
+			"#ID[c1298c46]" = {
+				lightmap_format = "standard_irradiance"
+				variables = {
+					lightmap_uv_offset = [ 0 0 ]
+					lightmap_uv_scale = [ 1 1 ]
+				}
+				resources = {
+					lightmap = 50
+				}
+			}
+		}
+	} {
+		unit = "#ID[4d55cfefde6a2411]"
+		meshes = {
+		}
+	} {
+		unit = "#ID[7fa47b60a7231b17]"
+		meshes = {
+		}
+	} ]
+lightmaps = [ "content/levels/vr_learning-lightmaps/lightmap_0" "content/levels/vr_learning-lightmaps/lightmap_1" "content/levels/vr_learning-lightmaps/lightmap_2" "content/levels/vr_learning-lightmaps/lightmap_3" "content/levels/vr_learning-lightmaps/lightmap_4" "content/levels/vr_learning-lightmaps/lightmap_5" "content/levels/vr_learning-lightmaps/lightmap_6" "content/levels/vr_learning-lightmaps/lightmap_7" "content/levels/vr_learning-lightmaps/lightmap_8" "content/levels/vr_learning-lightmaps/lightmap_9" "content/levels/vr_learning-lightmaps/lightmap_10" "content/levels/vr_learning-lightmaps/lightmap_11" "content/levels/vr_learning-lightmaps/lightmap_12" "content/levels/vr_learning-lightmaps/lightmap_13" "content/levels/vr_learning-lightmaps/lightmap_14" "content/levels/vr_learning-lightmaps/lightmap_15" "content/levels/vr_learning-lightmaps/lightmap_16" "content/levels/vr_learning-lightmaps/lightmap_17" "content/levels/vr_learning-lightmaps/lightmap_18" "content/levels/vr_learning-lightmaps/lightmap_19" "content/levels/vr_learning-lightmaps/lightmap_20" "content/levels/vr_learning-lightmaps/lightmap_21" "content/levels/vr_learning-lightmaps/lightmap_22" "content/levels/vr_learning-lightmaps/lightmap_23" "content/levels/vr_learning-lightmaps/lightmap_24" "content/levels/vr_learning-lightmaps/lightmap_25" "content/levels/vr_learning-lightmaps/lightmap_26" "content/levels/vr_learning-lightmaps/lightmap_27" "content/levels/vr_learning-lightmaps/lightmap_28" "content/levels/vr_learning-lightmaps/lightmap_29" "content/levels/vr_learning-lightmaps/lightmap_30" "content/levels/vr_learning-lightmaps/lightmap_31" "content/levels/vr_learning-lightmaps/lightmap_32" "content/levels/vr_learning-lightmaps/lightmap_33" "content/levels/vr_learning-lightmaps/lightmap_34" "content/levels/vr_learning-lightmaps/lightmap_35" "content/levels/vr_learning-lightmaps/lightmap_36" "content/levels/vr_learning-lightmaps/lightmap_37" "content/levels/vr_learning-lightmaps/lightmap_38" "content/levels/vr_learning-lightmaps/lightmap_39" "content/levels/vr_learning-lightmaps/lightmap_40" "content/levels/vr_learning-lightmaps/lightmap_41" "content/levels/vr_learning-lightmaps/lightmap_42" "content/levels/vr_learning-lightmaps/lightmap_43" "content/levels/vr_learning-lightmaps/lightmap_44" "content/levels/vr_learning-lightmaps/lightmap_45" "content/levels/vr_learning-lightmaps/lightmap_46" "content/levels/vr_learning-lightmaps/lightmap_47" "content/levels/vr_learning-lightmaps/lightmap_48" "content/levels/vr_learning-lightmaps/lightmap_49" "content/levels/vr_learning-lightmaps/lightmap_50" "content/levels/vr_learning-lightmaps/lightmap_51" "content/levels/vr_learning-lightmaps/lightmap_52" ]

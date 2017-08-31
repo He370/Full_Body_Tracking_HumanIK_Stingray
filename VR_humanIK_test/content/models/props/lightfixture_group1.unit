@@ -1,0 +1,43 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 3.124922
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			2.172697
+			1.043599
+			1.764176
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.167364
+			-0.279396
+			0.81109
+			0.48586
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	Lights = "content/models/room/light"
+	walls = "content/models/props/materials/white_walls"
+}
+renderables = {
+	lightfixture_group1 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

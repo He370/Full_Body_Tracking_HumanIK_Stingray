@@ -1,0 +1,125 @@
+
+_data_root_version = 1
+_id = "fc71b6e0-8b4c-46fd-80db-520668969fe9"
+_name = "content/models/minion/minion_anim_controller"
+anim_skeleton_ref = {
+	_id = "43a6b9ee-42ec-4d23-b053-ed87e5a3d717"
+	ref_filename = "content/models/minion/minion.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	bones = "content/models/minion/minion"
+	layers = [
+		{
+			default_state = "Clip"
+			states = [
+				{
+					animations = [
+						"content/models/minion/minion"
+					]
+					loop_animation = true
+					name = "Clip"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+					]
+					weights = [
+						"1.0"
+					]
+				}
+			]
+		}
+	]
+}
+constraint_targets = [
+]
+constraints = [
+]
+events = [
+]
+layers = [
+	{
+		_id = "b6f94245-2258-4d7c-9172-345c4c36bc73"
+		_name = "Layer"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "27769c12-5094-4b23-964e-feae2c560340"
+			ref_filename = null
+			ref_id = "0012f63f-1ba0-40cd-9dc1-c0844f7d1e83"
+		}
+		empty_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
+			{
+				_id = "0012f63f-1ba0-40cd-9dc1-c0844f7d1e83"
+				_name = "Clip"
+				anim_blend_set_ref = {
+					_id = "ecbdab4f-7f5b-451c-bd6a-dd7e15421da9"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "08d31b85-b090-4ac2-803c-2f03758adf51"
+						ref_filename = "content/models/minion/minion.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "fd854c6a-bd31-4b30-a9d0-6e9b804f326b"
+					ref_filename = null
+					ref_id = null
+				}
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				template_transitions = [
+				]
+				transitions = [
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 100
+				y = 100
+			}
+		]
+		template_states = [
+		]
+		time_states = [
+		]
+	}
+]
+ragdolls = [
+]
+setup = {
+	_id = "93ac68b9-6d55-4246-b20d-aa805d4b45bc"
+	level = "core/editor_slave/levels/animation_preview_level/animation_preview_level"
+	unit_ref = {
+		_id = "5776c72f-5eff-4d3b-b2f2-477b784e9853"
+		ref_filename = "content/models/minion/minion.unit_anim"
+		ref_id = null
+	}
+}
+variables = [
+]

@@ -1,0 +1,959 @@
+
+_data_root_version = 1
+_id = "57cb2c02-adee-4ea9-9bae-098949809f15"
+_name = "content/models/sven/Sven"
+anim_blend_sets = [
+]
+anim_bones = [
+	{
+		_id = "e0b26bde-3860-47d0-9f02-a5b74bbed8a8"
+		_name = "StingrayEntityRoot"
+		lod_level = 5
+	}
+	{
+		_id = "43f93ea0-bd0c-4318-8a77-9087e82ebc12"
+		_name = "FbxAxisSystem_ConvertNode"
+		lod_level = 5
+	}
+	{
+		_id = "7215d71e-f6c4-4d47-a1c1-7492e012405b"
+		_name = "sm_rig:Skel:Bone__M__Root"
+		lod_level = 5
+	}
+	{
+		_id = "65992abd-0a0c-48d6-aff8-cee5d0a84e08"
+		_name = "sm_rig:Mesh_LOD1:LOD1_Group"
+		lod_level = 5
+	}
+	{
+		_id = "c902d745-8075-4023-b172-b677551a1433"
+		_name = "sm_rig:Skel:Bone__M__Capsule_Collision"
+		lod_level = 5
+	}
+	{
+		_id = "f1c313bb-a532-4086-b88f-fc371bb69e6e"
+		_name = "sm_rig:Skel:Bone__L__Arm_Hand_Transform"
+		lod_level = 5
+	}
+	{
+		_id = "46a8015e-b034-4af6-ae6e-57cc509511c6"
+		_name = "sm_rig:Skel:Bone__L__Arm_Hand_Ref_01"
+		lod_level = 5
+	}
+	{
+		_id = "360eda76-41d1-4acf-9bae-1a79f4a41def"
+		_name = "sm_rig:Skel:Bone__L__Arm_Hand_Ref_02"
+		lod_level = 5
+	}
+	{
+		_id = "1bd5f6dc-dfa5-4cc0-97ce-b2cdd2491baa"
+		_name = "sm_rig:Skel:Bone__L__Leg_Ankle_Transform"
+		lod_level = 5
+	}
+	{
+		_id = "140584e3-f0e5-4f78-97de-e1eb141c6c23"
+		_name = "sm_rig:Skel:Bone__L__Leg_Foot_Ref_01"
+		lod_level = 5
+	}
+	{
+		_id = "2ebac058-4b3a-47b8-9807-b090fb1762d0"
+		_name = "sm_rig:Skel:Bone__L__Leg_Foot_Ref_02"
+		lod_level = 5
+	}
+	{
+		_id = "2a05da81-cac9-43e0-b01a-179a26614c89"
+		_name = "sm_rig:Skel:Bone__R__Arm_Hand_Transform"
+		lod_level = 5
+	}
+	{
+		_id = "763f6444-1320-458c-b9f4-b9a3ea63e8e4"
+		_name = "sm_rig:Skel:Bone__R__Arm_Hand_Ref_01"
+		lod_level = 5
+	}
+	{
+		_id = "dbf6fbdd-935f-4aa7-83d3-656ff3a08026"
+		_name = "sm_rig:Skel:Bone__R__Arm_Hand_Ref_02"
+		lod_level = 5
+	}
+	{
+		_id = "152a06c4-b46e-451e-babc-f58a6c91ad52"
+		_name = "sm_rig:Skel:Bone__R__Leg_Ankle_Transform"
+		lod_level = 5
+	}
+	{
+		_id = "dd5a403e-fb3c-4584-bd50-829428e9cbe6"
+		_name = "sm_rig:Skel:Bone__R__Leg_Foot_Ref_01"
+		lod_level = 5
+	}
+	{
+		_id = "39607c5a-7572-4174-8578-5ccde85f9898"
+		_name = "sm_rig:Skel:Bone__R__Leg_Foot_Ref_03"
+		lod_level = 5
+	}
+	{
+		_id = "2ddcfc9b-a46c-4416-92a7-21114a2a3694"
+		_name = "sm_rig:Skel:Bone__M__Chest_Lookat_Reference"
+		lod_level = 5
+	}
+	{
+		_id = "2d246e3e-b590-4498-8736-259428404047"
+		_name = "sm_rig:Skel:Bone__M__Hips"
+		lod_level = 5
+	}
+	{
+		_id = "bdbfa826-ac38-44f1-8b7c-9e89fe28d533"
+		_name = "sm_rig:Skel:annotationLocator1"
+		lod_level = 5
+	}
+	{
+		_id = "20d9ce35-4a03-4fdf-ae74-08c18063bbd6"
+		_name = "sm_rig:Mesh_LOD1:Suit"
+		lod_level = 5
+	}
+	{
+		_id = "66b9ae19-e702-4ffd-bbc4-d1911922558b"
+		_name = "sm_rig:Mesh_LOD1:Head"
+		lod_level = 5
+	}
+	{
+		_id = "b6573036-397c-45f0-a0ce-5fe76f4a9387"
+		_name = "sm_rig:Mesh_LOD1:Head_Eyebrows"
+		lod_level = 5
+	}
+	{
+		_id = "23be081c-abb4-4cfd-8210-607fac15774c"
+		_name = "sm_rig:Mesh_LOD1:Head_Hair"
+		lod_level = 5
+	}
+	{
+		_id = "a6c1bd76-84a4-4637-8b08-62ced0d2e73c"
+		_name = "sm_rig:Mesh_LOD1:Head_Eyes"
+		lod_level = 5
+	}
+	{
+		_id = "436f751a-0ed4-4a4b-9e47-839468e3361f"
+		_name = "sm_rig:Mesh_LOD1:Mouth_Gums_Lower"
+		lod_level = 5
+	}
+	{
+		_id = "9cc1f87b-5ddf-4524-8f8c-ddd829bb1fdf"
+		_name = "sm_rig:Mesh_LOD1:Mouth_Gums_Upper"
+		lod_level = 5
+	}
+	{
+		_id = "702d0531-cc65-456a-9e89-c25e1c6998bb"
+		_name = "sm_rig:Mesh_LOD1:Mouth_Tongue"
+		lod_level = 5
+	}
+	{
+		_id = "8c0174dd-27e0-4826-a096-1b15e0b0fe2e"
+		_name = "sm_rig:Mesh_LOD1:Mouth_Teeth_Upper"
+		lod_level = 5
+	}
+	{
+		_id = "3acb1f19-dc04-422f-bc82-ad51b14e95d7"
+		_name = "sm_rig:Mesh_LOD1:Mouth_Teeth_Lower"
+		lod_level = 5
+	}
+	{
+		_id = "f34bc1b1-e5dd-4fce-b417-bccb335dc180"
+		_name = "sm_rig:Mesh_LOD1:Helmet_Collar"
+		lod_level = 5
+	}
+	{
+		_id = "425da415-3ec9-46ce-b17c-f9db0a5ee5de"
+		_name = "sm_rig:Mesh_LOD1:Helmet_Hose"
+		lod_level = 5
+	}
+	{
+		_id = "2ef65b5c-e2f3-4d5c-8bbe-22d35179316b"
+		_name = "sm_rig:Mesh_LOD1:Shoulder_Pads"
+		lod_level = 5
+	}
+	{
+		_id = "480430ef-9b86-474c-871d-7588fc7b5a74"
+		_name = "sm_rig:Mesh_LOD1:Elbow_Pads"
+		lod_level = 5
+	}
+	{
+		_id = "ddf85b42-0ce9-4d27-ac4e-b04d91f51c92"
+		_name = "sm_rig:Mesh_LOD1:Shield_L_Forearm"
+		lod_level = 5
+	}
+	{
+		_id = "b2aae995-e699-463a-bec0-ec4f42a1a31c"
+		_name = "sm_rig:Mesh_LOD1:Shield_R_Forearm"
+		lod_level = 5
+	}
+	{
+		_id = "2087c0bc-5a81-448e-9934-12ad97fa3702"
+		_name = "sm_rig:Mesh_LOD1:Strap_Buckle_Ribs"
+		lod_level = 5
+	}
+	{
+		_id = "e10a6b4b-c456-48e9-bf97-45c36fb1bf10"
+		_name = "sm_rig:Mesh_LOD1:Strap_Buckle_Chest"
+		lod_level = 5
+	}
+	{
+		_id = "4c134410-31b1-4ef6-adf4-66631e083f8e"
+		_name = "sm_rig:Mesh_LOD1:Belt_R_Pouch"
+		lod_level = 5
+	}
+	{
+		_id = "38b4f81f-0d5a-4e7e-8e79-3c74aed1b618"
+		_name = "sm_rig:Mesh_LOD1:Belt_L_Pouch"
+		lod_level = 5
+	}
+	{
+		_id = "03d804dc-b338-4f91-8489-debc64184821"
+		_name = "sm_rig:Mesh_LOD1:Belt_R_CartridgeHolder"
+		lod_level = 5
+	}
+	{
+		_id = "baec2499-1893-47f6-9a03-adbada0cb779"
+		_name = "sm_rig:Mesh_LOD1:Belt_L_Canister_02"
+		lod_level = 5
+	}
+	{
+		_id = "2fd43ed6-253c-443a-80ad-b15b5a566e79"
+		_name = "sm_rig:Mesh_LOD1:Belt_Buckle"
+		lod_level = 5
+	}
+	{
+		_id = "386e0a93-7fa5-418e-b645-be82cc4d43fe"
+		_name = "sm_rig:Mesh_LOD1:Belt_R_CartridgeHolder_Cartridge_Bulb"
+		lod_level = 5
+	}
+	{
+		_id = "21b9c7e2-2d83-4592-bf3f-2236b0e4bad0"
+		_name = "sm_rig:Mesh_LOD1:Belt_R_CartridgeHolder_Cartridge"
+		lod_level = 5
+	}
+	{
+		_id = "76e72374-4475-4e4a-a06e-5860f1584a59"
+		_name = "sm_rig:Mesh_LOD1:Belt_R_Canister_03"
+		lod_level = 5
+	}
+	{
+		_id = "18c5f530-f88a-404a-bc4d-fe88e65c52f9"
+		_name = "sm_rig:Mesh_LOD1:Belt_R_Canister_02"
+		lod_level = 5
+	}
+	{
+		_id = "bbb65d16-4bb7-44dc-9e00-f7ef9d657be3"
+		_name = "sm_rig:Mesh_LOD1:Belt_R_Canister_01"
+		lod_level = 5
+	}
+	{
+		_id = "87fff2f5-8bdb-4ef7-9c58-26977a669b5f"
+		_name = "sm_rig:Mesh_LOD1:Belt_L_Canister_03"
+		lod_level = 5
+	}
+	{
+		_id = "1ea5ce0e-0a64-4dd4-b123-18092cf02308"
+		_name = "sm_rig:Mesh_LOD1:Belt_L_Canister_01"
+		lod_level = 5
+	}
+	{
+		_id = "fb75f253-bd18-4fd7-a8ae-36dcd7b7283b"
+		_name = "sm_rig:Mesh_LOD1:Knee_Pads"
+		lod_level = 5
+	}
+	{
+		_id = "97cd7f53-69a4-4245-83c8-f8a5f22901ba"
+		_name = "sm_rig:Mesh_LOD1:Leg_L_Pouch_Straps"
+		lod_level = 5
+	}
+	{
+		_id = "3cf2f3b6-9e5f-491c-8793-d6771d2f4831"
+		_name = "sm_rig:Mesh_LOD1:Leg_L_Pouch"
+		lod_level = 5
+	}
+	{
+		_id = "464137bd-1ca3-46a2-86bc-11228ae02330"
+		_name = "sm_rig:Mesh_LOD1:Gun_R_Base"
+		lod_level = 5
+	}
+	{
+		_id = "03f20625-3e19-4a08-83f1-f820114f0809"
+		_name = "sm_rig:Mesh_LOD1:Gun_R_Cartridge_Bulb"
+		lod_level = 5
+	}
+	{
+		_id = "1682c61c-132c-4e21-a1df-a0548292d527"
+		_name = "sm_rig:Mesh_LOD1:Gun_R_Barrel"
+		lod_level = 5
+	}
+	{
+		_id = "d9b348a7-672c-4c9a-834a-dbf82d46c184"
+		_name = "sm_rig:Mesh_LOD1:Gun_R_Cartridge"
+		lod_level = 5
+	}
+	{
+		_id = "51663995-312c-4725-8ba0-df3772778a65"
+		_name = "sm_rig:Mesh_LOD1:Jetpack_Straps"
+		lod_level = 5
+	}
+	{
+		_id = "a0afca62-d77e-4ead-b4e3-58fe464405c9"
+		_name = "sm_rig:Mesh_LOD1:Jetpack_Thruster"
+		lod_level = 5
+	}
+	{
+		_id = "14cbe824-6fac-4ca4-abc1-18cf94679964"
+		_name = "sm_rig:Mesh_LOD1:Jetpack_Tanks"
+		lod_level = 5
+	}
+	{
+		_id = "5e749598-65db-486d-8201-9f853d684cc6"
+		_name = "sm_rig:Mesh_LOD1:Jetpack_Base"
+		lod_level = 5
+	}
+	{
+		_id = "8fe368b5-7822-426a-9514-80fc1b174d1d"
+		_name = "sm_rig:Mesh_LOD1:Jetpack_Attitude_Jets"
+		lod_level = 5
+	}
+	{
+		_id = "5af38ea8-547f-46b6-9a75-a473f47aa8e9"
+		_name = "sm_rig:Mesh_LOD1:Jetpack_Door"
+		lod_level = 5
+	}
+	{
+		_id = "15dd71a0-a38c-4c5f-80c0-a0e4b8f4b38f"
+		_name = "sm_rig:Mesh_LOD1:Jetpack_Doors_Side"
+		lod_level = 5
+	}
+	{
+		_id = "5ebbf4fe-eade-41a7-a67d-80ae27b84aa5"
+		_name = "sm_rig:Mesh_LOD1:Jetpack_Airi_Intake"
+		lod_level = 5
+	}
+	{
+		_id = "37f92865-0b85-42ff-b334-c3591dde91fa"
+		_name = "sm_rig:Mesh_LOD1:annotationLocator1"
+		lod_level = 5
+	}
+	{
+		_id = "14b09427-9d56-4d6a-ba37-35c2332ca096"
+		_name = "sm_rig:Skel:Bone__M__Hips_Base_Spine_Rotation"
+		lod_level = 5
+	}
+	{
+		_id = "d01d1498-73bb-4c71-9fec-ace3161ed6a3"
+		_name = "sm_rig:Skel:Bone__M__Hips_Base_Legs_Rotation"
+		lod_level = 5
+	}
+	{
+		_id = "e1040b06-e8eb-4273-942a-3217c3d28f54"
+		_name = "sm_rig:Mesh_LOD1:File_Annotation"
+		lod_level = 5
+	}
+	{
+		_id = "aed10089-3cd2-4bc0-8fab-f24f4a512720"
+		_name = "sm_rig:Skel:Bone_L_HipHelper"
+		lod_level = 5
+	}
+	{
+		_id = "5f9b7b6b-a001-4b6c-9281-dc6d6fab37fc"
+		_name = "sm_rig:Skel:Bone_R_HipHelper"
+		lod_level = 5
+	}
+	{
+		_id = "35d87bf9-fa64-4008-87e5-f1caefc5185c"
+		_name = "sm_rig:Skel:Bone__M__Spine_01"
+		lod_level = 5
+	}
+	{
+		_id = "57bedf63-de3c-4bb5-ad8c-68e0f64f8dda"
+		_name = "sm_rig:Skel:Bone__L__Leg_Upr"
+		lod_level = 5
+	}
+	{
+		_id = "c13c1c22-d2cb-4e68-994e-7efe4d15ca17"
+		_name = "sm_rig:Skel:Bone__R__Leg_Upr"
+		lod_level = 5
+	}
+	{
+		_id = "8c4ad5a8-85cf-48a6-93dd-94880ca644f1"
+		_name = "sm_rig:Skel:Bone_L_LegHelper"
+		lod_level = 5
+	}
+	{
+		_id = "63396c9f-e824-4597-b83b-51ecaff3abe0"
+		_name = "sm_rig:Skel:Bone_R_LegHelper"
+		lod_level = 5
+	}
+	{
+		_id = "9e31bc48-b215-40bd-a0ae-9754eb7db10f"
+		_name = "sm_rig:Skel:Bone__M__Spine_02"
+		lod_level = 5
+	}
+	{
+		_id = "405ab5fd-1b7c-4200-9957-1b8c1622a07d"
+		_name = "sm_rig:Skel:Bone__L__Leg_Lwr"
+		lod_level = 5
+	}
+	{
+		_id = "79805f1b-ff32-43ae-8967-e244f93b92d7"
+		_name = "sm_rig:Skel:Bone__L__Leg_Upr_Roll_02"
+		lod_level = 5
+	}
+	{
+		_id = "77f508b2-0253-4964-b90f-e784f3120d01"
+		_name = "sm_rig:Skel:Bone__L__Leg_Upr_Roll_01"
+		lod_level = 5
+	}
+	{
+		_id = "f375a726-3530-416c-8917-729f3fada624"
+		_name = "sm_rig:Skel:Bone__R__Leg_Lwr"
+		lod_level = 5
+	}
+	{
+		_id = "13b47d64-5de4-4165-82a4-cdf0e1568587"
+		_name = "sm_rig:Skel:Bone__R__Leg_Upr_Roll_02"
+		lod_level = 5
+	}
+	{
+		_id = "f168170c-1631-4d25-90d5-c4dbb04744c5"
+		_name = "sm_rig:Skel:Bone__R__Leg_Upr_Roll_01"
+		lod_level = 5
+	}
+	{
+		_id = "83cfdccc-8871-4e24-b028-e81094ead767"
+		_name = "sm_rig:Skel:Bone__M__Spine_03"
+		lod_level = 5
+	}
+	{
+		_id = "de147ab6-18cb-4679-aa65-a24307a6430c"
+		_name = "sm_rig:Skel:Bone__L__Leg_Knee"
+		lod_level = 5
+	}
+	{
+		_id = "84b0e98a-8591-4c7c-8881-afe6d12dcc9e"
+		_name = "sm_rig:Skel:Bone__L__Leg_Ankle"
+		lod_level = 5
+	}
+	{
+		_id = "9f1764ca-263d-4150-8bdf-ec41b09893fa"
+		_name = "sm_rig:Skel:Bone__R__Leg_Ankle"
+		lod_level = 5
+	}
+	{
+		_id = "727a30da-967e-4c37-8fe4-c955f639e857"
+		_name = "sm_rig:Skel:Bone__R__Leg_Knee"
+		lod_level = 5
+	}
+	{
+		_id = "64634e64-2b25-498f-932f-27b40805b67e"
+		_name = "sm_rig:Skel:Bone__M__Spine_04"
+		lod_level = 5
+	}
+	{
+		_id = "c4a47495-3c82-461f-aa8a-fa9693c70218"
+		_name = "sm_rig:Skel:Bone__L__Leg_Toe"
+		lod_level = 5
+	}
+	{
+		_id = "8ab997cd-0f2f-4589-bb74-87c37818d1a9"
+		_name = "sm_rig:Skel:Bone__L__Leg_Ankle_FloorContact"
+		lod_level = 5
+	}
+	{
+		_id = "7c380795-8349-414e-a407-da2b5a657446"
+		_name = "sm_rig:Skel:Bone__R__Leg_Toe"
+		lod_level = 5
+	}
+	{
+		_id = "4e53a834-61b9-408a-b12b-89ac124276df"
+		_name = "sm_rig:Skel:Bone__R__Leg_Ankle_FloorContact"
+		lod_level = 5
+	}
+	{
+		_id = "03da7dbb-cb32-4bab-ad04-41fd94c2256e"
+		_name = "sm_rig:Skel:Bone__M__Spine_05"
+		lod_level = 5
+	}
+	{
+		_id = "0d889f30-c9cc-44b1-813d-7a3be9e2f8cb"
+		_name = "sm_rig:Skel:Bone__L__Leg_Toe_End"
+		lod_level = 5
+	}
+	{
+		_id = "a7ae38c6-d6c3-4886-9484-6d0997a73940"
+		_name = "sm_rig:Skel:Bone__L__Leg_Toe_FloorContact"
+		lod_level = 5
+	}
+	{
+		_id = "9e79ba42-4708-43ed-a8be-14641757479a"
+		_name = "sm_rig:Skel:Bone__R__Leg_Toe_End"
+		lod_level = 5
+	}
+	{
+		_id = "a8ce26ac-6f35-4879-b81a-546f9757a42c"
+		_name = "sm_rig:Skel:Bone__R__Leg_Toe_FloorContact"
+		lod_level = 5
+	}
+	{
+		_id = "59064e81-9077-42d9-865d-bd452390b253"
+		_name = "sm_rig:Skel:Bone__M__Neck_01"
+		lod_level = 5
+	}
+	{
+		_id = "abe31311-68bc-4555-bdc1-0f41dab503dc"
+		_name = "sm_rig:Skel:Bone__M__Helmet_Collar"
+		lod_level = 5
+	}
+	{
+		_id = "ff4e3999-746a-42e4-a703-ab831da01891"
+		_name = "sm_rig:Skel:Bone__L__Chest_AVG"
+		lod_level = 5
+	}
+	{
+		_id = "deaf112a-b80a-476c-8f21-aa17d15da113"
+		_name = "sm_rig:Skel:Bone__R__Chest_AVG"
+		lod_level = 5
+	}
+	{
+		_id = "ed9f7eeb-d03c-4504-bb35-aeb667b1911f"
+		_name = "sm_rig:Skel:Bone__L__Arm_Clav"
+		lod_level = 5
+	}
+	{
+		_id = "b56b83c9-c3a2-41c0-8723-58977ebab215"
+		_name = "sm_rig:Skel:Bone__M__RocketPack"
+		lod_level = 5
+	}
+	{
+		_id = "2c79c550-f428-43ae-b6d7-9a07991d27f7"
+		_name = "sm_rig:Skel:Bone__R__Arm_Clav"
+		lod_level = 5
+	}
+	{
+		_id = "62d5efec-5732-4268-a9da-69a70af793c1"
+		_name = "sm_rig:Skel:Bone__M__Neck_02"
+		lod_level = 5
+	}
+	{
+		_id = "1c3ed084-4d0a-4545-8a6e-99b0e1789be5"
+		_name = "sm_rig:Skel:Bone__M__Helmet"
+		lod_level = 5
+	}
+	{
+		_id = "3967de7e-4382-4fdc-a214-a9524ba9cc9b"
+		_name = "sm_rig:Skel:Bone__L__Arm_Upr"
+		lod_level = 5
+	}
+	{
+		_id = "2685c8a5-e2b7-4535-9c5d-311f197f12a5"
+		_name = "sm_rig:Skel:Bone__L__RocketPack_Attitude_01"
+		lod_level = 5
+	}
+	{
+		_id = "368041ac-b944-4a4b-bf9c-deb81d8351d5"
+		_name = "sm_rig:Skel:Bone__R__RocketPack_Attitude_01"
+		lod_level = 5
+	}
+	{
+		_id = "87cae88c-8970-4d58-b5bd-68f9ad72ad5d"
+		_name = "sm_rig:Skel:Bone__M__RocketPack_GunSocket"
+		lod_level = 5
+	}
+	{
+		_id = "39b20d05-a60f-4cf0-94f5-434bd68285d1"
+		_name = "sm_rig:Skel:Bone__M__RocketPack_AirIntake"
+		lod_level = 5
+	}
+	{
+		_id = "74482a2c-d9b1-495f-a078-258172d4f61a"
+		_name = "sm_rig:Skel:Bone__L__RocketPack_Door"
+		lod_level = 5
+	}
+	{
+		_id = "281417a3-5842-4cef-ad4c-4ba703821df6"
+		_name = "sm_rig:Skel:Bone__R__RocketPack_Door"
+		lod_level = 5
+	}
+	{
+		_id = "4662b37c-7014-4538-ab02-ae5ce0f1f261"
+		_name = "sm_rig:Skel:Bone__M__RocketPack_Door"
+		lod_level = 5
+	}
+	{
+		_id = "e38b2746-c10b-4bbf-93d1-4bd780d57b6b"
+		_name = "sm_rig:Skel:Bone__L__RocketPack_Thruster"
+		lod_level = 5
+	}
+	{
+		_id = "8a79a5e2-10c5-45d6-95d8-c7e4308c9ac6"
+		_name = "sm_rig:Skel:Bone__R__RocketPack_Thruster"
+		lod_level = 5
+	}
+	{
+		_id = "7d23a05e-5bde-4028-8bad-6b7b47228da9"
+		_name = "sm_rig:Skel:Bone__R__Arm_Upr"
+		lod_level = 5
+	}
+	{
+		_id = "3bf55c68-f308-4912-9091-4727413fe4f5"
+		_name = "sm_rig:Skel:Bone__M__Neck_Collar_Bend"
+		lod_level = 5
+	}
+	{
+		_id = "aee93d85-810f-4664-ba9a-1df5159c9c1f"
+		_name = "sm_rig:Skel:Bone__M__Head"
+		lod_level = 5
+	}
+	{
+		_id = "2e4652a6-9b67-4e41-b417-3719e919f8db"
+		_name = "sm_rig:Skel:Bone__L__Arm_Upr_Roll_01"
+		lod_level = 5
+	}
+	{
+		_id = "da0f77e2-5a75-4316-a6df-00630937abc0"
+		_name = "sm_rig:Skel:Bone__L__Arm_Upr_Roll_02"
+		lod_level = 5
+	}
+	{
+		_id = "9c3fe872-76d5-482c-83a5-b7d4f9c5cc05"
+		_name = "sm_rig:Skel:Bone__L__Arm_Lwr"
+		lod_level = 5
+	}
+	{
+		_id = "73c831b1-7c8e-40ca-9077-521c9e7fcb07"
+		_name = "sm_rig:Skel:Bone__R__Arm_Upr_Roll_01"
+		lod_level = 5
+	}
+	{
+		_id = "0e04b7ab-8050-4242-bf9c-60737054f526"
+		_name = "sm_rig:Skel:Bone__R__Arm_Upr_Roll_02"
+		lod_level = 5
+	}
+	{
+		_id = "34b4fbb4-3734-4000-9620-84adcb4d4f24"
+		_name = "sm_rig:Skel:Bone__R__Arm_Lwr"
+		lod_level = 5
+	}
+	{
+		_id = "c0ead50c-5aab-45c6-ad8b-d58a7c4714e9"
+		_name = "sm_rig:Skel:Bone__M__Head_End"
+		lod_level = 5
+	}
+	{
+		_id = "4899ab87-98b0-450b-9091-95e66b229595"
+		_name = "sm_rig:Skel:Bone__M__Jaw"
+		lod_level = 5
+	}
+	{
+		_id = "cbd1d73d-218c-48aa-a1f1-9edbd330c802"
+		_name = "sm_rig:Skel:Bone__L__Eye"
+		lod_level = 5
+	}
+	{
+		_id = "c96e34ce-7e17-4899-b58b-f046bbfdbad9"
+		_name = "sm_rig:Skel:Bone__R__Eye"
+		lod_level = 5
+	}
+	{
+		_id = "e79273df-ec3f-4e2b-a7ae-f3fc22fa62b8"
+		_name = "sm_rig:Skel:Bone__L__Arm_ShoulderPad"
+		lod_level = 5
+	}
+	{
+		_id = "81c92aab-4e3c-4080-93b8-65b918ed7023"
+		_name = "sm_rig:Skel:Bone__L__Arm_Hand"
+		lod_level = 5
+	}
+	{
+		_id = "7e00a504-a8ab-4200-bdf5-99b2c282796a"
+		_name = "sm_rig:Skel:Bone__L__Arm_Lwr_Roll_01"
+		lod_level = 5
+	}
+	{
+		_id = "2c9d4931-e742-455e-bfbd-7a68de4b5223"
+		_name = "sm_rig:Skel:Bone__L__Arm_Lwr_Roll_02"
+		lod_level = 5
+	}
+	{
+		_id = "949d8570-fc4e-46f3-a25c-9380c2f639ed"
+		_name = "sm_rig:Skel:Bone__L__Arm_Elbow"
+		lod_level = 5
+	}
+	{
+		_id = "d818fe27-5877-41ae-a76e-e1f98debf6e3"
+		_name = "sm_rig:Skel:Bone__L__Arm_Lwr_Guard"
+		lod_level = 5
+	}
+	{
+		_id = "d3cf8206-405d-4795-bb7e-07b99bc89e1b"
+		_name = "sm_rig:Skel:Bone__R__Arm_ShoulderPad"
+		lod_level = 5
+	}
+	{
+		_id = "09b37c32-460d-45b5-aa41-0a4238f139bb"
+		_name = "sm_rig:Skel:Bone__R__Arm_Hand"
+		lod_level = 5
+	}
+	{
+		_id = "d09d69f2-5936-418c-b1f7-48663b258f64"
+		_name = "sm_rig:Skel:Bone__R__Arm_Lwr_Roll_01"
+		lod_level = 5
+	}
+	{
+		_id = "ca07d0ea-87bc-4734-b22b-ac06d60fed09"
+		_name = "sm_rig:Skel:Bone__R__Arm_Lwr_Roll_02"
+		lod_level = 5
+	}
+	{
+		_id = "6d28a781-97e7-48e1-8443-d115f53ad2a7"
+		_name = "sm_rig:Skel:Bone__R__Arm_Elbow"
+		lod_level = 5
+	}
+	{
+		_id = "d5f89bfd-cb67-466f-984b-603f3c76ff36"
+		_name = "sm_rig:Skel:Bone__R__Arm_Lwr_Guard"
+		lod_level = 5
+	}
+	{
+		_id = "dc1ee143-606e-4976-b533-c2f7e765f003"
+		_name = "sm_rig:Skel:Bone__M__Jaw_End"
+		lod_level = 5
+	}
+	{
+		_id = "572c49d1-6597-498f-8af6-ecd9c7d77e4c"
+		_name = "sm_rig:Skel:Bone__L__FingerThumb_01"
+		lod_level = 5
+	}
+	{
+		_id = "bfe727d3-4c39-4b87-b6dc-5c0a2ad0ea21"
+		_name = "sm_rig:Skel:Bone__L__FingerIndex_01"
+		lod_level = 5
+	}
+	{
+		_id = "122b55dd-5adb-4d7a-8f7f-c120ca1c182b"
+		_name = "sm_rig:Skel:Bone__L__FingerMiddle_01"
+		lod_level = 5
+	}
+	{
+		_id = "fa5a1e19-b229-4c05-8cbb-bdddb2038abd"
+		_name = "sm_rig:Skel:Bone__L__FingerRing_01"
+		lod_level = 5
+	}
+	{
+		_id = "033836c3-079f-4465-af68-ff22e44796d1"
+		_name = "sm_rig:Skel:Bone__L__FingerPinky_01"
+		lod_level = 5
+	}
+	{
+		_id = "4c41fca2-636f-47eb-bf44-d25cd52841e4"
+		_name = "sm_rig:Skel:Bone__L__Hand_Gun_Socket"
+		lod_level = 5
+	}
+	{
+		_id = "f904f8a3-a2ae-48a3-8d6f-500a46bf1154"
+		_name = "sm_rig:Skel:Bone__R__FingerThumb_01"
+		lod_level = 5
+	}
+	{
+		_id = "9cdb26f2-bef4-48a4-bafa-ec218ed04e26"
+		_name = "sm_rig:Skel:Bone__R__FingerIndex_01"
+		lod_level = 5
+	}
+	{
+		_id = "de17d794-c5db-4f71-9ad1-098be8950ae2"
+		_name = "sm_rig:Skel:Bone__R__FingerMiddle_01"
+		lod_level = 5
+	}
+	{
+		_id = "796530b3-08ca-41f1-8c1e-ecba8599715b"
+		_name = "sm_rig:Skel:Bone__R__FingerRing_01"
+		lod_level = 5
+	}
+	{
+		_id = "4b792b02-1554-4b60-967d-ab0c261e9a07"
+		_name = "sm_rig:Skel:Bone__R__FingerPinky_01"
+		lod_level = 5
+	}
+	{
+		_id = "f6307927-767a-45c3-8715-1b940f3000bf"
+		_name = "sm_rig:Skel:Bone__L__Hand_Gun_Socket_ncl1_1"
+		lod_level = 5
+	}
+	{
+		_id = "4947da89-e3ea-44f6-b95c-d2d0f8275b52"
+		_name = "sm_rig:Skel:Bone__R__Gun_1"
+		lod_level = 5
+	}
+	{
+		_id = "c6fa1f88-f62e-45ff-a357-d5accc5195db"
+		_name = "sm_rig:Skel:Bone__L__FingerThumb_02"
+		lod_level = 5
+	}
+	{
+		_id = "d2f37aae-9a2f-4198-bac7-0564fcf81168"
+		_name = "sm_rig:Skel:Bone__L__FingerIndex_02"
+		lod_level = 5
+	}
+	{
+		_id = "fc524f26-61b9-4a7c-a89c-0023b85baa9c"
+		_name = "sm_rig:Skel:Bone__L__FingerMiddle_02"
+		lod_level = 5
+	}
+	{
+		_id = "4b4dd2bb-001f-4d87-aae8-8fb3ddcb9cd5"
+		_name = "sm_rig:Skel:Bone__L__FingerRing_02"
+		lod_level = 5
+	}
+	{
+		_id = "c91eed64-ffcb-4907-9d80-56bd7e1b24bd"
+		_name = "sm_rig:Skel:Bone__L__FingerPinky_02"
+		lod_level = 5
+	}
+	{
+		_id = "09c1dfc9-8d53-4b9c-b106-e1e9034c3e3f"
+		_name = "sm_rig:Skel:Bone__R__FingerThumb_02"
+		lod_level = 5
+	}
+	{
+		_id = "e10a6174-dee5-4877-886e-f44b883c7da2"
+		_name = "sm_rig:Skel:Bone__R__FingerIndex_02"
+		lod_level = 5
+	}
+	{
+		_id = "a99ec559-c032-4cdb-9f8d-bca4f5b6d84a"
+		_name = "sm_rig:Skel:Bone__R__FingerMiddle_02"
+		lod_level = 5
+	}
+	{
+		_id = "008b57d9-3558-43da-921a-a634bcae0854"
+		_name = "sm_rig:Skel:Bone__R__FingerRing_02"
+		lod_level = 5
+	}
+	{
+		_id = "9866d058-d6fe-4946-94c7-12d3b3ed8780"
+		_name = "sm_rig:Skel:Bone__R__FingerPinky_02"
+		lod_level = 5
+	}
+	{
+		_id = "9ec1a932-ef7a-4b63-9043-05f33d268d12"
+		_name = "sm_rig:Skel:Bone__R__Gun_2"
+		lod_level = 5
+	}
+	{
+		_id = "2247a564-0a08-44d8-839d-4630e749af43"
+		_name = "sm_rig:Skel:Bone__R__Gun_3"
+		lod_level = 5
+	}
+	{
+		_id = "7af48d59-ae73-4fcb-acee-5252d8100467"
+		_name = "sm_rig:Skel:Bone__L__FingerThumb_03"
+		lod_level = 5
+	}
+	{
+		_id = "2741f164-3fe0-43c0-8024-8174f50f05e2"
+		_name = "sm_rig:Skel:Bone__L__FingerIndex_03"
+		lod_level = 5
+	}
+	{
+		_id = "4c0cc93e-f300-49a8-8ba5-74cc00387418"
+		_name = "sm_rig:Skel:Bone__L__FingerMiddle_03"
+		lod_level = 5
+	}
+	{
+		_id = "ef95d1b8-8a9c-4894-b4e5-d07266c08ca0"
+		_name = "sm_rig:Skel:Bone__L__FingerRing_03"
+		lod_level = 5
+	}
+	{
+		_id = "7440c45a-c63a-413c-911e-f9fbcf417203"
+		_name = "sm_rig:Skel:Bone__L__FingerPinky_03"
+		lod_level = 5
+	}
+	{
+		_id = "88d3661e-75ea-4c7d-a7a8-80d26a6ea2da"
+		_name = "sm_rig:Skel:Bone__R__FingerThumb_03"
+		lod_level = 5
+	}
+	{
+		_id = "8303e4a6-aafb-4da2-b431-8be096728e34"
+		_name = "sm_rig:Skel:Bone__R__FingerIndex_03"
+		lod_level = 5
+	}
+	{
+		_id = "46556859-61b7-4b6c-b994-87245663a10c"
+		_name = "sm_rig:Skel:Bone__R__FingerMiddle_03"
+		lod_level = 5
+	}
+	{
+		_id = "9c1f82d5-9dec-42bb-964f-7c904c88628c"
+		_name = "sm_rig:Skel:Bone__R__FingerRing_03"
+		lod_level = 5
+	}
+	{
+		_id = "47aeec47-4a2f-4c48-83ae-37c8bca2cead"
+		_name = "sm_rig:Skel:Bone__R__FingerPinky_03"
+		lod_level = 5
+	}
+	{
+		_id = "2dbc1cdb-8a4a-4c43-9b60-07d69e8126ea"
+		_name = "sm_rig:Skel:Bone__L__FingerThumb_04"
+		lod_level = 5
+	}
+	{
+		_id = "d1a698d6-ca15-480f-beb7-5aff05bc1845"
+		_name = "sm_rig:Skel:Bone__L__FingerIndex_04"
+		lod_level = 5
+	}
+	{
+		_id = "5a4f1910-355b-416e-a946-e0410677f46d"
+		_name = "sm_rig:Skel:Bone__L__FingerMiddle_04"
+		lod_level = 5
+	}
+	{
+		_id = "011b1fc2-22d3-470f-a30b-be14048ae576"
+		_name = "sm_rig:Skel:Bone__L__FingerRing_04"
+		lod_level = 5
+	}
+	{
+		_id = "de64a7aa-569a-45f0-b584-156fbdc4e2c7"
+		_name = "sm_rig:Skel:Bone__L__FingerPinky_04"
+		lod_level = 5
+	}
+	{
+		_id = "634eddb5-794f-4483-a5af-30dd30e53b15"
+		_name = "sm_rig:Skel:Bone__R__FingerThumb_04"
+		lod_level = 5
+	}
+	{
+		_id = "05d82eab-e7cc-40cb-a52a-d9063396d399"
+		_name = "sm_rig:Skel:Bone__R__FingerIndex_04"
+		lod_level = 5
+	}
+	{
+		_id = "f3593b1e-9985-4e17-a8bd-096a24b40783"
+		_name = "sm_rig:Skel:Bone__R__FingerMiddle_04"
+		lod_level = 5
+	}
+	{
+		_id = "6bcf0f6e-e74f-4c4a-98d4-082822de05da"
+		_name = "sm_rig:Skel:Bone__R__FingerRing_04"
+		lod_level = 5
+	}
+	{
+		_id = "b96fe6dd-e77c-4a25-be2e-52d6d7103bab"
+		_name = "sm_rig:Skel:Bone__R__FingerPinky_04"
+		lod_level = 5
+	}
+]
+dcc_asset_ref = {
+	_id = "bbd89dd9-0699-4f76-92c3-30d97fa20164"
+	ref_filename = "content/models/sven/Sven.dcc_asset"
+	ref_id = null
+}
+default_bonelod_and_maxlod_count = 5
+locomotion_root_bone_ref = {
+	_id = "7a7f5aa8-a31a-4827-a560-266176da0afb"
+	ref_filename = null
+	ref_id = null
+}

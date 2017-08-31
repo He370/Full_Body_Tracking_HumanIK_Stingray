@@ -1,0 +1,760 @@
+
+nodes = [
+	{
+		flow_nodes_resource = "core/humanik/humanik"
+		id = "6553ae9a-8d34-4f98-9910-07e6dafcda50"
+		in_variables = {
+			characterization = {
+				type = "string"
+			}
+			unit = {
+				node = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "HumanIK Creature"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "2312968c-c94f-4273-9f0c-7b941b6021c4:0"
+					node = "2312968c-c94f-4273-9f0c-7b941b6021c4"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			characterization = "content/models/minion/minion"
+			unit = null
+		}
+		variables = [
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "characterization"
+				type = "string"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "core/humanik/humanik"
+		id = "3ff15bdc-38dd-4368-93c6-fa6470403cda"
+		in_variables = {
+			blend_alpha = {
+				type = "float"
+			}
+			blend_in_time = {
+				type = "float"
+			}
+			chain_index = {
+				type = "float"
+			}
+			constraint_id = {
+				type = "float"
+			}
+			in_world_space = {
+				type = "bool"
+			}
+			unit = {
+				node = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "HumanIK Add Chain Pin"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "361c0360-db86-405c-9d85-18625d21cfb5:0"
+					node = "361c0360-db86-405c-9d85-18625d21cfb5"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			blend_alpha = 1
+			blend_in_time = 1
+			chain_index = 1
+			constraint_id = -1
+			in_world_space = false
+			unit = null
+		}
+		variables = [
+			{
+				name = "in_world_space"
+				type = "bool"
+			}
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "constraint_id"
+				type = "float"
+			}
+			{
+				name = "blend_in_time"
+				type = "float"
+			}
+			{
+				name = "chain_index"
+				type = "float"
+			}
+			{
+				name = "blend_alpha"
+				type = "float"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "core/humanik/humanik"
+		id = "3dcce27a-626c-444e-a0c7-cc30b9f855b2"
+		in_variables = {
+			blend_alpha = {
+				type = "float"
+			}
+			blend_in_time = {
+				type = "float"
+			}
+			chain_index = {
+				type = "float"
+			}
+			constraint_id = {
+				type = "float"
+			}
+			in_world_space = {
+				type = "bool"
+			}
+			unit = {
+				node = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "HumanIK Add Chain Pin"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "88d3664e-b658-4802-9b93-86db53150b66:0"
+					node = "88d3664e-b658-4802-9b93-86db53150b66"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			blend_alpha = 1
+			blend_in_time = 1
+			chain_index = 4
+			constraint_id = -1
+			in_world_space = false
+			unit = null
+		}
+		variables = [
+			{
+				name = "in_world_space"
+				type = "bool"
+			}
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "constraint_id"
+				type = "float"
+			}
+			{
+				name = "blend_in_time"
+				type = "float"
+			}
+			{
+				name = "chain_index"
+				type = "float"
+			}
+			{
+				name = "blend_alpha"
+				type = "float"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "core/humanik/humanik"
+		id = "361c0360-db86-405c-9d85-18625d21cfb5"
+		in_variables = {
+			blend_alpha = {
+				type = "float"
+			}
+			blend_in_time = {
+				type = "float"
+			}
+			chain_index = {
+				type = "float"
+			}
+			constraint_id = {
+				type = "float"
+			}
+			in_world_space = {
+				type = "bool"
+			}
+			unit = {
+				node = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "HumanIK Add Chain Pin"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "65e0a18e-40cf-4037-9e68-6815f51d9c73:0"
+					node = "65e0a18e-40cf-4037-9e68-6815f51d9c73"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			blend_alpha = 1
+			blend_in_time = 1
+			chain_index = 2
+			constraint_id = -1
+			in_world_space = false
+			unit = null
+		}
+		variables = [
+			{
+				name = "in_world_space"
+				type = "bool"
+			}
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "constraint_id"
+				type = "float"
+			}
+			{
+				name = "blend_in_time"
+				type = "float"
+			}
+			{
+				name = "chain_index"
+				type = "float"
+			}
+			{
+				name = "blend_alpha"
+				type = "float"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "core/humanik/humanik"
+		id = "88d3664e-b658-4802-9b93-86db53150b66"
+		in_variables = {
+			blend_alpha = {
+				type = "float"
+			}
+			blend_in_time = {
+				type = "float"
+			}
+			chain_index = {
+				type = "float"
+			}
+			constraint_id = {
+				type = "float"
+			}
+			in_world_space = {
+				type = "bool"
+			}
+			unit = {
+				node = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "HumanIK Add Chain Pin"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "bfd81f42-4cb2-4b11-9ae2-c4f12fbd0cf6:0"
+					node = "bfd81f42-4cb2-4b11-9ae2-c4f12fbd0cf6"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			blend_alpha = 1
+			blend_in_time = 1
+			chain_index = 5
+			constraint_id = -1
+			in_world_space = false
+			unit = null
+		}
+		variables = [
+			{
+				name = "in_world_space"
+				type = "bool"
+			}
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "constraint_id"
+				type = "float"
+			}
+			{
+				name = "blend_in_time"
+				type = "float"
+			}
+			{
+				name = "chain_index"
+				type = "float"
+			}
+			{
+				name = "blend_alpha"
+				type = "float"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "core/humanik/humanik"
+		id = "65e0a18e-40cf-4037-9e68-6815f51d9c73"
+		in_variables = {
+			blend_alpha = {
+				type = "float"
+			}
+			blend_in_time = {
+				type = "float"
+			}
+			chain_index = {
+				type = "float"
+			}
+			constraint_id = {
+				type = "float"
+			}
+			in_world_space = {
+				type = "bool"
+			}
+			unit = {
+				node = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "HumanIK Add Chain Pin"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "3dcce27a-626c-444e-a0c7-cc30b9f855b2:0"
+					node = "3dcce27a-626c-444e-a0c7-cc30b9f855b2"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			blend_alpha = 1
+			blend_in_time = 1
+			chain_index = 3
+			constraint_id = -1
+			in_world_space = false
+			unit = null
+		}
+		variables = [
+			{
+				name = "in_world_space"
+				type = "bool"
+			}
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "constraint_id"
+				type = "float"
+			}
+			{
+				name = "blend_in_time"
+				type = "float"
+			}
+			{
+				name = "chain_index"
+				type = "float"
+			}
+			{
+				name = "blend_alpha"
+				type = "float"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "core/humanik/humanik"
+		id = "bfd81f42-4cb2-4b11-9ae2-c4f12fbd0cf6"
+		in_variables = {
+			blend_alpha = {
+				type = "float"
+			}
+			blend_in_time = {
+				type = "float"
+			}
+			chain_index = {
+				type = "float"
+			}
+			constraint_id = {
+				type = "float"
+			}
+			in_world_space = {
+				type = "bool"
+			}
+			unit = {
+				node = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "HumanIK Add Chain Pin"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			blend_alpha = 1
+			blend_in_time = 1
+			chain_index = 6
+			constraint_id = -1
+			in_world_space = false
+			unit = null
+		}
+		variables = [
+			{
+				name = "in_world_space"
+				type = "bool"
+			}
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "constraint_id"
+				type = "float"
+			}
+			{
+				name = "blend_in_time"
+				type = "float"
+			}
+			{
+				name = "chain_index"
+				type = "float"
+			}
+			{
+				name = "blend_alpha"
+				type = "float"
+			}
+		]
+	}
+	{
+		id = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "6874a707-9cf2-4c48-a2a2-93dcffc46ed6:0"
+					node = "6874a707-9cf2-4c48-a2a2-93dcffc46ed6"
+				}
+			]
+		}
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+	{
+		flow_nodes_resource = "core/humanik/humanik"
+		id = "6874a707-9cf2-4c48-a2a2-93dcffc46ed6"
+		name = "HumanIK Switch On"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "6553ae9a-8d34-4f98-9910-07e6dafcda50:0"
+					node = "6553ae9a-8d34-4f98-9910-07e6dafcda50"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variables = [
+		]
+	}
+	{
+		flow_nodes_resource = "core/humanik/humanik"
+		id = "2312968c-c94f-4273-9f0c-7b941b6021c4"
+		in_variables = {
+			blend_alpha = {
+				type = "float"
+			}
+			blend_in_time = {
+				type = "float"
+			}
+			constraint_id = {
+				type = "float"
+			}
+			motion_amplitude = {
+				type = "float"
+			}
+			motion_frequency = {
+				type = "float"
+			}
+			motion_phase = {
+				type = "float"
+			}
+			motion_type = {
+				type = "float"
+			}
+			pull = {
+				type = "float"
+			}
+			reach_r = {
+				type = "float"
+			}
+			reach_t = {
+				type = "float"
+			}
+			section_index = {
+				type = "float"
+			}
+			unit = {
+				node = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "HumanIK Add Section Motion"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "744a39a8-2ec4-42f8-a6e2-9c461d2197b9:0"
+					node = "744a39a8-2ec4-42f8-a6e2-9c461d2197b9"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			blend_alpha = 1
+			blend_in_time = 1
+			constraint_id = -1
+			motion_amplitude = 0.15
+			motion_frequency = 2
+			motion_phase = 0
+			motion_type = 2
+			pull = 1
+			reach_r = 0
+			reach_t = 1
+			section_index = 1
+			unit = null
+		}
+		variables = [
+			{
+				name = "reach_r"
+				type = "float"
+			}
+			{
+				name = "blend_in_time"
+				type = "float"
+			}
+			{
+				name = "reach_t"
+				type = "float"
+			}
+			{
+				name = "blend_alpha"
+				type = "float"
+			}
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "motion_amplitude"
+				type = "float"
+			}
+			{
+				name = "constraint_id"
+				type = "float"
+			}
+			{
+				name = "pull"
+				type = "float"
+			}
+			{
+				name = "motion_phase"
+				type = "float"
+			}
+			{
+				name = "section_index"
+				type = "float"
+			}
+			{
+				name = "motion_frequency"
+				type = "float"
+			}
+			{
+				name = "motion_type"
+				type = "float"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "core/humanik/humanik"
+		id = "744a39a8-2ec4-42f8-a6e2-9c461d2197b9"
+		in_variables = {
+			blend_alpha = {
+				type = "float"
+			}
+			blend_in_time = {
+				type = "float"
+			}
+			constraint_id = {
+				type = "float"
+			}
+			motion_amplitude = {
+				type = "float"
+			}
+			motion_frequency = {
+				type = "float"
+			}
+			motion_phase = {
+				type = "float"
+			}
+			motion_type = {
+				type = "float"
+			}
+			pull = {
+				type = "float"
+			}
+			reach_r = {
+				type = "float"
+			}
+			reach_t = {
+				type = "float"
+			}
+			section_index = {
+				type = "float"
+			}
+			unit = {
+				node = "abb18d89-f801-421b-96a3-fd88ad5a1a55"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "HumanIK Add Section Motion"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "3ff15bdc-38dd-4368-93c6-fa6470403cda:0"
+					node = "3ff15bdc-38dd-4368-93c6-fa6470403cda"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			blend_alpha = 1
+			blend_in_time = 1
+			constraint_id = -1
+			motion_amplitude = 0.25
+			motion_frequency = 3
+			motion_phase = 0.5
+			motion_type = 6
+			pull = 0
+			reach_r = 1
+			reach_t = 0
+			section_index = 1
+			unit = null
+		}
+		variables = [
+			{
+				name = "reach_r"
+				type = "float"
+			}
+			{
+				name = "blend_in_time"
+				type = "float"
+			}
+			{
+				name = "reach_t"
+				type = "float"
+			}
+			{
+				name = "blend_alpha"
+				type = "float"
+			}
+			{
+				name = "unit"
+				type = "unit"
+			}
+			{
+				name = "motion_amplitude"
+				type = "float"
+			}
+			{
+				name = "constraint_id"
+				type = "float"
+			}
+			{
+				name = "pull"
+				type = "float"
+			}
+			{
+				name = "motion_phase"
+				type = "float"
+			}
+			{
+				name = "section_index"
+				type = "float"
+			}
+			{
+				name = "motion_frequency"
+				type = "float"
+			}
+			{
+				name = "motion_type"
+				type = "float"
+			}
+		]
+	}
+]

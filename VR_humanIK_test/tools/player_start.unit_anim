@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "3fdd1f07-7f0a-42fa-b127-8d340139699e"
+_name = "tools/player_start"
+anim_controller_ref = {
+	_id = "2ee813fc-4230-4c2a-875f-17875773eb29"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "7b5beb96-114e-490c-bd26-0b19b58d49d4"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "e94699ff-2e4a-4262-8db5-0746624147a4"
+	ref_filename = "tools/player_start.dcc_asset"
+	ref_id = null
+}

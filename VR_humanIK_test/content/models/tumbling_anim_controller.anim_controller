@@ -1,0 +1,125 @@
+
+_data_root_version = 1
+_id = "c7bd9c5c-75a6-40d1-9eea-f793ed1aa018"
+_name = "content/models/tumbling_anim_controller"
+anim_skeleton_ref = {
+	_id = "3967d8ca-49bb-4621-a3ba-497b58374dad"
+	ref_filename = "content/models/tumbling_anim.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	bones = "content/models/tumbling_anim"
+	layers = [
+		{
+			default_state = "Clip"
+			states = [
+				{
+					animations = [
+						"content/models/tumbling_anim"
+					]
+					loop_animation = true
+					name = "Clip"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+					]
+					weights = [
+						"1.0"
+					]
+				}
+			]
+		}
+	]
+}
+constraint_targets = [
+]
+constraints = [
+]
+events = [
+]
+layers = [
+	{
+		_id = "db4dfb8c-613e-428b-9020-d6ea94f2cc37"
+		_name = "Layer"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "8fa24cb9-9e3b-40f9-9a41-739c7334463a"
+			ref_filename = null
+			ref_id = "b4285582-25c3-43b9-914b-424d400d4659"
+		}
+		empty_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
+			{
+				_id = "b4285582-25c3-43b9-914b-424d400d4659"
+				_name = "Clip"
+				anim_blend_set_ref = {
+					_id = "1e5a3317-6925-4eef-b506-ae9e1564459a"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "bebd1352-1d81-49e2-877b-45788e4eacb1"
+						ref_filename = "content/models/tumbling_anim.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "692d4347-25cf-46d1-98b5-79551b679e6a"
+					ref_filename = null
+					ref_id = null
+				}
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				template_transitions = [
+				]
+				transitions = [
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 100
+				y = 100
+			}
+		]
+		template_states = [
+		]
+		time_states = [
+		]
+	}
+]
+ragdolls = [
+]
+setup = {
+	_id = "f49b132b-493d-42fa-8ee1-59aac4156d3c"
+	level = "core/editor_slave/levels/animation_preview_level/animation_preview_level"
+	unit_ref = {
+		_id = "247606c2-8f77-46d7-81ba-223ca6e2ff28"
+		ref_filename = "content/models/tumbling_anim.unit_anim"
+		ref_id = null
+	}
+}
+variables = [
+]

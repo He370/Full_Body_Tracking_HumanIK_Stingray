@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "30e9522a-072a-49a7-b17f-f3c1b5c2c05e"
+_name = "Live Assets/Alex/alex"
+anim_controller_ref = {
+	_id = "a713fde8-3289-41b8-9b2d-395e50fc34a6"
+	ref_filename = "Live Assets/Alex/alex_controller.anim_controller"
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "7e60d8ef-f34c-4c05-8641-1476a930b0c2"
+	ref_filename = "Live Assets/People Shared/live_skeleton.anim_skeleton"
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "fb369171-6131-4888-9e90-66ee8504e213"
+	ref_filename = "Live Assets/Alex/alex.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "Live Assets/Alex/alex"

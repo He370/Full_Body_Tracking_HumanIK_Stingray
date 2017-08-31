@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "pickup_trigger"
+		node = "pickup_trigger"
+		shapes = [
+			{
+				material = "default"
+				shape = "pickup_trigger"
+				template = "pickup_trigger"
+				type = "capsule"
+			}
+		]
+		template = "keyframed"
+	}
+]

@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "81446953-ed6d-4dec-b732-49ed5dce7c8e"
+_name = "content/models/Props/projectile"
+anim_controller_ref = {
+	_id = "163cf9f5-45a7-403a-9f3e-516203050eda"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "f8cd0936-16af-4231-88ea-dea7732a9b86"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "52725520-f4b4-4fa1-9a6c-46d94ea16581"
+	ref_filename = "content/models/Props/projectile.dcc_asset"
+	ref_id = null
+}

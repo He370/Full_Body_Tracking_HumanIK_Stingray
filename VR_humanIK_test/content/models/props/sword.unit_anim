@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "764b011f-3e5e-4832-886b-075676f0ecf8"
+_name = "content/models/Props/sword"
+anim_controller_ref = {
+	_id = "883930f6-791b-4814-8f5b-cb98033b0aba"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "1acc5a25-1b2b-479d-92f1-d21a7ee44fb6"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "e3a5ac74-9cf6-4d6c-b7e4-a616b0009352"
+	ref_filename = "content/models/Props/sword.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/Props/sword"

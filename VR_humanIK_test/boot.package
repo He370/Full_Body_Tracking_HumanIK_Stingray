@@ -1,0 +1,44 @@
+// Minimal files to boot the engine using Appkit
+
+config = [
+	"core/performance_hud/performance_hud"
+]
+font = [
+	"core/performance_hud/debug"
+]
+lua = [
+	"core/appkit/lua/*"
+	"core/humanik/lua/*"
+	"core/wwise/lua/*"
+	"core/scaleform_studio/lua/*"
+	"script/lua/*"
+	"vr_steam/script/lua/*"
+]
+material = [
+	"core/performance_hud/*"
+	"core/editor_slave/resources/gui/*"
+]
+package = [
+	"loading_screen"
+	"main"
+]
+physics_properties = [
+	"global"
+]
+shading_environment = [
+	"core/stingray_renderer/environments/midday/midday"
+]
+unit = [
+	"core/appkit/units/*"
+	"core/units/camera"
+	"vr_steam/models/*"
+]
+wwise_dep = [
+	"content/audio/*"
+]
+
+ADD_PACKAGES = [
+	"gwnav/boot.package"
+	"core/animation/boot.package"
+	"main.package"
+]

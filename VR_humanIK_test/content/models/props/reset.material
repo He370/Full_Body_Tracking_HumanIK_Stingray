@@ -1,0 +1,19 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	color_map = "content/models/props/textures/reset"
+}
+variables = {
+	metallic = {
+		type = "scalar"
+		value = 0.25
+	}
+	roughness = {
+		type = "scalar"
+		value = 0.25
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+}

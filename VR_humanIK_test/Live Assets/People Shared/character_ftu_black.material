@@ -1,0 +1,49 @@
+
+shader = {
+	connections = [
+	]
+	constants = [
+		{
+			connector_id = "aca690cb-6305-4a2f-bf3d-69183a493db3"
+			id = "e3cc7a14-5811-4001-a4ea-cd0d3c759178"
+			instance_id = "bc541949-abe0-41b4-959f-7db4b2a50aad"
+			value = [0 0 0]
+		}
+		{
+			connector_id = "34259752-b962-4b65-92c3-903a57338519"
+			id = "8458a263-8d5f-4290-9623-8d88e55a3a4a"
+			instance_id = "bc541949-abe0-41b4-959f-7db4b2a50aad"
+			value = [0.8]
+		}
+		{
+			connector_id = "aa71a2ef-3fb1-3c26-42ea-72645a698cb8"
+			id = "18efc3c8-9d7f-4ef1-b5e3-443510008fb0"
+			instance_id = "bc541949-abe0-41b4-959f-7db4b2a50aad"
+			value = [0.15]
+		}
+	]
+	groups = [
+	]
+	nodes = [
+		{
+			content_size = [160 0]
+			export = {
+			}
+			id = "bc541949-abe0-41b4-959f-7db4b2a50aad"
+			options = [
+				"4c3163d4-c086-4645-ba1c-0d68a98022a1"
+				"435e14e4-556d-4ac1-af14-8dafe63aff8f"
+				"e60eb59c-0b6c-76f4-0c95-40229987c238"
+			]
+			position = [1800 560]
+			samplers = {
+			}
+			type = "Live Assets/People Shared/entourage_unlit_base"
+		}
+	]
+	version = 3
+}
+textures = {
+}
+variables = {
+}

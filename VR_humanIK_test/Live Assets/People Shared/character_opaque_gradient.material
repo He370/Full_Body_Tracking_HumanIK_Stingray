@@ -1,0 +1,84 @@
+
+shader = {
+	connections = [
+		{
+			destination = {
+				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
+				instance_id = "668d3dd6-1498-4340-9dbe-678fc8cae7fd"
+			}
+			source = {
+				instance_id = "bfdd5c02-e324-448c-b95f-d535086c7014"
+			}
+		}
+		{
+			destination = {
+				connector_id = "aca690cb-6305-4a2f-bf3d-69183a493db3"
+				instance_id = "8ab8c800-ac88-46a9-b7df-96b3074e21c8"
+			}
+			select = [
+				"rgb"
+			]
+			source = {
+				instance_id = "668d3dd6-1498-4340-9dbe-678fc8cae7fd"
+			}
+		}
+	]
+	constants = [
+	]
+	groups = [
+	]
+	nodes = [
+		{
+			content_size = [160 0]
+			export = {
+			}
+			id = "bfdd5c02-e324-448c-b95f-d535086c7014"
+			options = [
+			]
+			position = [1400 440]
+			samplers = {
+			}
+			type = "core/shader_nodes/texture_coordinate0"
+		}
+		{
+			content_size = [160 0]
+			export = {
+			}
+			id = "668d3dd6-1498-4340-9dbe-678fc8cae7fd"
+			options = [
+				"fb3f709b-a54a-4e93-ac9f-e9fc76fb8bcd"
+				"5dd59b3d-1762-4a14-9930-7500230ef3db"
+				"1e067464-12d8-4826-9b72-cfd5765003e3"
+			]
+			position = [1580 440]
+			samplers = {
+				texture_map = {
+					display_name = "Texture"
+					slot_name = "texture_map_c8cae7fd"
+					ui = {
+					}
+				}
+			}
+			type = "core/shader_nodes/sample_texture"
+		}
+		{
+			content_size = [160 0]
+			export = {
+			}
+			id = "8ab8c800-ac88-46a9-b7df-96b3074e21c8"
+			options = [
+				"4c3163d4-c086-4645-ba1c-0d68a98022a1"
+			]
+			position = [1800 440]
+			samplers = {
+			}
+			type = "Live Assets/People Shared/entourage_unlit_base"
+		}
+	]
+	version = 3
+}
+textures = {
+	texture_map_c8cae7fd = "Live Assets/People Shared/gradient_character_01_d"
+}
+variables = {
+}

@@ -1,0 +1,86 @@
+
+Connections = [
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "a6a89593-a9bc-4109-8c1d-3be1454bf301"
+		Id = "64f0f287-3c9d-4841-ab8a-19f5e6c70961"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "040538bc-cd18-49d5-9dcb-305e8f74638e"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "HeadPosition"
+		FromNode = "a45aab8e-98cb-49d1-8fdf-8eb7bec05da6"
+		Id = "f814951b-bfdc-4f3d-bfc8-20baba9d56ae"
+		ToItem = "Position"
+		ToNode = "1e42ea38-0d09-495a-a421-abed33c20a9b"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "a6a89593-a9bc-4109-8c1d-3be1454bf301"
+		Id = "c2d6145c-a9c5-4cdd-b98a-dcd96dbe1262"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "1e42ea38-0d09-495a-a421-abed33c20a9b"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "546c70d1-395b-462e-8647-9a50a77bf82a"
+		Id = "d91d6437-21ba-46f6-9c2c-1f5085cbef32"
+		ToItem = "Label"
+		ToNode = "e3486d04-7548-4b9f-88f0-57bd4af094a9"
+		Type = "String"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Position"
+		FromNode = "d2b78650-15e1-4159-8f5a-323f2575fcab"
+		Id = "afdf6a7c-c413-4c5e-bb81-9c61d1d9cea5"
+		ToItem = "Vector"
+		ToNode = "546c70d1-395b-462e-8647-9a50a77bf82a"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "a6a89593-a9bc-4109-8c1d-3be1454bf301"
+		Id = "2e185d34-ffd5-4da1-9310-175b7128ddf4"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "e3486d04-7548-4b9f-88f0-57bd4af094a9"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "HeadPosition"
+		FromNode = "a45aab8e-98cb-49d1-8fdf-8eb7bec05da6"
+		Id = "e5734f45-2820-4684-8943-e49290134bc3"
+		ToItem = "Position"
+		ToNode = "0bc25d4a-6561-48d0-b6f1-0c87245a90b7"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "HeadRotation"
+		FromNode = "a45aab8e-98cb-49d1-8fdf-8eb7bec05da6"
+		Id = "db42e5d7-296d-48ad-90e4-7148abadad94"
+		ToItem = "Rotation"
+		ToNode = "0bc25d4a-6561-48d0-b6f1-0c87245a90b7"
+		Type = "Quaternion"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "a6a89593-a9bc-4109-8c1d-3be1454bf301"
+		Id = "fe600798-f867-401a-8726-79b60d84a96f"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "0bc25d4a-6561-48d0-b6f1-0c87245a90b7"
+	}
+]
+Groups = []
+Nodes = []

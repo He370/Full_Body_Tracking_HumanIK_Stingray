@@ -1,0 +1,35 @@
+
+_data_root_version = 1
+_id = "3e51e9f8-59e9-4a64-8393-51481890d21a"
+_name = "content/models/tumbling_anim"
+anim_skeleton_ref = {
+	_id = "7671ca09-4ecd-45f7-b481-dc4a39c845d0"
+	ref_filename = "content/models/tumbling_anim.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "ea542ce2-ceb1-464e-875e-60e1fb0632f4"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "7f48890f-6772-4dc2-bbc7-341bcdeb42fe"
+	ref_filename = "content/models/tumbling_anim.dcc_asset"
+	ref_id = null
+}
+global_compression_settings = {
+	_id = "5acb7774-2fd5-4663-9462-d40be05ab3e1"
+	do_pack_positions = true
+	do_pack_rotations = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+}
+offset_animation = false
+take_name = "Tumbling"
+triggers = [
+]

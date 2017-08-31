@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "hmd_char_col"
+		node = "StingrayEntityRoot"
+		shapes = [
+			{
+				material = "default"
+				shape = "hmd_char_col"
+				template = "character"
+				type = "box"
+			}
+		]
+		template = "keyframed"
+	}
+]

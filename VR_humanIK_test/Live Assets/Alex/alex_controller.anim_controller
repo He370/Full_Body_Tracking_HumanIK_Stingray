@@ -1,0 +1,183 @@
+
+_data_root_version = 8
+_id = "0db9e828-b81b-46fa-8f60-e0aeead3d6f2"
+_name = "Live Assets/Alex/alex_controller"
+anim_event_root_folder_name = "Events"
+anim_skeleton_ref = {
+	_id = "9d9fff13-a044-492b-9986-edc1f0a10470"
+	ref_filename = "Live Assets/People Shared/live_skeleton.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	events = {
+		"Anim End" = {
+		}
+	}
+	layers = [
+		{
+			default_state = "alex"
+			states = [
+				{
+					animations = [
+						"Live Assets/Alex/alex"
+					]
+					loop_animation = true
+					name = "alex"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+					]
+					weights = [
+						"1.0"
+					]
+				}
+			]
+		}
+	]
+}
+constraint_root_folder_name = "Constraints"
+constraint_target_root_folder_name = "Constraint Targets"
+constraint_targets = {
+	_id = "e75f1e3d-cff8-41c2-a01d-59c68870d0d5"
+	_name = "Constraint Targets"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+constraints = {
+	_id = "fc723118-08af-40c8-8838-a18635bfe443"
+	_name = "Constraints"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+events = {
+	_id = "784b9335-f35c-420f-8838-1ee83824a74f"
+	_name = "Events"
+	data_list = [
+		{
+			_id = "26d7ea0f-de95-449a-a394-c57a1707261f"
+			_name = "Anim End"
+		}
+	]
+	sub_folders = [
+	]
+}
+layers = [
+	{
+		_id = "cc3d6e44-985d-4482-a002-5fa41f22e061"
+		_name = "Base"
+		anim_blend_set_ref = {
+			_id = "dbdc23be-ca22-4f60-a88b-ccfd1aac0ba1"
+			ref_filename = null
+			ref_id = null
+		}
+		blend_states = [
+		]
+		constraints = [
+		]
+		default_state_ref = {
+			_id = "847f17b2-c726-4ab9-8605-56219d702d90"
+			ref_filename = null
+			ref_id = "2929919c-9cb6-4685-bbb8-d6dff2f8491d"
+		}
+		empty_states = [
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
+			{
+				_id = "2929919c-9cb6-4685-bbb8-d6dff2f8491d"
+				_name = "alex"
+				anim_blend_set_ref = {
+					_id = "6aeb70f6-9828-4115-b22d-8cdd1865e819"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "ec008ee0-2d36-43e7-a9e4-cdefd1758b9b"
+						ref_filename = "Live Assets/Alex/alex.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "758e313e-0241-48f9-aaf7-f595dd5dc6f4"
+					ref_filename = null
+					ref_id = "26d7ea0f-de95-449a-a394-c57a1707261f"
+				}
+				group_transitions = [
+				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transition_switch_entries = [
+				]
+				transition_switch_exits = [
+				]
+				transitions = [
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 100
+				y = 100
+			}
+		]
+		time_states = [
+		]
+		transition_switches = [
+		]
+	}
+]
+ragdoll_root_folder_name = "Ragdolls"
+ragdolls = {
+	_id = "ebd6e006-0242-49d2-b3b9-3fa5d2409f00"
+	_name = "Ragdolls"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+setup = {
+	_id = "c55d475a-feac-473e-b141-024f69d0dbb4"
+	level = ""
+	unit_ref = {
+		_id = "ec415eaa-92a4-4d2a-b01b-8a5458ea5f0a"
+		ref_filename = "Live Assets/Alex/alex.unit_anim"
+		ref_id = null
+	}
+}
+variable_root_folder_name = "Variables"
+variables = {
+	_id = "3e89093e-e4bc-4dac-b3a5-399774d3c8ca"
+	_name = "Variables"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}

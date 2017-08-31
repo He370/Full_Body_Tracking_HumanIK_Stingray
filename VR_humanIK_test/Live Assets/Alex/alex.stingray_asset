@@ -1,0 +1,34 @@
+name = "Alex"
+description = "Male-Silhouette"
+version = "1.0.3"
+thumbnail = "alex.jpg"
+keywords = ["asset-package"]
+
+author = {
+ name = "Live Design"
+ company = "Autodesk inc."
+ url = "https://gamedev.autodesk.com/"
+}
+
+license = {
+ type = "Autodesk"
+ url = "http://www.autodesk.com/company/legal-notices-trademarks/software-license-agreements"
+}
+
+// Extensions
+//
+extensions = {
+    templates = [
+        {
+            type = "package"
+            destination = "Live Assets/Alex"
+        }
+    ]
+}
+
+// Dependencies
+//
+dependencies = {
+ "stingray" = ">=1.7"
+    "peopleshared" = "~1.0.1"
+}

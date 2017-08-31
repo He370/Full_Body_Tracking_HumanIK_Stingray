@@ -1,0 +1,33 @@
+name = "Live Assets: People Shared"
+description = "Required Content for all the Live Assets people"
+version = "1.0.1"
+thumbnail = "peopleshared.jpg"
+keywords = ["asset-package"]
+
+author = {
+ name = "Live Design"
+ company = "Autodesk inc."
+ url = "https://gamedev.autodesk.com/"
+}
+
+license = {
+ type = "Autodesk"
+ url = "http://www.autodesk.com/company/legal-notices-trademarks/software-license-agreements"
+}
+
+// Extensions
+//
+extensions = {
+    templates = [
+        {
+            type = "package"
+            destination = "Live Assets/People Shared"
+        }
+    ]
+}
+
+// Dependencies
+//
+dependencies = {
+    "stingray" = ">=1.7"
+}

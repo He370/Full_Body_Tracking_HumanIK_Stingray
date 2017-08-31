@@ -1,0 +1,33 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	color_map = "content/models/sven/textures/sven_Mouth_diffuse_u1_v2"
+	normal_map = "content/models/sven/textures/sven_Mouth_normal_u1_v2"
+	roughness_map = "content/models/sven/textures/sven_Mouth_specular_u1_v2"
+}
+variables = {
+	base_color = {
+		type = "vector3"
+		value = [
+			1
+			1
+			1
+		]
+	}
+	roughness = {
+		type = "scalar"
+		value = 0
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_normal_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_roughness_map = {
+		type = "scalar"
+		value = 1
+	}
+}

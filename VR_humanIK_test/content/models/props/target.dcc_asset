@@ -1,0 +1,15 @@
+
+_data_root_version = 1
+_id = "f5085796-822d-433e-a159-d9b472de4ba6"
+_name = "content/models/Props/target"
+asset = "content/models/Props/target"
+extension = ".FBX"
+import_options = {
+	combine_meshes = false
+	combine_meshes_by_material = false
+	reverse_forward_axis = true
+	skip_animations = false
+	skip_cameras = false
+	skip_lights = true
+	skip_lods = true
+}

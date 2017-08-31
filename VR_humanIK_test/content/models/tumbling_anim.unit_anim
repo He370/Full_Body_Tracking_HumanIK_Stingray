@@ -1,0 +1,19 @@
+
+_data_root_version = 1
+_id = "5dd5599d-8033-4506-92fb-a65520607869"
+_name = "content/models/tumbling_anim"
+anim_controller_ref = {
+	_id = "6497b4bc-ef60-4baf-965d-b6a08b00f4bf"
+	ref_filename = "content/models/tumbling_anim_controller.anim_controller"
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "9de00d71-9b0a-43cf-aced-d7bc983f7989"
+	ref_filename = "content/models/tumbling_anim.anim_skeleton"
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "8d9cd10a-03ee-4585-bb20-62a0f5850fe6"
+	ref_filename = "content/models/tumbling_anim.dcc_asset"
+	ref_id = null
+}

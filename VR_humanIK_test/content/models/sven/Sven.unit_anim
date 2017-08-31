@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "5c00973d-fab0-4668-9af5-7f190717d189"
+_name = "content/models/sven/Sven"
+anim_controller_ref = {
+	_id = "48690669-435c-4c36-b0a0-df91a3200a37"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "876fe018-6ddb-4806-889b-46b951339d27"
+	ref_filename = "content/models/sven/Sven.anim_skeleton"
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "d6ca6998-de59-42bc-ba43-ed3e37abf9ad"
+	ref_filename = "content/models/sven/Sven.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/sven/Sven"

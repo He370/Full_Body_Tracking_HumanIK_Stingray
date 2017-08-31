@@ -1,0 +1,92 @@
+
+art_directory = "."
+data_compiler = {
+	file_folder_extensions = [
+		".s2d"
+	]
+	resource_overrides = [
+		{
+			platforms = [
+				"win32"
+			]
+			suffix = ".win32"
+		}
+		{
+			platforms = [
+				"ps4"
+			]
+			suffix = ".ps4"
+		}
+		{
+			platforms = [
+				"xb1"
+			]
+			suffix = ".xb1"
+		}
+		{
+			platforms = [
+				"ios"
+			]
+			suffix = ".ios"
+		}
+		{
+			platforms = [
+				"android"
+			]
+			suffix = ".android"
+		}
+	]
+}
+data_directory = "../VR_humanIK_test_data"
+default_startup_level = "content/levels/vr_learning"
+description = null
+libraries = {
+	wwise = {
+		project_file = "VR_humanIK_test_wwise.wproj"
+		root_folder = "../VR_humanIK_test_wwise"
+	}
+}
+migrations = {
+	"asset-browser" = {
+		patches = {
+			"replace-fbxasc" = [
+				"successfully applied"
+			]
+		}
+		version = "1.1.1"
+	}
+	"level-flow-editor" = {
+		patches = [
+			"347e4fc5-db57-4c84-94a6-bf93a2b89c0b"
+		]
+		version = "1.10.0"
+	}
+	navigation = {
+		patches = {
+			"ensure-gwnav-in-project-boot.package" = [
+				"successfully applied"
+			]
+			"from-1.0.0-to-1.0.1" = [
+				"successfully applied"
+			]
+			"from-C#-module-to-1.0.0" = [
+				"successfully applied"
+			]
+		}
+		version = "1.0.1"
+	}
+	wwise = {
+		patches = {
+			"wwise2014.1.6_to_wwise2016.1.3" = [
+				[
+					"WwiseCLI.exe executed..."
+				]
+			]
+		}
+		version = "1.7.0"
+	}
+}
+name = "VR_humanIK_test"
+source_directory = "./"
+thumbnail = "thumbnail.png"
+version = "1.10.0.0"

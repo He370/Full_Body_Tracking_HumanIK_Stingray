@@ -1,0 +1,148 @@
+
+particle_system = {
+	CameraDistance = 1.2
+	clouds = [
+		{
+			controllers = [
+				{
+					Name = "Emitter: Rate"
+					RateMax = 150
+					RateMin = 100
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							0.984
+							1
+						]
+					]
+					type = "rate_emitter"
+				}
+				{
+					Gradient = [
+						[
+							0.5
+							[
+								99
+								99
+								99
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 1
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							0
+						]
+						[
+							0.216
+							0.678
+						]
+						[
+							0.52
+							0.9661
+						]
+						[
+							0.808
+							0.6949
+						]
+						[
+							1
+							0
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					AdditiveBlend = true
+					DepthFadeDistance = 0
+					DiffuseMap = "content/fx/textures/Smoke"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 0
+					LitParticles = false
+					MaterialMap = null
+					Name = "Material: Billboard (deprecated)"
+					NormalMap = null
+					OneBitAlpha = false
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 0.1
+					UVAnimationY = 0.1
+				}
+				{
+					MaxDegrees = 360
+					MinDegrees = -360
+					type = "rotation_random"
+				}
+				{
+					axis = [
+						0
+						0
+						1
+					]
+					max_theta = 5
+					max_velocity = 4
+					min_theta = 0
+					min_velocity = 0.5
+					type = "velocity_cone"
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.1
+					InitialMaxHeight = 0.1
+					InitialMin = 0.3
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							2
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+			]
+			Id = "1e8cf838-5bb3-4c1d-8b2a-b05387d306f9"
+			max_particle_life = 0.6
+			min_particle_life = 0.4
+			Mute = false
+			name = "steam"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 25
+			Tilt = 0
+			total = 200
+		}
+	]
+	Level = "core/editor_slave/resources/levels/animation_preview"
+	life_time = 10000000000
+	ShowRuler = true
+	SpawnHeight = 1
+	UseRandomSeed = false
+	Variables = {
+		Variables = [
+		]
+	}
+}

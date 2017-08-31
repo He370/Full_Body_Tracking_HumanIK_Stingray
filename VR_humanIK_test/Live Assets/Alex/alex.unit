@@ -1,0 +1,41 @@
+data = {
+	"Category Name" = "Entourage"
+	"Subcategory Name" = "People"
+}
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 2.90888
+		orthographic_plane = [0 0 1 0]
+		orthographic_zoom = 10
+		position = [-0.276849 2.723242 1.982849]
+		projection_type = "perspective"
+		rotation = [0.009646 -0.187865 0.980855 -0.050363]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	Character = "Live Assets/People Shared/character_ftu_black"
+	Shadow = "Live Assets/People Shared/Shadow"
+}
+renderables = {
+	Entourage_Alex = {
+		always_keep = false
+		culling = "disabled"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = false
+		surface_queries = false
+		viewport_visible = true
+	}
+	Entourage_Alex_Shadow = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = false
+	}
+}

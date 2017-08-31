@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "e4709e2e-1999-49db-9e5a-5bf2420b3835"
+_name = "content/models/robot/wpn_assaultrif_3p"
+anim_controller_ref = {
+	_id = "9d5c2a90-176d-457f-aae1-deaa709239dd"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "c5d43479-2be9-4b61-99a1-187cb879ae8c"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "8ef539f2-b698-45a6-9f5e-aef2f9ce1827"
+	ref_filename = "content/models/robot/wpn_assaultrif_3p.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/robot/wpn_assaultrif_3p"

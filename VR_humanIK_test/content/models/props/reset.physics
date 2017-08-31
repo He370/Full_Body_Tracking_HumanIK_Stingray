@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "reset"
+		node = "reset"
+		shapes = [
+			{
+				material = "default"
+				shape = "reset"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]

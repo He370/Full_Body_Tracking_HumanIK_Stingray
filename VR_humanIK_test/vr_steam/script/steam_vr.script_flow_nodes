@@ -1,0 +1,358 @@
+nodes = [
+    {
+        name = "SteamVR Button"
+        category = "SteamVR/Input"
+        args = {
+            controllerIndex = {
+                type = "enum"
+                choices = ["1" "2" "3" "4"]
+            }
+            buttonName = {
+                type = "enum"
+                choices = ["Trigger" "Grip" "System" "Menu" "TouchUp" "TouchDown" "TouchLeft" "TouchRight"]
+            }
+        }
+        returns = {
+            value = "float"
+    		pressed = "event"
+        	held = "event"
+            released = "event"
+        }
+        function_map = [["update" "SteamVRFlowCallbacks.button_events"]]
+    }
+
+    {
+        name = "SteamVR Touch"
+        category = "SteamVR/Input"
+        args = {
+            controllerIndex = {
+                type = "enum"
+                choices = ["1" "2" "3" "4"]
+            }
+             buttonName = {
+                type = "enum"
+                choices = ["Touch"]
+            }
+        }
+        returns = {
+            x = "float"
+            y = "float"
+            pressed = "event"
+            held = "event"
+            released = "event"
+    		touched = "event"
+        	untouched = "event"
+        }
+        function_map = [["update" "SteamVRFlowCallbacks.touch_events"]]
+    }
+
+    {
+        name = "SteamVR Controller Pose"
+        category = "SteamVR"
+        query = true
+        args = {
+            space = {
+                type = "enum"
+                choices = ["Local" "World"]
+                default = "World"
+            }
+            controllerIndex = {
+                type = "enum"
+                choices = ["1" "2" "3" "4"]
+            }
+        }
+        returns = {
+        	position = "vector3"
+        	rotation = "quaternion"
+        }
+        function = "SteamVRFlowCallbacks.controller_pose"
+    }
+
+    {
+        name = "SteamVR HMD Pose"
+        category = "SteamVR"
+        query = true
+        args = {
+            space = {
+                type = "enum"
+                choices = ["Local" "World"]
+                default = "World"
+            }
+        }
+        returns = {
+        	headPosition = "vector3"
+        	headRotation = "quaternion"
+        	leftEyePosition = "vector3"
+        	leftEyeRotation = "quaternion"
+        	rightEyePosition = "vector3"
+        	rightEyeRotation = "quaternion"
+        }
+        function = "SteamVRFlowCallbacks.hmd_pose"
+    }
+
+    {
+        name = "SteamVR Is Tracked"
+        category = "SteamVR"
+        query = true
+        args = {
+            device = {
+                type = "enum"
+                choices = ["HMD" "Controller1" "Controller2" "Controller3" "Controller4"]
+            }
+        }
+        returns = {
+            value = "bool"
+        }
+        function = "SteamVRFlowCallbacks.is_tracked"
+    }
+
+    {
+        name = "SteamVR Controller Feedback"
+        category = "SteamVR"
+        args = {
+            controllerIndex = {
+                type = "enum"
+                choices = ["1" "2" "3" "4"]
+            }
+            seconds = {
+                type = "float"
+                default = 0.2
+            }
+        }
+        function = "SteamVRFlowCallbacks.controller_feedback"
+    }
+
+    {
+        name = "SteamVR Is Enabled"
+        category = "SteamVR"
+        query = true
+        returns = {
+            value = "bool"
+        }
+        function = "SteamVRFlowCallbacks.is_enabled"
+    }
+
+    {
+        name = "SteamVR Set Tracking Space"
+        category = "SteamVR"
+        args = {
+            position = "vector3"
+            rotation = "quaternion"
+            scale = "vector3"
+        }
+        function = "SteamVRFlowCallbacks.set_tracking_space"
+    }
+    
+    {
+        name = "SteamVR Get Tracking Space"
+        category = "SteamVR"
+		returns = {
+            position = "vector3"
+            rotation = "quaternion"
+            scale = "vector3"
+		}
+		query = true
+        function = "SteamVRFlowCallbacks.get_tracking_space"
+    }
+
+    {
+        name = "SteamVR Tracking Space Size"
+        category = "SteamVR"
+        query = true
+        returns = {
+            width = "float"
+            depth = "float"
+        }
+        function = "SteamVRFlowCallbacks.tracking_space_size"
+    }
+
+    {
+        name = "SteamVR Tracking Space Rectangle"
+        category = "SteamVR"
+        query = true
+        args = {
+            space = {
+                type = "enum"
+                choices = ["Local" "World"]
+                default = "World"
+            }
+        }
+        returns = {
+            corner1 = "vector3"
+            corner2 = "vector3"
+            corner3 = "vector3"
+            corner4 = "vector3"
+        }
+        function = "SteamVRFlowCallbacks.tracking_space_rectangle"
+    }
+
+    {
+        name = "SteamVR Fade In"
+        category = "SteamVR"
+        args = {
+            color = "vector3"
+            seconds = {
+                type = "float"
+                default = 1.0
+            }
+        }
+        function = "SteamVRFlowCallbacks.fade_in"
+    }
+
+    {
+        name = "SteamVR Fade Out"
+        category = "SteamVR"
+        args = {
+            color = "vector3"
+            seconds = {
+                type = "float"
+                default = 1.0
+            }
+        }
+        function = "SteamVRFlowCallbacks.fade_out"
+    }
+
+    {
+        name = "SteamVR Draw Parabola (TESTING)"
+        category = "SteamVR"
+        args = {
+            controller_position = "vector3"
+            end_location = "vector3"
+            segments = "float"
+            t_final = "float"
+        }
+        function = "SteamVRFlowCallbacks.draw_arc"
+    }  
+
+    {
+        name = "SteamVR Draw Debug Line (TESTING)"
+        category = "SteamVR"
+        args = {
+            position_from = "vector3"
+            position_to = "vector3"            
+        }
+        function = "SteamVRFlowCallbacks.draw_line"
+    }     
+
+    {
+        name = "SteamVR Reset Debug Line (TESTING)"
+        category = "SteamVR"
+        args = {
+           
+        }
+        function = "SteamVRFlowCallbacks.reset_line"
+    }         
+ 
+    {
+        name = "SteamVR Draw Parabola With Raycasts (TESTING)"
+        category = "SteamVR"
+        args = {
+            controller_position = "vector3"
+            v_initial = "vector3"
+        }
+        function = "SteamVRFlowCallbacks.draw_arc_with_raycasts"
+    }   
+
+	{
+		name = "SteamVR Set Actor Kinematic"
+		args = {
+			Actor = "actor"
+			Bool = "bool"
+		}
+		function = "SteamVRFlowCallbacks.set_kinematic"
+		category = "Project"
+		brief = "Sets an actor to kinematic true or false."
+	}
+
+	{
+		name = "SteamVR Set Unit Highlight"
+		args = {
+			Unit = "unit"
+			Mesh = "string"
+			MaterialSlot = "string"
+			Color = "vector3"
+			Enable = "bool"
+			Alpha = "float"
+			Mask = "float"
+		}
+		function = "SteamVRFlowCallbacks.setUnitHighlight"
+		category = "Project"
+	}    
+
+	{
+		name = "SteamVR Caculate Rotation Offset"
+		args = {
+			child_rotation = "quaternion"
+			parent_rotation = "quaternion"
+		}
+		returns = {
+			offset_rotation = "quaternion"
+		}
+		query = true
+		function = "SteamVRFlowCallbacks.caculateRotationOffset"
+		category = "Project"
+	}
+
+	{
+        name = "SteamVR Caculate Position Offset"
+        args = {
+            parent_unit = "unit"            
+            parent_object = "string"
+            child_unit = "unit"
+            child_object = "string"
+        }
+        returns = {
+            position = "vector3"
+        }
+        query = true
+		function = "SteamVRFlowCallbacks.caculatePositionOffset"
+		category = "Project"
+    }
+    // Caculate look at
+{
+        name = "SteamVR Look At"
+        args = {
+            unit = "unit"            
+            look_at_position = "vector3"
+            up_vector = "vector3"
+            // index = "float"
+            node_name = "string"
+            constrain_x_y = "bool"
+        }
+        returns = {
+        }
+function = "SteamVRFlowCallbacks.look_at"
+category = "Math/Rotation"
+    }    
+    
+    {
+        name = "SteamVR Link Node To Tracker"
+        category = "SteamVR/Link"
+        args = {
+            unit = "unit"
+            node_name = "string"
+            link_to = {
+                type = "enum"
+                choices = ["HMD" "LeftEye" "RightEye" "Controller1" "Controller2" "Controller3" "Controller4"]
+            }
+            preserve_world_pose = "bool"
+        }
+        function = "SteamVRFlowCallbacks.link_node_to_tracker"
+    }
+
+    {
+        name = "SteamVR Unlink Node From Tracker"
+        category = "SteamVR/Link"
+        args = {
+            unit = "unit"
+            node_name = "string"
+        }
+        function = "SteamVRFlowCallbacks.unlink_node_from_tracker"
+    }
+
+    {
+        name = "SteamVR Clear All Links"
+        category = "SteamVR/Link"
+        function = "SteamVRFlowCallbacks.clear_links"
+    }
+]

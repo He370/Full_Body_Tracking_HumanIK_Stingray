@@ -1,0 +1,15 @@
+
+_data_root_version = 1
+_id = "e881657e-a0df-4852-8dc7-67a489afce84"
+_name = "content/models/Props/bonsai_scene"
+asset = "content/models/Props/bonsai_scene"
+extension = ".fbx"
+import_options = {
+	combine_meshes = false
+	combine_meshes_by_material = false
+	reverse_forward_axis = true
+	skip_animations = false
+	skip_cameras = false
+	skip_lights = true
+	skip_lods = true
+}

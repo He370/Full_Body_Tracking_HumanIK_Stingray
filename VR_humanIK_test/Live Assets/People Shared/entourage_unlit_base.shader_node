@@ -1,0 +1,840 @@
+/*	@adoc shaders
+	@node Output > Unlit Base
+	@des Use this output node in order to create an unlit material: a material that
+		is always shaded the same way regardless of the surrounding light in the
+		scene.
+
+		An unlit material has only a base color and an optional opacity.
+		Because it is unaffected by light, it does not receive or cast shadows.
+		It does not offer any of the physically based surface properties of the
+		Stingray standard base output like metallic and roughness settings, and
+		cannot accept a normal map.
+
+		You can use unlit materials as an inexpensive way to shade objects that
+		you do not need to be realistically shaded as a part of the scene.
+	@in Position Offset:
+		An optional offset to apply to the position of the pixel being shaded,
+		in world space.
+	@in Base Color:
+		The RGB color of the pixel being shaded.
+	@in Opacity:
+		The opacity of the pixel being shaded. Values closer to `0` are more transparent;
+		values closer to `1` are more opaque. Note that the *Blend Mode* option must be
+		set to *Transparent* in order for this value to be used.
+	@option Layer:
+		Determines which shading pass the object is rendered with.
+	@option Depth Testing:
+		Determines how the mesh being shaded is placed in line with other meshes in
+		front of it, intersecting it, and behind it.
+
+		-	`Normal`: The mesh occludes meshes that are behind it and that intersect
+			it, and the mesh is occluded by other meshes that are between it and the
+			camera.
+		-	`Inverted`: Causes the shader to apply only to the surfaces of other meshes
+			that intersect it or that are between it and the camera.
+		-	`Disabled`: Causes the mesh being shaded to be rendered in front of all
+			other meshes between it and the camera.
+	@option Blend Mode:
+		Determines how input opacity values are applied to the surface.
+
+		-	`Opaque`: Every pixel on the surface is fully opaque. The opacity input
+			value is not used.
+		-	`Transparent`: Opacity values between `0` and `1` result in a partially
+			transparent surface.
+	@option Face Culling:
+		Determines whether any overlapping triangles in the mesh are culled (not rendered).
+		You can cull only triangles in the back, only triangles in the front, or neither.
+		For solid surfaces, you will typically want to cull triangles in the back in order
+		to avoid the overhead of rendering faces that will be hidden by the front faces. For
+		semi-transparent surfaces, you may want to disable culling in order for the back
+		side of the object to be visible through the front faces.
+	@option Disable Depth Writes:
+		Determines whether or not the pixels in the object being shaded are written
+		into the depth buffer. You may need to enable this if your material is
+		semi-transparent and you are having problems with it covering up other
+		semi-transparent materials.
+	@option Instancing:
+		Enabling this option may increase rendering performance in cases where
+		you have many instances of the same mesh geometry using this material
+		in your scene.
+	@option Project to Far Plane:
+		When enabled, the mesh being shaded is rendered behind all other rendered meshes.
+		It will only be visible in places where it does not occlude any other meshes that
+		lie in between the camera and its far clipping plane.
+	@option Camera Translation Lock:
+		When enabled, the world space position of the mesh being shaded is offset by the
+		position of the camera. As the camera moves, the mesh appears to move with it,
+		remaining at a static translation relative to the camera.
+*/
+version = 1
+group = "Output"
+display_name = "Entourage Base"
+output_node = true
+render_configs = ["core/stingray_renderer/renderer"]
+
+inputs = {
+	"aee6e47b-be7b-4d67-a123-2ab5d660b94e" = {
+		name = "vertex_offset"
+		display_name = "Position offset"
+		is_required = false
+		type = { vector3: ["HAS_VERTEX_OFFSET"] }
+		domain = "vertex"
+	}
+
+	"aca690cb-6305-4a2f-bf3d-69183a493db3" = {
+		name = "base_color"
+		is_required = false
+		display_name = "Base Color"
+		type = { vector3: ["HAS_BASE_COLOR"] }
+		domain = "pixel"
+	}
+
+	"34259752-b962-4b65-92c3-903a57338519" = {
+		name = "opacity"
+		is_required = false
+		display_name = "Opacity"
+		type = { scalar: ["HAS_OPACITY"] }
+		domain = "pixel"
+	}
+
+	"aa71a2ef-3fb1-3c26-42ea-72645a698cb8" = {
+		name = "brightness"
+		is_required = false
+		display_name = "Brightness"
+		type = { scalar: ["HAS_BRIGHTNESS"] }
+		domain = "pixel"
+	}
+}
+
+options = {
+	"d1a42a54-0794-4d57-9aa0-eb35acb6b35c" = "INSTANCED"
+	"8df1b8f7-17c2-4ae4-8c4e-25517ec1df46" = "CULL_NONE"
+	"c198c109-2cdf-49ee-af18-a982c23e2729" = "CULL_FRONT"
+	"34994d84-9d51-48ac-af85-bc053b2c65c3" = "SKIN"
+	"e1bfa889-2503-4ac3-9134-c08a7fa04568" = "PROJECT_TO_FAR_PLANE"
+	"6a6241cc-7d21-4e2e-87c8-8d9c7bdcd322" = "CAMERA_TRANSLATION_LOCK"
+	"435e14e4-556d-4ac1-af14-8dafe63aff8f" = "BLEND_TRANSPARENT"
+	"52c7ce01-ee57-4770-914e-727fc1966962" = "LAYER_EMISSIVE"
+	"182fabd6-9a4d-4cfc-8c8f-0c45ef09a138" = "LAYER_SKYDOME"
+	"4c3163d4-c086-4645-ba1c-0d68a98022a1" = "LAYER_HDR_TRANSPARENT"
+	"c8d8b754-c567-4c7b-9cbd-8acab22beff5" = "LAYER_TRANSPARENT"
+	"afe47c59-33c4-43b2-af4a-817085b1113c" = "DEPTH_TEST_INVERTED"
+	"774556cd-2d1e-4df8-8ae2-5e84800f0c04" = "DEPTH_TEST_DISABLED"
+	"7b8bc0bf-c453-49d2-9415-0e80fec1039f" = "DISABLE_DEPTH_WRITE"
+	"1a925f90-de22-4e2e-8179-7308e29720a5" = "BLEND_ADDITIVE"
+	"e60eb59c-0b6c-76f4-0c95-40229987c238" = "STENCIL_ENABLED"
+}
+
+ui = [
+	{
+		type = "drop_down"
+		display_name = "Layer"
+		options = {
+			"Emissive"	= "52c7ce01-ee57-4770-914e-727fc1966962"
+			"Skydome"	= "182fabd6-9a4d-4cfc-8c8f-0c45ef09a138"
+			"HDR Transparent" = "4c3163d4-c086-4645-ba1c-0d68a98022a1"
+			"LDR Transparent" = "c8d8b754-c567-4c7b-9cbd-8acab22beff5"
+		}
+		default = "4c3163d4-c086-4645-ba1c-0d68a98022a1"
+	}
+
+	{
+		type = "drop_down"
+		display_name = "Depth Testing"
+		options = {
+			"Normal"	= "00000000-0000-0000-0000-000000000000"
+			"Inverted"	= "afe47c59-33c4-43b2-af4a-817085b1113c"
+			"Disabled"	= "774556cd-2d1e-4df8-8ae2-5e84800f0c04"
+		}
+		default = "00000000-0000-0000-0000-000000000000"
+	}
+
+	{
+		type = "drop_down"
+		display_name = "Blend Mode"
+		options = {
+			"Opaque"	= "00000000-0000-0000-0000-000000000000"
+			"Transparent"	= "435e14e4-556d-4ac1-af14-8dafe63aff8f"
+			"Transparent Add" = "1a925f90-de22-4e2e-8179-7308e29720a5"
+		}
+		default = "00000000-0000-0000-0000-000000000000"
+	}
+
+	{
+		type = "drop_down"
+		display_name = "Face Culling"
+		options = {
+			"Back"					= "00000000-0000-0000-0000-000000000000"
+			"Front"					= "c198c109-2cdf-49ee-af18-a982c23e2729"
+			"None (double sided)"	= "8df1b8f7-17c2-4ae4-8c4e-25517ec1df46"
+		}
+		default = "00000000-0000-0000-0000-000000000000"
+	}
+
+	{ type = "checkbox" display_name = "Disable Depth Writes" option = "7b8bc0bf-c453-49d2-9415-0e80fec1039f" }
+	{ type = "checkbox" display_name = "Instancing" option = "d1a42a54-0794-4d57-9aa0-eb35acb6b35c" }
+	{ type = "checkbox" display_name = "Project to Far Plane" option = "e1bfa889-2503-4ac3-9134-c08a7fa04568" }
+	{ type = "checkbox" display_name = "Camera Translation Lock" option = "6a6241cc-7d21-4e2e-87c8-8d9c7bdcd322" }
+	{ type = "checkbox" display_name = "Enable Stencil Buffer" option = "e60eb59c-0b6c-76f4-0c95-40229987c238" }
+]
+
+render_state = {
+	culling_base = {
+		inherit: ["core/stingray_renderer/shader_libraries/common#default"]
+		state: {
+			"defined(CULL_NONE)" = {
+				cull_mode = "cull_none"
+			}
+			"defined(CULL_FRONT)" = {
+				cull_mode = "cull_ccw"
+			}
+			"!defined(CULL_NONE) && !defined(CULL_FRONT)" = {
+				cull_mode = "cull_cw"
+			}
+		}
+	}
+	unlit = {
+		inherit: ["culling_base"]
+		state: {
+			"defined(BLEND_TRANSPARENT)" = {
+				blend_enable = "true"
+				blend_op = "blend_op_add"
+				dest_blend = "blend_inv_src_alpha"
+				src_blend = "blend_src_alpha"
+			}
+
+			"defined(BLEND_ADDITIVE)" = {
+				blend_enable = "true"
+				blend_op = "blend_op_add"
+				dest_blend = "blend_one"
+				src_blend = "blend_src_alpha"
+			}
+
+			"defined(DISABLE_DEPTH_WRITE)" = {
+				z_write_enable = "false"
+			}
+
+			"defined(DEPTH_TEST_DISABLED)" = {
+				z_enable = "false"
+			}
+
+			"defined(DEPTH_TEST_INVERTED)" = {
+				z_func = "greater_equal"
+			}
+
+			"defined(STENCIL_ENABLED)" = {
+				stencil_enable = "true"
+				stencil_func = "not_equal"
+				stencil_ref = "0x14"
+				stencil_mask = "0x14"
+				stencil_fail = "stencil_op_keep"
+				stencil_pass = "stencil_op_replace"
+			}
+		}
+	}
+	unlit_ios = {
+		inherit: ["culling_base"]
+		state: {
+			"defined(BLEND_TRANSPARENT)" = {
+				blend_enable = "true"
+				blend_op = "blend_op_add"
+				dest_blend = "blend_inv_src_alpha"
+				src_blend = "blend_src_alpha"
+			}
+
+			"defined(BLEND_ADDITIVE)" = {
+				blend_enable = "true"
+				blend_op = "blend_op_add"
+				dest_blend = "blend_one"
+				src_blend = "blend_src_alpha"
+			}
+
+			"defined(DISABLE_DEPTH_WRITE)" = {
+				z_write_enable = "false"
+			}
+
+			"defined(DEPTH_TEST_DISABLED)" = {
+				z_enable = "false"
+			}
+
+			"defined(DEPTH_TEST_INVERTED)" = {
+				z_func = "greater_equal"
+			}
+
+			"defined(STENCIL_ENABLED)" = {
+				z_func = "less"
+				stencil_enable = "true"
+				stencil_func = "not_equal"
+				stencil_ref = "0x14"
+				stencil_mask = "0x14"
+				stencil_fail = "stencil_op_keep"
+				stencil_pass = "stencil_op_replace"
+			}
+		}
+	}
+
+	material_transfer = {
+		inherit: ["core/stingray_renderer/shader_libraries/common#default"]
+		state: {
+			cull_mode = "cull_none"
+			z_write_enable = "false"
+			z_enable = "false"
+		}
+	}
+
+	selection = {
+		inherit: ["culling_base"]
+	}
+}
+
+sampler_state = { }
+
+pass_macros = [
+	{ if: "channels_referenced(screen_pos)" then: [{ define: ["NEEDS_SCREEN_POS"] }] }
+]
+
+channel_declarations = 	{
+	texcoord0			= { type = "float2" }
+	color0				= { type = "float4" }
+	screen_pos			= { type = "float2" }
+
+	eye_vector			= { type = "float3" }
+	world_space_normal	= { type = "float3" }
+	last_clip_position	= { type = "float3" }
+	texcoord1			= { type = "float2" }
+	lightmap_uv			= { type = "float2" }
+	vertex_position		= { type = "float4" }
+	vertex_normal		= { type = "float3" }
+}
+
+stage_linkage = {
+	vertex = [
+		{ if: "channels_referenced(texcoord0) || (defined(MATERIAL_TRANSFER) && defined(LAYER_SKYDOME))" then: [
+			{ channels = ["texcoord0"] input_semantics = ["TEXCOORD0"] }
+		] }
+		{ if: "channels_referenced(color0)" then: [
+			{ channels = ["color0"] input_semantics = ["COLOR0"] }
+		] }
+
+		{ if: "defined(NEEDS_EYE_VECTOR)" then:			[{ channels = ["eye_vector"] }] }
+		{ if: "defined(NEEDS_WORLD_SPACE_NORMAL)" then:	[{ channels = ["world_space_normal"] }] }
+		{ if: "defined(MOTION_VECTOR)" then:			[{ channels = ["last_clip_position"] }] }
+		{ if: "defined(MATERIAL_TRANSFER) && !(defined(MATERIAL_TRANSFER) && defined(LAYER_SKYDOME))" then: [
+			{ channels = ["texcoord1"] input_semantics = ["TEXCOORD1"] }
+			{ channels = ["lightmap_uv"] }
+		] }
+		{ channels = ["vertex_position"] }
+		{ channels = ["vertex_normal"] input_semantics = ["NORMAL"] }
+	]
+	pixel = [
+		{ if: "defined(NEEDS_WORLD_SPACE_NORMAL)" then:	[{ channels = ["world_space_normal"] }] }
+		{ if: "defined(MOTION_VECTOR)" then:			[{ channels = ["last_clip_position"] }] }
+		{ if: "defined(NEEDS_SCREEN_POS)" then:			[{ channels = ["screen_pos"] }] }
+	]
+}
+
+permutation_sets = {
+	vertex_modifiers = [
+		{ if: "num_skin_weights() == 4" define: { "macros": ["SKINNED_4WEIGHTS"] stages: ["vertex"] } }
+		{ if: "num_skin_weights() == 3" define: { "macros": ["SKINNED_3WEIGHTS"] stages: ["vertex"] } }
+		{ if: "num_skin_weights() == 2" define: { "macros": ["SKINNED_2WEIGHTS"] stages: ["vertex"] } }
+		{ if: "num_skin_weights() == 1" define: { "macros": ["SKINNED_1WEIGHT"]  stages: ["vertex"] } }
+		{ default = true }
+	]
+
+	instanced_modifiers = [
+		{ default = true }
+	]
+
+	non_instanced_modifiers = [
+		{ permute_with: "vertex_modifiers" }
+	]
+
+	default = [
+		{ if: "defined(INSTANCED)" permute_with: "instanced_modifiers" }
+		{ if: "!defined(INSTANCED)" permute_with: "non_instanced_modifiers" }
+	]
+}
+
+shader_contexts = {
+	material_transfer = {
+		passes_sort_mode = "immediate"
+		compile_with = [
+			{ if: "on_renderer(D3D11, D3D12)" }
+		]
+
+		passes = [
+			{ code_block="unlit" defines=["MATERIAL_TRANSFER"] render_state="material_transfer" }
+		]
+	}
+
+	default = {
+		passes_sort_mode = "deferred"
+
+		compile_with = [
+			{ if: "on_renderer(D3D11, D3D12, GNM, GL, METAL) && render_setting(mini_renderer)" define:["LDR_OUTPUT"] permute_with: "default" }
+			{ if: "on_renderer(D3D11, D3D12, GNM, GL, METAL)" permute_with: "default" }
+		]
+
+		passes = [
+			{ if: "defined(LAYER_EMISSIVE)" then: [
+				{ layer="emissive" code_block="unlit" defines="MOTION_VECTOR" render_state="unlit" }
+			]}
+			{ if: "defined(LAYER_SKYDOME)" then: [
+				{ layer="skydome" code_block="unlit" render_state="unlit" }
+			]}
+			{ if: "defined(LAYER_HDR_TRANSPARENT) && on_renderer(GL)" then: [
+				{ layer="hdr_transparent" code_block="unlit" render_state="unlit_ios" }
+			]}
+			{ if: "defined(LAYER_HDR_TRANSPARENT)" then: [
+				{ layer="hdr_transparent" code_block="unlit" render_state="unlit" }
+			]}
+
+			{ if: "defined(LAYER_TRANSPARENT)" then: [
+				{ layer="transparent" code_block="unlit" render_state="unlit" }
+			] }
+
+			{ if: "!on_renderer(GL, METAL)" then: [
+				{ layer="selection" code_block="unlit" define="DRAW_SELECTION" render_state="selection" branch_key="dev_selection" }
+			] }
+		]
+	}
+}
+
+code_blocks = {
+	macros = {
+		code = {
+			shared = """
+				#define TAA_GUI_DEPTH_BIAS_RANGE 50.0 // The [0, TAA_GUI_DEPTH_BIAS_RANGE] depth range for which we lerp the min-max depth biases for line drawing
+				#define TAA_GUI_MIN_DEPTH_BIAS 0.001 // The depth offset to add for lines drawn at z = 0
+				#define TAA_GUI_MAX_DEPTH_BIAS 0.05 // The depth offset to add for lines drawn at z >= GUI_DEPTH_BIAS_RANGE
+
+				// We need to disable instancing for the material transfer context as it doesn't use the world transform.
+				#if defined(INSTANCED) && defined(MATERIAL_TRANSFER)
+					#undef INSTANCED
+				#endif
+
+				#if defined(PS_NEEDS_WP) || defined(NEEDS_EYE_VECTOR) || defined(HAS_VERTEX_OFFSET) || (defined(RENDERER_D3D) && defined(INSTANCED)) || defined(CAMERA_TRANSLATION_LOCK)
+					#define NEEDS_WORLD_SPACE_POSITION
+				#endif
+			"""
+		}
+	}
+
+	unlit = {
+		include:[
+			"core/stingray_renderer/shader_libraries/common#common",
+			"core/stingray_renderer/shader_libraries/common#gbuffer_access",
+			"core/stingray_renderer/shader_libraries/common#skinning",
+			"core/stingray_renderer/shader_libraries/common#taa_offsets",
+			"core/stingray_renderer/shader_libraries/color_management#color_management"
+			"macros"]
+
+		instance_data = {
+			"on_renderer(D3D11, D3D12) && !defined(MATERIAL_TRANSFER) && defined(INSTANCED)": {
+				world = { type = "matrix4x4" }
+				"defined(MOTION_VECTOR)": {
+					last_world = { type = "matrix4x4" }
+				}
+				"defined(DRAW_SELECTION)": {
+					dev_selection_color = { type = "vector4" }
+					dev_selection_mask = { type = "scalar" }
+				}
+			}
+		}
+
+		samplers = {
+		}
+
+		code = {
+			glsl = """
+				#if defined(STAGE_VERTEX)
+					layout(location = POSITION0) in highp vec4 in_pos;
+
+					CBUFFER_START(c_per_object)
+						#if defined(NEEDS_WORLD_SPACE_POSITION)
+							#if defined(CAMERA_TRANSLATION_LOCK)
+								UNIFORM mat4 view;
+								UNIFORM mat4 proj;
+							#else
+								UNIFORM mat4 view_proj;
+							#endif
+						#else
+							UNIFORM mat4 world_view_proj;
+						#endif
+						UNIFORM mat4 world;
+					CBUFFER_END
+
+					void main()
+					{
+						GraphManualChannels params;
+						GraphResults graph;
+
+						// Write output channels
+						#if defined(SKINNED)
+							vec4 position = vec4(skin_point(in_pos, blendindices, blendweights), 1);
+							mediump vec3 normal = skin_vector(GRAPH_DATA(vertex_normal), blendindices, blendweights);
+							#if defined(NEEDS_TANGENT_SPACE)
+								mediump vec3 tangent = skin_vector(GRAPH_DATA(vertex_tangent), blendindices, blendweights);
+								mediump vec3 binormal = skin_vector(GRAPH_DATA(vertex_binormal), blendindices, blendweights);
+							#endif
+						#else
+							vec4 position = in_pos;
+							mediump vec3 normal = GRAPH_DATA(vertex_normal);
+							#if defined(NEEDS_TANGENT_SPACE)
+								mediump vec3 tangent = GRAPH_DATA(vertex_tangent);
+								mediump vec3 binormal = GRAPH_DATA(vertex_binormal);
+							#endif
+						#endif
+
+						#if defined(NEEDS_WORLD_SPACE_POSITION)
+							vec4 wp = position * world;
+						#endif
+
+						GRAPH_PARAM(params, vertex_position) = position;
+
+						#if defined(NEEDS_WORLD_SPACE_NORMAL)
+							GRAPH_PARAM(params, world_space_normal) = normal * mat3(world);
+						#endif
+
+						#if defined(NEEDS_EYE_VECTOR)
+							GRAPH_PARAM(params, eye_vector) = camera_pos[0] - wp.rgb;
+						#endif
+
+						#if defined(NEEDS_TANGENT_SPACE)
+							tspace_transform_transpose(
+								GRAPH_PARAM(params, tsm0),
+								GRAPH_PARAM(params, tsm1),
+								GRAPH_PARAM(params, tsm2),
+								tangent, binormal, normal,
+								mat3(world));
+						#endif
+
+						// Evaluate all pieces of the graph that should run per-vertex.
+						graph_evaluate(graph, params);
+
+						vec4 p;
+						#if defined(NEEDS_WORLD_SPACE_POSITION)
+							#if defined(HAS_VERTEX_OFFSET)
+								wp += vec4(graph.vertex_offset, 0);
+							#endif
+
+							#if defined(CAMERA_TRANSLATION_LOCK)
+								mat4 tmp = view;
+								tmp[0][3] = 0.0;
+								tmp[1][3] = 0.0;
+								tmp[2][3] = 0.0;
+								p = (wp * tmp) * proj;
+							#else
+								p = wp * view_proj;
+							#endif
+						#else
+							p = position * world_view_proj;
+						#endif
+
+						#if defined(PROJECT_TO_FAR_PLANE)
+							p.z = p.w;
+						#endif
+
+						gl_Position = p;
+					}
+				#elif defined(STAGE_FRAGMENT)
+					layout(location = 0) out mediump vec4 out_color;
+					UNIFORM float exposure;
+					UNIFORM vec3 baked_diffuse_tint;
+
+					void main()
+					{
+						#if defined(HAS_BASE_COLOR) || defined(HAS_OPACITY)
+							GraphManualChannels params;
+							GraphResults graph;
+
+							#if defined(NEEDS_SCREEN_POS)
+								mediump vec2 screen_pos = (gl_FragCoord.xy / back_buffer_size);
+								GRAPH_PARAM(params, screen_pos) = screen_pos;
+							#endif
+
+							graph_evaluate(graph, params);
+						#endif
+
+						mediump vec3 color = vec3(0.5, 0.5, 0.5);
+						#if defined(HAS_BASE_COLOR)
+							color = graph.base_color;
+						#endif
+
+						mediump float op = 1.0;
+						#if defined(HAS_OPACITY)
+							op = graph.opacity;
+						#endif
+
+						#if defined(LDR_OUTPUT) && (defined(LAYER_EMISSIVE) || defined(LAYER_SKYDOME) || defined(LAYER_HDR_TRANSPARENT))
+							color *= exposure;
+							color = filmic_tone_mapping(color);
+						#endif
+
+						#if defined(HAS_BRIGHTNESS)
+							out_color = vec4(color.r, color.g, color.b, op) * min(1.0, baked_diffuse_tint.x * baked_diffuse_tint.x + graph.brightness);
+						#else
+							out_color = vec4(color.r, color.g, color.b, op) * min(1.0, baked_diffuse_tint.x * baked_diffuse_tint.x);
+						#endif
+					}
+				#endif
+			"""
+
+			hlsl = """
+				struct VS_INPUT {
+					float4 position : POSITION;
+					SKIN_INPUT
+					GRAPH_VERTEX_INPUT
+				};
+
+				struct PS_INPUT {
+					#if defined(RENDERER_D3D) && defined(INSTANCED) && defined(DRAW_SELECTION)
+						float4 instance_selection_color : COLOR0;
+						float instance_selection_mask : COLOR1;
+					#endif
+					float4 position : SV_POSITION;
+					float clip_distance : SV_ClipDistance;
+					float cull_distance : SV_CullDistance;
+					GRAPH_PIXEL_INPUT
+				};
+
+				CBUFFER_START(c_per_object)
+					#if defined(NEEDS_WORLD_SPACE_POSITION)
+						#if defined(CAMERA_TRANSLATION_LOCK)
+							float4x4 view;
+							float4x4 proj;
+						#else
+							float4x4 view_proj;
+						#endif
+					#else
+						float4x4 world_view_proj;
+					#endif
+					float4x4 world;
+					float4x4 last_world;
+					bool use_object_camera_transform;
+					float4 dev_selection_color;
+					float dev_selection_mask;
+					float exposure;
+					float3 baked_diffuse_tint;
+					GRAPH_MATERIAL_EXPORTS
+				CBUFFER_END
+
+				#if defined(INSTANCED) && defined(RENDERER_D3D)
+					Buffer<float4> idata;
+					float ioffset;
+				#endif
+
+				PS_INPUT vs_main(VS_INPUT input, uint instance_id : SV_InstanceId)
+				{
+					PS_INPUT o;
+					float4 p;
+
+					uint camera = resolve_camera_index(instance_id);
+					instance_id = resolve_instance_id(instance_id);
+
+					GraphVertexParams params;
+					GraphVertexResults results;
+
+					#if defined(INSTANCED) && defined(RENDERER_D3D)
+						uint offset = (uint)ioffset + instance_id*IDATA_STRIDE;
+
+						world[0] = idata.Load(offset + IDATA_world + 0);
+						world[1] = idata.Load(offset + IDATA_world + 1);
+						world[2] = idata.Load(offset + IDATA_world + 2);
+						world[3] = idata.Load(offset + IDATA_world + 3);
+
+						#if defined(MOTION_VECTOR)
+							last_world[0] = idata.Load(offset + IDATA_last_world + 0);
+							last_world[1] = idata.Load(offset + IDATA_last_world + 1);
+							last_world[2] = idata.Load(offset + IDATA_last_world + 2);
+							last_world[3] = idata.Load(offset + IDATA_last_world + 3);
+						#endif
+
+						#if defined(DRAW_SELECTION)
+							o.instance_selection_color = idata.Load(offset + (instance_id*IDATA_STRIDE + IDATA_dev_selection_color));
+							o.instance_selection_mask = idata.Load(offset + (instance_id*IDATA_STRIDE + IDATA_dev_selection_mask));
+						#endif
+					#endif
+
+					// Write automatic params
+					GRAPH_VERTEX_WRITE_PARAMS(params, input);
+
+					// Write output channels
+					#if defined(SKINNED)
+						float4 position = float4(skin_point(input.position, input.blendindices, input.blendweights), 1);
+						#if defined(MOTION_VECTOR)
+							float4 last_position = float4(skin_point_last_frame(input.position, input.blendindices, input.blendweights), 1);
+						#endif
+						#if (defined(NEEDS_WORLD_SPACE_NORMAL) || defined(NEEDS_TANGENT_SPACE))
+							float3 normal = skin_vector(GRAPH_VERTEX_DATA(input, vertex_normal).xyz, input.blendindices, input.blendweights);
+						#endif
+						#if defined(NEEDS_TANGENT_SPACE)
+							float3 tangent = skin_vector(GRAPH_VERTEX_DATA(input, vertex_tangent).xyz, input.blendindices, input.blendweights);
+							float3 binormal = skin_vector(GRAPH_VERTEX_DATA(input, vertex_binormal).xyz, input.blendindices, input.blendweights);
+						#endif
+					#else
+						float4 position = input.position;
+						#if defined(MOTION_VECTOR)
+							float4 last_position = position;
+						#endif
+						#if (defined(NEEDS_WORLD_SPACE_NORMAL) || defined(NEEDS_TANGENT_SPACE))
+							float3 normal = GRAPH_VERTEX_DATA(input, vertex_normal).xyz;
+						#endif
+						#if defined(NEEDS_TANGENT_SPACE)
+							float3 tangent = GRAPH_VERTEX_DATA(input, vertex_tangent).xyz;
+							float3 binormal = GRAPH_VERTEX_DATA(input, vertex_binormal).xyz;
+						#endif
+					#endif
+
+					#if defined(NEEDS_WORLD_SPACE_POSITION)
+						float4 wp = mul(position, world);
+					#endif
+
+					GRAPH_VERTEX_PARAM(params, vertex_position) = position;
+
+					#if defined(NEEDS_WORLD_SPACE_NORMAL)
+						GRAPH_VERTEX_PARAM(params, world_space_normal).rgb = mul(normal, (float3x3)world);
+					#endif
+
+					#if defined(NEEDS_EYE_VECTOR)
+						GRAPH_VERTEX_PARAM(params, eye_vector).rgb = camera_pos[camera] - wp.rgb;
+					#endif
+
+					#if defined(NEEDS_TANGENT_SPACE)
+						tspace_transform_transpose(
+							GRAPH_VERTEX_PARAM(params, tsm0),
+							GRAPH_VERTEX_PARAM(params, tsm1),
+							GRAPH_VERTEX_PARAM(params, tsm2),
+							tangent, binormal, normal,
+							(float3x3)world);
+					#endif
+
+					#if defined(MOTION_VECTOR)
+						GRAPH_VERTEX_PARAM(params, last_clip_position) = float3(0.0, 0.0, 0.0);
+
+						float4 cur_wp = mul(position, world);
+						float4 last_wp = mul(last_position, last_world);
+						if(length(cur_wp - last_wp) > 0.0) {
+							float4 last_clip_pos = mul(last_wp, camera_last_view_projection[camera]);
+							compute_stereo_clip(camera, last_clip_pos);
+							GRAPH_VERTEX_PARAM(params, last_clip_position) = last_clip_pos.xyw;
+						}
+					#endif
+
+					// Evaluate all pieces of the graph that should run per-vertex.
+					GRAPH_EVALUATE_VERTEX(results, params);
+
+					#if defined(NEEDS_WORLD_SPACE_POSITION)
+						#if defined(HAS_VERTEX_OFFSET)
+							wp += float4(results.vertex_offset, 0);
+						#endif
+
+						#if defined(CAMERA_TRANSLATION_LOCK)
+							float4x4 tmp_v = use_object_camera_transform ? view : camera_view[camera];
+							tmp_v._m30_m31_m32 = float3(0,0,0);
+							p = mul(mul(wp, tmp_v), (use_object_camera_transform ? proj : camera_projection[camera]));
+						#else
+							p = mul(wp, (use_object_camera_transform ? view_proj : camera_view_projection[camera]));
+						#endif
+					#else
+						p = mul(position, (use_object_camera_transform ? world_view_proj : mul(world, camera_view_projection[camera])));
+					#endif
+
+					#if defined(MATERIAL_TRANSFER)
+						#if defined(MATERIAL_TRANSFER) && defined(LAYER_SKYDOME)
+							float2 unwrapped_uv = GRAPH_CHANNEL(input, texcoord0);
+						#else
+							float2 unwrapped_uv = GRAPH_CHANNEL(input, texcoord1);
+						#endif
+						float2 ndc = float2(unwrapped_uv.x, unwrapped_uv.y) * 2 - 1;
+						ndc.y *= -1;
+						p = float4(ndc, 0, 1);
+					#endif
+
+					#if defined(PROJECT_TO_FAR_PLANE)
+						p.z = p.w;
+					#endif
+
+					#if defined(LAYER_TRANSPARENT) && !defined(DEPTH_TEST_DISABLED)
+						p.z -= lerp(TAA_GUI_MIN_DEPTH_BIAS, TAA_GUI_MAX_DEPTH_BIAS, saturate((p.z / p.w) / TAA_GUI_DEPTH_BIAS_RANGE)) * taa_enabled;
+					#endif
+
+					#if defined(DRAW_SELECTION) || defined(MATERIAL_TRANSFER) || defined(LAYER_TRANSPARENT)
+						o.position = p;
+					#else
+						float4 view_space = p / p.w;
+						view_space.xy += get_vs_halton_offset(frame_number);
+						o.position = view_space * p.w;
+					#endif
+
+					compute_stereo_clip(camera, o.position, o.clip_distance, o.cull_distance);
+
+					// Write results
+					GRAPH_VERTEX_WRITE(o, results, params);
+					return o;
+				}
+
+				#if defined(DRAW_SELECTION)
+
+					struct PS_OUTPUT {
+						float4 buffer0 : SV_TARGET0;
+						float buffer1 : SV_TARGET1;
+					};
+
+					PS_OUTPUT ps_main(PS_INPUT input) : SV_TARGET0
+					{
+						PS_OUTPUT to_return;
+						#if defined(RENDERER_D3D) && defined(INSTANCED)
+							to_return.buffer0 = input.instance_selection_color;
+							to_return.buffer1 = input.instance_selection_mask;
+						#else
+							to_return.buffer0 = dev_selection_color;
+							to_return.buffer1 = dev_selection_mask;
+						#endif
+						return to_return;
+					}
+				#else
+					float4 ps_main(PS_INPUT input) : SV_TARGET0
+					{
+						#if defined(HAS_BASE_COLOR) || defined(HAS_OPACITY)
+							GraphPixelParams params;
+							GraphPixelResults graph;
+
+							#if defined(NEEDS_SCREEN_POS)
+								float2 screen_pos = (input.position.xy / back_buffer_size);
+								GRAPH_PARAM(params, screen_pos) = screen_pos;
+							#endif
+
+							GRAPH_PIXEL_WRITE_PARAMS(params, input);
+							GRAPH_EVALUATE_PIXEL(graph, params);
+						#endif
+
+						float3 out_color = float3(0.5, 0.5, 0.5);
+						#if defined(HAS_BASE_COLOR)
+							out_color = graph.base_color;
+						#endif
+
+						float op = 1.f;
+						#if defined(HAS_OPACITY)
+							op = graph.opacity;
+						#endif
+
+						#if defined(LDR_OUTPUT) && (defined(LAYER_EMISSIVE) || defined(LAYER_SKYDOME) || defined(LAYER_HDR_TRANSPARENT))
+							out_color *= exposure;
+							out_color = filmic_tone_mapping(out_color);
+						#endif
+
+						#if defined(HAS_BRIGHTNESS)
+							out_color = out_color * min(1.0, baked_diffuse_tint * baked_diffuse_tint + graph.brightness);
+						#else
+							out_color = out_color * min(1.0, baked_diffuse_tint * baked_diffuse_tint);
+						#endif
+
+						return float4(out_color, op);
+					}
+				#endif
+			"""
+		}
+	}
+}

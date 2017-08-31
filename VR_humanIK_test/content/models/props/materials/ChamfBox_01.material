@@ -1,0 +1,18 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+}
+variables = {
+	base_color = {
+		type = "vector3"
+		value = [
+			1
+			0.5
+			0
+		]
+	}
+	roughness = {
+		type = "scalar"
+		value = 0.8999997
+	}
+}
